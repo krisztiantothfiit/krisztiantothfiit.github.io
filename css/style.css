@@ -1,22 +1,24 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: Gotham-Rounded-Bold; 
+  src: url("gothamroundedbold_21016.ttf");
+} 
+
+@font-face {
+  font-family: Gotham-Rounded-Book; 
+  src: url("gothamroundedbook_21018.ttf");
+} 
 
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  font-family: Gotham-Rounded-Book;
 }
 
 a {
-  color: #50d8af;
+  color: #17bdd2;
   transition: 0.5s;
 }
 
@@ -39,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: Gotham-Rounded-Bold;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -50,7 +52,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #50d8af;
+  background: #17bdd2;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -61,13 +63,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #50d8af;
+  background: #17bdd2;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #0c2e8a;
+  background: #050051;
   color: #fff;
 }
 
@@ -88,11 +90,11 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #topbar .contact-info i {
-  color: #50d8af;
+  color: #17bdd2;
   padding: 4px;
 }
 
@@ -111,7 +113,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #topbar .social-links a:first-child {
@@ -136,18 +138,18 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: Gotham-Rounded-Bold;
   font-weight: 700;
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: #050051;
   line-height: 1;
   display: inline-block;
 }
 
 #header #logo h1 a span {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #header #logo img {
@@ -195,20 +197,20 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: #050051;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-  color: #50d8af;
+  color: #17bdd2;
   text-decoration: underline;
 }
 
 #intro .intro-content .btn-get-started,
 #intro .intro-content .btn-projects {
-  font-family: "Raleway", sans-serif;
+  font-family: Gotham-Rounded-Book;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -221,23 +223,23 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: #050051;
+  border: 2px solid #050051;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: #050051;
 }
 
 #intro .intro-content .btn-projects {
-  background: #50d8af;
-  border: 2px solid #50d8af;
+  background: #17bdd2;
+  border: 2px solid #17bdd2;
 }
 
 #intro .intro-content .btn-projects:hover {
   background: none;
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #intro #intro-carousel {
@@ -320,7 +322,7 @@ h6 {
   content: "\f107";
   position: absolute;
   right: 8px;
-  font-family: FontAwesome;
+  font-family: Gotham-Rounded-Bold;
   font-style: normal;
   font-weight: normal;
 }
@@ -343,7 +345,7 @@ h6 {
   text-decoration: none;
   display: inline-block;
   color: #555;
-  font-family: "Raleway", sans-serif;
+  font-family: Gotham-Rounded-Bold;
   font-weight: 700;
   font-size: 14px;
   outline: none;
@@ -351,7 +353,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 .nav-menu > li {
@@ -379,7 +381,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 .nav-menu ul ul {
@@ -462,11 +464,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #mobile-body-overly {
@@ -507,7 +509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h2 {
   font-size: 32px;
-  color: #0c2e8a;
+  color: #050051;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -520,7 +522,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   width: 50px;
   height: 3px;
-  background: #50d8af;
+  background: #17bdd2;
   bottom: 0;
   left: 0;
 }
@@ -547,10 +549,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: #050051;
   font-weight: 700;
   font-size: 36px;
-  font-family: "Raleway", sans-serif;
+  font-family: Gotham-Rounded-Bold;
 }
 
 #about .content h3 {
@@ -572,7 +574,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #about .content ul {
@@ -619,8 +621,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background: #050051;
+  background: linear-gradient(45deg, #17bdd2 0%, #a3ebd5 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -644,52 +646,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
-/* Clients Section
+/* Gallery Section
 --------------------------------*/
 
-#clients {
-  padding: 30px 0;
-}
-
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
-}
-
-#clients img:hover {
-  opacity: 1;
-}
-
-#clients .owl-nav,
-#clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#clients .owl-dot.active {
-  background-color: #50d8af;
-}
-
-/* Our Portfolio Section
---------------------------------*/
-
-#portfolio {
+#gallery {
   background: #fff;
   padding: 30px 0;
 }
 
-#portfolio .portfolio-overlay {
+#gallery .gallery-overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -701,7 +666,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.4s;
 }
 
-#portfolio .portfolio-item {
+#gallery .gallery-item {
   overflow: hidden;
   position: relative;
   padding: 0;
@@ -709,7 +674,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
-#portfolio .portfolio-item h2 {
+#gallery .gallery-item h2 {
   color: #ffffff;
   font-size: 24px;
   margin: 0;
@@ -717,22 +682,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
-#portfolio .portfolio-item img {
+#gallery .gallery-item img {
   transition: all ease-in-out 0.4s;
   width: 100%;
 }
 
-#portfolio .portfolio-item:hover img {
+#gallery .gallery-item:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-#portfolio .portfolio-item:hover .portfolio-overlay {
+#gallery .gallery-item:hover .gallery-overlay {
   opacity: 1;
   background: rgba(0, 0, 0, 0.7);
 }
 
-#portfolio .portfolio-info {
+#gallery .gallery-info {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -812,45 +777,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #50d8af;
-}
-
-/* Call To Action Section
---------------------------------*/
-
-#call-to-action {
-  background: #081e5b;
-  background-size: cover;
-  padding: 40px 0;
-}
-
-#call-to-action .cta-title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-#call-to-action .cta-text {
-  color: #fff;
-}
-
-#call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 3px solid #fff;
-  color: #fff;
-}
-
-#call-to-action .cta-btn:hover {
-  background: #50d8af;
-  border: 3px solid #50d8af;
+  background-color: #17bdd2;
 }
 
 /* Our Team Section
@@ -876,7 +803,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .details {
-  background: #50d8af;
+  background: #17bdd2;
   color: #fff;
   padding: 15px;
   border-radius: 0 0 3px 3px;
@@ -923,7 +850,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #contact .contact-info address,
@@ -945,7 +872,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #50d8af;
+  color: #17bdd2;
 }
 
 #contact .contact-address,
@@ -960,8 +887,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #50d8af;
-  border: 1px solid #50d8af;
+  color: #17bdd2;
+  border: 1px solid #17bdd2;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1002,7 +929,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #50d8af;
+  background: #17bdd2;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -1037,7 +964,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .credits a {
-  color: #0c2e8a;
+  color: #050051;
 }
 
 @media (min-width: 768px) {
