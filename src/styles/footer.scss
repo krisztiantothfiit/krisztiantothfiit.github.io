@@ -1,0 +1,45 @@
+@import '../variables.scss';
+
+#footer .section {
+    background: url(/assets/images/header.jpg) no-repeat center center;
+    background-size: cover;
+    background-position: 0 7%;
+    min-height: unset;
+    margin-top: 2%;
+    padding: 7%
+}
+
+.footer {
+    width: 60%;
+    margin-left: auto;
+
+    p {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.heart.mat-icon {
+    color: #ef4b4b ;
+    height: 15px;
+    font-size: 15px;
+}
+
+.link:hover {
+    text-decoration: none;
+    span {
+        color: var(--secondary);
+    }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+    #footer .section {
+        background-position: top;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer {
+        width: 60%;
+    }
+}

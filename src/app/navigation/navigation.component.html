@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque">
+  <div class="container">
+    <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
+      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNav()" id="navbar-toggler"
+      [ngClass]="{close: toClose}">
+      <span></span>
+    </div>
+    <a class="navbar-brand">
+      <img class="navbar-brand-img" src="assets/images/logo.png">
+      <div class="navbar-brand-name">
+        <span translate="navigation.brand.florist" class="nav-text-color"></span>
+        <span translate="navigation.brand.name" class="nav-text-color"></span>
+      </div>
+    </a>
+    <div class="collapse navbar-collapse" id="primary-menu">
+      <ul class="nav navbar-nav ms-auto nav-no-opacity">
+        <app-navigation-item title="header"></app-navigation-item>
+        <app-navigation-item title="services"></app-navigation-item>
+        <app-navigation-item title="gallery"></app-navigation-item>
+        <app-navigation-item title="contact"></app-navigation-item>
+        <li>
+          <div class="dropdown show nav-item-border">
+            <a class="btn btn-secondary dropdown-toggle lang-dropdown nav-text-color" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ currentLang | uppercase}}
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="changeUsedLang('sk')">
+                <div class="flex">
+                  <mat-icon svgIcon="sk_flag"></mat-icon>
+                  <span class="margin-left-10">SK</span>
+                </div>
+              </a>
+              <a class="dropdown-item" (click)="changeUsedLang('hu')">
+                <div class="flex">
+                  <mat-icon svgIcon="hu_flag"></mat-icon>
+                  <span class="margin-left-10">HU</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

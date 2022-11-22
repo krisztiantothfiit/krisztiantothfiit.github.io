@@ -1,0 +1,21 @@
+$background-primary: #f7dce3;
+$background-secondary: #ffffff;
+$background-default: #ffffff;
+$primary: #f6b6cc;
+$secondary: #f3507b;
+$text: #252526;
+$mobile-resolution: 769px;
+$tablet-resolution: 960px;
+$font-family-title: 'Parisienne', cursive;
+$font-family-default: 'Merriweather', serif;
+
+:root {
+    --background-primary: #{$background-primary};
+    --background-secondary: #{$background-secondary};
+    --background-default: #{$background-default};
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --text: #{$text};
+    --font-family-title: #{$font-family-title};
+    --font-family-default: #{$font-family-default};
+}

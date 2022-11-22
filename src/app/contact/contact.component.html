@@ -1,0 +1,40 @@
+<div class="divider-box">
+  <img src="assets/images/divider.png" class="divider">
+</div>
+<app-section id="contact">
+  <div class="contact-box row">
+    <div class="col-lg-6 col-md-12 contact-info">
+      <h3 translate="contact.title"></h3>
+      <div class="contact-row">
+        <span class="material-symbols-outlined">location_on</span>
+        <p translate="contact.address"></p>
+      </div>
+      <div class="contact-row">
+        <span class="material-symbols-outlined">call</span>
+        <p translate="contact.phone"></p>
+      </div>
+      <div class="contact-row">
+        <span class="material-symbols-outlined">mail</span>
+        <p translate="contact.email"></p>
+      </div>
+      <hr>
+      <div class="contact-row">
+        <span class="material-symbols-outlined">schedule</span>
+        <div>
+          <p translate="contact.monFri"></p>
+          <p translate="contact.sat"></p>
+          <p translate="contact.sun"></p>
+        </div>
+      </div>
+      <a target="_blank" [href]="url" class="button">
+        <span translate="contact.button"></span>
+      </a>
+      <hr class="mobile-only no-padding">
+    </div>
+    <div class="col-lg-6 col-md-12 no-padding">
+      <a target="_blank" [href]="url">
+        <app-map></app-map>
+      </a>
+    </div>
+  </div>
+</app-section>
