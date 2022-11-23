@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('Kvetinárstvo Eva');
+    this.titleService.setTitle('PERFECT');
     this.metaTagService.addTags([
       {name: 'description', content: 'Z nášho širokého výberu kvetov Vám vykúzlime nádherné kytice pre každú príležitosť'},
       {name: 'keywords', content: 'kvetinárstvo, kvetinárstvo Eva, kvetinárstvo Veľký Biel, kvety, vence, Veľký Biel, kytice'},
