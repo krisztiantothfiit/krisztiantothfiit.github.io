@@ -1,6 +1,4 @@
 import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { Observable, Observer } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { GalleryDialogComponent } from './dialog/gallery-dialog/gallery-dialog.component';
 

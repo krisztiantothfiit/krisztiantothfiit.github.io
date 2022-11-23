@@ -6,10 +6,10 @@
 @import 'styles/contact.scss';
 @import 'styles/footer.scss';
 @import 'styles/header.scss';
-@import 'styles/info.scss';
+@import 'styles/about-us.scss';
 @import 'styles/gallery.scss';
 @import 'styles/navigation.scss';
-@import 'styles/services.scss';
+@import 'styles/our-team.scss';
 
 body {
     background-color: var(--background-default);
@@ -32,12 +32,6 @@ body {
     height: 50px;
     margin-top: 7%;
     margin-bottom: 7%;
-}
-
-.background {
-    background: url(/assets/images/header.jpg) no-repeat center center;
-    background-size: cover;
-    background-position: 0 10%;
 }
 
 h1 {
@@ -170,7 +164,7 @@ button:focus {
     background: var(--background-primary);
     box-shadow: inset 0 0 4px #ffffff;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: var(--secondary);
     border-radius: 12px;

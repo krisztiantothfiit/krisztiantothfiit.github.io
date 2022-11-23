@@ -25,31 +25,31 @@ import { cookieConfig } from './cookie.service';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
-import { ServicesListComponent } from './services-list/services-list.component';
-import { ServiceComponent } from './services-list/service/service.component';
+import { OurTeamComponent } from './our-team/our-team.component';
+import { EmployeeComponent } from './our-team/employee/employee.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { GalleryDialogComponent } from './gallery/dialog/gallery-dialog/gallery-dialog.component';
-import { InfoComponent } from './info/info.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 import { GridColsDirective } from './gallery/directives/grid-cols.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ServicesListComponent,
+    OurTeamComponent,
     ContactComponent,
     NavigationComponent,
     NavigationItemComponent,
     SectionComponent,
     MapComponent,
-    ServiceComponent,
+    EmployeeComponent,
     FooterComponent,
     ScrollToTopComponent,
     GalleryComponent,
     GalleryDialogComponent,
-    InfoComponent,
+    AboutUsComponent,
     GridColsDirective
   ],
   imports: [

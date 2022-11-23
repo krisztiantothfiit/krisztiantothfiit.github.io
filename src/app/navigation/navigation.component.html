@@ -6,16 +6,12 @@
       <span></span>
     </div>
     <a class="navbar-brand">
-      <img class="navbar-brand-img" src="assets/images/logo.png">
-      <div class="navbar-brand-name">
-        <span translate="navigation.brand.florist" class="nav-text-color"></span>
-        <span translate="navigation.brand.name" class="nav-text-color"></span>
-      </div>
     </a>
     <div class="collapse navbar-collapse" id="primary-menu">
       <ul class="nav navbar-nav ms-auto nav-no-opacity">
         <app-navigation-item title="header"></app-navigation-item>
-        <app-navigation-item title="services"></app-navigation-item>
+        <app-navigation-item title="about-us"></app-navigation-item>
+        <app-navigation-item title="our-team"></app-navigation-item>
         <app-navigation-item title="gallery"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
         <li>
@@ -36,6 +32,12 @@
                 <div class="flex">
                   <mat-icon svgIcon="hu_flag"></mat-icon>
                   <span class="margin-left-10">HU</span>
+                </div>
+              </a>
+              <a class="dropdown-item" (click)="changeUsedLang('en')">
+                <div class="flex">
+                  <mat-icon svgIcon="en_flag"></mat-icon>
+                  <span class="margin-left-10">EN</span>
                 </div>
               </a>
             </div>

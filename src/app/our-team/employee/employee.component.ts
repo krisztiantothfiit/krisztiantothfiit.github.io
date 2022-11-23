@@ -2,10 +2,10 @@ import { Component, Input } from '@angular/core';
 import { AnimationComponent } from 'src/app/animation.component';
 
 @Component({
-  selector: 'app-service',
-  templateUrl: './service.component.html'
+  selector: 'app-employee',
+  templateUrl: './employee.component.html'
 })
-export class ServiceComponent extends AnimationComponent {
+export class EmployeeComponent extends AnimationComponent {
   @Input() service = '';
   @Input() picture = '';
   @Input() ref = '';
