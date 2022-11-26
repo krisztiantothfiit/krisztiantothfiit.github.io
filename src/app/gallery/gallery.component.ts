@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { GalleryDialogComponent } from './dialog/gallery-dialog/gallery-dialog.component';
 
@@ -13,42 +13,55 @@ export interface Tile {
 })
 export class GalleryComponent {
   tiles: Tile[] = [];
-  defaultTabIndex = 0;
-  selectedTabIndex = 0;
-
-  tabs = [
-    { label: 'galleryBouquets' },
-    { label: 'galleryWreaths' },
-    { label: 'galleryIkebana' },
-    { label: 'galleryDecorations' },
-    { label: 'galleryBoxes' }
-  ];
-
-  folderInfo = [
-    { name: 'bouquet', pictureCount: 57 },
-    { name: 'wreath', pictureCount: 54 },
-    { name: 'ikebana', pictureCount: 22 },
-    { name: 'decoration', pictureCount: 45 },
-    { name: 'box', pictureCount: 54 }
-  ];
+  showRows = 1;
+  showLoadMore = false;
+  pictureCount = 57;
 
   constructor(public dialog: MatDialog, private elem: ElementRef) {
-    this.elem.nativeElement.style.setProperty('--picture-count', this.folderInfo[this.selectedTabIndex].pictureCount)
-    this.selectedTabChanged({ index: this.defaultTabIndex });
+    this.elem.nativeElement.style.setProperty('--picture-count', this.pictureCount)
+    this.selectedTabChanged({ index: 0 });
+    this.showLoadMore = this.tiles.length > 5;
   }
 
   selectedTabChanged(event: any) {
     this.tiles = [];
-    this.selectedTabIndex = event.index;
-
-    for (let i = 1; i <= this.folderInfo[event.index].pictureCount; i++) {
-      this.tiles = [...this.tiles, { src: `../../assets/images/${this.folderInfo[event.index].name}/${this.folderInfo[event.index].name}${i}.jpg` }]
+    for (let i = 1; i <= this.pictureCount; i++) {
+      this.tiles = [...this.tiles, { src: `../../assets/images/gallery/bouquet${i}.jpg` }]
     }
   }
 
-  openDialog({ src }: Tile): void {
-    this.dialog.open(GalleryDialogComponent, {
-      data: { src }
-    });
+  getBackgroundUrl(index: number) {
+    if (index < this.tiles.length) {
+      return `url("${this.tiles[index].src}")`;
+    }
+    return '';
+  }
+
+  getRange(): any {
+    return [].constructor(this.showRows);
+  }
+
+  loadMore(): void {
+    if (this.showRows + 1 <= Math.floor(this.tiles.length / 5) + 1) {
+      this.showRows += 1;
+    } else {
+      this.showLoadMore = false;
+    }
+  }
+
+  openDialog(index: number): void {
+    if (index < this.tiles.length) {
+      this.dialog.open(GalleryDialogComponent, {
+        data: { src: this.tiles[index].src }
+      });
+    }
+  }
+
+  getReverse(i: number): boolean {
+    if (Math.floor(this.tiles.length / 5) + 1 % 2 === 0) {
+    return i % 2 == 1;
+    } else {
+      return i % 2 == 0;
+    }
   }
 }

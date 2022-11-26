@@ -14,5 +14,8 @@
   "cookieMessage": "Ez az oldal sütiket használ. Az \"Engedélyezem\" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.",
   "cookieAllow": "Engedélyezem",
   "cookieDeny": "Megtiltom",
-  "cookiePolicy": "Cookie szabályzat"
+  "cookiePolicy": "Cookie szabályzat",
+  "gallery.title": "Galéria",
+  "gallery.subtitle": "Galéria",
+  "gallery.loadMoreBtn": "Több kép"
 }

@@ -2,8 +2,6 @@
 
 #footer .section {
     min-height: unset;
-    margin-top: 2%;
-    padding: 7%
 }
 
 .footer {
@@ -20,10 +18,8 @@
 }
 
 .link:hover {
-    text-decoration: none;
-    span {
-        color: var(--secondary);
-    }
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
 }
 
 @media only screen and (max-width: $mobile-resolution) {

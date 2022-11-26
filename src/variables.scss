@@ -1,21 +1,13 @@
-$background-primary: #F2E3D5;
-$background-secondary: #356C64;
-$background-default: #356C64;
-$primary: #08eda0;
+$primary: #356C64;
 $secondary: #F2E3D5;
-$text: #FCF7F3;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
 $font-family-title: 'Artifex CF Bold';
 $font-family-default: 'Artifex CF Regular';
 
 :root {
-    --background-primary: #{$background-primary};
-    --background-secondary: #{$background-secondary};
-    --background-default: #{$background-default};
     --primary: #{$primary};
     --secondary: #{$secondary};
-    --text: #{$text};
     --font-family-title: #{$font-family-title};
     --font-family-default: #{$font-family-default};
 }

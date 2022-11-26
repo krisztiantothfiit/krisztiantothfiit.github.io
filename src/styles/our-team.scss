@@ -1,5 +1,11 @@
 @import '../variables.scss';
 
+#our-team {
+    .section {
+        background-color: var(--secondary);
+    }
+}
+
 .service-img {
     padding: 0px;
     text-align: left;
@@ -99,5 +105,5 @@
 
 .ref:hover {
     text-decoration: none !important;
-    color: var(--text) !important;
+    color: var(--secondary) !important;
   }

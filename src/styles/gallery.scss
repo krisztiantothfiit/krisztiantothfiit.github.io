@@ -16,6 +16,39 @@
   cursor: pointer;
 }
 
+#gallery {
+  .row {
+    display: flex;
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  .row-2 {
+    height: 25vh;
+  }
+
+  .no-border {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+
+  [class*="col-"] {
+    max-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: content-box;
+    padding: 0;
+    border: inset 10px transparent;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .mat-tab-label {
   height: unset !important;
 }
@@ -40,8 +73,8 @@
 
 .dialog-img {
   display: block;
-  max-width:750px;
-  max-height:750px;
+  max-width: 750px;
+  max-height: 750px;
   width: auto;
   height: auto;
 }
@@ -53,22 +86,25 @@
   align-items: center;
   position: relative;
 
-  & > .close {
+  &>.close {
     position: absolute;
     right: 0;
     top: 0;
     width: 32px;
     height: 32px;
     opacity: 1;
-    background: var(--background-secondary);
+    background-color: var(--secondary);
+    border-radius: 30px;
 
-    &:before, &:after {
+    &:before,
+    &:after {
       position: absolute;
       left: 15px;
       content: ' ';
-      height: 33px;
+      height: 20px;
       width: 2px;
-      background-color: #333;
+      background-color: var(--primary);
+      top: 7px;
     }
 
     &:before {
@@ -97,14 +133,14 @@
 
   .dialog-img {
     display: block;
-    max-width:540px;
-    max-height:540px;
+    max-width: 540px;
+    max-height: 540px;
     width: auto;
     height: auto;
   }
 }
 
-@media only screen and (max-width: $mobile-resolution) { 
+@media only screen and (max-width: $mobile-resolution) {
   .mat-tab-label {
     min-width: 110px !important;
     padding: 0px !important;
@@ -135,10 +171,9 @@
 
   .dialog-img {
     display: block;
-    max-width:400px;
-    max-height:400px;
+    max-width: 400px;
+    max-height: 400px;
     width: auto;
     height: auto;
   }
 }
-

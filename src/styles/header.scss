@@ -28,39 +28,6 @@
     text-align: justify !important;
 }
 
-.header-handwriting {
-    text-align: right !important;
-}
-
-.header-img {
-    padding-top: 0 !important;
-    img {
-        max-width: 110%;
-    }
-}
-
-.custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(123% + 1.3px);
-    height: 107px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom .shape-fill {
-    fill: var(--background-default);
-}
-
 @media only screen and (max-width: $mobile-resolution) {
 
     #header .section {
@@ -92,7 +59,7 @@
 
     .header-subtitles {
         padding: 1rem 15px 0 15px;
-        background-color: var(--background-default);
+        background-color: var(--secondary);
     }
 
     .header-img {

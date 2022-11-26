@@ -14,5 +14,8 @@
   "cookieMessage": "Táto stránka používa súbory cookie. Kliknutím na tlačidlo \"Povoliť\" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.",
   "cookieAllow": "Povoliť",
   "cookieDeny": "Odmietnuť",
-  "cookiePolicy": "Zásady používania súborov cookie"
+  "cookiePolicy": "Zásady používania súborov cookie",
+  "gallery.title": "Naše fotky",
+  "gallery.subtitle": "Fotky z jazykových táborov",
+  "gallery.loadMoreBtn": "Načítať ďalšie"
 }

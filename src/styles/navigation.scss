@@ -1,7 +1,7 @@
 .navbar {
     padding: 1% 0;
-    background: var(--background-primary);
-    color: var(--text);
+    background: var(--secondary);
+    color: var(--secondary);
     font-family: var(--font-family-default);
     z-index: 2;
 }
@@ -17,14 +17,18 @@
     margin-right: 15px;
 }
 
+.show>.btn-secondary.dropdown-toggle {
+  color: var(--primary) !important;
+}
+
 .navbar-brand-name {
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--background-secondary);
+  border-left: 1px solid var(--primary);
   padding: 0 15px;
   line-height: 18px;
   span {
-    color: var(--background-secondary) !important;
+    color: var(--primary) !important;
     padding: 2px 0;
   }
 }
@@ -45,7 +49,8 @@
 
 .dropdown-menu {
   min-width: 0 !important;
-  background-color: var(--background-secondary);
+  background-color: var(--primary);
+  border: 1px solid var(--secondary) !important;
 }
 
 .dropdown-menu:before {
@@ -60,18 +65,20 @@
     border-color: transparent;
     border-style: solid;
     border-width: 10px;
-    background-color: var(--background-secondary);
+    background-color: var(--primary);
     border-top-right-radius: 1px;
     box-shadow: 0.75em -0.75em rgb(0, 0, 0, 0.25);
 }
 
 .dropdown-item {
   cursor: pointer;
+
 }
 
 .dropdown-item:hover {
+  background-color: var(--secondary);
   span {
-    color: var(--secondary);
+    color: var(--primary);
   }
 }
 
@@ -175,17 +182,13 @@
 
 
 .nav-text-color {
-  color: var(--background-secondary);
+  color: var(--primary);
 }
 
 .nav-item:hover, .lang-dropdown:hover {
   span {
-    color: var(--secondary) !important;
+    color: var(--primary) !important;
   }
-}
-
-.dropdown-menu {
-  border: none;
 }
 
 .nav-item-border {
@@ -194,7 +197,7 @@
 
 @media only screen and (max-width: $mobile-resolution) {
   .navbar-expand-custom {
-    background-color: var(--background-secondary);
+    background-color: var(--secondary);
 
     .nav-link {
       padding: .5rem 1rem;
@@ -207,18 +210,18 @@
 
   .navbar {
     padding: 1% 0;
-    background: var(--background-secondary);
+    background: var(--secondary);
     position: fixed;
     z-index: 2;
     width: 100%;
   }
 
   .nav-text-color {
-    color: var(--background-secondary) !important;
+    color: var(--primary) !important;
   }
 
   .nav-item-border {
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid var(--primary);
   }
 
   .dropdown-menu.show {
