@@ -1,5 +1,7 @@
 $primary: #356C64;
+$primary-trans: #356c6433;
 $secondary: #F2E3D5;
+$secondary-trans: #f2e3d580;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
 $font-family-title: 'Artifex CF Bold';
@@ -7,7 +9,9 @@ $font-family-default: 'Artifex CF Regular';
 
 :root {
     --primary: #{$primary};
+    --primary-trans: #{$primary-trans};
     --secondary: #{$secondary};
+    --secondary-trans: #{$secondary-trans};
     --font-family-title: #{$font-family-title};
     --font-family-default: #{$font-family-default};
 }

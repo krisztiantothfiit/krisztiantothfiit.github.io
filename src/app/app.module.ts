@@ -26,7 +26,6 @@ import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { OurTeamComponent } from './our-team/our-team.component';
-import { EmployeeComponent } from './our-team/employee/employee.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -44,7 +43,6 @@ import { GridColsDirective } from './gallery/directives/grid-cols.directive';
     NavigationItemComponent,
     SectionComponent,
     MapComponent,
-    EmployeeComponent,
     FooterComponent,
     ScrollToTopComponent,
     GalleryComponent,
