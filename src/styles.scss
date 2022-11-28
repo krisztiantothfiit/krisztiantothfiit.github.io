@@ -22,7 +22,7 @@ body {
 .section {
     min-height: 50vh;
     text-align: center;
-    padding: 2% 0;
+    padding: 5% 0;
 }
 
 .divider-box {
@@ -55,21 +55,27 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
-    color: var(--secondary);
-    font-family: var(--font-family-default);
+    font-size: 1.5em;
+    color: var(--terciary);
+    font-family: var(--font-family-title);
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
 .primary {
     color: var(--primary);
 }
 
+.secondary {
+  color: var(--secondary);
+}
+
 p, span {
     font-family: var(--font-family-default);
-    color: var(--secondary);
+    color: var(--terciary);
     font-size: 1.25em;
-    text-align: justify;
+    text-align: left;
+    line-height: 100%;
 }
 
 img {
@@ -154,8 +160,13 @@ button:focus {
     }
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .scrollToTop.mat-mini-fab:hover {
     background-color: var(--secondary);
+    border: 1px solid var(--primary);
     .mat-button-wrapper {
         color: var(--primary);
     }

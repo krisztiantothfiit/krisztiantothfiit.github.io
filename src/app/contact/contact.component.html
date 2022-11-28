@@ -1,3 +1,49 @@
 <app-section id="contact">
-  <h1>Kontakt</h1>
+  <h2 translate="contact.title" class="primary no-margin"></h2>
+  <span translate="contact.subtitle"></span>
+
+  <div class="row pb-5 pt-5">
+    <div class="col-lg-4 col-md-12 info-box">
+      <span class="material-symbols-outlined primary">business</span>
+      <p class="no-margin" translate="contact.address.text"></p>
+    </div>
+    <div class="col-lg-4 col-md-12 info-box">
+      <span class="material-symbols-outlined primary">stay_current_portrait</span>
+      <p class="no-margin" translate="contact.phone.text"></p>
+    </div>
+    <div class="col-lg-4 col-md-12 info-box">
+      <span class="material-symbols-outlined primary">mail</span>
+      <p class="no-margin" translate="contact.email.text"></p>
+    </div>
+  </div>
+
+  <div>
+    <div class="contact-box">
+      <h3 translate="contact.form.title" class="secondary"></h3>
+      <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.name"></mat-label>
+          <input matInput name="Name" formControlName="name">
+          <mat-error *ngIf="hasRequiredError('name')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.email"></mat-label>
+          <input matInput name="Email" formControlName="email"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}">
+          <mat-error *ngIf="hasRequiredError('email')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.message"></mat-label>
+          <textarea matInput name="Message" rows="3" formControlName="message"></textarea>
+          <mat-error *ngIf="hasRequiredError('message')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <div class="submit-btn mt-4">
+          <button mat-flat-button class="button" type="submit">
+            <span translate="contact.form.submitBtn"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <app-map></app-map>
+  </div>
 </app-section>

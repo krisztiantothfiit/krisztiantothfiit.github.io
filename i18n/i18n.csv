@@ -23,3 +23,21 @@ gallery.title;Naše fotky;Galéria;Galéria
 gallery.subtitle;Fotky z jazykových táborov;Galéria;Galéria
 gallery.loadMoreBtn;Načítať ďalšie;Több kép;Load more
 
+contact.title;Spojte sa s nami;Vegye fel velünk a kapcsolatot;Get in touch with us
+contact.subtitle;Kontaktujte nás pomocou nižšie uvedených informácií;Kérjük, vegye fel velünk a kapcsolatot az alábbi elérhetőségeken;Please contact us using the information below
+contact.address.title;Adresa;Cím;Address
+contact.address.text;Kráľová nad Váhom 170, 925 91 Kráľová nad Váhom;text;text
+contact.phone.title;Telefón;Telefon;Phone
+contact.phone.text;0902 634 571;text;text
+contact.email.title;Email;Email;Email
+contact.email.text;nagytimea12@yahoo.com;text;text
+contact.form.title;Napíšte nám;text;Send us
+contact.form.name;Meno;Name;Név
+contact.form.email;Email;Email;Email
+contact.form.message;Správa;Message;Üzenet
+contact.form.name.placeholder;napr. Jožko Mrkvička;e.g. John Smith;pl. Minta János 
+contact.form.email.placeholder;vzor@email.com;example@email.com;minta@email.com
+contact.form.message.placeholder;Chcel by som si dohodnúť stretnutie...;I would like to make an appointment...;Szeretnék időpontot kérni...
+contact.form.submitBtn;Poslať správu;Send message;Üzenet küldése
+contact.form.required;Povinné pole;Required field;Kötelezően kitöltendő mező
+contact.form.successMsg;Správa bola úspešne odoslaná!;Message was succesfully sent!;Az üzenetet sikeresen elküldtük!

@@ -1,20 +1,21 @@
 <app-section id="gallery">
-  <h2 translate="gallery.title"></h2>
-  <h3 translate="gallery.subtitle"></h3>
-  <div class="row" *ngFor="let r of getRange(); let i = index" [ngClass]="{reverse : getReverse(i)}">
-    <div class="col-md-6" [style.background-image]="getBackgroundUrl(i * 5 + 0)" (click)="openDialog(i*5 + 0)">
+  <h2 translate="gallery.title" class="no-margin"></h2>
+  <span translate="gallery.subtitle" class="secondary"></span>
+
+  <div class="row mb-5 mt-5" *ngFor="let r of getRange(); let i = index" [ngClass]="{reverse : getReverse(i)}">
+    <div class="col-md-6 col-sm-12" [style.background-image]="getBackgroundUrl(i * 5 + 0)" (click)="openDialog(i*5 + 0)">
     </div>
-    <div class="col-md-6 no-border">
+    <div class="col-md-6 col-sm-12 no-border">
       <div class="row row-2">
-        <div class="col-md-6" [style.background-image]="getBackgroundUrl(i * 5 + 1)" (click)="openDialog(i*5 + 1)">
+        <div class="col-md-6 col-sm-6" [style.background-image]="getBackgroundUrl(i * 5 + 1)" (click)="openDialog(i*5 + 1)">
         </div>
-        <div class="col-md-6" [style.background-image]="getBackgroundUrl(i * 5 + 2)" (click)="openDialog(i*5 + 2)">
+        <div class="col-md-6 col-sm-6" [style.background-image]="getBackgroundUrl(i * 5 + 2)" (click)="openDialog(i*5 + 2)">
         </div>
       </div>
       <div class="row row-2">
-        <div class="col-md-6" [style.background-image]="getBackgroundUrl(i * 5 + 3)" (click)="openDialog(i*5 + 3)">
+        <div class="col-md-6 col-sm-6" [style.background-image]="getBackgroundUrl(i * 5 + 3)" (click)="openDialog(i*5 + 3)">
         </div>
-        <div class="col-md-6" [style.background-image]="getBackgroundUrl(i * 5 + 4)" (click)="openDialog(i*5 + 4)">
+        <div class="col-md-6 col-sm-6" [style.background-image]="getBackgroundUrl(i * 5 + 4)" (click)="openDialog(i*5 + 4)">
         </div>
       </div>
     </div>

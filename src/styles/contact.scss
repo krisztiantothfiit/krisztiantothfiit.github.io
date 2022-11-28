@@ -5,17 +5,22 @@
 }
 
 .contact-box {
-    display: flex;
     background-color: var(--primary);
-    text-align: left;
-    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 100px;
+    padding: 2%;
+    min-width: 30%;
+    margin-top: -70px;
 }
 
 .map {
-    height: 100%;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    height: 300px;
+    border-radius: 10px;
     overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    filter: grayscale(1);
 }
 
 .button {
@@ -27,28 +32,97 @@
     }
 }
 
-
 .button:hover {
     background-color: var(--secondary);
+    border: 1px solid var(--primary) !important;
     span {
         color: var(--primary);
     }
 }
 
-hr {
-    padding-bottom: 1rem;
+.success-dialog {
+    mat-dialog-container {
+        width: 35% !important;
+        height: 350px !important;
+        min-width: 350px !important;
+        top: 20% !important;
+        left: 32.5% !important;
+        position: absolute !important;
+        border-radius: 25px !important;
+    }
+
+    .mat-dialog-actions {
+        min-height: unset;
+    }
 }
 
-.contact-info {
-    padding: 7%;
-}
-
-.contact-row {
+.info-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     .material-symbols-outlined {
-        padding-right: 8px;
+        font-size: 50px;
+        margin-right: 2%;
     }
+}
+
+.success-dialog-content {
+    padding: 3%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    place-content: center space-evenly;
+
+    .mat-icon {
+        width: 100px;
+        height: 100px;
+        fill: var(--background-primary-1);
+    }
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+}
+
+.mat-form-field-label {
+    font-family: var(--font-family-title);
+    color: var(--secondary);
+    font-size: 1.25em !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label,
+.mat-form-field.mat-form-field-invalid .mat-form-field-label,
+.mat-form-field.mat-form-field-invalid .mat-form-field-label.mat-accent,
+.mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
+.mat-focused .mat-form-field-required-marker,
+.mat-input-element,
+.mat-form-field-required-marker {
+    color: var(--secondary) !important;
+}
+
+.mat-form-field.mat-warn .mat-input-element, .mat-form-field-invalid .mat-input-element {
+    caret-color: var(--secondary) !important;
+}
+
+
+
+.mat-form-field-appearance-standard .mat-form-field-underline,
+.mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-focused .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+    background-color: var(--secondary);
+}
+
+.mat-error {
+    color: var(--secondary);
+}
+
+.mat-form-field-label-wrapper {
+    text-align: left;
 }
 
 @media only screen and (max-width: $mobile-resolution) {
@@ -60,5 +134,13 @@ hr {
 
     .button {
         margin-bottom: 1rem;
+    }
+
+    .success-dialog {
+        mat-dialog-container {
+            width: calc(100% - 20px) !important;
+            left: 0% !important;
+            margin: 10px;
+        }
     }
 }

@@ -31,7 +31,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { GalleryDialogComponent } from './gallery/dialog/gallery-dialog/gallery-dialog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { GridColsDirective } from './gallery/directives/grid-cols.directive';
+import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +48,7 @@ import { GridColsDirective } from './gallery/directives/grid-cols.directive';
     GalleryComponent,
     GalleryDialogComponent,
     AboutUsComponent,
-    GridColsDirective
+    SuccessDialogComponent
   ],
   imports: [
     BrowserModule,
