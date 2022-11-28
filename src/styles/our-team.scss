@@ -99,8 +99,8 @@
 }
 
 .employee3 {
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 5%;
   z-index: 0;
   box-shadow: initial;
   border: 10px solid var(--primary);
@@ -118,12 +118,31 @@
 }
 
 .employee4 {
-  left: 10%;
-  top: 60%;
+  left: 15%;
+  top: 65%;
   z-index: 0;
   box-shadow: initial;
   border: 10px solid var(--primary);
   &:hover .employee4-desc {
+    opacity: 0.75;
+  }
+
+  &:hover .overlay {
+    background-color: var(--primary);
+
+    .text {
+      color: var(--secondary);
+    }
+  }
+}
+
+.employee5 {
+  left: 0%;
+  top: 35%;
+  z-index: 0;
+  box-shadow: initial;
+  border: 10px solid var(--primary);
+  &:hover .employee5-desc {
     opacity: 0.75;
   }
 
@@ -145,6 +164,11 @@
   right: 5%;
 }
 
+.heading {
+  text-align: left;
+  font-size: 2em;
+  margin-left: 15px;
+}
 
 @media only screen and (max-width: $mobile-resolution) {
 
