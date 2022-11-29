@@ -9,23 +9,49 @@
     min-height: 70vh;
 }
 
-.logo.mat-icon {
-    fill: var(--primary);
-    width: 70px;
-    height: 70px;
-}
-
 .header-text {
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    justify-content: center;
-    align-content: flex-start;
-    margin-top: 10%;
+  position: absolute;
+  z-index: 1;
+  top: 33%;
+  left: 0;
+  right: 0;
+
+  & > h1 {
+    font-size: 8em;
+    line-height: 100px;
+  }
+
+  & > h2 {
+    font-size: 5em;
+  }
 }
 
 .header-subtitle {
     text-align: justify !important;
+}
+
+.carousel {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+#header .container {
+  height: 900px;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-color: black;
 }
 
 @media only screen and (max-width: $mobile-resolution) {

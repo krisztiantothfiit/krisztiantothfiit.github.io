@@ -35,5 +35,8 @@
   "contact.form.message.placeholder": "Chcel by som si dohodnúť stretnutie...",
   "contact.form.submitBtn": "Poslať správu",
   "contact.form.required": "Povinné pole",
-  "contact.form.successMsg": "Správa bola úspešne odoslaná!"
+  "contact.form.successMsg": "Správa bola úspešne odoslaná!",
+  "ourTeam.our-team": "Naš tím",
+  "header.title": "PERFECT",
+  "header.subtitle": "PLAY PRACTICE PROGRESS"
 }

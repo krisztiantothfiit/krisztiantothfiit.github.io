@@ -35,5 +35,8 @@
   "contact.form.message.placeholder": "I would like to make an appointment...",
   "contact.form.submitBtn": "Send message",
   "contact.form.required": "Required field",
-  "contact.form.successMsg": "Message was succesfully sent!"
+  "contact.form.successMsg": "Message was succesfully sent!",
+  "ourTeam.our-team": "A csapatunk",
+  "header.title": "PERFECT:PERFECT",
+  "header.subtitle": "PLAY PRACTICE PROGRESS"
 }

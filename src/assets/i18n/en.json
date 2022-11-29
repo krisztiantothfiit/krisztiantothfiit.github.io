@@ -29,10 +29,12 @@
   "contact.form.name": "Név",
   "contact.form.email": "Email",
   "contact.form.message": "Üzenet",
-  "contact.form.name.placeholder": "pl. Minta János ",
+  "contact.form.name.placeholder": "pl. Minta János",
   "contact.form.email.placeholder": "minta@email.com",
   "contact.form.message.placeholder": "Szeretnék időpontot kérni...",
   "contact.form.submitBtn": "Üzenet küldése",
   "contact.form.required": "Kötelezően kitöltendő mező",
-  "contact.form.successMsg": "Az üzenetet sikeresen elküldtük!"
+  "contact.form.successMsg": "Az üzenetet sikeresen elküldtük!",
+  "ourTeam.our-team": "Our team",
+  "header.subtitle": "PLAY PRACTICE PROGRESS"
 }
