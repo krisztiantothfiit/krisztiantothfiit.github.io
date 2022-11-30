@@ -31,7 +31,7 @@ const sendMail = (user, callback) => {
     secure: false,
     auth: {
       user: 'fancyweb2022@gmail.com',
-      pass: 'whpljkltugvehglg'
+      pass: ''
     }
   });
 
