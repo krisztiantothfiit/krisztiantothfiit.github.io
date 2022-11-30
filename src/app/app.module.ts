@@ -32,6 +32,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { GalleryDialogComponent } from './gallery/dialog/gallery-dialog/gallery-dialog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
+import { MessageService } from './contact/message.service';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,7 @@ import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.
     BrowserAnimationsModule,
     NgcCookieConsentModule.forRoot(cookieConfig)
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
