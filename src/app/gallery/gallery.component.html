@@ -1,8 +1,9 @@
 <app-section id="gallery">
   <h2 translate="gallery.title" class="no-margin"></h2>
-  <span translate="gallery.subtitle" class="secondary"></span>
+  <span translate="gallery.subtitle"></span>
 
-  <div class="row mb-5 mt-5" *ngFor="let r of getRange(); let i = index" [ngClass]="{reverse : getReverse(i)}">
+  <div class="mt-5">
+  <div class="row" *ngFor="let r of getRange(); let i = index" [ngClass]="{reverse : getReverse(i)}">
     <div class="col-md-6 col-sm-12" [style.background-image]="getBackgroundUrl(i * 5 + 0)" (click)="openDialog(i*5 + 0)">
     </div>
     <div class="col-md-6 col-sm-12 no-border">
@@ -20,7 +21,8 @@
       </div>
     </div>
   </div>
-  <button *ngIf="showLoadMore" mat-flat-button class="button" (click)="loadMore()">
+</div>
+  <button *ngIf="showLoadMore" mat-flat-button class="button mt-5" (click)="loadMore()">
     <span translate="gallery.loadMoreBtn"></span>
   </button>
 </app-section>

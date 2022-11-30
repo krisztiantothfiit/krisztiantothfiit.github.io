@@ -13,6 +13,11 @@ navigation.brand.name;Jazyková škola - PERFECT;Nyelviskola - PERFECT;Language 
 footer.text1; © Perfect - Dizajn zo; © Perfect - A dizajnt; © Perfect - Design with
 footer.text2;vytvoril ;-ből készítette; made by ;
 footer.text3;Ilustračné obrázky navrhol Freepik;Az illusztrációs képeket tervezte Freepik;Images designed by Freepik
+footer.name;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT
+footer.address;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany
+footer.ico;<b>IČO:</b> 40563979;<b>IČO:</b> 40563979;<b>IČO:</b> 40563979
+footer.office;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003
+footer.number;<b>Číslo živnostenského registra:</b> 202-19448;<b>Číslo živnostenského registra:</b> 202-19448;<b>Číslo živnostenského registra:</b> 202-19448
 
 cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.
 cookieAllow;Povoliť;Engedélyezem;Allow
@@ -44,5 +49,5 @@ contact.form.successMsg;Správa bola úspešne odoslaná!;Message was succesfull
 
 ourTeam.our-team;Naš tím;A csapatunk;Our team
 
-header.title;PERFECT;PERFECT:PERFECT
-header.subtitle;PLAY PRACTICE PROGRESS;PLAY PRACTICE PROGRESS;PLAY PRACTICE PROGRESS
+header.title;Perfect;Perfect:Perfect
+header.subtitle;Play Practice Progress;Play Practice Progress;Play Practice Progress

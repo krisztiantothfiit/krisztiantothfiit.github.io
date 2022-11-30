@@ -1,6 +1,27 @@
 <app-section id="footer">
     <div class="footer">
-        <div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="navbar-brand">
+                    <img class="footer-logo" src="assets/images/logo_p.jpg">
+                    <div class="footer-logo-text">
+                        <h3 class="secondary no-margin"> {{'header.title' | translate | uppercase}}</h3>
+                        <span translate="header.subtitle" class="secondary"></span>
+                    </div>
+                </div>
+                <div class="flex mt-4 mb-4">
+                    <a href="https://www.facebook.com/profile.php?id=100064313131430" target="_blank"><mat-icon class="secondary social">facebook</mat-icon></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <p [innerHTML]="'footer.name' | translate"></p>
+                <p [innerHTML]="'footer.address' | translate"></p>
+                <p [innerHTML]="'footer.ico' | translate"></p>
+                <p [innerHTML]="'footer.number' | translate" class="mb-2"></p>
+                <p [innerHTML]="'footer.office' | translate"></p>
+            </div>
+        </div>
+        <div class="mt-4">
             <span>{{getYear()}}</span>
             <span translate="footer.text1"></span>
             <mat-icon class="heart">favorite</mat-icon>

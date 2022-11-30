@@ -8,8 +8,7 @@
     <a class="navbar-brand">
       <img class="navbar-brand-img" src="assets/images/logo_p.jpg">
       <div class="navbar-brand-name">
-        <span translate="navigation.brand.owner" class="nav-text-color"></span>
-        <span translate="navigation.brand.name" class="nav-text-color"></span>
+        <h3 class="nav-text-color no-margin">{{'title' | translate | uppercase}}</h3>
       </div>
     </a>
     <div class="collapse navbar-collapse" id="primary-menu">
@@ -23,7 +22,7 @@
           <div class="dropdown show nav-item-border">
             <a class="btn btn-secondary dropdown-toggle lang-dropdown nav-text-color" href="#" role="button"
               id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ currentLang | uppercase}}
+              <span class="nav-text-color">{{ currentLang | uppercase}}</span>
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">

@@ -12,7 +12,7 @@
 @import 'styles/our-team.scss';
 
 body {
-    background-color: var(--primary);
+    background-color: white;
 }
 
 .container {
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
     font-size: 2.5em;
-    color: var(--secondary);
+    color: var(--primary);
     font-family: var(--font-family-title);
 }
 
@@ -71,7 +71,10 @@ p, span {
     color: var(--terciary);
     font-size: 1.25em;
     text-align: left;
-    line-height: 100%;
+}
+
+b {
+  font-weight: bold;
 }
 
 img {
@@ -109,6 +112,7 @@ img {
   border-radius: 10px !important;
   background-color: var(--secondary) !important;
   margin: 5px !important;
+  border: 1px solid var(--primary) !important;
 }
 
 .cookie-button-deny {
@@ -122,12 +126,12 @@ img {
 }
 
 .cc-animate.cc-revoke.cc-bottom {
-  border: 1px solid var(--secondary);
-  color: var(--secondary);
+  border: 1px solid var(--primary);
+  color: var(--terciary);
 }
 
 .cc-theme-edgeless.cc-window {
-  border-top: 1px solid var(--secondary);
+  border-top: 1px solid var(--primary);
 }
 
 button:focus {
@@ -188,6 +192,14 @@ button:focus {
     background: var(--secondary);
     border-radius: 12px;
     border: 1px solid var(--primary);
+  }
+
+  .cc-message {
+    color: var(--terciary);
+  }
+
+  .align-end {
+    align-items: flex-end;
   }
 
 @media only screen and (max-width: $mobile-resolution) {

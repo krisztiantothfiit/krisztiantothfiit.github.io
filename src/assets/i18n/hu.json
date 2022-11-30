@@ -11,6 +11,11 @@
   "footer.text1": " © Perfect - A dizajnt",
   "footer.text2": "-ből készítette",
   "footer.text3": "Az illusztrációs képeket tervezte Freepik",
+  "footer.name": "<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT",
+  "footer.address": "<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany",
+  "footer.ico": "<b>IČO:</b> 40563979",
+  "footer.office": "Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003",
+  "footer.number": "<b>Číslo živnostenského registra:</b> 202-19448",
   "cookieMessage": "Ez az oldal sütiket használ. Az \"Engedélyezem\" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.",
   "cookieAllow": "Engedélyezem",
   "cookieDeny": "Megtiltom",
@@ -37,6 +42,6 @@
   "contact.form.required": "Required field",
   "contact.form.successMsg": "Message was succesfully sent!",
   "ourTeam.our-team": "A csapatunk",
-  "header.title": "PERFECT:PERFECT",
-  "header.subtitle": "PLAY PRACTICE PROGRESS"
+  "header.title": "Perfect:Perfect",
+  "header.subtitle": "Play Practice Progress"
 }
