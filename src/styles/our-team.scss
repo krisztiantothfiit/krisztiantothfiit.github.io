@@ -11,30 +11,6 @@
   }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 1s ease;
-  background-color: var(--secondary);
-}
-
-.text {
-  color: var(--primary);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .boss {
   position: absolute;
   left: 35%;
@@ -170,6 +146,138 @@
   margin-left: 15px;
 }
 
-@media only screen and (max-width: $mobile-resolution) {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: var(--secondary);
+}
 
+.text {
+  color: var(--primary);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+  .background-div {
+    height: 1750px;
+    width: 45%;
+    top: 0;
+    right: 5%;
+  }
+
+  .boss {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    top: 5%;
+  }
+
+  .boss-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .employee {
+    width: 250px;
+    height: 250px;
+  }
+
+  .employee-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .employee-bordered-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .employee1 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 25%;
+    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+  }
+
+  .employee2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+  }
+
+  .employee3 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 55%;
+    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    border: 0;
+
+    &:hover .overlay {
+      background-color: var(--secondary);
+
+      .text {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .employee4 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 70%;
+    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    border: 0;
+
+    &:hover .overlay {
+      background-color: var(--secondary);
+
+      .text {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .employee5 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 85%;
+    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    border: 0;
+
+    &:hover .overlay {
+      background-color: var(--secondary);
+
+      .text {
+        color: var(--primary);
+      }
+    }
+  }
+
+  #our-team {
+    .wrapper {
+      height: 1750px;
+      position: relative;
+    }
+  }
 }
