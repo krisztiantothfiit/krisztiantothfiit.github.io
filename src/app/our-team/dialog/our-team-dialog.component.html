@@ -1,0 +1,15 @@
+<div class="d-flex flex-direction">
+  <div class="image-container">
+    <div class="close mobile-close" (click)="close()"></div>
+    <img class="dialog-img" [src]="data.imgSrc">
+  </div>
+  <div class="text-container">
+    <div class="close desktop-close" (click)="close()"></div>
+    <div class="dialog-title">
+      {{ data.name | translate}}
+    </div>
+    <div class="dialog-text">
+      {{ data.desc | translate}}
+    </div>
+  </div>
+</div>

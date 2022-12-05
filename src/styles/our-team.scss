@@ -25,12 +25,25 @@
   &:hover .boss-desc {
     opacity: 0.75;
   }
+
+  .person-name {
+    font-size: 3rem;
+  }
+
+  .person-quote {
+    font-size: 2rem;
+  }
+
+  .read-more {
+    padding: 10px 30px;
+  }
 }
 
 .boss-img {
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .employee {
@@ -44,14 +57,16 @@
 
 .employee-img {
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .employee-bordered-img {
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .employee1 {
@@ -69,8 +84,12 @@
   top: 10%;
   z-index: 0;
   box-shadow: 1px 2px 20px 15px var(--secondary-trans);
-  &:hover .employee2-desc {
-    opacity: 0.75;
+  &:hover {
+    z-index: 1;
+
+    .employee2-desc {
+      opacity: 0.75;
+    }
   }
 }
 
@@ -87,8 +106,14 @@
   &:hover .overlay {
     background-color: var(--primary);
 
-    .text {
+    .person-name,
+    .person-quote {
       color: var(--secondary);
+    }
+
+    .read-more {
+      color: var(--primary) !important;
+      background-color: var(--secondary);
     }
   }
 }
@@ -106,27 +131,14 @@
   &:hover .overlay {
     background-color: var(--primary);
 
-    .text {
+    .person-name,
+    .person-quote {
       color: var(--secondary);
     }
-  }
-}
 
-.employee5 {
-  left: 0%;
-  top: 35%;
-  z-index: 0;
-  box-shadow: initial;
-  border: 10px solid var(--primary);
-  &:hover .employee5-desc {
-    opacity: 0.75;
-  }
-
-  &:hover .overlay {
-    background-color: var(--primary);
-
-    .text {
-      color: var(--secondary);
+    .read-more {
+      color: var(--primary) !important;
+      background-color: var(--secondary);
     }
   }
 }
@@ -160,14 +172,106 @@
   background-color: var(--secondary);
 }
 
-.text {
+.person-name {
   color: var(--primary);
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.person-quote {
+  color: var(--primary);
+  font-size: 1rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.read-more {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+  padding: 7px 15px;
+  color: var(--secondary) !important;
+  border-radius: 10px;
+  background-color: var(--primary);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.dialog-img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.dialog-title {
+  margin: auto;
   text-align: center;
+  color: var(--primary);
+  font-family: var(--font-family-title);
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.dialog-text {
+  margin: 50px;
+  text-align: center;
+  font-family: var(--font-family-title);
+  font-size: 20px;
+}
+
+.close {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  background-color: var(--secondary);
+  border-radius: 30px;
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: var(--primary);
+    top: 7px;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.text-container {
+  background: var(--secondary);
+}
+
+.mobile-close {
+  display: none;
+}
+
+.desktop-close {
+  display: block;
+}
+
+.flex-direction {
+  flex-direction: row;
 }
 
 @media only screen and (max-width: $tablet-resolution) {
@@ -185,6 +289,18 @@
     width: 300px;
     height: 300px;
     top: 5%;
+
+    .person-name {
+      font-size: 30px;
+    }
+
+    .person-quote {
+      font-size: 20px;
+    }
+
+    .read-more {
+      padding: 5px 10px;
+    }
   }
 
   .boss-img {
@@ -213,6 +329,7 @@
     margin: auto;
     top: 25%;
     box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    z-index: 1;
   }
 
   .employee2 {
@@ -234,8 +351,14 @@
     &:hover .overlay {
       background-color: var(--secondary);
 
-      .text {
+      .person-name,
+      .person-quote {
         color: var(--primary);
+      }
+
+      .read-more {
+        color: var(--secondary) !important;
+        background-color: var(--primary);
       }
     }
   }
@@ -251,25 +374,14 @@
     &:hover .overlay {
       background-color: var(--secondary);
 
-      .text {
+      .person-name,
+      .person-quote {
         color: var(--primary);
       }
-    }
-  }
 
-  .employee5 {
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 85%;
-    box-shadow: 1px 2px 20px 15px var(--primary-trans);
-    border: 0;
-
-    &:hover .overlay {
-      background-color: var(--secondary);
-
-      .text {
-        color: var(--primary);
+      .read-more {
+        color: var(--secondary) !important;
+        background-color: var(--primary);
       }
     }
   }
@@ -279,5 +391,42 @@
       height: 1750px;
       position: relative;
     }
+  }
+
+  .read-more {
+    padding: 5px 10px;
+  }
+
+  .dialog-img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .dialog-title {
+    margin: auto;
+    text-align: center;
+    color: var(--primary);
+    font-family: var(--font-family-title);
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .dialog-text {
+    margin: 50px;
+    text-align: center;
+    font-family: var(--font-family-title);
+    font-size: 10px;
+  }
+
+  .flex-direction {
+    flex-direction: column;
+  }
+
+  .mobile-close {
+    display: block;
+  }
+
+  .desktop-close {
+    display: none;
   }
 }

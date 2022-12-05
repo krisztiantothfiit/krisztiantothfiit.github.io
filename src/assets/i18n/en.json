@@ -41,5 +41,16 @@
   "contact.form.required": "Kötelezően kitöltendő mező",
   "contact.form.successMsg": "Az üzenetet sikeresen elküldtük!",
   "ourTeam.our-team": "Our team",
+  "ourTeam.bossName": "Silvia Nágel",
+  "ourTeam.bossQuote": "„Carpe diem - ži naplno.“ (Horatius)",
+  "ourTeam.employee1Name": "Martin Sirák",
+  "ourTeam.employee1Quote": "„In risu veritas. V smiechu je pravda.“ (James Joyce)",
+  "ourTeam.employee2Name": "Friderika Tóth",
+  "ourTeam.employee2Quote": "„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe)",
+  "ourTeam.employee3Name": "Karin Andrássy",
+  "ourTeam.employee3Quote": "„Život sa nepíše, život sa žije.“ (Karel Čapek)",
+  "ourTeam.employee4Name": "Timea Kovácsová",
+  "ourTeam.employee4Quote": "„Nový jazyk znamená nový život.” (Perzské príslovie)",
+  "ourTeam.readMore": "Read more >>",
   "header.subtitle": "Play Practice Progress"
 }

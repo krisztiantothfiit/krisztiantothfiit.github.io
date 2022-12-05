@@ -4,39 +4,53 @@
       <h1 class="heading">{{'ourTeam.our-team' | translate}}</h1>
     </div>
     <div class="boss">
-      <img class="boss-img">
+      <img class="boss-img" src="../../assets/images/our-team/our-team1.jpg">
       <div class="overlay boss-desc">
-        <div class="text">Boss</div>
+        <div class="person-name">{{'ourTeam.bossName' | translate}}</div>
+        <div class="person-quote">{{'ourTeam.bossQuote' | translate}}</div>
+        <a class="read-more"
+          (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team1.jpg', name: 'ourTeam.bossName', desc: 'ourTeam.bossDesc' })">
+          {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
     <div class="employee employee1">
-      <img class="employee-img">
+      <img class="employee-img" src="../../assets/images/our-team/our-team2.jpg">
       <div class="overlay employee1-desc">
-        <div class="text">Employee 1</div>
+        <div class="person-name">{{'ourTeam.employee1Name' | translate}}</div>
+        <div class="person-quote">{{'ourTeam.employee1Quote' | translate}}</div>
+        <a class="read-more"
+          (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team2.jpg', name: 'ourTeam.employee1Name', desc: 'ourTeam.employee1Desc' })">
+          {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
     <div class="employee employee2">
-      <img class="employee-img">
+      <img class="employee-img" src="../../assets/images/our-team/our-team3.jpg">
       <div class="overlay employee2-desc">
-        <div class="text">Employee 2</div>
+        <div class="person-name">{{'ourTeam.employee2Name' | translate}}</div>
+        <div class="person-quote">{{'ourTeam.employee2Quote' | translate}}</div>
+        <a class="read-more"
+          (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team3.jpg', name: 'ourTeam.employee2Name', desc: 'ourTeam.employee2Desc' })">
+          {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
     <div class="employee employee3">
-      <img class="employee-bordered-img">
+      <img class="employee-bordered-img" src="../../assets/images/our-team/our-team4.jpg">
       <div class="overlay employee3-desc">
-        <div class="text">Employee 3</div>
+        <div class="person-name">{{'ourTeam.employee3Name' | translate}}</div>
+        <div class="person-quote">{{'ourTeam.employee3Quote' | translate}}</div>
+        <a class="read-more"
+          (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team4.jpg', name: 'ourTeam.employee3Name', desc: 'ourTeam.employee3Desc' })">
+          {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
     <div class="employee employee4">
-      <img class="employee-bordered-img">
+      <img class="employee-bordered-img" src="../../assets/images/our-team/our-team5.jpg">
       <div class="overlay employee4-desc">
-        <div class="text">Employee 4</div>
-      </div>
-    </div>
-    <div class="employee employee5">
-      <img class="employee-bordered-img">
-      <div class="overlay employee5-desc">
-        <div class="text">Employee 5</div>
+        <div class="person-name">{{'ourTeam.employee4Name' | translate}}</div>
+        <div class="person-quote">{{'ourTeam.employee4Quote' | translate}}</div>
+        <a class="read-more"
+        (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team5.jpg', name: 'ourTeam.employee4Name', desc: 'ourTeam.employee4Desc' })">
+        {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
   </div>
