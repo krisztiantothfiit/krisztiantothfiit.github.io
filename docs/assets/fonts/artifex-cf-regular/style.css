@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Artifex CF Regular';
-    src: local('Artifex CF Regular'), local('Artifex-CF-Regular'),
-        url('ArtifexCF-Regular.woff2') format('woff2'),
-        url('ArtifexCF-Regular.woff') format('woff'),
-        url('ArtifexCF-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }

@@ -26,6 +26,7 @@ export class AppComponent implements OnInit {
     this.addIconToRegistry('sk_flag', 'assets/icons/sk.svg');
     this.addIconToRegistry('hu_flag', 'assets/icons/hu.svg');
     this.addIconToRegistry('en_flag', 'assets/icons/gb.svg');
+    this.addIconToRegistry('success', 'assets/icons/success.svg');
   }
 
   ngOnInit(): void {
