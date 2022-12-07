@@ -41,9 +41,9 @@
   "contact.form.submitBtn": "Poslať správu",
   "contact.form.required": "Povinné pole",
   "contact.form.successMsg": "Správa bola úspešne odoslaná!",
-  "ourTeam.our-team": "Naš tím",
+  "ourTeam.our-team": "Náš tím",
   "ourTeam.bossName": "Silvia Nágel",
-  "ourTeam.bossQuote": "„Carpe diem - ži naplno.“ (Horatius)",
+  "ourTeam.bossQuote": "„Carpe diem - ži naplno!“ (Horatius)",
   "ourTeam.bossDesc": "Silvia Nágel je učiteľkou anglického jazyka už 25 rokov a táto jej práca ju stále dokonale napĺňa. Študovala anglický jazyk a literatúru na UKF Nitra, kde zavŕšila svoje štúdium doktorandskym titulom. Svoju profesionálnu kariéru začala na základnej škole v Galante. V roku 2003 založila vlastnú jazykovú prax  vo svojej rodnej obci. Vyučuje všeobecnú a obchodnú angličtinu pre nadnárodné spoločnosti, dospelých a deti. Okrem jazykových kurzov sa zaoberá aj prekladateľskou činnosťou a organizuje letné jazykové tábory. Neustále hľadá nové výzvy, rada sa hrá a nepokazí žiadnu zábavu.",
   "ourTeam.employee1Name": "Martin Sirák",
   "ourTeam.employee1Quote": "„In risu veritas. V smiechu je pravda.“ (James Joyce)",
@@ -59,5 +59,14 @@
   "ourTeam.employee4Desc": "Timea Kovácsová sa anglickému jazyku profesionálne venuje viac ako 24 rokov. Po dokončení štúdií svoje znalosti ďalej zlepšila a prehĺbila viacročným pobytom vo Veľkej Británii a na mnohých cestách po svete ako sprievodkyňa v Európe, Číne, Afrike, Ázii a USA. Dlhodobo sa venuje organizovaniu jazykových kurzov a poznávacích zájazdov pre študentov v zahraničí. Timea dospela k poznaniu, že vďaka znalosti cudzích jazykov sa môže cítiť ako doma kdekoľvek na svete.",
   "ourTeam.readMore": "Čítaj ďalej >>",
   "header.title": "Perfect",
-  "header.subtitle": "Play Practice Progress"
+  "header.subtitle": "Play Practice Progress",
+  "aboutUs.title": "O nás",
+  "aboutUs.title1": "Kto sme",
+  "aboutUs.text1": "Sme malá komunitná jazyková škola, ktorá funguje od roku 2003.",
+  "aboutUs.title2": "Kde nás najdete",
+  "aboutUs.text2": "Sídlime na druhom poschodí polyfunkčnej budovy na Námestí Slobody č. 580 vo Veľkých Úľanoch.",
+  "aboutUs.title3": "Naši klienti",
+  "aboutUs.text3": "Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.",
+  "aboutUs.title4": "Naša metóda",
+  "aboutUs.text4": "Využívame kombináciu klasických a moderných vyučovacích metód šitú na mieru konkrétneho klienta. Uprednostňujeme interaktívne, kreatívne a hravé aktivity v danom jazyku."
 }

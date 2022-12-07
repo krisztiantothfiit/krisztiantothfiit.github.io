@@ -2,7 +2,8 @@
 
 #our-team {
   .section {
-    background-color: var(--secondary);
+    background-image: url(../assets/images/our-team/background.jpg);
+    background-size: cover;
   }
 
   .wrapper {
@@ -152,10 +153,13 @@
   right: 5%;
 }
 
-.heading {
-  text-align: left;
-  font-size: 2em;
-  margin-left: 15px;
+.our-team {
+  font-size: 5em;
+  padding-bottom: 30px;
+  letter-spacing: 5px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 3px var(--primary);
+  font-family: var(--font-family-title);
 }
 
 .overlay {

@@ -1,3 +1,54 @@
 <app-section id="about-us">
-    <h2>O nás</h2>
+  <div class="about-us"> {{ 'aboutUs.title' | translate }}</div>
+  <div class="row">
+    <div class="col-lg-2 col-md-12 about-us-img green">
+      <img [src]="'assets/images/about-us/aboutUs1.jpg'">
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="about-us-title green">
+        {{ 'aboutUs.title1' | translate }}
+      </div>
+      <div class="about-us-text">
+        {{ 'aboutUs.text1' | translate }}
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-12 about-us-img">
+      <img [src]="'assets/images/about-us/aboutUs2.jpg'">
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="about-us-title blue">
+        {{ 'aboutUs.title2' | translate }}
+      </div>
+      <div class="about-us-text">
+        {{ 'aboutUs.text2' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2 col-md-12 about-us-img">
+      <img [src]="'assets/images/about-us/aboutUs3.jpg'">
+    </div>
+    <div class="col-lg-4 col-md-12 ">
+      <div class="about-us-title red">
+        {{ 'aboutUs.title3' | translate }}
+      </div>
+      <div class="about-us-text">
+        {{ 'aboutUs.text3' | translate }}
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-12 about-us-img">
+      <img [src]="'assets/images/about-us/aboutUs4.jpg'">
+    </div>
+    <div class="col-lg-4 col-md-12 ">
+      <div class="about-us-title yellow">
+        {{ 'aboutUs.title4' | translate }}
+      </div>
+      <div class="about-us-text">
+        {{ 'aboutUs.text4' | translate }}
+      </div>
+    </div>
+  </div>
 </app-section>

@@ -1,8 +1,7 @@
 <app-section id="our-team">
+  <div class="our-team"> {{ 'ourTeam.our-team' | translate }}</div>
   <div class="wrapper">
-    <div class="background-div">
-      <h1 class="heading">{{'ourTeam.our-team' | translate}}</h1>
-    </div>
+    <div class="background-div"></div>
     <div class="boss">
       <img class="boss-img" src="../../assets/images/our-team/our-team1.jpg">
       <div class="overlay boss-desc">
@@ -49,8 +48,8 @@
         <div class="person-name">{{'ourTeam.employee4Name' | translate}}</div>
         <div class="person-quote">{{'ourTeam.employee4Quote' | translate}}</div>
         <a class="read-more"
-        (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team5.jpg', name: 'ourTeam.employee4Name', desc: 'ourTeam.employee4Desc' })">
-        {{'ourTeam.readMore' | translate }}</a>
+          (click)="openDialog({ imgSrc: '../../assets/images/our-team/our-team5.jpg', name: 'ourTeam.employee4Name', desc: 'ourTeam.employee4Desc' })">
+          {{'ourTeam.readMore' | translate }}</a>
       </div>
     </div>
   </div>
