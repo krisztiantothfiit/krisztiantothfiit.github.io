@@ -1,72 +1,66 @@
-id;sk;hu;en
-fancyweb;FancyWeb;FancyWeb
-title;Perfect;Perfect;Perfect
+id;sk;
+fancyweb;FancyWeb;
+title;Perfect;
 
-navigation.header;Domov;Főoldal;Home
-navigation.contact;Kontakt;Kontakt;Contact
-navigation.our-team;Naš tím;A csapatunk;Our team
-navigation.about-us;O nás;Rólunk;About us
-navigation.gallery;Naše fotky;Képeink;Our pictures
-navigation.brand.owner;Silvia Nágel;Silvia Nágel;Silvia Nágel
-navigation.brand.name;Jazyková škola - PERFECT;Nyelviskola - PERFECT;Language School - PERFECT;
+navigation.header;Domov;
+navigation.contact;Kontakt;
+navigation.our-team;Naš tím;
+navigation.about-us;O nás;
+navigation.gallery;Naše fotky;
 
-footer.text1; © Perfect - Dizajn zo; © Perfect - A dizajnt; © Perfect - Design with
-footer.text2;vytvoril ;-ből készítette; made by ;
-footer.text3;Ilustračné obrázky navrhol Freepik;Az illusztrációs képeket tervezte Freepik;Images designed by Freepik
-footer.name;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT
-footer.address;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany
-footer.ico;<b>IČO:</b> 40563979;<b>IČO:</b> 40563979;<b>IČO:</b> 40563979
-footer.office;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003
-footer.number;<b>Číslo živnostenského registra:</b> 202-19448;<b>Číslo živnostenského registra:</b> 202-19448;<b>Číslo živnostenského registra:</b> 202-19448
+footer.text1; © Perfect - Dizajn zo;
+footer.text2;vytvoril ;
+footer.text3;Ilustračné obrázky navrhol Freepik;
+footer.name;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;
+footer.address;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;
+footer.ico;<b>IČO:</b> 40563979;
+footer.office;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;
+footer.number;<b>Číslo živnostenského registra:</b> 202-19448;
 
 cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.
-cookieAllow;Povoliť;Engedélyezem;Allow
-cookieDeny;Odmietnuť;Megtiltom;Decline
-cookiePolicy;Zásady používania súborov cookie;Cookie szabályzat;Cookie policy
+cookieAllow;Povoliť;
+cookieDeny;Odmietnuť;
+cookiePolicy;Zásady používania súborov cookie;
 
-gallery.title;Naše fotky;Galéria;Galéria
-gallery.subtitle;Fotky z jazykových táborov;Galéria;Galéria
-gallery.loadMoreBtn;Načítať ďalšie;Több kép;Load more
+gallery.title;Fotky;
+gallery.loadMoreBtn;Načítať ďalšie;
 
-contact.title;Spojte sa s nami;Vegye fel velünk a kapcsolatot;Get in touch with us
-contact.subtitle;Kontaktujte nás pomocou nižšie uvedených informácií;Kérjük, vegye fel velünk a kapcsolatot az alábbi elérhetőségeken;Please contact us using the information below
-contact.address.title;Adresa;Cím;Address
-contact.address.text;Kráľová nad Váhom 170, 925 91 Kráľová nad Váhom;text;text
-contact.phone.title;Telefón;Telefon;Phone
-contact.phone.text;0902 634 571;text;text
-contact.email.title;Email;Email;Email
-contact.email.text;nagytimea12@yahoo.com;text;text
-contact.form.title;Napíšte nám;text;Send us
-contact.form.name;Meno;Name;Név
-contact.form.email;Email;Email;Email
-contact.form.message;Správa;Message;Üzenet
-contact.form.name.placeholder;napr. Jožko Mrkvička;e.g. John Smith;pl. Minta János
-contact.form.email.placeholder;vzor@email.com;example@email.com;minta@email.com
-contact.form.message.placeholder;Chcel by som si dohodnúť stretnutie...;I would like to make an appointment...;Szeretnék időpontot kérni...
-contact.form.submitBtn;Poslať správu;Send message;Üzenet küldése
-contact.form.required;Povinné pole;Required field;Kötelezően kitöltendő mező
-contact.form.successMsg;Správa bola úspešne odoslaná!;Message was succesfully sent!;Az üzenetet sikeresen elküldtük!
+contact.title;Spojte sa s nami;
+contact.subtitle;Kontaktujte nás pomocou nižšie uvedených informácií;
+contact.address.text;Námestie Slobody 580, Veľke Úľany (polyfunkčná budova);
+contact.phone.text;+421 911 276 747;
+contact.email.text;info@perfect2003.sk;
+contact.form.title;Napíšte nám;
+contact.form.name;Meno;
+contact.form.email;Email;
+contact.form.message;Správa;
+contact.form.name.placeholder;napr. Jožko Mrkvička;
+contact.form.email.placeholder;vzor@email.com;
+contact.form.message.placeholder;Chcel by som si dohodnúť stretnutie...;
+contact.form.submitBtn;Poslať správu;
+contact.form.required;Povinné pole;
+contact.form.successMsg;Správa bola úspešne odoslaná!;
 
-ourTeam.our-team;Náš tím;A csapatunk;Our team
-ourTeam.bossName;Silvia Nágel;Silvia Nágel;Silvia Nágel
-ourTeam.bossQuote;„Carpe diem - ži naplno!“ (Horatius);„Carpe diem - Élj a mának!“ (Horatius);„Carpe diem - seize the day!“ (Horatius)
+ourTeam.our-team;Náš tím;
+ourTeam.bossName;Silvia Nágel;
+ourTeam.bossQuote;„Carpe diem - ži naplno!“ (Horatius);
 ourTeam.bossDesc;Silvia Nágel je učiteľkou anglického jazyka už 25 rokov a táto jej práca ju stále dokonale napĺňa. Študovala anglický jazyk a literatúru na UKF Nitra, kde zavŕšila svoje štúdium doktorandskym titulom. Svoju profesionálnu kariéru začala na základnej škole v Galante. V roku 2003 založila vlastnú jazykovú prax  vo svojej rodnej obci. Vyučuje všeobecnú a obchodnú angličtinu pre nadnárodné spoločnosti, dospelých a deti. Okrem jazykových kurzov sa zaoberá aj prekladateľskou činnosťou a organizuje letné jazykové tábory. Neustále hľadá nové výzvy, rada sa hrá a nepokazí žiadnu zábavu.
-ourTeam.employee1Name;Martin Sirák;Martin Sirák;Martin Sirák
-ourTeam.employee1Quote;„In risu veritas. V smiechu je pravda.“ (James Joyce);„In risu veritas. V smiechu je pravda.“ (James Joyce);„In risu veritas. V smiechu je pravda.“ (James Joyce)
+ourTeam.employee1Name;Martin Sirák;
+ourTeam.employee1Quote;„In risu veritas. V smiechu je pravda.“ (James Joyce);
 ourTeam.employee1Desc;Martin Sirák vyštudoval odbor programovanie na piešťanskom gymnáziu a potom ekonomickú geografiu v Bratislave. Desať rokov pôsobil na akademickej pôde ako lektor a výskumný pracovník. Absolvoval štipendijné pobyty na zahraničných univerzitách vo Veľkej Británii, Belgicku, Portugalsku a Maďarsku. Angličtina, geografia, cestovanie a vzdelávanie sú jeho celoživotnými vášňami. Počas letnej sezóny pracuje ako turistický sprievodca po európskych mestách a pobytový delegát v Grécku. Miluje Londýn a severné Anglicko - ako správny britofil má rád futbal, pivo a anglicky písanú literatúru.
-ourTeam.employee2Name;Friderika Tóth;Friderika Tóth;Friderika Tóth
-ourTeam.employee2Quote;„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe);„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe);„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe)
+ourTeam.employee2Name;Friderika Tóth;
+ourTeam.employee2Quote;„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe);
 ourTeam.employee2Desc;Friderika Tóth je študentkou Univerzity Komenského v Bratislave, odbor učiteľstvo anglického a maďarského jazyka a literatúry. Sníva o úspešnej pedagogickej kariére. Má veľmi rada deti, ku ktorým sa vždy usiluje budovať láskavý a trpezlivý vzťah. Jej cieľom je odovzdávať svoje vedomosti deťom. V učení uplatňuje flexibilný prístup a otvorenosť novým výzvam. Možnosť spoznávať nových ľudí ju napĺňa veľkou radosťou. Miluje dramatické umenie, tanec a šport.
-ourTeam.employee3Name;Karin Andrássy;Karin Andrássy;Karin Andrássy
-ourTeam.employee3Quote;„Život sa nepíše, život sa žije.“ (Karel Čapek);„Život sa nepíše, život sa žije.“ (Karel Čapek);„Život sa nepíše, život sa žije.“ (Karel Čapek)
+ourTeam.employee3Name;Karin Andrássy;
+ourTeam.employee3Quote;„Život sa nepíše, život sa žije.“ (Karel Čapek);
 ourTeam.employee3Desc;Karin Andrássy je študentkou Pedagogickej fakulty Univerzity Komenského v Bratislave, odbor predškolská a elementárna pedagogika. Učí v Materskej škole vo Veľkých Úľanoch. Má rada spev, hudbu, výtvarné umenie a vďaka tejto práci ich môže vykonávať vo výchovno-vzdelávacej činnosti s detmi. Karin robí radosť, keď sa môže podieľať na výchove detí budúcej generácie.
-ourTeam.employee4Name;Timea Kovácsová;Timea Kovácsová;Timea Kovácsová
-ourTeam.employee4Quote;„Nový jazyk znamená nový život.” (Perzské príslovie);„Nový jazyk znamená nový život.” (Perzské príslovie);„Nový jazyk znamená nový život.” (Perzské príslovie)
+ourTeam.employee4Name;Timea Kovácsová;
+ourTeam.employee4Quote;„Nový jazyk znamená nový život.” (Perzské príslovie);„Nový jazyk znamená nový život.” (Perzské príslovie);
 ourTeam.employee4Desc;Timea Kovácsová sa anglickému jazyku profesionálne venuje viac ako 24 rokov. Po dokončení štúdií svoje znalosti ďalej zlepšila a prehĺbila viacročným pobytom vo Veľkej Británii a na mnohých cestách po svete ako sprievodkyňa v Európe, Číne, Afrike, Ázii a USA. Dlhodobo sa venuje organizovaniu jazykových kurzov a poznávacích zájazdov pre študentov v zahraničí. Timea dospela k poznaniu, že vďaka znalosti cudzích jazykov sa môže cítiť ako doma kdekoľvek na svete.
-ourTeam.readMore;Čítaj ďalej >>;Olvass tovább >>;Read more >>
+ourTeam.readMore;Viac;
 
-header.title;Perfect;Perfect:Perfect
-header.subtitle;Play Practice Progress;Play Practice Progress;Play Practice Progress
+header.title;Perfect;
+header.subtitle;Play Practice Progress;
 
 aboutUs.title;O nás
 aboutUs.title1;Kto sme

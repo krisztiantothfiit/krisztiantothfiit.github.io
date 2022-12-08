@@ -1,6 +1,6 @@
 #contact {
     .section {
-        background-color: var(--secondary);
+        background-color: white;
     }
 }
 
@@ -18,26 +18,45 @@
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    filter: grayscale(1);
+    margin-top: 30px;
+    margin-bottom: 0px;
+    filter: sepia(0.3);
 }
 
 .button {
     border-radius: 10px !important;
-    border: 1px solid var(--secondary) !important;
-    background-color: var(--primary);
+    background-color: #ff5c75;
     span {
         color: var(--secondary);
     }
 }
 
 .button:hover {
-    background-color: var(--secondary);
-    border: 1px solid var(--primary) !important;
+    background-color: #00d0b2;
     span {
         color: var(--primary);
     }
+}
+
+.custom-shape-divider-bottom-1670528829 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: white;
+}
+
+.custom-shape-divider-bottom-1670528829 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1670528829 .shape-fill {
+    fill: var(--secondary);
 }
 
 .success-dialog {
@@ -129,6 +148,10 @@
     .map {
         height: 300px;
         margin: 0px;
+    }
+
+    .info-box {
+        justify-content: flex-start;
     }
 
     .info-box:last-child {

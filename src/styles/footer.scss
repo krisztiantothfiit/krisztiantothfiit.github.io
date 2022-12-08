@@ -3,7 +3,7 @@
 #footer .section {
     min-height: unset;
     padding-bottom: 1%;
-    background-color: var(--primary);
+    background-color: var(--secondary);
 }
 
 .footer {
@@ -11,14 +11,12 @@
         text-align: left;
         margin-bottom: 10px;
     }
-
-    span, p {
-        color: var(--secondary);
-    }
 }
 
-.footer-logo-text h3 {
+.footer-logo-text h2 {
+    font-size: 1.5em;
     text-align: left;
+    -webkit-text-stroke: 1px var(--primary);
 }
 
 .footer-logo {
@@ -27,7 +25,6 @@
 }
 
 .heart.mat-icon {
-    color: #ef4b4b ;
     height: 15px;
     font-size: 15px;
 }

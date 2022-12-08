@@ -2,12 +2,11 @@
 
 #our-team {
   .section {
-    background-image: url(../assets/images/our-team/background.jpg);
-    background-size: cover;
+    background: white;
   }
 
   .wrapper {
-    height: 1000px;
+    height: 600px;
     position: relative;
   }
 }
@@ -15,16 +14,19 @@
 .boss {
   position: absolute;
   left: 35%;
-  top: 25%;
+  top: 15%;
   border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  box-shadow: 1px 2px 20px 15px var(--primary-trans);
+  width: 400px;
+  height: 400px;
+  box-shadow: 1px 2px 20px 15px rgb(0 0 0 / 30%);
   z-index: 1;
   background-color: white;
 
-  &:hover .boss-desc {
-    opacity: 0.75;
+  &:hover {
+    z-index: 3;
+    .boss-desc {
+      opacity: 0.75;
+    }
   }
 
   .person-name {
@@ -50,9 +52,8 @@
 .employee {
   position: absolute;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
-  box-shadow: 1px 2px 20px 15px var(--primary-trans);
+  width: 200px;
+  height: 200px;
   background-color: white;
 }
 
@@ -72,9 +73,9 @@
 
 .employee1 {
   left: 60%;
-  top: 60%;
+  top: 45%;
   z-index: 2;
-  box-shadow: 1px 2px 20px 15px var(--secondary-trans);
+  box-shadow: 1px 2px 20px 15px rgb(67 0 147 / 20%);
   &:hover .employee1-desc {
     opacity: 0.75;
   }
@@ -82,9 +83,9 @@
 
 .employee2 {
   left: 60%;
-  top: 10%;
+  top: 5%;
   z-index: 0;
-  box-shadow: 1px 2px 20px 15px var(--secondary-trans);
+  box-shadow: 1px 2px 20px 15px rgb(255 200 95 / 20%);
   &:hover {
     z-index: 1;
 
@@ -95,71 +96,23 @@
 }
 
 .employee3 {
-  left: 15%;
+  left: 20%;
   top: 5%;
   z-index: 0;
-  box-shadow: initial;
-  border: 10px solid var(--primary);
+  box-shadow: 1px 2px 20px 15px rgb(255 92 117 / 20%);
   &:hover .employee3-desc {
     opacity: 0.75;
-  }
-
-  &:hover .overlay {
-    background-color: var(--primary);
-
-    .person-name,
-    .person-quote {
-      color: var(--secondary);
-    }
-
-    .read-more {
-      color: var(--primary) !important;
-      background-color: var(--secondary);
-    }
   }
 }
 
 .employee4 {
-  left: 15%;
-  top: 65%;
+  left: 20%;
+  top: 55%;
   z-index: 0;
-  box-shadow: initial;
-  border: 10px solid var(--primary);
+  box-shadow: 1px 2px 20px 15px rgb(0 208 178 / 10%);
   &:hover .employee4-desc {
     opacity: 0.75;
   }
-
-  &:hover .overlay {
-    background-color: var(--primary);
-
-    .person-name,
-    .person-quote {
-      color: var(--secondary);
-    }
-
-    .read-more {
-      color: var(--primary) !important;
-      background-color: var(--secondary);
-    }
-  }
-}
-
-.background-div {
-  background-color: var(--primary);
-  height: 900px;
-  width: 50%;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-}
-
-.our-team {
-  font-size: 5em;
-  padding-bottom: 30px;
-  letter-spacing: 5px;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 3px var(--primary);
-  font-family: var(--font-family-title);
 }
 
 .overlay {
@@ -173,11 +126,11 @@
   width: 100%;
   opacity: 0;
   transition: 1s ease;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .person-name {
-  color: var(--primary);
+  color: white;
   font-size: 25px;
   position: absolute;
   top: 35%;
@@ -187,7 +140,7 @@
 }
 
 .person-quote {
-  color: var(--primary);
+  color: white;
   font-size: 1rem;
   position: absolute;
   top: 60%;
@@ -198,7 +151,7 @@
 
 .read-more {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.5;
@@ -209,7 +162,7 @@
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline !important;
+    color: #ff5c75 !important;
   }
 }
 
@@ -221,17 +174,35 @@
 .dialog-title {
   margin: auto;
   text-align: center;
-  color: var(--primary);
-  font-family: var(--font-family-title);
-  font-weight: bold;
   font-size: 80px;
+  padding-top: 30px;
 }
 
 .dialog-text {
   margin: 50px;
   text-align: center;
-  font-family: var(--font-family-title);
-  font-size: 20px;
+}
+
+.custom-shape-divider-bottom-1670528199 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background-color: white;
+}
+
+.custom-shape-divider-bottom-1670528199 svg {
+  position: relative;
+  display: block;
+  width: calc(141% + 1.3px);
+  height: 52px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1670528199 .shape-fill {
+  fill: var(--secondary);
 }
 
 .modal-close {
@@ -279,20 +250,13 @@
 }
 
 @media only screen and (max-width: $tablet-resolution) {
-  .background-div {
-    height: 1750px;
-    width: 45%;
-    top: 0;
-    right: 5%;
-  }
-
   .boss {
     left: 0;
     right: 0;
     margin: auto;
     width: 300px;
     height: 300px;
-    top: 5%;
+    top: 0%;
 
     .person-name {
       font-size: 30px;
@@ -331,8 +295,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 25%;
-    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    top: 22%;
     z-index: 1;
   }
 
@@ -340,59 +303,26 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 40%;
-    box-shadow: 1px 2px 20px 15px var(--primary-trans);
+    top: 42%;
   }
 
   .employee3 {
     left: 0;
     right: 0;
     margin: auto;
-    top: 55%;
-    box-shadow: 1px 2px 20px 15px var(--primary-trans);
-    border: 0;
-
-    &:hover .overlay {
-      background-color: var(--secondary);
-
-      .person-name,
-      .person-quote {
-        color: var(--primary);
-      }
-
-      .read-more {
-        color: var(--secondary) !important;
-        background-color: var(--primary);
-      }
-    }
+    top: 62%;
   }
 
   .employee4 {
     left: 0;
     right: 0;
     margin: auto;
-    top: 70%;
-    box-shadow: 1px 2px 20px 15px var(--primary-trans);
-    border: 0;
-
-    &:hover .overlay {
-      background-color: var(--secondary);
-
-      .person-name,
-      .person-quote {
-        color: var(--primary);
-      }
-
-      .read-more {
-        color: var(--secondary) !important;
-        background-color: var(--primary);
-      }
-    }
+    top: 82%;
   }
 
   #our-team {
     .wrapper {
-      height: 1750px;
+      height: 1600px;
       position: relative;
     }
   }

@@ -1,19 +1,13 @@
-$primary: #356C64;
-$primary-trans: #356c6433;
-$secondary: #FCF7F3;
-$secondary-trans: #f2e3d580;
-$terciary: #0D0D0D;
+$primary: #1F1A17;
+$secondary: whitesmoke;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
 $font-family-title: 'Fira Sans', sans-serif;
-$font-family-default: 'Karma', serif;
+$font-family-default: 'Quicksand', sans-serif;
 
 :root {
     --primary: #{$primary};
-    --primary-trans: #{$primary-trans};
     --secondary: #{$secondary};
-    --secondary-trans: #{$secondary-trans};
-    --terciary: #{$terciary};
     --font-family-title: #{$font-family-title};
     --font-family-default: #{$font-family-default};
 }

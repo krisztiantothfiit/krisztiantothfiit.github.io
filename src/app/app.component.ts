@@ -24,8 +24,6 @@ export class AppComponent implements OnInit {
     translate.currentLang = this.currentLang;
     // Icons initialization
     this.addIconToRegistry('sk_flag', 'assets/icons/sk.svg');
-    this.addIconToRegistry('hu_flag', 'assets/icons/hu.svg');
-    this.addIconToRegistry('en_flag', 'assets/icons/gb.svg');
     this.addIconToRegistry('success', 'assets/icons/success.svg');
   }
 
@@ -62,10 +60,10 @@ export class AppComponent implements OnInit {
   addMetaTags(): void {
     this.titleService.setTitle('PERFECT');
     this.metaTagService.addTags([
-      {name: 'description', content: 'Z nášho širokého výberu kvetov Vám vykúzlime nádherné kytice pre každú príležitosť'},
-      {name: 'keywords', content: 'kvetinárstvo, kvetinárstvo Eva, kvetinárstvo Veľký Biel, kvety, vence, Veľký Biel, kytice'},
+      {name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.'},
+      {name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola'},
       {name: 'robots', content: 'index, follow'},
-      {name: 'author', content: 'Eva Mészárosová'},
+      {name: 'author', content: 'Silvia Nágel'},
       {charset: 'UTF-8'},
     ])
   }

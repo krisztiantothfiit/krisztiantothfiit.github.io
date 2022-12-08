@@ -15,7 +15,7 @@ export class GalleryComponent {
   tiles: Tile[] = [];
   showRows = 1;
   showLoadMore = false;
-  pictureCount = 57;
+  pictureCount = 20;
 
   constructor(public dialog: MatDialog, private elem: ElementRef) {
     this.elem.nativeElement.style.setProperty('--picture-count', this.pictureCount)
@@ -26,7 +26,7 @@ export class GalleryComponent {
   selectedTabChanged(event: any) {
     this.tiles = [];
     for (let i = 1; i <= this.pictureCount; i++) {
-      this.tiles = [...this.tiles, { src: `../../assets/images/gallery/bouquet${i}.jpg` }]
+      this.tiles = [...this.tiles, { src: `../../assets/images/gallery/fotka${i}.jpg` }]
     }
   }
 
@@ -42,9 +42,10 @@ export class GalleryComponent {
   }
 
   loadMore(): void {
-    if (this.showRows + 1 <= Math.floor(this.tiles.length / 5) + 1) {
+    if (this.showRows * 5 <= this.tiles.length) {
       this.showRows += 1;
-    } else {
+    } 
+    if (this.showRows * 5 >= this.tiles.length) {
       this.showLoadMore = false;
     }
   }

@@ -12,7 +12,7 @@
 @import "styles/our-team.scss";
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 .section {
   min-height: 50vh;
   text-align: center;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 
 .divider-box {
@@ -45,17 +45,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
-  color: var(--primary);
+  font-size: 5em;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 3px var(--primary);
   font-family: var(--font-family-title);
 }
 
 h3 {
-  font-size: 1.5em;
-  color: var(--terciary);
+  text-align: justify;
   font-family: var(--font-family-title);
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 
 .primary {
@@ -66,12 +68,28 @@ h3 {
   color: var(--secondary);
 }
 
+.green {
+  color: #00d0b2;
+}
+
+.blue {
+  color: #430093;
+}
+
+.red {
+  color: #ff5c75;
+}
+
+.yellow {
+  color: #ffc85f;
+}
+
 p,
 span {
-  font-family: var(--font-family-default);
-  color: var(--terciary);
-  font-size: 1.25em;
+  color: var(--primary);
   text-align: left;
+  font-size: 16px;
+  font-family: var(--font-family-default);
 }
 
 b {
@@ -111,24 +129,22 @@ img {
   padding: 10px 30px !important;
   color: var(--primary) !important;
   border-radius: 10px !important;
-  background-color: var(--secondary) !important;
+  background-color: #00d0b2 !important;
   margin: 5px !important;
-  border: 1px solid var(--primary) !important;
 }
 
 .cookie-button-deny {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  background-color: var(--primary) !important;
+  background-color: #ff5c75 !important;
   border-radius: 10px !important;
   margin: 5px !important;
   color: var(--secondary) !important;
-  border: 1px solid var(--secondary) !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
   border: 1px solid var(--primary);
-  color: var(--terciary);
+  color: var(--primary);
 }
 
 .cc-theme-edgeless.cc-window {
@@ -141,13 +157,12 @@ button:focus {
 
 .scrollToTop.mat-mini-fab {
   position: fixed;
-  background-color: var(--primary);
+  background-color: #ffc85f;
   top: auto;
   left: auto;
   right: 30px;
   bottom: 30px;
   box-shadow: none;
-  border: 1px solid var(--secondary);
   z-index: 10;
 
   .mat-icon {
@@ -156,7 +171,7 @@ button:focus {
   }
 
   .mat-button-wrapper {
-    color: var(--secondary);
+    color: var(--primary);
   }
 }
 
@@ -165,11 +180,14 @@ button:focus {
 }
 
 .scrollToTop.mat-mini-fab:hover {
-  background-color: var(--secondary);
-  border: 1px solid var(--primary);
+  background-color: #430093;
   .mat-button-wrapper {
-    color: var(--primary);
+    color: var(--secondary);
   }
+}
+
+.row {
+  margin: 0;
 }
 
 .no-margin {
@@ -195,7 +213,7 @@ button:focus {
 }
 
 .cc-message {
-  color: var(--terciary);
+  color: var(--primary);
 }
 
 .align-end {
@@ -220,19 +238,13 @@ button:focus {
     display: none;
   }
 
-  h2 {
-    font-size: 25px;
-    margin-bottom: 10%;
-  }
-
-  h3 {
-    font-size: 25px;
-    text-align: center;
-  }
-
   p,
   span {
     font-size: 16px;
+  }
+
+  h2 {
+    font-size: 4em;
   }
 
   .divider {

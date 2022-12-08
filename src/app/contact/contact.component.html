@@ -1,23 +1,22 @@
 <app-section id="contact">
-  <h2 translate="contact.title" class="primary no-margin"></h2>
-  <span translate="contact.subtitle"></span>
+  <h2 translate="contact.title"></h2>
 
   <div class="row pb-4 pt-4">
     <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined primary">business</span>
+      <span class="material-symbols-outlined green">business</span>
       <p class="no-margin" translate="contact.address.text"></p>
     </div>
     <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined primary">stay_current_portrait</span>
+      <span class="material-symbols-outlined red">stay_current_portrait</span>
       <p class="no-margin" translate="contact.phone.text"></p>
     </div>
     <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined primary">mail</span>
+      <span class="material-symbols-outlined yellow">mail</span>
       <p class="no-margin" translate="contact.email.text"></p>
     </div>
   </div>
 
-  <div>
+  <!-- <div>
     <div class="contact-box mb-4">
       <h3 translate="contact.form.title" class="secondary"></h3>
       <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
@@ -44,6 +43,12 @@
         </div>
       </form>
     </div>
-    <app-map></app-map>
-  </div>
+  </div> -->
+
+  <app-map></app-map>
 </app-section>
+<div class="custom-shape-divider-bottom-1670528829">
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
+</div>
