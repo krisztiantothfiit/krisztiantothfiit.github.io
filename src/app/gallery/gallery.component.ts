@@ -15,7 +15,7 @@ export class GalleryComponent {
   tiles: Tile[] = [];
   showRows = 1;
   showLoadMore = false;
-  pictureCount = 20;
+  pictureCount = 25;
 
   constructor(public dialog: MatDialog, private elem: ElementRef) {
     this.elem.nativeElement.style.setProperty('--picture-count', this.pictureCount)

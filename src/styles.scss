@@ -116,6 +116,11 @@ img {
   display: flex;
 }
 
+.cc-revoke.cc-bottom {
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
 .mat-raised-button {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
@@ -244,7 +249,7 @@ button:focus {
   }
 
   h2 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .divider {

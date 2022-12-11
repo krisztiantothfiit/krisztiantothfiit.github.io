@@ -346,10 +346,8 @@
   }
 
   .dialog-text {
-    margin: 50px;
+    margin: 10px;
     text-align: center;
-    font-family: var(--font-family-title);
-    font-size: 10px;
   }
 
   .flex-direction {
@@ -357,7 +355,7 @@
   }
 
   .mobile-close {
-    display: block;
+    display: none;
   }
 
   .desktop-close {
