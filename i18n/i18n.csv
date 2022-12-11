@@ -6,7 +6,7 @@ navigation.header;Domov;
 navigation.contact;Kontakt;
 navigation.our-team;Naš tím;
 navigation.about-us;O nás;
-navigation.gallery;Naše fotky;
+navigation.gallery;Fotogaléria;
 
 footer.text1; © Perfect - Dizajn zo;
 footer.text2;vytvoril ;
@@ -22,7 +22,7 @@ cookieAllow;Povoliť;
 cookieDeny;Odmietnuť;
 cookiePolicy;Zásady používania súborov cookie;
 
-gallery.title;Fotky;
+gallery.title;Fotogaléria;
 gallery.loadMoreBtn;Načítať ďalšie;
 
 contact.title;Spojte sa s nami;
