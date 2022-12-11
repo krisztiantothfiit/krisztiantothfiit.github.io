@@ -52,8 +52,8 @@
 .employee {
   position: absolute;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 225px;
+  height: 225px;
   background-color: white;
 }
 
@@ -73,7 +73,7 @@
 
 .employee1 {
   left: 60%;
-  top: 45%;
+  top: 60%;
   z-index: 2;
   box-shadow: 1px 2px 20px 15px rgb(67 0 147 / 20%);
   &:hover .employee1-desc {
@@ -82,8 +82,8 @@
 }
 
 .employee2 {
-  left: 60%;
-  top: 5%;
+  left: 62%;
+  top: 2%;
   z-index: 0;
   box-shadow: 1px 2px 20px 15px rgb(255 200 95 / 20%);
   &:hover {
@@ -96,8 +96,8 @@
 }
 
 .employee3 {
-  left: 20%;
-  top: 5%;
+  left: 15%;
+  top: 0%;
   z-index: 0;
   box-shadow: 1px 2px 20px 15px rgb(255 92 117 / 20%);
   &:hover .employee3-desc {
@@ -106,11 +106,21 @@
 }
 
 .employee4 {
-  left: 20%;
-  top: 55%;
+  left: 23%;
+  top: 67%;
   z-index: 0;
   box-shadow: 1px 2px 20px 15px rgb(0 208 178 / 10%);
   &:hover .employee4-desc {
+    opacity: 0.75;
+  }
+}
+
+.employee5 {
+  left: 8%;
+  top: 39%;
+  z-index: 0;
+  box-shadow: 1px 2px 20px 15px rgb(0 168 236 / 10%);
+  &:hover .employee5-desc {
     opacity: 0.75;
   }
 }
@@ -295,7 +305,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 22%;
+    top: 18%;
     z-index: 1;
   }
 
@@ -303,17 +313,24 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: 42%;
+    top: 34%;
   }
 
   .employee3 {
     left: 0;
     right: 0;
     margin: auto;
-    top: 62%;
+    top: 50%;
   }
 
   .employee4 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 66%;
+  }
+
+  .employee5 {
     left: 0;
     right: 0;
     margin: auto;
@@ -322,7 +339,7 @@
 
   #our-team {
     .wrapper {
-      height: 1600px;
+      height: 2000px;
       position: relative;
     }
   }
