@@ -26,12 +26,6 @@
       "dom"
     ],
     "skipLibCheck":true,
-    "paths" : {
-      "http": ["./node_modules/stream-http"],
-      "https": ["./node_modules/https-browserify"],
-      "url": ["./node_modules/url"],
-      "buffer": ["./node_modules/buffer"]
-    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

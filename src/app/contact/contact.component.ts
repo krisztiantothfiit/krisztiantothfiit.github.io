@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { MailtrapClient } from 'mailtrap';
+import { MailServiceService } from './mail-service.service';
 import { SuccessDialogComponent } from './success-dialog/success-dialog.component';
 
 @Component({
@@ -10,14 +10,8 @@ import { SuccessDialogComponent } from './success-dialog/success-dialog.componen
 })
 export class ContactComponent {
   formGroup: FormGroup;
-  TOKEN = "762ace8b8ed88072f00ddd617c37e498";
-  SENDER_EMAIL = "info@perfect2003.sk";
-  RECIPIENT_EMAIL = "fancyweb2022@gmail.com";
 
-  client = new MailtrapClient({ token: this.TOKEN });
-  sender = { name: "Mailtrap Test", email: this.SENDER_EMAIL };
-
-  constructor(private dialog: MatDialog) {
+  constructor(private dialog: MatDialog, private mailService: MailServiceService) {
 
     this.formGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
@@ -33,23 +27,19 @@ export class ContactComponent {
 
   public submit(): void {
     if (!this.formGroup.invalid) {
-      this.client
-        .send({
-          from: this.sender,
-          to: [{ email: this.RECIPIENT_EMAIL }],
-          subject: "Contact form",
-          text: `
-        <b>Správa cez kontaktný formulár</b><br />
-        <br />
-        <b>Meno: </b>${this.formGroup.value.name} <br />
-        <b>Email: </b>${this.formGroup.value.email}<br />
-        <br />
-        <b>Správa:</b>
-        <br /> ${this.formGroup.value.message}</b> `,
-        })
-        .then(() => this.dialog.open(SuccessDialogComponent, {
-          panelClass: 'success-dialog'
-        }));
+      const mailOptions = {
+        subject: `Mail from ${this.formGroup.value.name}`,
+        text: `${this.formGroup.value.message}\n\nSender mail: ${this.formGroup.value.email}`
+      }
+
+      this.mailService.sendMail(mailOptions)
+        .subscribe((result: any) => {
+          if (result.output == 'success') {
+            this.dialog.open(SuccessDialogComponent, {
+              panelClass: 'success-dialog'
+            })
+          }
+        });
     }
   }
 }
