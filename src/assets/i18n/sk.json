@@ -35,6 +35,7 @@
   "contact.form.submitBtn": "Poslať správu",
   "contact.form.required": "Povinné pole",
   "contact.form.successMsg": "Správa bola úspešne odoslaná!",
+  "contact.form.failMsg": "Odoslanie správy zlyhalo",
   "ourTeam.our-team": "Náš tím",
   "ourTeam.bossName": "Silvia Nágel",
   "ourTeam.bossQuote": "„Carpe diem - ži naplno!“ (Horatius)",
@@ -63,7 +64,7 @@
   "aboutUs.title2": "Kde nás najdete",
   "aboutUs.text2": "Sídlime na druhom poschodí polyfunkčnej budovy na Námestí Slobody č. 580 vo Veľkých Úľanoch.",
   "aboutUs.title3": "Naši klienti",
-  "aboutUs.text3": "Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.",
+  "aboutUs.text3": "Vyučujeme angličtinu a nemčinu a doučujeme jazyk slovenský - skupinovo aj individuálne - deti, mládež a dospelých.",
   "aboutUs.title4": "Naša metóda",
   "aboutUs.text4": "Využívame kombináciu klasických a moderných vyučovacích metód šitú na mieru konkrétneho klienta. Uprednostňujeme interaktívne, kreatívne a hravé aktivity v danom jazyku."
 }

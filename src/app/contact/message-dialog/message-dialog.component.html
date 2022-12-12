@@ -1,0 +1,11 @@
+<div class="success-dialog-content">
+    <mat-dialog-content>
+        <mat-icon *ngIf="data == 'success'" svgIcon="success"></mat-icon>
+        <mat-icon *ngIf="data == 'fail'" svgIcon="fail"></mat-icon>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <p *ngIf="data == 'success'" translate="contact.form.successMsg"></p>
+        <p *ngIf="data == 'fail'" translate="contact.form.failMsg"></p>
+    </mat-dialog-actions>
+</div>
+

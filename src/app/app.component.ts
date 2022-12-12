@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
     // Icons initialization
     this.addIconToRegistry('sk_flag', 'assets/icons/sk.svg');
     this.addIconToRegistry('success', 'assets/icons/success.svg');
+    this.addIconToRegistry('fail', 'assets/icons/fail.svg');
   }
 
   ngOnInit(): void {
@@ -60,11 +61,11 @@ export class AppComponent implements OnInit {
   addMetaTags(): void {
     this.titleService.setTitle('PERFECT');
     this.metaTagService.addTags([
-      {name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.'},
-      {name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola'},
-      {name: 'robots', content: 'index, follow'},
-      {name: 'author', content: 'Silvia Nágel'},
-      {charset: 'UTF-8'},
+      { name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.' },
+      { name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola' },
+      { name: 'robots', content: 'index, follow' },
+      { name: 'author', content: 'Silvia Nágel' },
+      { charset: 'UTF-8' },
     ])
   }
 }

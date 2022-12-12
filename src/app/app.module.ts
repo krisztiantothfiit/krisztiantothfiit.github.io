@@ -31,7 +31,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { GalleryDialogComponent } from './gallery/dialog/gallery-dialog/gallery-dialog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { SuccessDialogComponent } from './contact/success-dialog/success-dialog.component';
+import { MessageDialogComponent } from './contact/message-dialog/message-dialog.component';
 import { OurTeamDialogComponent } from './our-team/dialog/our-team-dialog.component';
 
 @NgModule({
@@ -50,7 +50,7 @@ import { OurTeamDialogComponent } from './our-team/dialog/our-team-dialog.compon
     GalleryComponent,
     GalleryDialogComponent,
     AboutUsComponent,
-    SuccessDialogComponent
+    MessageDialogComponent
   ],
   imports: [
     BrowserModule,

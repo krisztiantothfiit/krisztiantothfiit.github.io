@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MailServiceService } from './mail-service.service';
-import { SuccessDialogComponent } from './success-dialog/success-dialog.component';
+import { MessageDialogComponent } from './message-dialog/message-dialog.component';
 
 @Component({
   selector: 'app-contact',
@@ -35,8 +35,12 @@ export class ContactComponent {
       this.mailService.sendMail(mailOptions)
         .subscribe((result: any) => {
           if (result.output == 'success') {
-            this.dialog.open(SuccessDialogComponent, {
-              panelClass: 'success-dialog'
+            this.dialog.open(MessageDialogComponent, {
+              data: 'success'
+            })
+          } else {
+            this.dialog.open(MessageDialogComponent, {
+              data: 'fail'
             })
           }
         });
