@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { MailServiceService } from './mail-service.service';
+import { MailService } from './mail-service.service';
 import { MessageDialogComponent } from './message-dialog/message-dialog.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { MessageDialogComponent } from './message-dialog/message-dialog.componen
 export class ContactComponent {
   formGroup: FormGroup;
 
-  constructor(private dialog: MatDialog, private mailService: MailServiceService) {
+  constructor(private dialog: MatDialog, private mailService: MailService) {
 
     this.formGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
@@ -36,13 +36,17 @@ export class ContactComponent {
         .subscribe((result: any) => {
           if (result.output == 'success') {
             this.dialog.open(MessageDialogComponent, {
+              panelClass: 'success-dialog',
               data: 'success'
             })
           } else {
             this.dialog.open(MessageDialogComponent, {
+              panelClass: 'success-dialog',
               data: 'fail'
             })
           }
+
+          this.formGroup.reset();
         });
     }
   }
