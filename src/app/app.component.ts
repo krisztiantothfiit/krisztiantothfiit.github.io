@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
     this.titleService.setTitle('PERFECT');
     this.metaTagService.addTags([
       { name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.' },
-      { name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola' },
+      { name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola, perfect2003, nemčina' },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Silvia Nágel' },
       { charset: 'UTF-8' },
