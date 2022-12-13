@@ -25,6 +25,11 @@ export class ContactComponent {
     return !!(formField && (formField.touched) && formField.hasError('required'));
   }
 
+  public hasPatternError(field: string): boolean {
+    const formField = this.formGroup.get(field);
+    return !!(formField && (formField.touched) && formField.hasError('pattern'));
+  }
+
   public submit(): void {
     if (!this.formGroup.invalid) {
       const mailOptions = {
