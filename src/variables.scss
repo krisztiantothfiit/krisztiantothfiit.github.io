@@ -1,13 +1,21 @@
-$primary: #1F1A17;
-$secondary: whitesmoke;
+$primary: #F0F1F2;
+$secondary: #BACBD9;
+$text: #0D0D0D;
+$primary-text: #787879;
+$secondary-text: #5D656C;
+$white: #fff;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
-$font-family-title: 'Fira Sans', sans-serif;
+$font-family-title: 'Open Sans', sans-serif;
 $font-family-default: 'Quicksand', sans-serif;
 
 :root {
     --primary: #{$primary};
     --secondary: #{$secondary};
+    --text: #{$text};
+    --primary-text: #{$primary-text};
+    --secondary-text: #{$secondary-text};
+    --white: #{$white};
     --font-family-title: #{$font-family-title};
     --font-family-default: #{$font-family-default};
 }

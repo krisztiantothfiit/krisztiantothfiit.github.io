@@ -29,8 +29,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fonts/artifex-cf-bold/style.css",
-              "src/assets/fonts/artifex-cf-regular/style.css",
               "node_modules/ol/ol.css",
               "node_modules/cookieconsent/build/cookieconsent.min.css"
             ],

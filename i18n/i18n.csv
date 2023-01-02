@@ -4,76 +4,16 @@ title;Perfect;
 
 navigation.header;Domov;
 navigation.contact;Kontakt;
-navigation.our-team;Naš tím;
+navigation.offering;Ponúkame;
 navigation.about-us;O nás;
-navigation.gallery;Fotogaléria;
+navigation.why;Prečo zvoliť nás;
 
-footer.text1; © Perfect - Dizajn zo;
-footer.text2;vytvoril ;
-footer.text3;Ilustračné obrázky navrhol Freepik;
-footer.name;<b>Obchodné meno:</b> PaedDr. Silvia Nágel - PERFECT;
-footer.address;<b>Miesto podnikania:</b> Jazerná 1498/44, 92522 Veľké Úľany;
-footer.ico;<b>IČO:</b> 40563979;
-footer.office;Fyzická osoba zapísaná v Živnostenskom registri Okresného úradu Galanta od 9. januára 2003;
-footer.number;<b>Číslo živnostenského registra:</b> 202-19448;
+top-contact.address1;Kráľová nad Váhom 702
+top-contact.address2;92591 Kráľová nad Váhom
+top-contact.email;klimatel@klimatel.sk
+top-contact.tel;+421 902 483 560
+top-contact.hours;Po-Pia: 8:00 - 15:30
 
-cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.
-cookieAllow;Povoliť;
-cookieDeny;Odmietnuť;
-cookiePolicy;Zásady používania súborov cookie;
-
-gallery.title;Fotogaléria;
-gallery.loadMoreBtn;Načítať ďalšie;
-
-contact.title;Spojte sa s nami;
-contact.subtitle;Kontaktujte nás pomocou nižšie uvedených informácií;
-contact.address.text;Námestie Slobody 580, Veľke Úľany (polyfunkčná budova);
-contact.phone.text;+421 911 276 747;
-contact.email.text;info@perfect2003.sk;
-contact.form.title;Napíšte nám;
-contact.form.name;Meno;
-contact.form.email;Email;
-contact.form.message;Správa;
-contact.form.name.placeholder;napr. Jožko Mrkvička;
-contact.form.email.placeholder;vzor@email.com;
-contact.form.message.placeholder;Chcel by som si dohodnúť stretnutie...;
-contact.form.submitBtn;Poslať správu;
-contact.form.required;Povinné pole;
-contact.form.pattern;Nesprávny tvar;
-contact.form.successMsg;Správa bola úspešne odoslaná!;
-contact.form.failMsg;Odoslanie správy zlyhalo;
-
-ourTeam.our-team;Náš tím;
-ourTeam.bossName;Silvia Nágel;
-ourTeam.bossQuote;„Carpe diem - ži naplno!“ (Horatius);
-ourTeam.bossDesc;Silvia Nágel je učiteľkou anglického jazyka už 25 rokov a táto jej práca ju stále dokonale napĺňa. Študovala anglický jazyk a literatúru na UKF Nitra, kde zavŕšila svoje štúdium doktorandskym titulom. Svoju profesionálnu kariéru začala na základnej škole v Galante. V roku 2003 založila vlastnú jazykovú prax  vo svojej rodnej obci. Vyučuje všeobecnú a obchodnú angličtinu pre nadnárodné spoločnosti, dospelých a deti. Okrem jazykových kurzov sa zaoberá aj prekladateľskou činnosťou a organizuje letné jazykové tábory. Neustále hľadá nové výzvy, rada sa hrá a nepokazí žiadnu zábavu.
-ourTeam.employee1Name;Martin Sirák;
-ourTeam.employee1Quote;„In risu veritas. V smiechu je pravda.“ (James Joyce);
-ourTeam.employee1Desc;Martin Sirák vyštudoval odbor programovanie na piešťanskom gymnáziu a potom ekonomickú geografiu v Bratislave. Desať rokov pôsobil na akademickej pôde ako lektor a výskumný pracovník. Absolvoval štipendijné pobyty na zahraničných univerzitách vo Veľkej Británii, Belgicku, Portugalsku a Maďarsku. Angličtina, geografia, cestovanie a vzdelávanie sú jeho celoživotnými vášňami. Počas letnej sezóny pracuje ako turistický sprievodca po európskych mestách a pobytový delegát v Grécku. Miluje Londýn a severné Anglicko - ako správny britofil má rád futbal, pivo a anglicky písanú literatúru.
-ourTeam.employee2Name;Friderika Tóth;
-ourTeam.employee2Quote;„Všetko býva ťažké, kým sa to nestane ľahkým.“ (Goethe);
-ourTeam.employee2Desc;Friderika Tóth je študentkou Univerzity Komenského v Bratislave, odbor učiteľstvo anglického a maďarského jazyka a literatúry. Sníva o úspešnej pedagogickej kariére. Má veľmi rada deti, ku ktorým sa vždy usiluje budovať láskavý a trpezlivý vzťah. Jej cieľom je odovzdávať svoje vedomosti deťom. V učení uplatňuje flexibilný prístup a otvorenosť novým výzvam. Možnosť spoznávať nových ľudí ju napĺňa veľkou radosťou. Miluje dramatické umenie, tanec a šport.
-ourTeam.employee3Name;Karin Andrássy;
-ourTeam.employee3Quote;„Život sa nepíše, život sa žije.“ (Karel Čapek);
-ourTeam.employee3Desc;Karin Andrássy je študentkou Pedagogickej fakulty Univerzity Komenského v Bratislave, odbor predškolská a elementárna pedagogika. Učí v Materskej škole vo Veľkých Úľanoch. Má rada spev, hudbu, výtvarné umenie a vďaka tejto práci ich môže vykonávať vo výchovno-vzdelávacej činnosti s detmi. Karin robí radosť, keď sa môže podieľať na výchove detí budúcej generácie.
-ourTeam.employee4Name;Timea Kovácsová;
-ourTeam.employee4Quote;„Nový jazyk znamená nový život.” (Perzské príslovie);„Nový jazyk znamená nový život.” (Perzské príslovie);
-ourTeam.employee4Desc;Timea Kovácsová sa anglickému jazyku profesionálne venuje viac ako 24 rokov. Po dokončení štúdií svoje znalosti ďalej zlepšila a prehĺbila viacročným pobytom vo Veľkej Británii a na mnohých cestách po svete ako sprievodkyňa v Európe, Číne, Afrike, Ázii a USA. Dlhodobo sa venuje organizovaniu jazykových kurzov a poznávacích zájazdov pre študentov v zahraničí. Timea dospela k poznaniu, že vďaka znalosti cudzích jazykov sa môže cítiť ako doma kdekoľvek na svete.
-ourTeam.employee5Name;Katarína Budaiová;
-ourTeam.employee5Quote;„Neuspokojte sa s tým, čo vám život dáva, zlepšujte život a niečo budujte.” (Ashton Kutcher);
-ourTeam.employee5Desc;Katarína Budaiová študuje odbor učiteľstvo nemeckého a slovenského jazyka a literatúry na Pedagogickej fakulte Univerzity Komenského v Bratislave. Učí v škole Green Resort School v Hrubej Borši, ktorá je založená na montessori koncepte.  Jej veľkým snom je stať sa úspešnou lektorkou cudzích jazykov. Má rada deti, jazyky a šport. Je pre ňu veľkým potešením, keď môže odovzdávať svoje vedomosti budúcim generáciám.
-
-ourTeam.readMore;Viac;
-
-header.title;Perfect;
-header.subtitle;Play Practice Progress;
-
-aboutUs.title;O nás
-aboutUs.title1;Kto sme
-aboutUs.text1;Sme malá komunitná jazyková škola, ktorá funguje od roku 2003.
-aboutUs.title2;Kde nás nájdete
-aboutUs.text2;Sídlime na druhom poschodí polyfunkčnej budovy na Námestí Slobody č. 580 vo Veľkých Úľanoch.
-aboutUs.title3;Naši klienti
-aboutUs.text3;Vyučujeme angličtinu a nemčinu a doučujeme jazyk slovenský - skupinovo aj individuálne - deti, mládež a dospelých.
-aboutUs.title4;Naša metóda
-aboutUs.text4;Využívame kombináciu klasických a moderných vyučovacích metód šitú na mieru konkrétneho klienta. Uprednostňujeme interaktívne, kreatívne a hravé aktivity v danom jazyku.
+header.header1;rekuperácie
+header.header2;klimatizácie
+header.header3;tepelné čerpadlá

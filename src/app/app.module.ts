@@ -33,6 +33,7 @@ import { GalleryDialogComponent } from './gallery/dialog/gallery-dialog/gallery-
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './contact/message-dialog/message-dialog.component';
 import { OurTeamDialogComponent } from './our-team/dialog/our-team-dialog.component';
+import { TopContactComponent } from './top-contact/top-contact/top-contact.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { OurTeamDialogComponent } from './our-team/dialog/our-team-dialog.compon
     GalleryComponent,
     GalleryDialogComponent,
     AboutUsComponent,
-    MessageDialogComponent
+    MessageDialogComponent,
+    TopContactComponent
   ],
   imports: [
     BrowserModule,

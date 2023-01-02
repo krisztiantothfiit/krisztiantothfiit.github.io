@@ -1,9 +1,8 @@
 .navbar {
     padding: 1% 0;
     font-family: var(--font-family-default);
-    z-index: 2;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: white;
+    z-index: 1;
+    background-color: transparent;
 }
 
 .navbar-brand {
@@ -18,12 +17,12 @@
 
 .nav-item:hover {
   .nav-text-color {
-    color: #ff5c75;
+    color: var(--secondary);
   }
 }
 
 .navbar-brand-img{
-    height: 35px;
+    height: 50px;
 }
 
 .show>.btn-secondary.dropdown-toggle {

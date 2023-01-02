@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.top-contact-row {
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 10px 8%;
+
+  & .row {
+    height: 100%;
+  }
+
+  div:nth-child(1) {
+    border-left: 0;
+  }
+
+  div:nth-child(n) {
+    border-right: 0;
+  }
+}
+
+.top-contact-icon {
+  align-self: center;
+  text-align: end;
+  padding: 0;
+}
+
+.top-contact-text {
+  align-self: center;
+}
+
+.top-contact-item {
+  border-left: 2px solid var(--secondary);
+  border-right: 2px solid var(--secondary);
+}
+
+.icon-display {
+  transform: scale(1.5);
+  margin-top: 5px;
+}
