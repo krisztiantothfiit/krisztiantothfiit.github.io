@@ -52,6 +52,7 @@ h2 {
   -webkit-text-fill-color: white;
   -webkit-text-stroke: 3px var(--primary);
   font-family: var(--font-family-title);
+  word-break: break-word;
 }
 
 h3 {
