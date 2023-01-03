@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 10px 8%;
+  padding: 10px 320px;
 
   & .row {
     height: 100%;
@@ -18,12 +18,16 @@
   div:nth-child(n) {
     border-right: 0;
   }
+
+  .col-lg-3 {
+    padding: 0;
+  }
 }
 
 .top-contact-icon {
   align-self: center;
   text-align: end;
-  padding: 0;
+  padding: 0 15px 0 0;
 }
 
 .top-contact-text {

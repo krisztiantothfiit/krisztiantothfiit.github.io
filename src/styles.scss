@@ -9,11 +9,11 @@
 @import "styles/about-us.scss";
 @import "styles/gallery.scss";
 @import "styles/navigation.scss";
-@import "styles/our-team.scss";
+@import "styles/offering.scss";
 @import "styles/top-contact.scss";
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--white);
 }
 
 .container {
@@ -46,18 +46,24 @@ h1 {
 }
 
 h2 {
-  font-size: 5em;
+  font-size: 4em;
   margin-bottom: 30px;
-  letter-spacing: 5px;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke: 3px var(--primary);
   font-family: var(--font-family-title);
-  word-break: break-word;
+  text-align: left;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 15px;
+  }
 }
 
 h3 {
   text-align: justify;
-  font-family: var(--font-family-title);
+  font-family: var(--font-family-default);
   font-size: 2em;
   margin-bottom: 15px;
 }

@@ -1,61 +1,73 @@
 <app-section id="about-us">
-  <h2> {{ 'aboutUs.title' | translate }}</h2>
-  <div class="row about-us-row">
-    <div class="col-lg-2 col-md-12 about-us-img green">
-      <img [src]="'assets/images/about-us/aboutUs1.jpg'">
-    </div>
-    <div class="col-lg-4 col-md-12">
-      <h3 class="about-us-title green">
-        {{ 'aboutUs.title1' | translate }}
-      </h3>
-      <div class="about-us-text">
-        {{ 'aboutUs.text1' | translate }}
-      </div>
-    </div>
-
-    <div class="col-lg-2 col-md-12 about-us-img">
-      <img [src]="'assets/images/about-us/aboutUs2.jpg'">
-    </div>
-    <div class="col-lg-4 col-md-12">
-      <h3 class="about-us-title blue">
-        {{ 'aboutUs.title2' | translate }}
-      </h3>
-      <div class="about-us-text">
-        {{ 'aboutUs.text2' | translate }}
-      </div>
-    </div>
-  </div>
+  <h2> {{ 'aboutUs.title' | translate | uppercase }}</h2>
 
   <div class="row">
-    <div class="col-lg-2 col-md-12 about-us-img">
-      <img [src]="'assets/images/about-us/aboutUs3.jpg'">
+    <div class="col-lg-6">
+      <img src="assets/images/about-us/about-us1.jpg">
     </div>
-    <div class="col-lg-4 col-md-12 ">
-      <h3 class="about-us-title red">
-        {{ 'aboutUs.title3' | translate }}
-      </h3>
-      <div class="about-us-text">
-        {{ 'aboutUs.text3' | translate }}
+    <div class="col-lg-6">
+      <div class="row">
+        <div class="about-us-desc"> {{ 'aboutUs.desc' | translate }}</div>
       </div>
-    </div>
-
-    <div class="col-lg-2 col-md-12 about-us-img">
-      <img [src]="'assets/images/about-us/aboutUs4.jpg'">
-    </div>
-    <div class="col-lg-4 col-md-12 ">
-      <h3 class="about-us-title yellow">
-        {{ 'aboutUs.title4' | translate }}
-      </h3>
-      <div class="about-us-text">
-        {{ 'aboutUs.text4' | translate }}
+      <div class="row about-us-wrapper">
+        <div class="row">
+          <div class="col-lg-2 about-us-icon">
+            <mat-icon class="icon-display">done</mat-icon>
+          </div>
+          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature1' | translate | uppercase }}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 about-us-icon">
+            <mat-icon class="icon-display">done</mat-icon>
+          </div>
+          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature2' | translate | uppercase }}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 about-us-icon">
+            <mat-icon class="icon-display">done</mat-icon>
+          </div>
+          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature3' | translate | uppercase }}</div>
+        </div>
       </div>
     </div>
   </div>
 </app-section>
-<div class="custom-shape-divider-bottom-1670527356">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path
-      d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-      class="shape-fill"></path>
-  </svg>
-</div>
+<app-section id="about-us-divider">
+  <div class="row about-us-divider-row">
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-4 about-us-divider-icon">
+          <mat-icon class="icon-display">calendar_today</mat-icon>
+        </div>
+        <div class="col-lg-8 about-us-divider-text">
+          <div>10+</div>
+          <div>{{ 'aboutUs.divider1' | translate | uppercase }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-4 about-us-divider-icon">
+          <mat-icon class="icon-display">check_circle_outline</mat-icon>
+        </div>
+        <div class="col-lg-8 about-us-divider-text">
+          <div>3000+</div>
+          <div>{{ 'aboutUs.divider2' | translate | uppercase }}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="row">
+        <div class="col-lg-4 about-us-divider-icon">
+          <mat-icon class="icon-display">group</mat-icon>
+        </div>
+        <div class="col-lg-8 about-us-divider-text">
+          <div>5000+</div>
+          <div>{{ 'aboutUs.divider3' | translate | uppercase }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</app-section>

@@ -2,9 +2,9 @@
 
 #header .section {
   display: flex;
-  position: absolute;
-  top: 0;
-  padding: 0;
+  position: relative;
+  margin-top: -96px;
+  padding-top: 0;
   width: 100%;
 }
 
@@ -17,6 +17,7 @@
 .carousel-item {
   & img {
     filter: brightness(0.5);
+    max-height: 93vh;
   }
 }
 
