@@ -6,13 +6,13 @@ navigation.header;Domov;
 navigation.contact;Kontakt;
 navigation.offering;Ponúkame;
 navigation.about-us;O nás;
-navigation.why;Prečo zvoliť nás;
+navigation.why-us;Prečo zvoliť nás;
 
-top-contact.address1;Kráľová nad Váhom 702
-top-contact.address2;92591 Kráľová nad Váhom
-top-contact.email;klimatel@klimatel.sk
-top-contact.tel;+421 902 483 560
-top-contact.hours;Po-Pia: 8:00 - 15:30
+topContact.address1;Kráľová nad Váhom 702
+topContact.address2;92591 Kráľová nad Váhom
+topContact.email;klimatel@klimatel.sk
+topContact.tel;+421 902 483 560
+topContact.hours;Po-Pia: 8:00 - 15:30
 
 header.header1;rekuperácie
 header.header2;klimatizácie
@@ -27,7 +27,26 @@ aboutUs.divider1;Rokov skúseností
 aboutUs.divider2;Realizovaných riešení
 aboutUs.divider3;Spokojných zákazníkov
 
-offering.offering;Ponúkame
+offering.title;Ponúkame
 offering.recovery;rekuperácia
 offering.air-conditioner;klimatizácia
 offering.heat-pump;tepelné čerpadlo
+
+whyUs.title;Prečo zvoliť nás?
+whyUs.title1;Bezplatná obhliadka a konzultácia
+whyUs.desc1;Dobrá znalosť požiadaviek klienta a technických možností objektu je základom kvalitného poradenstva s finálnou spokojnosťou zákazníka. Poraďte sa s nami a vyberte si správne.
+whyUs.title2;Produkty od popredných výrobcov
+whyUs.desc2;V našej ponuke nájdete výhradne certifikované, energeticky úsporné a inovatívne zariadenia s dlhodobou dostupnosťou náhradných dielov.
+whyUs.title3;Riešenia pre energetické úspory
+whyUs.desc3;Prinášame Vám rôzne riešenia pre zníženie nákladov za energie. Prepočítame orientačnú návratnosť.
+whyUs.title4;Dotácia na tepelné čerpadlo až 3400€
+whyUs.desc4;Sme zmluvným zhotoviteľom Slovenskej inovačnej a energetickej agentúry. Prevedieme Vás procesom vybavovania príspevku bez zbytočných byrokratických ťažkostí.
+whyUs.title5;Aj komfort je dôležitý
+whyUs.desc5;Dôležitou súčasťou vykurovacích aj klimatizačných zariadení je regulácia. Práve v tomto bode je komunikácia so zákazníkom veľmi dôležitá.
+
+deal.title;Nezmeškajte jedinečnú akciu
+deal.product1;Mitsubishi EF čierna
+deal.product2;Mitsubishi EF čierna
+deal.product3;Mitsubishi EF čierna
+deal.assembly;s montážou od
+deal.order;objednať prehliadku

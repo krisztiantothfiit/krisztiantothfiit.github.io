@@ -1,0 +1,89 @@
+@import "../variables.scss";
+
+.deal-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  .deal-item:not(:last-child) {
+    margin-right: 75px;
+  }
+}
+
+.deal-item {
+  background: var(--primary);
+  flex: 1 0 auto;
+  aspect-ratio: 1 / 1.2;
+  width: 250px;
+  border: 2px solid var(--primary);
+
+  div:first-child {
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+
+    & > mat-icon {
+      transform: scale(3);
+      color: var(--primary-text);
+    }
+  }
+
+  div:last-child {
+    height: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: var(--white);
+
+    & > h3 {
+      font-weight: 600;
+      font-size: 20px;
+      margin: 10px 0 0 40px;
+    }
+
+    & > h4 {
+      font-size: 18px;
+      margin: 0 0 0 40px;
+      text-align: left;
+    }
+  }
+}
+
+.price-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+  height: 45%;
+  align-content: center;
+
+  & > div {
+    padding-top: 0 !important;
+  }
+
+  div:first-child {
+    color: var(--primary-text);
+    padding-left: 15px;
+    padding-top: 15px !important;
+  }
+
+  div:last-child > p {
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+#deal .btn-primary {
+  background-color: var(--primary-text);
+  border: 0;
+  color: var(--primary);
+  width: 66%;
+  font-size: 16px;
+  align-self: center;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+}

@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+.why-us-desc {
+  margin: 0% 68px;
+  text-align: left;
+  color: var(--primary-text);
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.why-us-title {
+  margin: 15% 68px 6% 68px;
+  text-align: left;
+  color: var(--text);
+  line-height: 30px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#why-us {
+  img {
+    height: 390px;
+    width: auto;
+  }
+}
+
+.background-primary {
+  background: var(--primary);
+}
+
+.background-secondary {
+  background: var(--secondary);
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+
+}
