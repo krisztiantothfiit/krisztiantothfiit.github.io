@@ -171,7 +171,7 @@ button:focus {
 
 .scrollToTop.mat-mini-fab {
   position: fixed;
-  background-color: #ffc85f;
+  background-color: var(--secondary);
   top: auto;
   left: auto;
   right: 30px;
@@ -194,9 +194,9 @@ button:focus {
 }
 
 .scrollToTop.mat-mini-fab:hover {
-  background-color: #430093;
+  background-color: var(--text);
   .mat-button-wrapper {
-    color: var(--secondary);
+    color: var(--primary);
   }
 }
 

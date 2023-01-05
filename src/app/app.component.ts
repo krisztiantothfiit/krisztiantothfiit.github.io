@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('PERFECT');
+    this.titleService.setTitle('KLIMATEL');
     this.metaTagService.addTags([
       { name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.' },
       { name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola, perfect2003, nemčina' },

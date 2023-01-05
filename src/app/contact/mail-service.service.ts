@@ -9,6 +9,6 @@ export class MailService {
   constructor(private http: HttpClient) { }
 
   public sendMail(mailOptions: any) {
-    return this.http.post('https://perfect-2b857.web.app/send-mail', { body : mailOptions });
+    return this.http.post('', { body : mailOptions });
   }
 }

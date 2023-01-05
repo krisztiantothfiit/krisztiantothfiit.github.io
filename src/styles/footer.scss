@@ -3,25 +3,34 @@
 #footer .section {
     min-height: unset;
     padding-bottom: 1%;
-    background-color: var(--secondary);
+    background-color: var(--primary);
+}
+
+#footer span {
+  color: var(--primary-text);
 }
 
 .footer {
     p {
         text-align: left;
         margin-bottom: 10px;
+        color: var(--primary-text);
+    }
+
+    h5 {
+      text-align: left;
+      font-weight: bold;
+      padding-top: 15px;
     }
 }
 
-.footer-logo-text h2 {
+.navbar-brand h2 {
     font-size: 1.5em;
     text-align: left;
-    -webkit-text-stroke: 1px var(--primary);
-}
 
-.footer-logo {
-    height: 60px;
-    margin-right: 15px;
+    &::after{
+      content: unset;
+    }
 }
 
 .heart.mat-icon {
@@ -31,7 +40,8 @@
 
 .link:hover {
     text-decoration: underline;
-    text-decoration-color: var(--secondary);
+    text-decoration-color: var(--text);
+    cursor: pointer;
 }
 
 .social.mat-icon {

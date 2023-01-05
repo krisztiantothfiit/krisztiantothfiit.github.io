@@ -1,23 +1,8 @@
 <app-section id="contact">
-  <h2 translate="contact.title"></h2>
+  <h2>{{ 'contact.title' | translate | uppercase }}</h2>
 
-  <div class="row pb-4 pt-4">
-    <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined green">business</span>
-      <p class="no-margin" translate="contact.address.text"></p>
-    </div>
-    <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined red">stay_current_portrait</span>
-      <p class="no-margin" translate="contact.phone.text"></p>
-    </div>
-    <div class="col-lg-4 col-md-12 info-box">
-      <span class="material-symbols-outlined yellow">mail</span>
-      <p class="no-margin" translate="contact.email.text"></p>
-    </div>
-  </div>
-
-  <div class="flex flex-direction">
-    <div class="contact-box">
+  <div class="row">
+    <div class="col-lg-6">
       <h3 translate="contact.form.title"></h3>
       <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
         <mat-form-field appearance="standard" floatLabel="always">
@@ -33,6 +18,11 @@
           <mat-error *ngIf="hasPatternError('email')" translate="contact.form.pattern"></mat-error>
         </mat-form-field>
         <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.phone"></mat-label>
+          <input matInput name="Phone" formControlName="phone">
+          <mat-error *ngIf="hasRequiredError('phone')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
           <mat-label translate="contact.form.message"></mat-label>
           <textarea matInput name="Message" rows="3" formControlName="message"></textarea>
           <mat-error *ngIf="hasRequiredError('message')" translate="contact.form.required"></mat-error>
@@ -44,15 +34,44 @@
         </div>
       </form>
     </div>
-    <div class="map-wrap">
-      <app-map></app-map>
+    <div class="col-lg-6">
+      <div class="contact-right">
+        <div class="row">
+          <div class="col-lg-2 contact-icon">
+            <mat-icon class="icon-display">room</mat-icon>
+          </div>
+          <div class="col-lg-10 contact-text">{{ 'contact.address' | translate }}</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 contact-icon">
+            <mat-icon class="icon-display">mail_outline</mat-icon>
+          </div>
+          <div class="col-lg-10 contact-text">
+            <div>{{ 'topContact.email' | translate }}</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 contact-icon">
+            <mat-icon class="icon-display">phone</mat-icon>
+          </div>
+          <div class="col-lg-10 contact-text">
+            <div>{{ 'topContact.tel' | translate }}</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 contact-icon">
+            <mat-icon class="icon-display">access_time</mat-icon>
+          </div>
+          <div class="col-lg-10 contact-text">
+            <div>{{ 'topContact.hours' | translate }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="map-wrap">
+          <app-map></app-map>
+        </div>
+      </div>
     </div>
   </div>
 </app-section>
-<div class="custom-shape-divider-bottom-1670528829">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-    <path
-      d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-      class="shape-fill"></path>
-  </svg>
-</div>

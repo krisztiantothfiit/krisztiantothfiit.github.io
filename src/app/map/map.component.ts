@@ -26,7 +26,7 @@ export class MapComponent implements OnInit {
       ],
       target: 'map',
       view: new View({
-        center: transform([17.575526, 48.163649], 'EPSG:4326', 'EPSG:3857'),
+        center: transform([17.84877412577502, 48.160745719701495], 'EPSG:4326', 'EPSG:3857'),
         zoom: 18, maxZoom: 20,
       }),
     });
@@ -37,13 +37,13 @@ export class MapComponent implements OnInit {
       style: new Style({
         image: new Icon({
           anchor: [0.5, 1],
-          src: '../../assets/icons/icon.png'
+          src: 'assets/icons/icon.png'
         })
       })
     });
     this.map.addLayer(markers);
 
-    var marker = new Feature(new Point(fromLonLat([17.575526, 48.163649])));
+    var marker = new Feature(new Point(fromLonLat([17.84877412577502, 48.160745719701495])));
     // @ts-ignore: Object is possibly 'null'.
     markers.getSource().addFeature(marker);
   }
