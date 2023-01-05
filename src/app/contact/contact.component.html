@@ -3,7 +3,7 @@
 
   <div class="row">
     <div class="col-lg-6">
-      <h3 translate="contact.form.title"></h3>
+      <h3>{{ 'contact.form.title' | translate | uppercase }}</h3>
       <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
         <mat-form-field appearance="standard" floatLabel="always">
           <mat-label translate="contact.form.name"></mat-label>
