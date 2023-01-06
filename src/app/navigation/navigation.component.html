@@ -1,19 +1,28 @@
 <nav class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque">
   <div class="container">
     <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
-      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNav()" id="navbar-toggler"
-      [ngClass]="{close: toClose}">
+      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNav()"
+      id="navbar-toggler" [ngClass]="{close: toClose}">
       <span></span>
     </div>
     <a class="navbar-brand">
       <img class="navbar-brand-img" src="assets/images/logo.png">
     </a>
     <div class="collapse navbar-collapse" id="primary-menu">
-      <ul class="nav navbar-nav ms-auto nav-no-opacity">
+      <ul *ngIf="this.href == '/'" class="nav navbar-nav ms-auto nav-no-opacity">
         <app-navigation-item title="header"></app-navigation-item>
         <app-navigation-item title="about-us"></app-navigation-item>
         <app-navigation-item title="offering"></app-navigation-item>
         <app-navigation-item title="why-us"></app-navigation-item>
+        <app-navigation-item title="contact"></app-navigation-item>
+      </ul>
+      <ul *ngIf="this.href != '/'" class="nav navbar-nav ms-auto nav-no-opacity">
+        <li class="nav-item">
+          <a class="nav-link nav-item-border" (click)="returnHome()">
+            <span class="nav-text-color">{{'navigation.header' | translate | uppercase }}</span>
+          </a>
+        </li>
+        <app-navigation-item title="sub-page"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
       </ul>
     </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +7,15 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-    getYear(): number {
-        return new Date().getFullYear();
-    }
+  constructor(private router: Router) {
+  }
+
+  getYear(): number {
+    return new Date().getFullYear();
+  }
+
+  openPage(pageName: string) {
+    this.router.navigate([`${pageName}`]);
+  }
+
 }

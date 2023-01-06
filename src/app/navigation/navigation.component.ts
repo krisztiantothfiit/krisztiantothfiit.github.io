@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
 import { CookieService } from '../cookie.service';
@@ -10,9 +11,16 @@ import { CookieService } from '../cookie.service';
 export class NavigationComponent {
   @Input() public currentLang = '';
 
+  public href: string = "";
   toClose: boolean = false;
 
-  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService) { }
+  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router) {
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        this.href = val.url;
+      }
+    })
+  }
 
   changeUsedLang(lang: string) {
     this.translate.use(lang);
@@ -46,6 +54,10 @@ export class NavigationComponent {
 
   toggleNav() {
     this.toClose = !this.toClose;
+  }
+
+  returnHome() {
+    this.router.navigate([`/`]);
   }
 
 }

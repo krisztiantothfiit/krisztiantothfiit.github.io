@@ -33,6 +33,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './contact/message-dialog/message-dialog.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
 import { DealComponent } from './deal/deal.component';
+import { AirConditionerComponent } from './air-conditioner/air-conditioner.component';
+import { HomeComponent } from './home/home.component';
+import { AirPumpComponent } from './air-pump/air-pump.component';
+import { RecoveryComponent } from './recovery/recovery.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { DealComponent } from './deal/deal.component';
     AboutUsComponent,
     MessageDialogComponent,
     TopContactComponent,
-    DealComponent
+    DealComponent,
+    AirConditionerComponent,
+    HomeComponent,
+    AirPumpComponent,
+    RecoveryComponent
   ],
   imports: [
     BrowserModule,

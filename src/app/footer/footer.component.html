@@ -16,9 +16,10 @@
       </div>
       <div class="col-md-6 col-sm-12">
         <h5>{{ 'footer.links' | translate | uppercase }}</h5>
-        <p href="" target="_blank" class="link" [innerHTML]="'footer.link1' | translate"></p>
-        <p href="" target="_blank" class="link" [innerHTML]="'footer.link2' | translate"></p>
-        <p href="" target="_blank" class="link" [innerHTML]="'footer.link3' | translate"></p>
+        <p href="" target="_blank" class="link" [innerHTML]="'footer.link1' | translate" (click)="openPage('')"></p>
+        <p href="" target="_blank" class="link" [innerHTML]="'footer.link2' | translate" (click)="openPage('tepelne-cerpadlo')"></p>
+        <p href="" target="_blank" class="link" [innerHTML]="'footer.link3' | translate" (click)="openPage('klimatizacia')"></p>
+        <p href="" target="_blank" class="link" [innerHTML]="'footer.link4' | translate" (click)="openPage('rekuperacia')"></p>
       </div>
     </div>
     <div class="mt-4">

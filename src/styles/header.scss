@@ -32,5 +32,25 @@
   }
 }
 
+.image-item {
+  & img {
+    filter: brightness(0.5);
+    max-height: 93vh;
+  }
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 51.25%;
+  width: 100%;
+  color: var(--primary);
+
+  & p {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+
 @media only screen and (max-width: $mobile-resolution) {
 }

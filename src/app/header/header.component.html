@@ -1,5 +1,5 @@
 <app-section id="header">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div *ngIf="href == '/'" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -23,6 +23,33 @@
         <div class="carousel-caption d-none d-md-block">
           <p>{{ 'header.header1' | translate | uppercase }}</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="href == '/klimatizacia'">
+    <div class="image-item">
+      <img class="d-block w-100" src="assets/images/header/header2.jpg">
+      <div class="image-caption">
+        <p>{{ 'header.header2' | translate | uppercase }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="href == '/tepelne-cerpadlo'">
+    <div class="image-item">
+      <img class="d-block w-100" src="assets/images/header/header3.jpg">
+      <div class="image-caption">
+        <p>{{ 'header.header3' | translate | uppercase }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="href == '/rekuperacia'">
+    <div class="image-item">
+      <img class="d-block w-100" src="assets/images/header/header1.jpg">
+      <div class="image-caption">
+        <p>{{ 'header.header1' | translate | uppercase }}</p>
       </div>
     </div>
   </div>

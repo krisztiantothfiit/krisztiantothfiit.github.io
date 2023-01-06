@@ -8,7 +8,11 @@
       </div>
       <div class="row">
         <h3>{{ 'offering.air-conditioner' | translate | uppercase }}</h3>
-        <p>text text text text text</p>
+      </div>
+      <div class="row">
+        <button mat-flat-button class="button" (click)="openPage('klimatizacia')">
+          <span translate="offering.more"></span>
+        </button>
       </div>
     </div>
     <div class="offering-item">
@@ -17,7 +21,11 @@
       </div>
       <div class="row">
         <h3>{{ 'offering.heat-pump' | translate | uppercase }}</h3>
-        <p>text text text text text</p>
+      </div>
+      <div class="row">
+        <button mat-flat-button class="button" (click)="openPage('tepelne-cerpadlo')">
+          <span translate="offering.more"></span>
+        </button>
       </div>
     </div>
     <div class="offering-item">
@@ -26,10 +34,13 @@
       </div>
       <div class="row">
         <h3>{{ 'offering.recovery' | translate | uppercase }}</h3>
-        <p>text text text text text</p>
+      </div>
+      <div class="row">
+        <button mat-flat-button class="button" (click)="openPage('rekuperacia')">
+          <span translate="offering.more"></span>
+        </button>
       </div>
     </div>
   </div>
 
 </app-section>
-
