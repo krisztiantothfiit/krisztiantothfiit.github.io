@@ -142,19 +142,19 @@ img {
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  color: var(--primary) !important;
+  color: var(--text) !important;
   border-radius: 10px !important;
-  background-color: #00d0b2 !important;
+  background-color: var(--secondary) !important;
   margin: 5px !important;
 }
 
 .cookie-button-deny {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  background-color: #ff5c75 !important;
+  background-color: var(--primary) !important;
   border-radius: 10px !important;
   margin: 5px !important;
-  color: var(--secondary) !important;
+  color: var(--text) !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
@@ -163,7 +163,7 @@ img {
 }
 
 .cc-theme-edgeless.cc-window {
-  border-top: 1px solid var(--primary);
+  border-top: 1px solid var(--secondary-text);
 }
 
 button:focus {

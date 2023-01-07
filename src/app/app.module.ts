@@ -37,6 +37,7 @@ import { AirConditionerComponent } from './air-conditioner/air-conditioner.compo
 import { HomeComponent } from './home/home.component';
 import { AirPumpComponent } from './air-pump/air-pump.component';
 import { RecoveryComponent } from './recovery/recovery.component';
+import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { RecoveryComponent } from './recovery/recovery.component';
     AirConditionerComponent,
     HomeComponent,
     AirPumpComponent,
-    RecoveryComponent
+    RecoveryComponent,
+    AnimatedDigitComponent
   ],
   imports: [
     BrowserModule,

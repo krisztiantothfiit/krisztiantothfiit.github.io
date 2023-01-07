@@ -40,7 +40,10 @@
           <mat-icon class="icon-display">calendar_today</mat-icon>
         </div>
         <div class="col-lg-8 about-us-divider-text">
-          <div>10+</div>
+          <div class="flex">
+            <animated-digit [digit]="10" [duration]="1000"></animated-digit>
+            +
+          </div>
           <div>{{ 'aboutUs.divider1' | translate | uppercase }}</div>
         </div>
       </div>
@@ -52,7 +55,10 @@
           <mat-icon class="icon-display">check_circle_outline</mat-icon>
         </div>
         <div class="col-lg-8 about-us-divider-text">
-          <div>3000+</div>
+          <div class="flex">
+            <animated-digit [digit]="3000" [duration]="1000"></animated-digit>
+            +
+          </div>
           <div>{{ 'aboutUs.divider2' | translate | uppercase }}</div>
         </div>
       </div>
@@ -64,7 +70,10 @@
           <mat-icon class="icon-display">group</mat-icon>
         </div>
         <div class="col-lg-8 about-us-divider-text">
-          <div>5000+</div>
+          <div class="flex">
+            <animated-digit [digit]="5000" [duration]="1000"></animated-digit>
+            +
+          </div>
           <div>{{ 'aboutUs.divider3' | translate | uppercase }}</div>
         </div>
       </div>
