@@ -2,31 +2,30 @@
   <h2> {{ 'aboutUs.title' | translate | uppercase }}</h2>
 
   <div class="row">
-    <div class="col-lg-6">
-      <img src="assets/images/about-us/about-us1.jpg">
+    <div class="col-md-6 col-sm-12 background-brands" [style.background-image]="'url(assets/images/about-us/about-us1.png)'">
     </div>
-    <div class="col-lg-6">
+    <div class="col-md-6 col-sm-12">
       <div class="row">
         <div class="about-us-desc"> {{ 'aboutUs.desc' | translate }}</div>
       </div>
       <div class="row about-us-wrapper">
         <div class="row">
-          <div class="col-lg-2 about-us-icon">
+          <div class="col-md-2 col-sm-2 about-us-icon">
             <mat-icon class="icon-display">done</mat-icon>
           </div>
-          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature1' | translate | uppercase }}</div>
+          <div class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature1' | translate | uppercase }}</div>
         </div>
         <div class="row">
-          <div class="col-lg-2 about-us-icon">
+          <div class="col-md-2 col-sm-2 about-us-icon">
             <mat-icon class="icon-display">done</mat-icon>
           </div>
-          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature2' | translate | uppercase }}</div>
+          <div class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature2' | translate | uppercase }}</div>
         </div>
         <div class="row">
-          <div class="col-lg-2 about-us-icon">
+          <div class="col-md-2 col-sm-2 about-us-icon">
             <mat-icon class="icon-display">done</mat-icon>
           </div>
-          <div class="col-lg-10 about-us-text">{{ 'aboutUs.feature3' | translate | uppercase }}</div>
+          <div class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature3' | translate | uppercase }}</div>
         </div>
       </div>
     </div>
@@ -34,12 +33,12 @@
 </app-section>
 <app-section id="about-us-divider">
   <div class="row about-us-divider-row">
-    <div class="col-lg-4">
+    <div class="col-md-4 col-sm-12">
       <div class="row">
-        <div class="col-lg-4 about-us-divider-icon">
+        <div class="col-md-4 col-sm-2 about-us-divider-icon">
           <mat-icon class="icon-display">calendar_today</mat-icon>
         </div>
-        <div class="col-lg-8 about-us-divider-text">
+        <div class="col-md-8 col-sm-10 about-us-divider-text">
           <div class="flex">
             <animated-digit [digit]="10" [duration]="1000"></animated-digit>
             +
@@ -49,12 +48,12 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-md-4 col-sm-12">
       <div class="row">
-        <div class="col-lg-4 about-us-divider-icon">
+        <div class="col-md-4 col-sm-2 about-us-divider-icon">
           <mat-icon class="icon-display">check_circle_outline</mat-icon>
         </div>
-        <div class="col-lg-8 about-us-divider-text">
+        <div class="col-md-8 col-sm-10 about-us-divider-text">
           <div class="flex">
             <animated-digit [digit]="3000" [duration]="1000"></animated-digit>
             +
@@ -64,12 +63,12 @@
       </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-md-4 col-sm-12">
       <div class="row">
-        <div class="col-lg-4 about-us-divider-icon">
+        <div class="col-md-4 col-sm-2 about-us-divider-icon">
           <mat-icon class="icon-display">group</mat-icon>
         </div>
-        <div class="col-lg-8 about-us-divider-text">
+        <div class="col-md-8 col-sm-10 about-us-divider-text">
           <div class="flex">
             <animated-digit [digit]="5000" [duration]="1000"></animated-digit>
             +

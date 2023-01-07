@@ -61,4 +61,43 @@
 }
 
 @media only screen and (max-width: $tablet-resolution) {
+  .offering-item div:first-child, .offering-item div:nth-child(2) {
+    height: unset;
+  }
+
+  .offering-item div:first-child > mat-icon {
+    height: 64px;
+  }
+
+  .offering-item div:last-child button {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .offering-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .offering-container .offering-item:not(:last-child) {
+    margin-right: 6%;
+  }
+
+  .offering-item div:nth-child(2) > h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) { 
+  .offering-item {
+    width: 100%;
+    aspect-ratio: unset;
+  }
+
+  .offering-container .offering-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6%;
+  }
+
 }

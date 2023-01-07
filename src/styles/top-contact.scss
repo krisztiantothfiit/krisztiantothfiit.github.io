@@ -5,7 +5,8 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 10px 320px;
+  border-bottom: 2px solid var(--secondary);
+  padding: 10px 0;
 
   & .row {
     height: 100%;
@@ -68,5 +69,31 @@
   background-color: var(--text);
   .mat-button-wrapper {
     color: var(--primary);
+  }
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+  .wrap {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .tablet-phone-number.top-contact-item {
+    border-left: 0px;
+  }
+
+  .tablet-phone-number .col-md-4 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  .top-contact-item {
+    border-left: 0px;
+  }
+
+  .top-contact-row {
+    border-bottom: 1px solid var(--primary);
   }
 }

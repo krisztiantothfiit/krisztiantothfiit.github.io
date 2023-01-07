@@ -2,7 +2,7 @@
   <h2>{{ 'contact.title' | translate | uppercase }}</h2>
 
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-md-6">
       <h3>{{ 'contact.form.title' | translate | uppercase }}</h3>
       <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
         <mat-form-field appearance="standard" floatLabel="always">
@@ -34,35 +34,35 @@
         </div>
       </form>
     </div>
-    <div class="col-lg-6">
+    <div class="col-md-6">
       <div class="contact-right">
         <div class="row">
-          <div class="col-lg-2 contact-icon">
+          <div class="col-md-2 col-sm-2 contact-icon">
             <mat-icon class="icon-display">room</mat-icon>
           </div>
-          <div class="col-lg-10 contact-text">{{ 'contact.address' | translate }}</div>
+          <div class="col-md-10 col-sm-10 contact-text">{{ 'contact.address' | translate }}</div>
         </div>
         <div class="row">
-          <div class="col-lg-2 contact-icon">
+          <div class="col-md-2 col-sm-2 contact-icon">
             <mat-icon class="icon-display">mail_outline</mat-icon>
           </div>
-          <div class="col-lg-10 contact-text">
+          <div class="col-md-10 col-sm-10 contact-text">
             <div>{{ 'topContact.email' | translate }}</div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 contact-icon">
+          <div class="col-md-2 col-sm-2 contact-icon">
             <mat-icon class="icon-display">phone</mat-icon>
           </div>
-          <div class="col-lg-10 contact-text">
+          <div class="col-md-10 col-sm-10 contact-text">
             <div>{{ 'topContact.tel' | translate }}</div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2 contact-icon">
+          <div class="col-md-2 col-sm-2 contact-icon">
             <mat-icon class="icon-display">access_time</mat-icon>
           </div>
-          <div class="col-lg-10 contact-text">
+          <div class="col-md-10 col-sm-10 contact-text">
             <div>{{ 'topContact.hours' | translate }}</div>
           </div>
         </div>

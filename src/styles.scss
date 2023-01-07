@@ -23,7 +23,6 @@ body {
 }
 
 .section {
-  min-height: 50vh;
   text-align: center;
   padding: 4% 0;
 }
@@ -59,7 +58,6 @@ h2 {
     width: 20%;
     height: 2px;
     background-color: var(--secondary);
-    margin-top: 15px;
   }
 }
 
@@ -241,10 +239,6 @@ button:focus {
     padding-left: 15px;
   }
 
-  .background {
-    background: none;
-  }
-
   .mobile-only {
     display: block;
   }
@@ -279,11 +273,29 @@ button:focus {
   .cc-revoke.cc-bottom {
     display: none;
   }
+
+  .col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width: $tablet-resolution) {
   .container {
     max-width: 720px !important;
     padding: 0;
+  }
+
+  h2 {
+    font-size: 3em;
   }
 }

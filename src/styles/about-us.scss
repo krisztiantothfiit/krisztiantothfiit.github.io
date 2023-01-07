@@ -1,6 +1,6 @@
 @import "../variables.scss";
 
-.col-lg-6 {
+.col-md-6 {
   padding: 0;
 
   & > img {
@@ -8,7 +8,7 @@
   }
 }
 
-#about-us .col-lg-6 {
+#about-us .col-md-6 {
   background: var(--primary);
 }
 
@@ -53,8 +53,8 @@
   height: 100%;
   padding: 0 7.5%;
 
-  .col-lg-4:not(:last-child) {
-    & .col-lg-8 {
+  .col-md-4:not(:last-child) {
+    & .col-md-8 {
       border-right: 2px solid var(--text);
     }
   }
@@ -83,5 +83,61 @@
   }
 }
 
+@media only screen and (max-width: $tablet-resolution) {
+  .about-us-divider-row {
+    padding: 0 3%;
+
+    .col-md-4 {
+      padding: 0;
+    }
+  }
+
+  .about-us-divider-icon {
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .about-us-divider-row .col-md-4:not(:last-child) .col-md-8 {
+    padding-left: 0;
+  }
+
+  .about-us-divider-text div:nth-child(1) {
+    font-size: 40px;
+  }
+
+  .about-us-desc {
+    margin: 20% 10% 6% 10%;
+  }
+
+  .about-us-wrapper {
+    margin-bottom: 20% !important;
+  }
+}
+
 @media only screen and (max-width: $mobile-resolution) {
+  .about-us-divider-row {
+    padding: 6%;
+    padding-bottom: 0;
+
+    .row {
+      padding-bottom: 6% !important;
+    }
+
+  }
+
+  .about-us-divider-text {
+    padding-left: 0;
+  }
+
+  .about-us-divider-icon {
+    padding-right: 20px;
+  }
+
+  #about-us-divider .container {
+    height: unset;
+  }
+
+  .about-us-divider-row .col-md-4:not(:last-child) .col-md-8 {
+    border-right: 0;
+  }
 }

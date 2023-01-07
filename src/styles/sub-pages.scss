@@ -7,7 +7,7 @@
 
   & > li {
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
     color: var(--secondary-text);
   }
 
@@ -15,4 +15,8 @@
     content: "- ";
     font-size: 1.2em;
   }
+}
+
+.item-desc:last-child {
+  margin-bottom: 0;
 }

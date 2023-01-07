@@ -150,10 +150,21 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .contact-right {
+    height: unset;
+    padding: 6% 0;
+
+    .row {
+      padding-bottom: 6%;
+    }
+
+    .row:last-child {
+      padding-bottom: 0;
+    }
+  }
+
   .map {
-    height: 300px;
-    margin: 0px;
-    border-radius: 25px;
+    height: 400px;
   }
 
   .info-box {
@@ -181,5 +192,9 @@
       left: 0% !important;
       margin: 10px;
     }
+  }
+
+  .map-wrap {
+    padding-left: 0;
   }
 }

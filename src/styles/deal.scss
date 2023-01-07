@@ -21,7 +21,7 @@
 
   div:first-child {
     height: 50%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
@@ -35,7 +35,7 @@
   div:last-child {
     height: 50%;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     background: var(--white);
 
     & > h3 {
