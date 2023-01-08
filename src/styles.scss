@@ -233,10 +233,23 @@ button:focus {
   align-items: flex-end;
 }
 
+@media only screen and (max-width: $tablet-resolution) {
+  .container {
+    max-width: 720px !important;
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+}
+
 @media only screen and (max-width: $mobile-resolution) {
   .section {
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 6%;
+    padding-bottom: 6%;
   }
 
   .mobile-only {
@@ -244,16 +257,12 @@ button:focus {
   }
 
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
   p,
   span {
     font-size: 16px;
-  }
-
-  h2 {
-    font-size: 3.5em;
   }
 
   .divider {
@@ -284,18 +293,12 @@ button:focus {
     max-width: 83.333333%;
   }
 
-  h2 {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (max-width: $tablet-resolution) {
-  .container {
-    max-width: 720px !important;
-    padding: 0;
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }

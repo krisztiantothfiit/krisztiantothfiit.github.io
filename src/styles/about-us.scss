@@ -10,10 +10,13 @@
 
 #about-us .col-md-6 {
   background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-us-desc {
-  margin: 20% 68px 6% 68px;
+  margin: 0 68px 6% 68px;
   text-align: left;
   color: var(--primary-text);
   line-height: 30px;
@@ -33,6 +36,12 @@
 .about-us-text {
   align-self: center;
   text-align: left;
+  color: var(--primary-text);
+  margin: 0;
+}
+
+#about-us .content {
+  height: 600px;
 }
 
 // Divider
@@ -75,11 +84,15 @@
 .about-us-divider-text {
   text-align: left;
   line-height: normal;
+  span {
+    color: var(--text);
+  }
 
   div:nth-child(1) {
     font-weight: bold;
     font-size: 48px;
     color: var(--secondary-text);
+    font-family: var(--font-family-default);
   }
 }
 
@@ -115,6 +128,15 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+
+  #about-us .background-brands {
+    height: 300px;
+  }
+
+  #about-us .content {
+    height: 100%;
+  }
+
   .about-us-divider-row {
     padding: 6%;
     padding-bottom: 0;

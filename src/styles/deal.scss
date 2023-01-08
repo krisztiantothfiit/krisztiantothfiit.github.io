@@ -2,10 +2,11 @@
 
 .deal-container {
   padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
+  width: 40%;
   justify-content: space-around;
+  margin: auto !important;
 
   .deal-item:not(:last-child) {
     margin-right: 75px;
@@ -14,9 +15,8 @@
 
 .deal-item {
   background: var(--primary);
-  flex: 1 0 auto;
-  aspect-ratio: 1 / 1.2;
-  width: 250px;
+  width: 100%;
+  height: fit-content;
   border: 2px solid var(--primary);
 
   div:first-child {
@@ -24,7 +24,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
 
     & > mat-icon {
       transform: scale(3);
@@ -32,21 +31,26 @@
     }
   }
 
+  a {
+    margin-bottom: 40px;
+  }
+
   div:last-child {
     height: 50%;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--white);
 
     & > h3 {
       font-weight: 600;
-      font-size: 20px;
-      margin: 10px 0 0 40px;
+      font-size: 30px;
+      margin: 40px 40px 0 40px;
+      text-align: left;
     }
 
     & > h4 {
       font-size: 18px;
-      margin: 0 0 0 40px;
+      margin: 0 40px 0 40px;
       text-align: left;
     }
   }
@@ -56,7 +60,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row !important;
-  height: 45%;
+  // height: 30%;
   align-content: center;
 
   & > div {
@@ -64,9 +68,12 @@
   }
 
   div:first-child {
-    color: var(--primary-text);
-    padding-left: 15px;
+    p {
+      color: var(--primary-text);
+    }
+    padding-left: 40px;
     padding-top: 15px !important;
+    text-align: left;
   }
 
   div:last-child > p {
@@ -86,4 +93,22 @@
 }
 
 @media only screen and (max-width: $tablet-resolution) {
+  .deal-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  .deal-container {
+    width: 100%;
+  }
+
+  .deal-item div:last-child > h3, .deal-item div:last-child > h4 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .price-row div:first-child {
+    padding-left: 10%;
+  }
 }

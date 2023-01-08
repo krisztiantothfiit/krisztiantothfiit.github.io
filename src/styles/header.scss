@@ -71,6 +71,8 @@
   #header .section {
     margin-top: 0;
     padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .carousel-caption {
@@ -86,5 +88,13 @@
 
   .d-none {
     display: block !important;
+  }
+
+  .image-caption { 
+    bottom: 30%;
+
+    p {
+      font-size: 2em;
+    }
   }
 }

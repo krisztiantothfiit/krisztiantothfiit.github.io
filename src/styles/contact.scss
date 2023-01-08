@@ -38,6 +38,10 @@
 .contact-text {
   align-self: center;
   text-align: left;
+  p {
+    color: var(--text);
+    margin-bottom: 0;
+  }
 }
 
 .contact-right {
@@ -152,19 +156,16 @@
 @media only screen and (max-width: $mobile-resolution) {
   .contact-right {
     height: unset;
-    padding: 6% 0;
+    padding-top: 6%;
 
     .row {
       padding-bottom: 6%;
-    }
-
-    .row:last-child {
-      padding-bottom: 0;
     }
   }
 
   .map {
     height: 400px;
+    padding-bottom: 6%;
   }
 
   .info-box {

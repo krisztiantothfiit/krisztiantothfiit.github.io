@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 1px solid var(--primary);
   padding: 10px 0;
 
   & .row {
@@ -33,6 +33,9 @@
 
 .top-contact-text {
   align-self: center;
+  span, p {
+    color: var(--text);
+  }
 }
 
 .top-contact-item {
