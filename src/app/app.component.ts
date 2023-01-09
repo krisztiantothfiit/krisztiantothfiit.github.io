@@ -64,10 +64,10 @@ export class AppComponent implements OnInit {
   addMetaTags(): void {
     this.titleService.setTitle('KLIMATEL');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Vyučujeme anglický a doučujeme slovenský jazyk - skupinovo aj individuálne - deti, mládež a dospelých.' },
-      { name: 'keywords', content: 'jazyková škola, perfect, Silvia Nágel, Veľké Úlany, námestie slobody 580, angličtina, jazykova skola, perfect2003, nemčina' },
+      { name: 'description', content: 'Ponúkame Vám komplexné energeticky úsporné riešenia šité na mieru. Vykurovanie, chladenie a vetranie za rozumnú cenu a nízke prevádzkové náklady.' },
+      { name: 'keywords', content: 'klimatizacie, tepelne cerpadla, rekuperacia, klimatizácia, tepelné čerpadlá, rekuperácie, kráľová nad váhom, klimatizácie kráľová nad váhom, klimy' },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'Silvia Nágel' },
+      { name: 'author', content: 'František Kovács' },
       { charset: 'UTF-8' },
     ])
   }

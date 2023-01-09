@@ -70,6 +70,7 @@
 @media only screen and (max-width: $mobile-resolution) {
   .background-brands, .background, #why-us .text {
     height: 400px;
+    min-height: 400px;
   }
 
   .background-secondary {
@@ -78,9 +79,12 @@
 
   .why-us-title {
     margin: 10% 10% 6% 10%;
+    text-align: center;
+    width: 100%;
   }
 
   .why-us-desc {
     margin: 0 10% 10% 10%;
+    text-align: justify;
   }
 }

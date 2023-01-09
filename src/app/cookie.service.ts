@@ -77,7 +77,7 @@ export class CookieService implements OnDestroy {
 
 export const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'perfect2003.sk'
+    domain: 'klimatizujeme.sk'
   },
   palette: {
     popup: {

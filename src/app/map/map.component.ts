@@ -26,8 +26,8 @@ export class MapComponent implements OnInit {
       ],
       target: 'map',
       view: new View({
-        center: transform([17.84877412577502, 48.160745719701495], 'EPSG:4326', 'EPSG:3857'),
-        zoom: 18, maxZoom: 20,
+        center: transform([17.850569, 48.165752], 'EPSG:4326', 'EPSG:3857'),
+        zoom: 13, maxZoom: 20,
       }),
     });
 
