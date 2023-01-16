@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <h3>{{ 'contact.form.title' | translate | uppercase }}</h3>
-      <form [formGroup]="formGroup" class="form" (ngSubmit)="submit()">
+      <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
         <mat-form-field appearance="standard" floatLabel="always">
           <mat-label translate="contact.form.name"></mat-label>
           <input matInput name="Name" formControlName="name">

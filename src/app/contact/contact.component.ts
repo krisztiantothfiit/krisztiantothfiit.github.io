@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, FormGroupDirective, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { MailService } from './mail-service.service';
 import { MessageDialogComponent } from './message-dialog/message-dialog.component';
@@ -31,11 +31,11 @@ export class ContactComponent {
     return !!(formField && (formField.touched) && formField.hasError('pattern'));
   }
 
-  public submit(): void {
+  public submit(formDirective: FormGroupDirective): void {
     if (!this.formGroup.invalid) {
       const mailOptions = {
-        subject: `Mail from ${this.formGroup.value.name}`,
-        text: `${this.formGroup.value.message}\n\nSender mail: ${this.formGroup.value.email}`
+        subject: `Správa od ${this.formGroup.value.name}`,
+        text: `${this.formGroup.value.message}\n\nE-mailová adresa odosielateľa: ${this.formGroup.value.email}\n\nTelefónne číslo odosielateľa: ${this.formGroup.value.phone}`
       }
 
       this.mailService.sendMail(mailOptions)
@@ -52,6 +52,7 @@ export class ContactComponent {
             })
           }
 
+          formDirective.resetForm();
           this.formGroup.reset();
         });
     }

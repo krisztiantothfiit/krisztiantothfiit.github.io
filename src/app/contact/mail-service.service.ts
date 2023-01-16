@@ -9,6 +9,6 @@ export class MailService {
   constructor(private http: HttpClient) { }
 
   public sendMail(mailOptions: any) {
-    return this.http.post('', { body : mailOptions });
+    return this.http.post('https://us-central1-klimatel.cloudfunctions.net/app/send-mail', { body : mailOptions });
   }
 }
