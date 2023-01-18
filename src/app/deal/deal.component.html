@@ -2,22 +2,19 @@
   <h2> {{ 'deal.title' | translate | uppercase }}</h2>
 
   <div class="row deal-container">
-    <div class="deal-item">
-      <div class="row">
-        <img style="width:70%" src="assets/images/klima.png">
+    <div class="deal-item" *ngFor="let deal of deals; let i = index">
+      <div class="row image">
+        <img style="width:70%" [src]="'assets/deals/deal'+i+'.png'">
       </div>
-      <div class="row">
+      <div class="row content">
         <h3>{{ deal.name | uppercase }}</h3>
         <h4>{{deal.kw}}KW</h4>
         <div class="price-row">
-          <div class="col-sm-6">
-            <p>{{ 'deal.assembly' | translate}}</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="price">{{deal.price}} €</p>
-          </div>
+          <span>{{ 'deal.assembly' | translate}}</span>
+          <span class="price">{{deal.price}} €</span>
+          <span class="oldPrice">({{deal.oldPrice}} €)</span>
         </div>
-        <a href="/assets/katalog.pdf" target="_blank"><button class="btn btn-primary"><span>{{ 'deal.order' | translate | uppercase }}</span></button></a>
+        <a [href]="'/assets/deals/deal'+i+'.pdf'" target="_blank"><button class="btn btn-primary"><span>{{ 'deal.order' | translate | uppercase }}</span></button></a>
       </div>
     </div>
   </div>

@@ -4,7 +4,8 @@ import { Component, OnInit } from '@angular/core';
 type Deal = {
   price: number,
   kw: number, 
-  name: string
+  name: string,
+  oldPrice: number
 }
 
 @Component({
@@ -12,18 +13,14 @@ type Deal = {
   templateUrl: './deal.component.html'
 })
 export class DealComponent implements OnInit{
-  deal: Deal = {
-    price: 0,
-    kw: 0,
-    name: ''
-  };
+  deals: Deal[] = [];
 
   constructor(private httpClient: HttpClient){}
 
   ngOnInit(): void {
-    this.httpClient.get("assets/akcia.json").subscribe(data =>{
+    this.httpClient.get("assets/deals/deals.json").subscribe(data =>{
       console.log(data);
-      this.deal = data as Deal;
+      this.deals = data as Deal[];
     })
   }
 

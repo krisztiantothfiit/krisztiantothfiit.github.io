@@ -4,46 +4,39 @@
   padding: 0;
   list-style: none;
   display: flex;
-  width: 40%;
+  width: 100%;
   justify-content: space-around;
-  margin: auto !important;
-
-  .deal-item:not(:last-child) {
-    margin-right: 75px;
-  }
 }
 
 .deal-item {
   background: var(--primary);
-  width: 100%;
+  width: 30%;
   height: fit-content;
   border: 2px solid var(--primary);
 
-  div:first-child {
-    height: 50%;
+  .image {
+    height: 200px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    & > mat-icon {
-      transform: scale(3);
-      color: var(--primary-text);
-    }
   }
 
   a {
     margin-bottom: 40px;
   }
 
-  div:last-child {
-    height: 50%;
+  .content {
     justify-content: space-evenly;
     flex-direction: column;
     background: var(--white);
+  }
+
+  div:last-child {
 
     & > h3 {
       font-weight: 600;
-      font-size: 30px;
+      font-size: 26px;
+      height: 90px;
       margin: 40px 40px 0 40px;
       text-align: left;
     }
@@ -58,28 +51,34 @@
 
 .price-row {
   display: flex;
+  height: 90px;
+  align-items: baseline;
+  padding-right: 40px;
+  padding-left: 40px;
   flex-wrap: wrap;
-  flex-direction: row !important;
-  // height: 30%;
-  align-content: center;
+  justify-content: flex-end;
 
   & > div {
     padding-top: 0 !important;
   }
 
-  div:first-child {
-    p {
-      color: var(--primary-text);
-    }
-    padding-left: 40px;
+  span:first-child {
+    color: var(--primary-text);
     padding-top: 15px !important;
+    padding-right: 5px;
     text-align: left;
   }
 
-  div:last-child > p {
+  .price {
     color: var(--text);
     font-size: 30px;
     font-weight: bold;
+    padding-right: 5px;
+  }
+
+  .oldPrice {
+    color: var(--primary-text);
+    text-decoration: line-through;
   }
 }
 
@@ -94,13 +93,29 @@
 
 @media only screen and (max-width: $tablet-resolution) {
   .deal-container {
-    width: 60%;
+    width: 100%;
+  }
+
+  .deal-item {
+    width: 48%;
+    margin-bottom: 10px;
   }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
   .deal-container {
     width: 100%;
+  }
+
+  .deal-item {
+    width: 100%;
+    margin-bottom: 10px;
+
+    .image img {
+      height: 150px;
+      width: auto !important;
+      max-width: 90%;
+    }
   }
 
   .deal-item div:last-child > h3, .deal-item div:last-child > h4 {
