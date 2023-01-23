@@ -21,4 +21,8 @@ export class TopContactComponent {
     this.router.navigate(['/']);
   }
 
+  openFacebook() {
+    window.open("https://www.facebook.com/IImko", "_blank");
+  }
+
 }

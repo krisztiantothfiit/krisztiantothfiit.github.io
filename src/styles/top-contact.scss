@@ -1,29 +1,80 @@
 @import "../variables.scss";
 
 .top-contact-row {
-  background-color: var(--white);
-  position: sticky;
+  background-color: var(--background);
   top: 0;
-  z-index: 2;
-  border-bottom: 1px solid var(--primary);
-  padding: 10px 0;
 
   & .row {
     height: 100%;
-  }
-
-  div:nth-child(1) {
-    border-left: 0;
-  }
-
-  div:nth-child(n) {
-    border-right: 0;
   }
 
   .col-lg-3 {
     padding: 0;
   }
 }
+
+.facebook-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--primary);
+  height: 6rem;
+  margin-bottom: 0px;
+  border-radius: 45px;
+  top: -50%;
+  position: relative;
+  padding-top: 4.75%;
+
+  & > .row {
+    div:nth-child(1) {
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    div:nth-child(2) {
+      text-align: left;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.icon-display {
+  transform: scale(1.25);
+  color: var(--secondary);
+}
+
+.link {
+  color: var(--secondary);
+
+  &:hover {
+    color: var(--secondary);
+    text-decoration-color: var(--secondary)
+  }
+}
+
+.mat-mini-fab {
+  background-color: var(--primary) !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 0 !important;
+
+  .mat-button-wrapper {
+    color: var(--primary);
+    padding: 0 !important;
+  }
+}
+
+.mat-mini-fab:hover {
+  background-color: var(--primary);
+  .mat-button-wrapper {
+    color: var(--primary);
+  }
+}
+
+
 
 .top-contact-icon {
   align-self: center;
@@ -33,7 +84,8 @@
 
 .top-contact-text {
   align-self: center;
-  span, p {
+  span,
+  p {
     color: var(--text);
   }
 }
@@ -43,37 +95,9 @@
   border-right: 2px solid var(--secondary);
 }
 
-.icon-display {
-  transform: scale(1.5);
-  margin-top: 5px;
-}
 
-.goBack.mat-mini-fab {
-  position: fixed;
-  background-color: var(--secondary);
-  top: auto;
-  right: auto;
-  left: 30px;
-  bottom: 50%;
-  box-shadow: none;
-  z-index: 10;
 
-  .mat-icon {
-    margin-bottom: 4px;
-    margin-left: 9px;
-  }
 
-  .mat-button-wrapper {
-    color: var(--primary);
-  }
-}
-
-.goBack.mat-mini-fab:hover {
-  background-color: var(--text);
-  .mat-button-wrapper {
-    color: var(--primary);
-  }
-}
 
 @media only screen and (max-width: $tablet-resolution) {
   .wrap {

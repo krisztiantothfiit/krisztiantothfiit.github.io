@@ -1,5 +1,6 @@
-$primary: #F0F1F2;
-$secondary: #BACBD9;
+$primary: #604940;
+$background: #2E2620;
+$secondary: #E5D4BF;
 $text: #0D0D0D;
 $primary-text: #787879;
 $secondary-text: #5D656C;
@@ -11,6 +12,7 @@ $font-family-title: 'Crimson Text', serif;
 
 :root {
     --primary: #{$primary};
+    --background: #{$background};
     --secondary: #{$secondary};
     --text: #{$text};
     --primary-text: #{$primary-text};

@@ -1,52 +1,39 @@
 <div class="row top-contact-row desktop-only">
-  <div class="container flex wrap">
-  <div class="col-lg-3 col-md-6 col-sm-12 top-contact-item desktop-only ">
+  <div class="container">
     <div class="row">
-      <div class="col-md-2 col-sm-2 top-contact-icon">
-        <mat-icon class="icon-display">room</mat-icon>
-      </div>
-      <div class="col-md-10 col-sm-10 top-contact-text">
-        <span>{{ 'topContact.address1' | translate }}</span>
-        <span>{{ 'topContact.address2' | translate }}</span>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="facebook-container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <button mat-mini-fab (click)="openFacebook()">
+                <mat-icon class="icon-display" svgIcon="facebook"></mat-icon>
+              </button>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+              <span><a href="https://www.facebook.com/IImko" class="link" target="_blank">{{ 'topContact.facebook' | translate | uppercase }}</a></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 col-sm-12 top-contact-item desktop-only ">
     <div class="row">
-      <div class="col-md-4 col-sm-2 top-contact-icon">
-        <mat-icon class="icon-display">mail_outline</mat-icon>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <span>logo</span>
       </div>
-      <div class="col-md-8 col-sm-10 top-contact-text">
-        <span>{{ 'topContact.email' | translate }}</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 top-contact-item desktop-only tablet-phone-number">
-    <div class="row">
-      <div class="col-md-4 col-sm-2 top-contact-icon">
-        <mat-icon class="icon-display">phone</mat-icon>
-      </div>
-      <div class="col-md-8 col-sm-10 top-contact-text">
-        <span>{{ 'topContact.tel' | translate }}</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-lg-3 col-md-6 top-contact-item desktop-only">
-    <div class="row">
-      <div class="col-md-4 col-sm-2 top-contact-icon">
-        <mat-icon class="icon-display">access_time</mat-icon>
-      </div>
-      <div class="col-md-8 col-sm-10 top-contact-text">
-        <span>{{ 'topContact.hours' | translate }}</span>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <span>zavolajte</span>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <span>napiste</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
 
-<button mat-mini-fab class="goBack desktop-only" *ngIf="href != '/'" (click)="goBack()">
+<!-- <button mat-mini-fab class="goBack desktop-only" *ngIf="href != '/'" (click)="goBack()">
   <mat-icon>arrow_back_ios</mat-icon>
-</button>
+</button> -->
