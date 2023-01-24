@@ -69,10 +69,31 @@ h3 {
   color: var(--secondary);
   font-size: 1.3em;
   margin: 4%;
-  margin-bottom: 15px;
   position: relative;
   border-bottom: 1px solid var(--secondary);
   padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section .mat-flat-button {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  border-radius: 45px;
+  padding: 4px 32px;
+
+  span {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-family: var(--font-family-title);
+  }
+}
+
+.section .mat-flat-button:hover {
+  background-color: var(--primary);
+
+  span {
+    color: var(--secondary);
+  }
 }
 
 .primary {
@@ -114,6 +135,7 @@ img {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cc-revoke.cc-bottom {
@@ -153,7 +175,7 @@ img {
 }
 
 .cc-theme-edgeless.cc-window {
-  border-top: 1px solid var(--secondary-text);
+  border-top: 1px solid var(--secondary);
 }
 
 button:focus {
@@ -185,9 +207,10 @@ button:focus {
 }
 
 .scrollToTop.mat-mini-fab:hover {
-  background-color: var(--text);
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
   .mat-button-wrapper {
-    color: var(--primary);
+    color: var(--secondary);
   }
 }
 

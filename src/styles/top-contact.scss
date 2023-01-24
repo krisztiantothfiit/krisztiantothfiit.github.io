@@ -25,6 +25,10 @@
   position: relative;
   padding-top: 2.75%;
 
+  span {
+    font-family: var(--font-family-title);
+  }
+
   & > .row {
     div:nth-child(1) {
       text-align: right;
@@ -57,6 +61,11 @@
       padding-top: 5px;
     }
   }
+
+  .title span {
+    font-family: var(--font-family-title);
+    font-size: 18px;
+  }
 }
 
 .icon-display {
@@ -72,7 +81,7 @@
   }
 }
 
-.mat-mini-fab {
+.top-contact-row .mat-mini-fab {
   background-color: var(--primary) !important;
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -91,14 +100,14 @@
   }
 }
 
-.mat-mini-fab:hover {
+.top-contact-row .mat-mini-fab:hover {
   background-color: var(--primary);
   .mat-button-wrapper {
     color: var(--primary);
   }
 }
 
-.container {
+.top-contact-row .container {
   & > .row:nth-child(2) {
     padding: 15px 15px 75px 15px;
   }

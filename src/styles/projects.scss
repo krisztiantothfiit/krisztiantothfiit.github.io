@@ -58,6 +58,29 @@
 }
 
 
-@media only screen and (max-width: $tablet-resolution) {}
+@media only screen and (max-width: $tablet-resolution) {
+  .project-desc-box, .right .project-desc-box { 
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 6%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .project-desc-box p {
+    font-size: 16px;
+  }
+
+  .project, .right {
+    padding: 0;
+  }
+
+  .project img {
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+}
 
 @media only screen and (max-width: $mobile-resolution) {}

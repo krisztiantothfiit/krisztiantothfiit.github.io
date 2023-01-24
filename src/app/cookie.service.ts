@@ -77,14 +77,14 @@ export class CookieService implements OnDestroy {
 
 export const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'klimatel.sk'
+    domain: 'i-imko.sk'
   },
   palette: {
     popup: {
-      background: '#787879'
+      background: '#E5D4BF'
     },
     button: {
-      background: '#5D656C'
+      background: '#604940'
     }
   },
   theme: 'edgeless',

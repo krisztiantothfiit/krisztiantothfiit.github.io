@@ -1,6 +1,6 @@
 #contact {
   .section {
-    background-color: white;
+    background-color: primary;
   }
 
   h3 {
@@ -14,14 +14,14 @@
   width: 100%;
 
   span {
-    color: var(--white);
+    color: var(--primary);
   }
 }
 
 .button:hover {
-  background-color: var(--primary-text);
+  background-color: var(--primary);
   span {
-    color: var(--white);
+    color: var(--primary);
   }
 }
 
@@ -115,7 +115,7 @@
 
 .mat-form-field-label {
   font-family: var(--font-family-title);
-  color: var(--primary-text);
+  color: var(--primary);
   font-size: 1.25em !important;
 }
 
@@ -123,12 +123,12 @@
 .mat-focused .mat-form-field-required-marker,
 .mat-form-field-appearance-standard .mat-form-field-underline,
 .mat-input-element {
-  color: var(--secondary-text);
+  color: var(--secondary);
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple,
 .mat-form-field-ripple {
-  background-color: var(--primary-text);
+  background-color: var(--primary);
 }
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-label,

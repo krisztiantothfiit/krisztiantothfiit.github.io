@@ -30,10 +30,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './contact/message-dialog/message-dialog.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
-import { AirConditionerComponent } from './air-conditioner/air-conditioner.component';
 import { HomeComponent } from './home/home.component';
-import { AirPumpComponent } from './air-pump/air-pump.component';
-import { RecoveryComponent } from './recovery/recovery.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import { ProjectsComponent } from './projects/projects.component';
 
@@ -51,10 +48,7 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutUsComponent,
     MessageDialogComponent,
     TopContactComponent,
-    AirConditionerComponent,
     HomeComponent,
-    AirPumpComponent,
-    RecoveryComponent,
     AnimatedDigitComponent,
     ProjectsComponent
   ],

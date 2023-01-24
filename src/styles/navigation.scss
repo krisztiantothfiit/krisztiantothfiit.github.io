@@ -24,12 +24,6 @@
   cursor: pointer;
 }
 
-.nav-item:hover {
-  .nav-text-color {
-    color: var(--secondary);
-  }
-}
-
 .navbar-brand-img{
     height: 50px;
 }
@@ -44,7 +38,7 @@
   padding: 0 15px;
   letter-spacing: 4px;
   line-height: 18px;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: primary;
   -webkit-text-stroke: 1px var(--primary);
   span {
     color: var(--secondary) !important;
@@ -206,6 +200,13 @@
 .nav-text-color {
   color: var(--secondary);
   font-size: 1em;
+  font-family: var(--font-family-title);
+}
+
+.nav-item:hover {
+  .nav-text-color {
+    text-decoration: underline;
+  }
 }
 
 .nav-item-border {
@@ -213,7 +214,7 @@
 }
 
 .navbar-expand-custom .nav-link {
-  padding-right: 3rem;
+  padding-right: 2rem;
   padding-left: 0.5rem;
 }
 
@@ -230,7 +231,7 @@
 
 @media only screen and (max-width: $mobile-resolution) {
   .navbar-expand-custom {
-    background-color: white;
+    background-color: primary;
 
     .nav-link {
       padding: .5rem 1rem;
@@ -243,7 +244,7 @@
 
   .navbar {
     padding: 1% 0;
-    background: white;
+    background: primary;
     position: fixed;
     z-index: 17;
     width: 100vw;

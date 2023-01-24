@@ -5,28 +5,38 @@
       <div class="row project" *ngFor="let i of evenNumbers">
         <div class="col-md-6 col-sm-12 project-desc">
           <h3>{{ ('projects.title'+i) | translate | uppercase }}</h3>
+          <img class="mobile-only" [src]="'assets/images/projects/project-'+i+'.jpg'">
           <div class="project-desc-box">
             <p>{{ ('projects.desc'+i) | translate }}</p>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 project-image"
+        <div class="col-md-6 col-sm-12 project-image desktop-only"
           [style.background-image]="'url(assets/images/projects/project-'+i+'.jpg)'">
         </div>
       </div>
     </div>
     <div class="col-md-6 col-sm-12 right">
       <div class="row project" *ngFor="let i of oddNumbers">
-        <div class="col-md-6 col-sm-12  project-image"
+        <div class="col-md-6 col-sm-12 project-image desktop-only"
           [style.background-image]="'url(assets/images/projects/project-'+i+'.jpg)'">
         </div>
         <div class="col-md-6 col-sm-12 project-desc">
           <h3>{{ ('projects.title'+i) | translate | uppercase }}</h3>
+          <img class="mobile-only" [src]="'assets/images/projects/project-'+i+'.jpg'">
           <div class="project-desc-box">
             <p>{{ ('projects.desc'+i) | translate }}</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div *ngIf="!showAll">
+    <button mat-flat-button (click)="navigateToProjects()">
+      <span>
+      {{ 'projects.button' | translate }}
+    </span>
+  </button>
   </div>
 
 </app-section>
