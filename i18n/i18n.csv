@@ -32,27 +32,20 @@ aboutUs.feature2;Skladové a výrobné haly
 aboutUs.feature3;Bytové či rodinné domy
 aboutUs.desc2;Sme zodpovední za úplnný cyklus realizácie projektu od plánovania až po realizáciu a nechýba z naších služieb ani záručný a pozáručný servis.
 
-offering.title;Ponúkame
-offering.recovery;rekuperácie
-offering.air-conditioner;klimatizácie
-offering.heat-pump;tepelné čerpadlá
-offering.more;Viac info
-
-whyUs.title;Prečo zvoliť nás?
-whyUs.title1;Bezplatná obhliadka a konzultácia
-whyUs.desc1;Dobrá znalosť požiadaviek klienta a technických možností objektu je základom kvalitného poradenstva s finálnou spokojnosťou zákazníka. Poraďte sa s nami a vyberte si správne.
-whyUs.title2;Produkty od popredných výrobcov
-whyUs.desc2;V našej ponuke nájdete výhradne certifikované, energeticky úsporné a inovatívne zariadenia s dlhodobou dostupnosťou náhradných dielov.
-whyUs.title3;Riešenia pre energetické úspory
-whyUs.desc3;Prinášame Vám rôzne riešenia pre zníženie nákladov za energie. Prepočítame orientačnú návratnosť.
-whyUs.title4;Dotácia na tepelné čerpadlo až 3400€
-whyUs.desc4;Sme zmluvným zhotoviteľom Slovenskej inovačnej a energetickej agentúry. Prevedieme Vás procesom vybavovania príspevku bez zbytočných byrokratických ťažkostí.
-whyUs.title5;Aj komfort je dôležitý
-whyUs.desc5;Dôležitou súčasťou vykurovacích aj klimatizačných zariadení je regulácia. Práve v tomto bode je komunikácia so zákazníkom veľmi dôležitá.
-
-deal.title;Nezmeškajte jedinečnú akciu
-deal.assembly;od
-deal.order;Pozrieť katalóg
+projects.title;Realizované projekty
+projects.title0;Stredná športová škola Trenčín
+projects.desc0;Na stavbe sme sa podieľali kompletnými elektroinštalačnými prácami
+projects.title1;Vodné dielo Gapčíkovo
+projects.desc1;Pri rekonštrukcii rozdelenej na etapu I. a II. sme realizované kompletné elektroinštalačné práce tak vo výška ako aj v plavebných komorách.
+projects.title2;Bytový komplex Devínka pod lesom Bratislava
+projects.desc2;Na výstavbe BD sme sa podieľali kompletnými elektroinštalačnými prácami montážou prístupového systému do priestorov bytového domu, inštaláciou vonkajšieho osvetlenia, montážou kamerových systémov, bleskozvodov a uzemnení.
+projects.title3;Výrobná hala COPO Pezinok
+projects.desc3;Vo výrobnej hale sme realizovali kompletné elektroinštalačné práce, montáž výrobných technológií a automatizáciu strojov.
+projects.title4;Tesco Petržalka
+projects.desc4;Pri výstavbe obchodného domu, ktorý sa stal súčasťou pôvodnej stavby Tesco, sme realizovali kompletné elektroinštalačné práce.
+projects.title5;Lidl Trenčín
+projects.desc5;Pri výstavbe predajne sme realizovali inžiniersku činnosť, dodávku a montáž trafostanice a kompletné elektroinštalačné práce.
+projects.button;Pozrite ďalšie projekty
 
 contact.title;Kontaktujte nás;
 contact.form.title;Napíšte nám;

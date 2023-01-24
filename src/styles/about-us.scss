@@ -26,6 +26,16 @@
   padding: 0;
 }
 
+.about-us-image {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1%;
+}
+
+.about-us-text {
+  padding-left: 1%;
+}
+
 .about-us-image img {
   width: 90%;
 }

@@ -25,25 +25,22 @@ import { cookieConfig } from './cookie.service';
 import { GoogleTagManagerModule } from 'angular-google-tag-manager';
 import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
-import { OfferingComponent } from './offering/offering.component';
-import { WhyUsComponent } from './why-us/why-us.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './contact/message-dialog/message-dialog.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
-import { DealComponent } from './deal/deal.component';
 import { AirConditionerComponent } from './air-conditioner/air-conditioner.component';
 import { HomeComponent } from './home/home.component';
 import { AirPumpComponent } from './air-pump/air-pump.component';
 import { RecoveryComponent } from './recovery/recovery.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    OfferingComponent,
     ContactComponent,
     NavigationComponent,
     NavigationItemComponent,
@@ -51,16 +48,15 @@ import { AnimatedDigitComponent } from './animated-digit/animated-digit.componen
     MapComponent,
     FooterComponent,
     ScrollToTopComponent,
-    WhyUsComponent,
     AboutUsComponent,
     MessageDialogComponent,
     TopContactComponent,
-    DealComponent,
     AirConditionerComponent,
     HomeComponent,
     AirPumpComponent,
     RecoveryComponent,
-    AnimatedDigitComponent
+    AnimatedDigitComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

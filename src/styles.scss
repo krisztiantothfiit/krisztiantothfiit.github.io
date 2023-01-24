@@ -7,11 +7,9 @@
 @import "styles/footer.scss";
 @import "styles/header.scss";
 @import "styles/about-us.scss";
-@import "styles/why-us.scss";
+@import "styles/projects.scss";
 @import "styles/navigation.scss";
-@import "styles/offering.scss";
 @import "styles/top-contact.scss";
-@import "styles/deal.scss";
 @import "styles/sub-pages.scss";
 
 body {
@@ -66,10 +64,15 @@ h2 {
 }
 
 h3 {
-  text-align: justify;
-  font-family: var(--font-family-default);
-  font-size: 2em;
+  text-align: center;
+  font-family: var(--font-family-title);
+  color: var(--secondary);
+  font-size: 1.3em;
+  margin: 4%;
   margin-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 10px;
 }
 
 .primary {
@@ -78,22 +81,6 @@ h3 {
 
 .secondary {
   color: var(--secondary);
-}
-
-.green {
-  color: #00d0b2;
-}
-
-.blue {
-  color: #430093;
-}
-
-.red {
-  color: #ff5c75;
-}
-
-.yellow {
-  color: #ffc85f;
 }
 
 p,
