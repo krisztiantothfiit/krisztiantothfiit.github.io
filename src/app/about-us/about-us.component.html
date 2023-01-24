@@ -1,8 +1,9 @@
 <app-section id="about-us">
-  <h2> {{ 'aboutUs.title' | translate | uppercase }}</h2>
+  <h2>{{ 'aboutUs.title' | translate | uppercase }}</h2>
 
   <div class="row content">
-    <div class="col-md-6 col-sm-12 background-brands" [style.background-image]="'url(assets/images/about-us/about-us1.png)'">
+    <div class="col-md-6 col-sm-12 about-us-image">
+    <img src="assets/images/about-us/about-us.png">
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="row">
@@ -10,71 +11,26 @@
       </div>
       <div class="row about-us-wrapper">
         <div class="row">
-          <div class="col-md-2 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">done</mat-icon>
+          <div class="col-md-1 col-sm-2 about-us-icon">
+            <mat-icon class="icon-display">circle</mat-icon>
           </div>
           <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature1' | translate | uppercase }}</p>
         </div>
         <div class="row">
-          <div class="col-md-2 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">done</mat-icon>
+          <div class="col-md-1 col-sm-2 about-us-icon">
+            <mat-icon class="icon-display">circle</mat-icon>
           </div>
           <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature2' | translate | uppercase }}</p>
         </div>
         <div class="row">
-          <div class="col-md-2 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">done</mat-icon>
+          <div class="col-md-1 col-sm-2 about-us-icon">
+            <mat-icon class="icon-display">circle</mat-icon>
           </div>
           <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature3' | translate | uppercase }}</p>
         </div>
       </div>
-    </div>
-  </div>
-</app-section>
-<app-section id="about-us-divider">
-  <div class="row about-us-divider-row">
-    <div class="col-md-4 col-sm-12">
       <div class="row">
-        <div class="col-md-4 col-sm-2 about-us-divider-icon">
-          <mat-icon class="icon-display">calendar_today</mat-icon>
-        </div>
-        <div class="col-md-8 col-sm-10 about-us-divider-text">
-          <div class="flex">
-            <animated-digit [digit]="10" [duration]="1000"></animated-digit>
-            +
-          </div>
-          <span>{{ 'aboutUs.divider1' | translate | uppercase }}</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-12">
-      <div class="row">
-        <div class="col-md-4 col-sm-2 about-us-divider-icon">
-          <mat-icon class="icon-display">check_circle_outline</mat-icon>
-        </div>
-        <div class="col-md-8 col-sm-10 about-us-divider-text">
-          <div class="flex">
-            <animated-digit [digit]="3000" [duration]="1000"></animated-digit>
-            +
-          </div>
-          <span>{{ 'aboutUs.divider2' | translate | uppercase }}</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-12">
-      <div class="row">
-        <div class="col-md-4 col-sm-2 about-us-divider-icon">
-          <mat-icon class="icon-display">import_contacts</mat-icon>
-        </div>
-        <div class="col-md-8 col-sm-10 about-us-divider-text">
-          <div class="flex">
-            <animated-digit [digit]="50" [duration]="1000"></animated-digit>
-            +
-          </div>
-          <span>{{ 'aboutUs.divider3' | translate | uppercase }}</span>
-        </div>
+        <p class="about-us-desc"> {{ 'aboutUs.desc2' | translate }}</p>
       </div>
     </div>
   </div>
