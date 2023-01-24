@@ -2,7 +2,16 @@
     padding: 1% 0;
     font-family: var(--font-family-default);
     z-index: 1;
-    background-color: transparent;
+    background-color: var(--primary);
+    width: 50%;
+    left: 50%;
+    top: -50px;
+    border-radius: 45px 0 0 45px;
+
+    .container {
+      max-width: 100%;
+      justify-content: center;
+    }
 }
 
 .navbar-brand {

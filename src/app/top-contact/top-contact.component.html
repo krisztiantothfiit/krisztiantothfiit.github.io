@@ -10,7 +10,11 @@
               </button>
             </div>
             <div class="col-lg-8 col-md-6 col-sm-12">
-              <span><a href="https://www.facebook.com/IImko" class="link" target="_blank">{{ 'topContact.facebook' | translate | uppercase }}</a></span>
+              <span>
+                <a href="https://www.facebook.com/IImko" class="link" target="_blank">
+                  {{ 'topContact.facebook' | translate | uppercase }}
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -23,10 +27,34 @@
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <span>zavolajte</span>
+            <div class="row contact-container">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <mat-icon class="icon-display">phone</mat-icon>
+              </div>
+              <div class="col-lg-8 col-md-6 col-sm-12">
+                <div>
+                  <span>{{ 'topContact.call-us' | translate | uppercase }}</span>
+                </div>
+                <div>
+                  <span>{{ 'topContact.tel' | translate }}</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <span>napiste</span>
+            <div class="row contact-container">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <mat-icon class="icon-display">mail</mat-icon>
+              </div>
+              <div class="col-lg-8 col-md-6 col-sm-12">
+                <div>
+                  <span>{{ 'topContact.write-us' | translate | uppercase }}</span>
+                </div>
+                <div>
+                  <span>{{ 'topContact.email' | translate }}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -5,17 +5,12 @@
       id="navbar-toggler" [ngClass]="{close: toClose}">
       <span></span>
     </div>
-    <a class="navbar-brand" href="/">
-      <img class="navbar-brand-img desktop-only" src="assets/images/logo.png">
-      <img class="navbar-brand-img mobile-only" src="assets/images/logo-black.png">
-    </a>
     <div class="collapse navbar-collapse" id="primary-menu">
       <ul *ngIf="this.href == '/'" class="nav navbar-nav ms-auto nav-no-opacity">
         <app-navigation-item title="header"></app-navigation-item>
         <app-navigation-item title="about-us"></app-navigation-item>
-        <app-navigation-item title="offering"></app-navigation-item>
-        <app-navigation-item title="deal"></app-navigation-item>
-        <app-navigation-item title="why-us"></app-navigation-item>
+        <app-navigation-item title="projects"></app-navigation-item>
+        <app-navigation-item title="services"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
       </ul>
       <ul *ngIf="this.href != '/'" class="nav navbar-nav ms-auto nav-no-opacity">

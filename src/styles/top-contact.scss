@@ -18,12 +18,12 @@
   margin: 0 auto;
   text-align: center;
   background-color: var(--primary);
-  height: 6rem;
+  height: 5rem;
   margin-bottom: 0px;
-  border-radius: 45px;
-  top: -50%;
+  border-radius: 0 0 45px 45px;
+  top: -25%;
   position: relative;
-  padding-top: 4.75%;
+  padding-top: 2.75%;
 
   & > .row {
     div:nth-child(1) {
@@ -39,8 +39,28 @@
   }
 }
 
+.contact-container {
+  & > {
+    div:nth-child(1) {
+      text-align: right;
+      padding-top: 15px;
+      padding-right: 15px;
+
+      .mat-icon {
+        transform: scale(1.75);
+      }
+    }
+
+    div:nth-child(2) {
+      text-align: left;
+      padding-left: 5px;
+      padding-top: 5px;
+    }
+  }
+}
+
 .icon-display {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .link {
@@ -64,6 +84,11 @@
     color: var(--primary);
     padding: 0 !important;
   }
+
+  .mat-icon {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .mat-mini-fab:hover {
@@ -73,30 +98,11 @@
   }
 }
 
-
-
-.top-contact-icon {
-  align-self: center;
-  text-align: end;
-  padding: 0 15px 0 0;
-}
-
-.top-contact-text {
-  align-self: center;
-  span,
-  p {
-    color: var(--text);
+.container {
+  & > .row:nth-child(2) {
+    padding: 15px 15px 75px 15px;
   }
 }
-
-.top-contact-item {
-  border-left: 2px solid var(--secondary);
-  border-right: 2px solid var(--secondary);
-}
-
-
-
-
 
 @media only screen and (max-width: $tablet-resolution) {
   .wrap {
