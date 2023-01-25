@@ -109,7 +109,13 @@
 
 .top-contact-row .container {
   & > .row:nth-child(2) {
-    padding: 15px 15px 75px 15px;
+    padding: 15px 15px 60px 15px;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .contact-container span {
+    font-size: 11pt !important;
   }
 }
 
@@ -119,14 +125,35 @@
     row-gap: 10px;
   }
 
-  .tablet-phone-number.top-contact-item {
-    border-left: 0px;
+  .facebook-container {
+    width: 60%;
+    top: -40%;
+    padding-top: 4.75%;
+
+    span {
+      font-size: 9pt;
+    }
   }
 
-  .tablet-phone-number .col-md-4 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+  .top-contact-row .mat-mini-fab {
+    width: 20px !important;
+    height: 20px !important;
+    padding-top: 4px;
+
+    .mat-icon {
+      height: 20px;
+      width: 20px;
+    }
   }
+  
+  .contact-container span {
+    font-size: 9pt !important;
+  }
+
+  .mat-icon {
+    transform: scale(1.25) !important;
+  }
+
 }
 
 @media only screen and (max-width: $mobile-resolution) {
