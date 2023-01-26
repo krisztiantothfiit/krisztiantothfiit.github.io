@@ -27,6 +27,12 @@ export class AppComponent implements OnInit {
     this.addIconToRegistry('success', 'assets/icons/success.svg');
     this.addIconToRegistry('fail', 'assets/icons/fail.svg');
     this.addIconToRegistry('facebook', 'assets/icons/facebook.svg');
+    this.addIconToRegistry('service1', 'assets/icons/service1.svg');
+    this.addIconToRegistry('service2', 'assets/icons/service2.svg');
+    this.addIconToRegistry('service3', 'assets/icons/service3.svg');
+    this.addIconToRegistry('service4', 'assets/icons/service4.svg');
+    this.addIconToRegistry('service5', 'assets/icons/service5.svg');
+    this.addIconToRegistry('service6', 'assets/icons/service6.svg');
   }
 
   ngOnInit(): void {
@@ -60,7 +66,7 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('KLIMATEL');
+    this.titleService.setTitle('i-imko');
     this.metaTagService.addTags([
       { name: 'description', content: 'Ponúkame Vám komplexné energeticky úsporné riešenia šité na mieru. Vykurovanie, chladenie a vetranie za rozumnú cenu a nízke prevádzkové náklady.' },
       { name: 'keywords', content: 'klimatizacie, tepelne cerpadla, rekuperacia, klimatizácia, tepelné čerpadlá, rekuperácie, kráľová nad váhom, klimatizácie kráľová nad váhom, klimy' },

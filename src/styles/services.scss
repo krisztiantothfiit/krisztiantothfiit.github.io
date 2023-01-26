@@ -1,0 +1,52 @@
+.service {
+    border-radius: 45px;
+    border: 1px solid var(--primary);
+    width: 47%;
+    margin-bottom: 80px;
+    text-align: left;
+
+    .row {
+        margin-bottom: 4%;
+    }
+
+    .mat-icon {
+        color: var(--primary);
+        margin-right: 15px;
+    }
+
+    .service-header {
+        display: flex;
+        margin-top: -25px;
+        width: 80%;
+        background: var(--background);
+        align-items: center;
+
+        .mat-icon {
+            color: var(--secondary);
+            height: 40px;
+            width: 40px;
+        }
+
+
+        h4 {
+            font-family: var(--font-family-title);
+            color: var(--secondary);
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+    .service {
+        width: 100%;
+    }
+
+}

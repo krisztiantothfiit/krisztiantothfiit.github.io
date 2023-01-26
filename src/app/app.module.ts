@@ -33,6 +33,7 @@ import { TopContactComponent } from './top-contact/top-contact.component';
 import { HomeComponent } from './home/home.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProjectsComponent } from './projects/projects.component';
     TopContactComponent,
     HomeComponent,
     AnimatedDigitComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@
 @import "styles/navigation.scss";
 @import "styles/top-contact.scss";
 @import "styles/sub-pages.scss";
+@import "styles/services.scss";
 
 body {
   background-color: var(--background);
@@ -159,10 +160,11 @@ img {
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  color: var(--text) !important;
+  color: var(--primary) !important;
   border-radius: 10px !important;
   background-color: var(--secondary) !important;
   margin: 5px !important;
+  border: 1px solid var(--primary)!important;
 }
 
 .cookie-button-deny {
@@ -171,7 +173,7 @@ img {
   background-color: var(--primary) !important;
   border-radius: 10px !important;
   margin: 5px !important;
-  color: var(--text) !important;
+  color: var(--secondary) !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
