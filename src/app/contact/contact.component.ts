@@ -57,4 +57,8 @@ export class ContactComponent {
         });
     }
   }
+
+  openFacebook() {
+    window.open("https://www.facebook.com/IImko", "_blank");
+  }
 }

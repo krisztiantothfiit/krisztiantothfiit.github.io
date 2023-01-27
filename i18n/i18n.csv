@@ -70,9 +70,11 @@ projects.desc16;Poskytli sme komplet elektroinštalačné práce.
 projects.title17;Ministerstvo financií SR Bratislava
 projects.desc17;Na rekonštrukcii priestorov budovy sme sa podieľali interiérovým a exteriérovým osvetlením, montážou elektrických žalúzií.
 
+
+
 contact.title;Kontaktujte nás;
-contact.form.title;Napíšte nám;
-contact.form.name;Meno;
+contact.form.title;Vyžiadajte si obhliadku;
+contact.form.name;Meno a priezvisko;
 contact.form.email;Email;
 contact.form.phone;Tel. číslo;
 contact.form.message;Správa;
@@ -84,7 +86,6 @@ contact.form.required;Povinné pole;
 contact.form.pattern;Nesprávny tvar;
 contact.form.successMsg;Správa bola úspešne odoslaná!;
 contact.form.failMsg;Odoslanie správy zlyhalo;
-contact.address;Kráľová nad Váhom 702, 92591 Kráľová nad Váhom
 
 footer.title;i-imko Šaľa, s.r.o.
 footer.text1; © i-imko - Dizajn zo;
