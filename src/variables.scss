@@ -6,7 +6,8 @@ $small-mobile-resolution: 576px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
 $font-family-default: 'Hind Madurai', sans-serif;
-$font-family-title: 'Cormorant Garamond', serif;
+$font-family-title: 'Cormorant', serif;
+$box-shadow: rgb(46 38 32 / 40%) 0px 2px 4px, rgb(46 38 32 / 30%) 0px 7px 13px -3px, rgb(46 38 32 / 20%) 0px -3px 0px inset;
 
 :root {
     --primary: #{$primary};
@@ -15,4 +16,5 @@ $font-family-title: 'Cormorant Garamond', serif;
     --text: #{$text};
     --font-family-title: #{$font-family-title};
     --font-family-default: #{$font-family-default};
+    --box-shadow: #{$box-shadow};
 }

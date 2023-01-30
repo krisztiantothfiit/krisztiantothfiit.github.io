@@ -30,6 +30,11 @@
   margin-right: -40px;
   padding: 8%;
   margin-bottom: 40px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  min-height: 160px;
+  align-items: center;
+  justify-content: center;
 
   p {
     color: var(--primary);

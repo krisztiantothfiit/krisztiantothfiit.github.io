@@ -2,7 +2,7 @@
   <h2>{{ 'contact.title' | translate | uppercase }}</h2>
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-12">
       <div class="contact-left">
         <div class="row">
           <div class="col-md-4 col-sm-4 contact-icon">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-8 col-sm-12">
       <div class="contact-right">
         <h3>{{ 'contact.form.title' | translate | uppercase }}</h3>
         <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
@@ -71,7 +71,7 @@
             <mat-error *ngIf="hasRequiredError('message')" translate="contact.form.required"></mat-error>
           </mat-form-field>
           <div class="submit-btn mt-4">
-            <button mat-flat-button class="button" type="submit">
+            <button mat-flat-button class="button inverse-colors" type="submit">
               <span>{{'contact.form.submitBtn' | translate | uppercase}}</span>
             </button>
           </div>

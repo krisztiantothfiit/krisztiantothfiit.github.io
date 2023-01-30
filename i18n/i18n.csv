@@ -1,6 +1,6 @@
 id;sk;
 fancyweb;FancyWeb;
-title;i-imko;
+title;I-Imko;
 
 navigation.header;Domov;
 navigation.contact;Kontakt;
@@ -87,22 +87,22 @@ contact.form.pattern;Nesprávny tvar;
 contact.form.successMsg;Správa bola úspešne odoslaná!;
 contact.form.failMsg;Odoslanie správy zlyhalo;
 
-footer.title;i-imko Šaľa, s.r.o.
-footer.text1; © i-imko - Dizajn zo;
+footer.title;I-Imko, s.r.o.
+footer.subtitle;Profesionálne elektroinštalačné práce
+footer.text1; © I-Imko, s.r.o. - Dizajn zo;
 footer.text2;vytvoril ;
 footer.text3;Ilustračné obrázky navrhol Freepik;
-footer.address.title;Adresa
-footer.address.content;Kráľová nad Váhom 702,<br/>92591 Kráľová nad Váhom;
-footer.phone.title;Telefónne číslo
-footer.phone.content;+421 910 870 087
-footer.email.title;Email
-footer.email.content;i-imko@i-imko.sk;
-footer.links;Linky
-footer.link1;Domovská stránka
-footer.link2;Ako fungujú tepelné čerpadlá?
-footer.link3;Klimatizácie a kúrenie
-footer.link4;Rekuperácia
-
+footer.address.title;Sídlo spoločnosti
+footer.address.content;Družstevná 1162/2,<br/>952 22 Veľké Úľany;
+footer.contact.title;Kontakty
+footer.contact.phone;+421 910 870 087
+footer.contact.email;i-imko@i-imko.sk;
+footer.invoice.title;Fakturačné údaje
+footer.invoice.ico;IČO: 51279487
+footer.invoice.dic;DIČ: 2120652787
+footer.invoice.ic;IČ DPH: SK2120652787
+footer.registry.title;Spoločnosť zapísaná
+footer.registry.text;Obchodný register okresného súdu Trnava, Oddiel.: s.r.o., vložka č. 41356/T
 
 services.title;Naše služby
 services.section1.title;Kabeláž a zariadenie staveniska

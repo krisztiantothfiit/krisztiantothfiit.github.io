@@ -9,17 +9,13 @@
   }
 }
 
-.button {
-  background-color: var(--primary) !important;
+#contact .mat-flat-button {
   width: 100%;
-
-  span {
-    color: var(--secondary) !important;
-  }
 }
 
-.button:hover {
-  background-color: var(--background) !important;
+.inverse-colors.mat-flat-button {
+  background-color: var(--primary) !important;
+
   span {
     color: var(--secondary) !important;
   }
@@ -36,15 +32,21 @@
 #contact .link {
   color: var(--primary);
   text-decoration-color: var(--primary);
+  font-family: var(--font-family-title);
 }
 
 .contact-text {
   align-self: center;
   text-align: left;
+
   span {
     color: var(--primary);
     margin-bottom: 0;
     font-size: 18px;
+  }
+
+  .title span {
+    font-family: var(--font-family-title);
   }
 }
 
@@ -61,6 +63,7 @@
     background-color: var(--secondary);
     margin: 15px;
     border-radius: 15px;
+    box-shadow: var(--box-shadow);
   }
 }
 
@@ -69,6 +72,7 @@
   padding: 25px;
   border-radius: 45px;
   margin: 0 20px;
+  box-shadow: var(--box-shadow);
 }
 
 .success-dialog {
@@ -145,17 +149,17 @@
 .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker,
 .mat-form-field-required-marker,
 .mat-error {
-  color: red !important;
+  color: #ef4b4b !important;
 }
 
 .mat-form-field.mat-warn .mat-input-element,
 .mat-form-field-invalid .mat-input-element {
-  caret-color: red !important;
+  caret-color: #ef4b4b !important;
 }
 
 .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
 .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
-  background-color: red;
+  background-color: #ef4b4b;
 }
 
 .mat-form-field-label-wrapper {
@@ -181,7 +185,7 @@
   .contact-text {
     padding: 10px 0 !important;
     text-align: center !important;
-    
+
     & span {
       font-size: 15px;
     }
@@ -201,19 +205,21 @@
   .contact-left {
     border-bottom: 1px solid var(--secondary);
     border-right: 0;
-    flex-direction: row;
+    flex-direction: column;
     padding-bottom: 23px;
 
     & .row {
       height: 100%;
       margin: 5px;
-      width: 33%;
+      width: 100%;
       padding: 15px 0;
     }
   }
 
   .contact-right {
     margin-top: 15px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .contact-icon {

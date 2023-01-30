@@ -3,24 +3,33 @@
 #footer .section {
     min-height: unset;
     padding-bottom: 1%;
-    background-color: var(--primary);
+    background-color: var(--background);
 }
 
 #footer span {
-  color: var(--primary);
+  color: var(--secondary);
+}
+
+.footer-icon {
+    display: flex;
+    .mat-icon {
+        color: var(--secondary);
+        margin-right: 10px;
+    }
 }
 
 .footer {
     p {
         text-align: left;
-        margin-bottom: 10px;
-        color: var(--primary);
+        color: var(--secondary);
     }
 
     h5 {
       text-align: left;
-      font-weight: bold;
+      color: var(--secondary);
       padding-top: 15px;
+      font-family: var(--font-family-title);
+      font-size: 18px;
     }
 }
 
@@ -40,6 +49,7 @@
 .heart.mat-icon {
     height: 15px;
     font-size: 15px;
+    color: #ef4b4b;
 }
 
 .link:hover {

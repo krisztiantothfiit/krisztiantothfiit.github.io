@@ -17,7 +17,7 @@
     .service-header {
         display: flex;
         margin-top: -25px;
-        width: 80%;
+        width: 70%;
         background: var(--background);
         align-items: center;
 
@@ -26,7 +26,6 @@
             height: 40px;
             width: 40px;
         }
-
 
         h4 {
             font-family: var(--font-family-title);
@@ -42,6 +41,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 25px;
 }
 
 @media only screen and (max-width: $tablet-resolution) {

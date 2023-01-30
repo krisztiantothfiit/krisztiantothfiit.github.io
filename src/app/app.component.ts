@@ -66,12 +66,12 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('i-imko');
+    this.titleService.setTitle('I-Imko');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Ponúkame Vám komplexné energeticky úsporné riešenia šité na mieru. Vykurovanie, chladenie a vetranie za rozumnú cenu a nízke prevádzkové náklady.' },
-      { name: 'keywords', content: 'klimatizacie, tepelne cerpadla, rekuperacia, klimatizácia, tepelné čerpadlá, rekuperácie, kráľová nad váhom, klimatizácie kráľová nad váhom, klimy' },
+      { name: 'description', content: 'Naším zámerom je realizácia kompletných elektroinštalačných prác pre rôzne objekty.' },
+      { name: 'keywords', content: 'elektroinstalacne prace, elektroinštalačné práce, Veľké Úľany, elektroinštalácie, jadrové vŕtanie' },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'František Kovács' },
+      { name: 'author', content: 'Renata Ivanová' },
       { charset: 'UTF-8' },
     ])
   }
