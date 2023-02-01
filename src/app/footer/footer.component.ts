@@ -14,8 +14,8 @@ export class FooterComponent {
     return new Date().getFullYear();
   }
 
-  openPage(pageName: string) {
-    this.router.navigate([`${pageName}`]);
+  navigateToResouces() {
+    this.router.navigate(['zdroje']);
   }
 
 }

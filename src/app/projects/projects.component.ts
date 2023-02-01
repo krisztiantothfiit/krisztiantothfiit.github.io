@@ -22,7 +22,6 @@ export class ProjectsComponent implements OnInit {
     }
     this.oddNumbers = Array.from({ length: this.numberOfProjects / 2 }, (e, i) => (i * 2) + 1);
     this.evenNumbers = Array.from({ length: this.numberOfProjects / 2}, (e, i) => (i * 2));
-    console.log(this.oddNumbers, this.evenNumbers)
   }
 
   navigateToProjects(){

@@ -4,6 +4,7 @@ import { MatIconRegistry } from "@angular/material/icon";
 import defaultLanguage from '../assets/i18n/sk.json';
 import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
 import { CookieService } from './cookie.service';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +18,22 @@ export class AppComponent implements OnInit {
     private domSanitizer: DomSanitizer,
     private cookie: CookieService,
     private metaTagService: Meta,
-    private titleService: Title) {
+    private titleService: Title,
+    private router: Router) {
     // Translate initialization
     translate.setTranslation(this.currentLang, defaultLanguage);
     translate.setDefaultLang(this.currentLang);
     translate.currentLang = this.currentLang;
+
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        const el = document.getElementById(this.router.url.substring(1));
+        if (el) {
+          el.scrollIntoView();
+        }
+      }
+    });
+
     // Icons initialization
     this.addIconToRegistry('sk_flag', 'assets/icons/sk.svg');
     this.addIconToRegistry('success', 'assets/icons/success.svg');

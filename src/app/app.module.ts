@@ -34,6 +34,7 @@ import { HomeComponent } from './home/home.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     AnimatedDigitComponent,
     ProjectsComponent,
-    ServicesComponent
+    ServicesComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
