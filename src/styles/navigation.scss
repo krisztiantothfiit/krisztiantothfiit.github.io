@@ -304,8 +304,12 @@
     transform: scale(6) !important;
     left: 75px;
     position: relative;
-    top: 0px;
+    bottom: 20px;
     color: var(--secondary);
+  }
+
+  .mat-icon {
+    height: 14px !important;
   }
 }
 
