@@ -18,6 +18,7 @@
 
 .about-us-wrapper {
   flex-direction: column;
+  padding: 10px 0;
 }
 
 .about-us-icon {
@@ -66,5 +67,9 @@
 
   .about-us-desc {
     margin-bottom: 4%;
+  }
+
+  .about-us-wrapper {
+    padding-bottom: 20px;
   }
 }

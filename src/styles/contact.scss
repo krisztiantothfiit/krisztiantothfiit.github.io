@@ -58,7 +58,7 @@
   height: 100%;
   justify-content: center;
   border-right: 1px solid var(--secondary);
-  padding: 0 20px;
+  padding: 0 15px;
 
   & .row {
     height: 25%;
@@ -208,11 +208,12 @@
     border-bottom: 1px solid var(--secondary);
     border-right: 0;
     flex-direction: column;
-    padding-bottom: 23px;
+    padding-bottom: 10px;
+    align-items: center;
 
     & .row {
       height: 100%;
-      margin: 5px;
+      margin: 5px 0;
       width: 100%;
       padding: 15px 0;
     }

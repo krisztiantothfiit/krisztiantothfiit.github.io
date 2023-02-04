@@ -1,9 +1,9 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 #footer .section {
-    min-height: unset;
-    padding-bottom: 1%;
-    background-color: var(--background);
+  min-height: unset;
+  padding-bottom: 1%;
+  background-color: var(--background);
 }
 
 #footer span {
@@ -11,61 +11,97 @@
 }
 
 .footer-icon {
-    display: flex;
-    .mat-icon {
-        color: var(--secondary);
-        margin-right: 10px;
-    }
+  display: flex;
+  .mat-icon {
+    color: var(--secondary);
+    margin-right: 10px;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  height: 60%;
+
+  & > mat-icon {
+    transform: scale(9);
+    position: relative;
+    top: 65px;
+    left: 95px;
+  }
 }
 
 .footer {
-    p {
-        text-align: left;
-        color: var(--secondary);
-    }
+  p {
+    text-align: left;
+    color: var(--secondary);
+  }
 
-    h5 {
-      text-align: left;
-      color: var(--secondary);
-      padding-top: 15px;
-      font-family: var(--font-family-title);
-      font-size: 18px;
-    }
+  h5 {
+    text-align: left;
+    color: var(--secondary);
+    padding-top: 15px;
+    font-family: var(--font-family-title);
+    font-size: 18px;
+  }
 }
 
 .footer .navbar-brand {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .navbar-brand h2 {
-    font-size: 1.5em;
-    text-align: left;
+  font-size: 1.5em;
+  text-align: left;
 
-    &::after{
-      content: unset;
-    }
+  &::after {
+    content: unset;
+  }
 }
 
 .heart.mat-icon {
-    height: 15px;
-    font-size: 15px;
-    color: #ef4b4b;
+  height: 15px;
+  font-size: 15px;
+  color: #ef4b4b;
 }
 
 .link:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--text);
-    cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+  cursor: pointer;
 }
 
 .social.mat-icon {
-    font-size: 40px;
-    height: 40px;
-    width: 40px;
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+  .footer-logo {
+    height: 33%;
+
+    & > mat-icon {
+      transform: scale(6);
+      position: relative;
+      top: 50px;
+      left: 60px;
+    }
+  }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
-    #footer .section {
-        background-position: top;
+  #footer .section {
+    background-position: top;
+  }
+
+  .footer-logo {
+    height: 33%;
+
+    & > mat-icon {
+      transform: scale(6);
+      position: relative;
+      top: 0;
+      left: 60px;
     }
+  }
 }

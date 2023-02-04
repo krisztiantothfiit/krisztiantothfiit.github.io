@@ -44,6 +44,13 @@
   }
 }
 
+.main-logo {
+  transform: scale(11);
+  left: 120px;
+  position: relative;
+  top: 15px;
+}
+
 .contact-container {
   & > {
     div:nth-child(1) {
@@ -78,7 +85,7 @@
 
   &:hover {
     color: var(--secondary);
-    text-decoration-color: var(--secondary)
+    text-decoration-color: var(--secondary);
   }
 }
 
@@ -142,9 +149,15 @@
   }
 
   .mat-icon {
-    transform: scale(1.25) !important;
+    transform: scale(1.25);
   }
 
+  .main-logo {
+    transform: scale(10) !important;
+    left: 85px;
+    position: relative;
+    top: 45px;
+  }
 }
 
 @media only screen and (max-width: $mobile-resolution) {

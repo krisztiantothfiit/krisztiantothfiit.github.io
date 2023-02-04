@@ -156,6 +156,8 @@
 }
 .toggler {
   background: none;
+  position: relative;
+  left: 30px;
 
   span {
     transition: background 0s 0.3s;
@@ -220,6 +222,11 @@
   padding-left: 0.5rem;
 }
 
+
+.logo {
+  display: none !important;
+}
+
 @media only screen and (max-width: 1350px) {
   .navbar {
     width: 70%;
@@ -269,7 +276,7 @@
 
     .container {
       align-items: center;
-      justify-content: end;
+      justify-content: space-between;
     }
   }
 
@@ -290,6 +297,15 @@
     left: 39px;
     top: 35px;
     right: unset;
+  }
+
+  .logo {
+    display: inline-block !important;
+    transform: scale(6) !important;
+    left: 75px;
+    position: relative;
+    top: 0px;
+    color: var(--secondary);
   }
 }
 
