@@ -52,7 +52,7 @@
       padding-right: 15px;
 
       .mat-icon {
-        transform: scale(1.75);
+        transform: scale(1.25);
       }
     }
 
@@ -114,12 +114,6 @@
   }
 }
 
-@media only screen and (max-width: 1350px) {
-  .contact-container span {
-    font-size: 11pt !important;
-  }
-}
-
 @media only screen and (max-width: $tablet-resolution) {
   .wrap {
     flex-wrap: wrap;
@@ -145,10 +139,6 @@
       height: 20px;
       width: 20px;
     }
-  }
-  
-  .contact-container span {
-    font-size: 9pt !important;
   }
 
   .mat-icon {

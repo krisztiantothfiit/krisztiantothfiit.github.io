@@ -16,15 +16,23 @@
 
     .service-header {
         display: flex;
-        margin-top: -25px;
-        width: 70%;
+        margin-top: -15px;
+        width: 80%;
         background: var(--background);
         align-items: center;
+        margin-left: 2.5rem;
 
         .mat-icon {
             color: var(--secondary);
-            height: 40px;
-            width: 40px;
+            height: 30px;
+            width: 30px;
+            overflow: visible;
+            transform: scale(1) !important;
+
+            svg {
+                height: 30px;
+                width: 30px;
+            }
         }
 
         h4 {
@@ -41,7 +49,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 @media only screen and (max-width: $tablet-resolution) {

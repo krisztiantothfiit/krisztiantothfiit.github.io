@@ -6,6 +6,8 @@
   h3 {
     font-size: 30px;
     color: var(--primary);
+    margin-top: 0;
+    padding: 0;
   }
 }
 
@@ -24,8 +26,8 @@
 .contact-icon {
   align-self: center;
   text-align: end;
-  padding: 5px 20px 0 0 !important;
-  transform: scale(1.75);
+  padding: 5px 15px 0 0 !important;
+  transform: scale(1.25);
   color: var(--primary);
 }
 
