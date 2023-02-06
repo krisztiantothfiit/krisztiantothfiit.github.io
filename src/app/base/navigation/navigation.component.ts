@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
-import { CookieService } from '../cookie.service';
+import { CookieService } from '../../cookie.service';
 
 @Component({
   selector: 'app-navigation',
