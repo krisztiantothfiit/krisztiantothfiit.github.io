@@ -2,12 +2,12 @@ id;sk
 fancyweb;FancyWeb
 title;I-Imko
 
-navigation.header;Domov
-navigation.contact;Kontakt
-navigation.services;Naše služby
+
 navigation.about-us;O nás
-navigation.projekty;Realizované projekty
-navigation.zdroje;Zdroje obrázkov
+navigation.about-doberman;O Dobermannovi
+navigation.our-dog;Naša fenka
+navigation.our-puppies;Naše šteniatka
+navigation.contact;Kontakt
 
 cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.;Ez az oldal sütiket használ. Az "Engedélyezem" gombra kattintva elfogadja, hogy ezeket a kiválasztott nyelv mentésére és a weboldal forgalmának elemzésére használjuk.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.
 cookieAllow;Povoliť
@@ -20,11 +20,8 @@ topContact.email;iimko@i-imko.sk
 topContact.call-us;Zavolajte nám
 topContact.tel;+421 944 466 624
 
-header.title-start;I
-header.title-middle;-
-header.title-end;Imko s.r.o.
-header.subtitle;Sledujeme nové trendy v oblasti elektroinštalácií a sme pripravení ich v praxi implementovať.
-header.button;Vyžiadať cenovú ponuku
+header.text;„Psia láska je najčistejšia vec. Jeho dôvera vo vás je totálna. Nesmiete ju zradiť.“
+header.author;Michel Houellebecq
 
 aboutUs.title;o nás
 aboutUs.desc;Naša spoločnosť vznikla v roku 2018 s cieľom zúročiť všetky získané dlhoročné skúsenosti z riadenia a realizácie projektov elektroinštalácií po celom Slovensku. Realizujeme kompletné elektroinštalačné práce pre rôzne objekty, medzi ktoré okrem iných patria:

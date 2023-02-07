@@ -15,7 +15,7 @@
 @import "styles/resources.scss";
 
 body {
-  background-color: var(--background);
+  background-color: var(--terciary);
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
 }
 
 .background {
-  background-image: url('assets/images/header/header1.jpg');
+  background-image: url("assets/images/header/header2.svg");
   background-size: cover;
 }
 
@@ -43,12 +43,11 @@ body {
 }
 
 h1 {
-  font-size: 3.6em;
-  color: var(--secondary);
+  font-size: 27px;
+  color: var(--primary);
   font-family: var(--font-family-title);
-  font-weight: bold;
-  line-height: 52px;
-  margin: 0;
+  letter-spacing: 1px;
+  margin: 0
 }
 
 h2 {
@@ -116,7 +115,7 @@ span {
   color: var(--secondary);
   text-align: left;
   font-size: 16px;
-  font-family: var(--font-family-default);
+  font-family: var(--font-family-title);
 }
 
 b {
@@ -124,8 +123,7 @@ b {
 }
 
 img {
-  border-radius: 20px;
-  filter: brightness(0.7);
+  border-radius: 4px;
 }
 
 .mt {
@@ -165,7 +163,7 @@ img {
   border-radius: 10px !important;
   background-color: var(--secondary) !important;
   margin: 5px !important;
-  border: 1px solid var(--primary)!important;
+  border: 1px solid var(--primary) !important;
 }
 
 .cookie-button-deny {

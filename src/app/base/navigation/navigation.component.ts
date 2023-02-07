@@ -14,13 +14,7 @@ export class NavigationComponent {
   public href: string = "";
   toClose: boolean = false;
 
-  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router) {
-    this.router.events.subscribe((val) => {
-      if (val instanceof NavigationEnd) {
-        this.href = val.url;
-      }
-    })
-  }
+  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router) { }
 
   changeUsedLang(lang: string) {
     this.translate.use(lang);
@@ -56,8 +50,7 @@ export class NavigationComponent {
     this.toClose = !this.toClose;
   }
 
-  returnHome() {
-    this.router.navigate([`/`]);
+  openFacebook() {
+    window.open("https://www.facebook.com/IImko", "_blank");
   }
-
 }

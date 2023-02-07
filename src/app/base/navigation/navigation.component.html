@@ -1,36 +1,24 @@
 <nav id="nav" class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque">
   <div class="container">
-    <mat-icon class="logo" svgIcon="logo"></mat-icon>
     <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
       aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNav()"
       id="navbar-toggler" [ngClass]="{close: toClose}">
       <span></span>
     </div>
-    <div class="collapse navbar-collapse" id="primary-menu" [ngSwitch]="this.href">
-      <ul *ngSwitchCase="'/'" class="nav navbar-nav ms-auto nav-no-opacity">
-        <app-navigation-item title="header"></app-navigation-item>
+    <img class="navbar-brand-img desktop-only" src="assets/images/logo.png">
+    <img class="navbar-brand-img mobile-only" src="assets/images/logo-black.png">
+    <div class="collapse navbar-collapse" id="primary-menu">
+      <ul class="nav navbar-nav ms-auto nav-no-opacity">
         <app-navigation-item title="about-us"></app-navigation-item>
-        <app-navigation-item title="projekty"></app-navigation-item>
-        <app-navigation-item title="services"></app-navigation-item>
+        <app-navigation-item title="about-doberman"></app-navigation-item>
+        <app-navigation-item title="our-dog"></app-navigation-item>
+        <app-navigation-item title="our-puppies"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
-      </ul>
-      <ul *ngSwitchCase="'/zdroje'" class="nav navbar-nav ms-auto nav-no-opacity">
         <li class="nav-item">
-          <a class="nav-link nav-item-border" (click)="returnHome()">
-            <span class="nav-text-color">{{'navigation.header' | translate | uppercase }}</span>
+          <a class="nav-link nav-item-border" (click)="openFacebook()">
+            <mat-icon class="icon-display" svgIcon="facebook"></mat-icon>
           </a>
         </li>
-        <app-navigation-item title="zdroje"></app-navigation-item>
-        <app-navigation-item title="contact"></app-navigation-item>
-      </ul>
-      <ul *ngSwitchCase="'/projekty'" class="nav navbar-nav ms-auto nav-no-opacity">
-        <li class="nav-item">
-          <a class="nav-link nav-item-border" (click)="returnHome()">
-            <span class="nav-text-color">{{'navigation.header' | translate | uppercase }}</span>
-          </a>
-        </li>
-        <app-navigation-item title="projekty"></app-navigation-item>
-        <app-navigation-item title="contact"></app-navigation-item>
       </ul>
     </div>
   </div>

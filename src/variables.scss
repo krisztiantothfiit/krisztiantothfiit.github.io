@@ -1,20 +1,24 @@
-$primary: #604940;
+$primary: #401E0A;
+$primary-shade: #85796F;
 $background: #2E2620;
-$secondary: #E5D4BF;
+$secondary: #BFAE9F;
+$terciary: #E5DED8;
 $text: #0D0D0D;
-$small-mobile-resolution: 576px;
+$small-mobile-resolution: 590px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
-$font-family-default: 'Hind Madurai', sans-serif;
-$font-family-title: 'Cormorant', serif;
+$font-family-title: 'Playfair Display', serif;
+$font-family-subtitle: 'Great Vibes', cursive;
 $box-shadow: rgb(46 38 32 / 40%) 0px 2px 4px, rgb(46 38 32 / 30%) 0px 7px 13px -3px, rgb(46 38 32 / 20%) 0px -3px 0px inset;
 
 :root {
     --primary: #{$primary};
+    --primary-shade: #{$primary-shade};
     --background: #{$background};
     --secondary: #{$secondary};
+    --terciary: #{$terciary};
     --text: #{$text};
     --font-family-title: #{$font-family-title};
-    --font-family-default: #{$font-family-default};
+    --font-family-subtitle: #{$font-family-subtitle};
     --box-shadow: #{$box-shadow};
 }

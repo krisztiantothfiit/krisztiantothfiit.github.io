@@ -1,21 +1,12 @@
 <app-section id="header">
-  <div class="row header-row">
-    <div class="col-lg-12 header-title">
-      <span>{{ 'header.title-start' | translate }}</span>
-      <span class="straight-dash">{{ 'header.title-middle' | translate }}</span>
-      <span>{{ 'header.title-end' | translate }}</span>
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <img src="assets/images/header/header1.png">
     </div>
-  </div>
-  <div class="row header-row">
-    <div class="col-lg-12 header-subtitle">
-      <span>{{ 'header.subtitle' | translate }}</span>
-    </div>
-  </div>
-  <div class="row header-row">
-    <div class="col-lg-12 header-button">
-      <button mat-flat-button class="inverse-colors" (click)="scrollToContact()">
-        <span>{{ 'header.button' | translate | uppercase }}</span>
-      </button>
+    <div class="col-lg-6 col-sm-12 header-text">
+      <h1>{{ 'header.text' | translate | uppercase }}</h1>
+      <span class="nav-text-color">{{ 'header.author' | translate | uppercase }}</span>
+      <img class="paw" src="assets/images/header/header3.png">
     </div>
   </div>
 </app-section>
