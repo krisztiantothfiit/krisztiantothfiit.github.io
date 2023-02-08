@@ -1,67 +1,12 @@
 @import "../variables.scss";
 
-.about-us-desc {
-  margin: 0;
+#certificate h2 {
+  margin-bottom: 0;
 }
 
-#about-us .content {
-  align-items: center;
-}
-
-.about-us-wrapper {
-  flex-direction: column;
-  padding: 10px 0;
-}
-
-.about-us-icon {
-  align-self: center;
-  text-align: end;
-  padding: 0;
-  display: flex;
-}
-
-.about-us-image {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 1%;
-}
-
-#about-us .icon-display {
-  color: var(--primary);
-}
-
-.about-us-text {
-  padding-left: 1%;
-}
-
-.about-us-image img {
-  width: 90%;
-}
-
-.about-us-text {
-  align-self: center;
-  margin: 0;
-  font-size: 18px;
-  font-family: var(--font-family-title);
-}
 
 @media only screen and (max-width: $tablet-resolution) {
-  #about-us .content {
-    align-items: flex-start;
-  }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
-  .about-us-image img {
-    width: 100%;
-    margin-bottom: 4%;
-  }
-
-  .about-us-desc {
-    margin-bottom: 4%;
-  }
-
-  .about-us-wrapper {
-    padding-bottom: 20px;
-  }
 }

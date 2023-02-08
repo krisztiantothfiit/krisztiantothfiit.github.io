@@ -31,10 +31,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
 import { WhyDobermannComponent } from './why-dobermann/why-dobermann.component';
-import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
 import { AboutDobermannsComponent } from './about-dobermanns/about-dobermanns.component';
-import { ServicesComponent } from './services/services.component';
-import { ResourcesComponent } from './resources/resources.component';
 import { CertificateComponent } from './certificate/certificate.component';
 
 @NgModule({
@@ -52,10 +49,7 @@ import { CertificateComponent } from './certificate/certificate.component';
     MessageDialogComponent,
     TopContactComponent,
     WhyDobermannComponent,
-    AnimatedDigitComponent,
     AboutDobermannsComponent,
-    ServicesComponent,
-    ResourcesComponent,
     CertificateComponent,
   ],
   imports: [

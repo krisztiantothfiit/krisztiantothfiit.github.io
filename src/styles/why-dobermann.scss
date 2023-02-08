@@ -7,21 +7,15 @@
 
   h3 {
     text-align: center !important;
-    font-weight: 600;
   }
 
   p {
-    margin: 0px 40px;
-    text-align: justify;
+    margin: 0px;
   }
 }
 
-.margin-auto {
-  margin: auto;
-}
-
 .row-margin {
-  margin: 45px 0 !important;
+  margin-bottom: 45px !important;
 }
 
 .icon-background {
@@ -31,14 +25,14 @@
   margin: 20px auto;
   height: 70px;
   padding: 7px 0 0 0;
-  box-shadow: 0px 4px 50px var(--primary);
+  box-shadow: var(--box-shadow);
 }
 
 @media only screen and (max-width: $tablet-resolution) {
-  #why-dobermann p {
-    margin: 0;
-  }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .row-margin {
+    margin-bottom: 0px !important;
+  }
 }

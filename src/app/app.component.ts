@@ -39,6 +39,7 @@ export class AppComponent implements OnInit {
     this.addIconToRegistry('success', 'assets/icons/success.svg');
     this.addIconToRegistry('fail', 'assets/icons/fail.svg');
     this.addIconToRegistry('facebook', 'assets/icons/facebook.svg');
+    this.addIconToRegistry('logo', 'assets/images/logo.svg');
   }
 
   ngOnInit(): void {

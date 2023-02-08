@@ -3,58 +3,37 @@
 #footer .section {
   min-height: unset;
   padding-bottom: 1%;
-  background-color: var(--background);
+  background-color: var(--text);
 }
 
-#footer span {
-  color: var(--secondary);
-}
+#footer {
 
-.footer-icon {
-  display: flex;
-  .mat-icon {
+  h2,
+  h3,
+  p,
+  span {
     color: var(--secondary);
-    margin-right: 10px;
-  }
-}
-
-.footer-logo {
-  display: flex;
-  height: 60%;
-
-  & > mat-icon {
-    transform: scale(9);
-    position: relative;
-    top: 65px;
-    left: 95px;
-  }
-}
-
-.footer {
-  p {
-    text-align: left;
-    color: var(--secondary);
+    text-align: center;
   }
 
-  h5 {
-    text-align: left;
-    color: var(--secondary);
-    padding-top: 15px;
-    font-family: var(--font-family-title);
-    font-size: 18px;
+  .row {
+    margin-bottom: 2%;
   }
-}
 
-.footer .navbar-brand {
-  padding-left: 0;
-}
+  .icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 50px;
+    height: 50px;
 
-.navbar-brand h2 {
-  font-size: 1.5em;
-  text-align: left;
-
-  &::after {
-    content: unset;
+    .mat-icon {
+      color: var(--primary);
+      font-size: 30px;
+      height: 30px;
+      width: 30px;
+    }
   }
 }
 
@@ -70,38 +49,11 @@
   cursor: pointer;
 }
 
-.social.mat-icon {
-  font-size: 40px;
-  height: 40px;
-  width: 40px;
-}
-
-@media only screen and (max-width: $tablet-resolution) {
-  .footer-logo {
-    height: 33%;
-
-    & > mat-icon {
-      transform: scale(6);
-      position: relative;
-      top: 50px;
-      left: 60px;
-    }
-  }
-}
+@media only screen and (max-width: $tablet-resolution) {}
 
 @media only screen and (max-width: $mobile-resolution) {
-  #footer .section {
-    background-position: top;
-  }
 
-  .footer-logo {
-    height: 33%;
-
-    & > mat-icon {
-      transform: scale(6);
-      position: relative;
-      top: 0;
-      left: 60px;
-    }
+  #footer .row {
+    margin-bottom: 1rem;
   }
 }

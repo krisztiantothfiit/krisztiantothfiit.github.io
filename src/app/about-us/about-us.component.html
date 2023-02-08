@@ -1,37 +1,30 @@
 <app-section id="about-us">
-  <h2>{{ 'aboutUs.title' | translate | uppercase }}</h2>
-
-  <div class="row content">
-    <div class="col-md-6 col-sm-12 about-us-image">
-      <img src="assets/images/about-us/about-us.png">
+  <div class="row column-reverse-mobile">
+    <div class="col-md-6 col-sm-12">
+      <h2>{{ 'aboutUs.title1' | translate }}</h2>
+      <h3>{{ 'aboutUs.subtitle1' | translate }}</h3>
+      <p>{{ 'aboutUs.text1' | translate }}</p>
+      <p class="bold">{{ 'aboutUs.text2' | translate }}</p>
+      <p>{{ 'aboutUs.text3' | translate }}</p>
+      <p class="bold">{{ 'aboutUs.text4' | translate }}</p>
+      <p>{{ 'aboutUs.text5' | translate }}</p>
     </div>
-    <div class="col-md-6 col-sm-12 about-us-text">
-      <div class="row">
-        <p class="about-us-desc"> {{ 'aboutUs.desc' | translate }}</p>
-      </div>
-      <div class="row about-us-wrapper">
-        <div class="row">
-          <div class="col-md-1 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">circle</mat-icon>
-          </div>
-          <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature1' | translate | uppercase }}</p>
-        </div>
-        <div class="row">
-          <div class="col-md-1 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">circle</mat-icon>
-          </div>
-          <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature2' | translate | uppercase }}</p>
-        </div>
-        <div class="row">
-          <div class="col-md-1 col-sm-2 about-us-icon">
-            <mat-icon class="icon-display">circle</mat-icon>
-          </div>
-          <p class="col-md-10 col-sm-10 about-us-text">{{ 'aboutUs.feature3' | translate | uppercase }}</p>
-        </div>
-      </div>
-      <div class="row">
-        <p class="about-us-desc"> {{ 'aboutUs.desc2' | translate }}</p>
-      </div>
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/images/about-us/about-us1.png">
+    </div>
+  </div>
+</app-section>
+<app-section id="about-us2">
+  <div class="row">
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/images/about-us/about-us2.png">
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <h2>{{ 'aboutUs.title2' | translate }}</h2>
+      <h3>{{ 'aboutUs.subtitle2' | translate }}</h3>
+      <p>{{ 'aboutUs.text1' | translate }}</p>
+      <p class="bold">{{ 'aboutUs.text2' | translate }}</p>
+      <p>{{ 'aboutUs.text3' | translate }}</p>
     </div>
   </div>
 </app-section>
