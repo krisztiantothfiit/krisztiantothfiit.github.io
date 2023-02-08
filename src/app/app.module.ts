@@ -30,11 +30,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
 import { TopContactComponent } from './top-contact/top-contact.component';
-import { HomeComponent } from './home/home.component';
+import { WhyDobermannComponent } from './why-dobermann/why-dobermann.component';
 import { AnimatedDigitComponent } from './animated-digit/animated-digit.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { AboutDobermannsComponent } from './about-dobermanns/about-dobermanns.component';
 import { ServicesComponent } from './services/services.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { CertificateComponent } from './certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -50,11 +51,12 @@ import { ResourcesComponent } from './resources/resources.component';
     AboutUsComponent,
     MessageDialogComponent,
     TopContactComponent,
-    HomeComponent,
+    WhyDobermannComponent,
     AnimatedDigitComponent,
-    ProjectsComponent,
+    AboutDobermannsComponent,
     ServicesComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    CertificateComponent,
   ],
   imports: [
     BrowserModule,

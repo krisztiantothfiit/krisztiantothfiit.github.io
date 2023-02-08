@@ -7,12 +7,12 @@
 @import "styles/footer.scss";
 @import "styles/header.scss";
 @import "styles/about-us.scss";
-@import "styles/projects.scss";
+@import "styles/about-dobermanns.scss";
 @import "styles/navigation.scss";
 @import "styles/top-contact.scss";
 @import "styles/sub-pages.scss";
 @import "styles/services.scss";
-@import "styles/resources.scss";
+@import "styles/why-dobermann.scss";
 
 body {
   background-color: var(--terciary);
@@ -24,7 +24,7 @@ body {
 
 .section {
   text-align: center;
-  padding: 4% 0;
+  padding: 2% 0;
 }
 
 .background {
@@ -51,34 +51,20 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
-  margin-bottom: 50px;
-  font-family: var(--font-family-title);
+  font-size: 35px;
+  font-family: var(--font-family-subtitle);
   text-align: center;
   position: relative;
-  color: var(--secondary);
-
-  &::after {
-    content: "";
-    display: block;
-    left: 25%;
-    width: 50%;
-    position: absolute;
-    height: 1px;
-    background-color: var(--secondary);
-  }
+  color: var(--primary-shade);
 }
 
 h3 {
   text-align: center;
   font-family: var(--font-family-title);
-  color: var(--secondary);
-  font-size: 1.3em;
-  margin: 4%;
+  color: var(--primary);
+  font-size: 18px;
   position: relative;
-  border-bottom: 1px solid var(--secondary);
-  padding-bottom: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .section .mat-flat-button {
@@ -112,7 +98,7 @@ h3 {
 
 p,
 span {
-  color: var(--secondary);
+  color: var(--text);
   text-align: left;
   font-size: 16px;
   font-family: var(--font-family-title);
@@ -124,6 +110,7 @@ b {
 
 img {
   border-radius: 4px;
+  max-width: 100%;
 }
 
 .mt {
@@ -318,10 +305,5 @@ button:focus {
   h2 {
     font-size: 2em;
     margin-bottom: 30px;
-  }
-
-  h2::after {
-    width: 100%;
-    left: 0;
   }
 }

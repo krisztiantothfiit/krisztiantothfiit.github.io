@@ -1,0 +1,44 @@
+@import "../variables.scss";
+
+#why-dobermann {
+  h2 {
+    text-align: left !important;
+  }
+
+  h3 {
+    text-align: center !important;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0px 40px;
+    text-align: justify;
+  }
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.row-margin {
+  margin: 45px 0 !important;
+}
+
+.icon-background {
+  background-color: var(--secondary);
+  border-radius: 90px;
+  width: 70px;
+  margin: 20px auto;
+  height: 70px;
+  padding: 7px 0 0 0;
+  box-shadow: 0px 4px 50px var(--primary);
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+  #why-dobermann p {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+}
