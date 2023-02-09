@@ -29,10 +29,14 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
-import { TopContactComponent } from './top-contact/top-contact.component';
+import { ActivitiesComponent } from './activities/activities.component';
 import { WhyDobermannComponent } from './why-dobermann/why-dobermann.component';
 import { AboutDobermannsComponent } from './about-dobermanns/about-dobermanns.component';
 import { CertificateComponent } from './certificate/certificate.component';
+import { OurDogComponent } from './our-dog/our-dog.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { OurPuppiesComponent } from './our-puppies/our-puppies.component';
+
 
 @NgModule({
   declarations: [
@@ -47,10 +51,12 @@ import { CertificateComponent } from './certificate/certificate.component';
     ScrollToTopComponent,
     AboutUsComponent,
     MessageDialogComponent,
-    TopContactComponent,
+    ActivitiesComponent,
     WhyDobermannComponent,
     AboutDobermannsComponent,
     CertificateComponent,
+    OurDogComponent,
+    OurPuppiesComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +72,7 @@ import { CertificateComponent } from './certificate/certificate.component';
     MatDialogModule,
     MatTabsModule,
     MatGridListModule,
+    YouTubePlayerModule,
     GoogleTagManagerModule.forRoot({
       id: environment.gtmId,
     }),

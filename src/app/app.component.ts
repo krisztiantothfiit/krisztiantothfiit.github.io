@@ -12,6 +12,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   public currentLang = 'sk';
+  apiLoaded = false;
 
   constructor(private translate: TranslateService,
     private matIconRegistry: MatIconRegistry,
@@ -45,6 +46,13 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.initCookies();
     this.addMetaTags();
+
+    if (!this.apiLoaded) {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.body.appendChild(tag);
+      this.apiLoaded = true;
+    }
   }
 
   initCookies(): void {
