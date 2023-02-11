@@ -36,7 +36,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { OurDogComponent } from './our-dog/our-dog.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { OurPuppiesComponent } from './our-puppies/our-puppies.component';
-
+import { PhotogalleryComponent } from './photogallery/photogallery.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +57,7 @@ import { OurPuppiesComponent } from './our-puppies/our-puppies.component';
     CertificateComponent,
     OurDogComponent,
     OurPuppiesComponent,
+    PhotogalleryComponent
   ],
   imports: [
     BrowserModule,

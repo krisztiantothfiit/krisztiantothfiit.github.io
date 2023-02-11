@@ -81,10 +81,10 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('I-Imko');
+    this.titleService.setTitle('Vita Amoris');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Naším zámerom je realizácia kompletných elektroinštalačných prác pre rôzne objekty.' },
-      { name: 'keywords', content: 'elektroinstalacne prace, elektroinštalačné práce, Veľké Úľany, elektroinštalácie, jadrové vŕtanie' },
+      { name: 'description', content: 'Sme chovná stanica Vita Amoris, ktorá sa venuje chovu dobermanna, nádherného elegantného plemena.' },
+      { name: 'keywords', content: 'chovná stanica, chovna stanica, vita amoris, dobermann ' },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Renata Ivanová' },
       { charset: 'UTF-8' },

@@ -1,0 +1,50 @@
+<div *ngIf="!secondPhotogallery; else secondPhotogallery">
+    <img class="wave" src="assets/images/photogallery/wave1.svg">
+    <app-section id="photogallery">
+        <h2>{{ 'photogallery.title1' | translate }}</h2>
+        <div class="wrapper">
+            <div class="one photogallery-image" [style.background-image]="'url(assets/images/photogallery/photo1.png)'">
+            </div>
+            <div class="two photogallery-image" [style.background-image]="'url(assets/images/photogallery/photo2.png)'">
+            </div>
+            <div class="three photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo3.png)'">
+            </div>
+            <div class="four photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo4.png)'">
+            </div>
+            <div class="five photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo5.png)'">
+            </div>
+            <div class="six photogallery-image" [style.background-image]="'url(assets/images/photogallery/photo6.png)'">
+            </div>
+        </div>
+    </app-section>
+    <img class="wave" src="assets/images/photogallery/wave2.svg">
+</div>
+
+<ng-template #secondPhotogallery>
+    <img class="wave" src="assets/images/photogallery/wave3.svg">
+    <app-section id="photogallery">
+        <h2>{{ 'photogallery.title2' | translate }}</h2>
+        <div class="wrapper">
+            <div class="one photogallery-image" [style.background-image]="'url(assets/images/photogallery/photo7.png)'">
+            </div>
+            <div class="two photogallery-image" [style.background-image]="'url(assets/images/photogallery/photo8.png)'">
+            </div>
+            <div class="three photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo9.png)'">
+            </div>
+            <div class="four photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo10.png)'">
+            </div>
+            <div class="five photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo11.png)'">
+            </div>
+            <div class="six photogallery-image"
+                [style.background-image]="'url(assets/images/photogallery/photo12.png)'">
+            </div>
+        </div>
+    </app-section>
+    <img class="wave" src="assets/images/photogallery/wave4.svg">
+</ng-template>
