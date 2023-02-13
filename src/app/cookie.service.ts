@@ -77,11 +77,11 @@ export class CookieService implements OnDestroy {
 
 export const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'vita-amoris.sk'
+    domain: 'vitaamoris.sk'
   },
   palette: {
     popup: {
-      background: '#E5DED8'
+      background: '#85796F'
     },
     button: {
       background: '#401E0A'
