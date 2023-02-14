@@ -147,11 +147,6 @@ button:focus {
 
 // COOKIES
 
-.cc-revoke.cc-bottom {
-  color: var(--primary) !important;
-  border: 1px solid var(--primary) !important;
-}
-
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
@@ -171,8 +166,7 @@ button:focus {
 }
 
 .cc-animate.cc-revoke.cc-bottom {
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  color: var(--terciary);
 }
 
 .cc-theme-edgeless.cc-window {
