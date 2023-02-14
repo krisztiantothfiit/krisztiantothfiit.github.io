@@ -1,19 +1,23 @@
 @import "../variables.scss";
 
-#footer .section {
+#contact .section {
   min-height: unset;
   padding-bottom: 1%;
   background-color: var(--text);
 }
 
-#footer {
+#contact {
 
   h2,
   h3,
   p,
   span {
-    color: var(--secondary);
+    color: var(--terciary);
     text-align: center;
+  }
+
+  .icon-background {
+    background-color: var(--terciary);
   }
 
   .row {

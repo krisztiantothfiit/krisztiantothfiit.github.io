@@ -3,7 +3,6 @@
 @include mat.core();
 
 @import "variables";
-@import "styles/contact.scss";
 @import "styles/footer.scss";
 @import "styles/header.scss";
 @import "styles/about-us.scss";
@@ -198,6 +197,10 @@ button:focus {
   background: var(--primary-shade);
   border-radius: 12px;
   border: 1px solid var(--primary-shade);
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 

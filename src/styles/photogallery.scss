@@ -90,5 +90,10 @@
     .six {
         grid-column: 2;
         grid-row: 4;
+        background-position: right;
+    }
+
+    .wrapper {
+        gap: 10px
     }
 }

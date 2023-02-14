@@ -1,4 +1,4 @@
-<div *ngIf="!secondPhotogallery">
+<div *ngIf="!secondPhotogallery; else second">
     <img class="wave" src="assets/images/photogallery/wave1.svg">
     <app-section id="photogallery">
         <h2>{{ 'photogallery.title1' | translate }}</h2>
@@ -23,7 +23,7 @@
     <img class="wave" src="assets/images/photogallery/wave2.svg">
 </div>
 
-<div *ngIf="secondPhotogallery">
+<ng-template #second>
     <img class="wave" src="assets/images/photogallery/wave3.svg">
     <app-section id="photogallery">
         <h2>{{ 'photogallery.title2' | translate }}</h2>
@@ -47,4 +47,4 @@
         </div>
     </app-section>
     <img class="wave" src="assets/images/photogallery/wave4.svg">
-  </div>
+  </ng-template>

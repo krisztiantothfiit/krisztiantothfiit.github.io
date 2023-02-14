@@ -162,6 +162,7 @@
 
   &.close {
     background: none;
+    opacity: 1;
 
     span {
       background: none;
@@ -247,8 +248,9 @@
   }
 
   .nav-item-border {
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary-shade);
   }
+
 
   .dropdown-menu.show {
     display: flex;

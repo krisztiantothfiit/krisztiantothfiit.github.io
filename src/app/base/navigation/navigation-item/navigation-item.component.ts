@@ -10,7 +10,12 @@ export class NavigationItemComponent {
     scroll() {
         const el = document.getElementById(this.title);
         if (el) {
-            el.scrollIntoView({behavior: 'smooth'});
+            var elementPosition = el.getBoundingClientRect().top;
+            var offsetPosition = elementPosition + window.pageYOffset - 56;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+           });
         }
     }
 }
