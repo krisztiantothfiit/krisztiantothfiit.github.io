@@ -30,8 +30,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
 import { ActivitiesComponent } from './activities/activities.component';
-import { WhyDobermannComponent } from './why-dobermann/why-dobermann.component';
-import { AboutDobermannsComponent } from './about-dobermanns/about-dobermanns.component';
+import { WhydobermanComponent } from './why-doberman/why-doberman.component';
+import { AboutdobermansComponent } from './about-dobermans/about-dobermans.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { OurDogComponent } from './our-dog/our-dog.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -52,8 +52,8 @@ import { PhotogalleryComponent } from './photogallery/photogallery.component';
     AboutUsComponent,
     MessageDialogComponent,
     ActivitiesComponent,
-    WhyDobermannComponent,
-    AboutDobermannsComponent,
+    WhydobermanComponent,
+    AboutdobermansComponent,
     CertificateComponent,
     OurDogComponent,
     OurPuppiesComponent,

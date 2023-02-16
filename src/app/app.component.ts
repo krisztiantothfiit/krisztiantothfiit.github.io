@@ -83,8 +83,8 @@ export class AppComponent implements OnInit {
   addMetaTags(): void {
     this.titleService.setTitle('Vita Amoris');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Sme chovná stanica Vita Amoris, ktorá sa venuje chovu dobermanna, nádherného elegantného plemena.' },
-      { name: 'keywords', content: 'chovná stanica, chovna stanica, vita amoris, dobermann ' },
+      { name: 'description', content: 'Sme chovná stanica Vita Amoris, ktorá sa venuje chovu dobermana, nádherného elegantného plemena.' },
+      { name: 'keywords', content: 'chovná stanica, chovna stanica, vita amoris, doberman ' },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Renata Ivanová' },
       { charset: 'UTF-8' },

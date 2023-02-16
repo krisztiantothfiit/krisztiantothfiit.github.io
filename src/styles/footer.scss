@@ -11,9 +11,20 @@
   h2,
   h3,
   p,
-  span {
+  span,
+  a {
     color: var(--terciary);
     text-align: center;
+  }
+
+  a {
+    font-family: var(--font-family-title);
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
   }
 
   .icon-background {

@@ -51,6 +51,6 @@ export class NavigationComponent {
   }
 
   openFacebook() {
-    window.open("https://www.facebook.com/IImko", "_blank");
+    window.open("https://www.facebook.com/profile.php?id=100090247062700", "_blank");
   }
 }
