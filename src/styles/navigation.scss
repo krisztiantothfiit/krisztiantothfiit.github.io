@@ -15,7 +15,11 @@
 }
 
 .show > .btn-secondary.dropdown-toggle {
-  color: var(--secondary) !important;
+  color: var(--text) !important;
+}
+
+.btn-secondary:hover {
+  color: var(--text) !important;
 }
 
 .navbar-brand-name {
@@ -35,7 +39,6 @@
 .lang-dropdown {
   background-color: transparent !important;
   border-color: transparent !important;
-  padding: 0.5em;
 }
 
 .btn-secondary.dropdown-toggle:focus {
@@ -202,7 +205,7 @@
 }
 
 .navbar-expand-custom .nav-link {
-  padding-right: 3rem;
+  padding-right: 2rem;
   padding-left: 0.5rem;
 }
 
@@ -211,6 +214,10 @@
   color: var(--text) !important;
   position: relative;
   top: 2px;
+}
+
+.flex {
+  display: flex;
 }
 
 @media only screen and (max-width: $tablet-resolution) {
@@ -314,6 +321,6 @@
   }
 
   .show > .btn-secondary.dropdown-toggle {
-    color: var(--primary) !important;
+    color: var(--text) !important;
   }
 }

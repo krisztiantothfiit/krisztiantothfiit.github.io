@@ -14,6 +14,29 @@
         <app-navigation-item title="our-dog"></app-navigation-item>
         <app-navigation-item title="our-puppies"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
+        <li>
+          <div class="dropdown show nav-item-border">
+            <a class="btn btn-secondary dropdown-toggle lang-dropdown nav-text-color" href="#" role="button"
+              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ currentLang | uppercase}}
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="changeUsedLang('sk')">
+                <div class="flex">
+                  <mat-icon svgIcon="sk_flag"></mat-icon>
+                  <span class="margin-left-10">SK</span>
+                </div>
+              </a>
+              <a class="dropdown-item" (click)="changeUsedLang('en')">
+                <div class="flex">
+                  <mat-icon svgIcon="en_flag"></mat-icon>
+                  <span class="margin-left-10">EN</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
         <li class="nav-item">
           <a class="nav-link" (click)="openFacebook()">
             <mat-icon class="icon-display" svgIcon="facebook"></mat-icon>
