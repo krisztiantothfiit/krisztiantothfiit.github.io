@@ -1,24 +1,28 @@
-$primary: #401E0A;
+$primary: #125EC6;
 $primary-shade: #85796F;
-$background: #2E2620;
-$secondary: #BFAE9F;
-$terciary: #e5ded8;
+$background: #F2F5FA;
+$default: #FFFFFF;
+$secondary: #000000;
+$terciary: #A6BFE8;
 $text: #0D0D0D;
 $small-mobile-resolution: 590px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
-$font-family-title: 'Playfair Display', serif;
-$font-family-subtitle: 'Great Vibes', cursive;
+$font-family-text: 'Pontano Sans', sans-serif;;
+$font-family-title: 'Montserrat', sans-serif;
+$font-family-highlighted-text: 'Fira Sans', sans-serif;
 $box-shadow: 0px 4px 30px rgba(64, 30, 10, 0.3);
 
 :root {
     --primary: #{$primary};
     --primary-shade: #{$primary-shade};
+    --default: #{$default};
     --background: #{$background};
     --secondary: #{$secondary};
     --terciary: #{$terciary};
     --text: #{$text};
+    --font-family-text: #{$font-family-text};
     --font-family-title: #{$font-family-title};
-    --font-family-subtitle: #{$font-family-subtitle};
+    --font-family-highlighted-text: #{$font-family-highlighted-text};
     --box-shadow: #{$box-shadow};
 }

@@ -1,22 +1,40 @@
-id;sk;en;
-fancyweb;FancyWeb;FancyWeb;
-title;Vita Amoris;Vita Amoris;
-
-navigation.about-us;O nás;About Us;
-navigation.about-doberman;O dobermanovi;About the Dobermann;
-navigation.our-dog;Naša fenka;Our Female;
-navigation.our-puppies;Naše šteniatka;Our Puppies;
-navigation.contact;Kontakt;Contact;
+id;sk
+fancyweb;FancyWeb
+title1;Alžbeta
+title2;Vímiova
 
 cookieMessage;"Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.";"This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.";
 cookieAllow;Povoliť;Allow;
 cookieDeny;Odmietnuť;Deny;
 cookiePolicy;Zásady používania súborov cookie;Cookie Policy;
 
-certificate.title;Náš certifikát;Our Certificate;
+navigation.insurance;Poistenie
+navigation.partners;Partneri
+navigation.wanna-be-insured;Chcem sa poistiť
+navigation.contact;Kontakt
+navigation.about-me;O mne
 
-header.text;„Psia láska je najčistejšia vec. Jeho dôvera vo vás je totálna. Nesmiete ju zradiť.“;„The love of a dog is a pure thing. He gives you a trust which is total. You must not betray it.“;
-header.author;Michel Houellebecq;Michel Houellebecq;
+header.title1;Spoločne
+header.title2;Zabezpečíme
+header.title3;Vašu
+header.title4;Budúcnosť
+header.text;Hľadáte spoľahlivé poistenie, úver, či lízing? Som tu pre vás. S mojou odbornosťou a skúsenosťami vám nájdem najlepšie riešenie pre vaše poistné potreby v bežnom a v pracovnom živote, ale aj v podnikaní. Dôverujte mi a zabezpečte si svoju budúcnosť a pokojný život.
+header.button;Chcem sa poistiť
+
+insurance.title1;Poistenie
+insurance.title2;Poistite si všetko, čo je pre vás dôležité...
+insurance.subtitle1;Život
+insurance.paragraph1;Zabezpečíme pre vás kvalitné a komplexné poistenie osôb všetkých vekových kategórií, vrátane detí, dospelých a seniorov. Ponúkame životné a úrazové poistenie, ako aj špeciálne poistenie, ktoré splní všetky vaše požiadavky.
+insurance.subtitle2;Domov
+insurance.paragraph2;Poskytujeme vám kompletné poistenie pre rodinné domy, byty, bytové domy a ich vybavenie, spolu s poistením zodpovednosti za vlastníctvo týchto nehnuteľností a poistením zodpovednosti za bežné činnosti. Váš majetok a zodpovednosť sú u nás v bezpečí.
+insurance.subtitle3;Podnikanie
+insurance.paragraph3;U nás si môžete uzatvoriť poistenie majetku, ktoré zahŕňa poistenie zodpovednosti, pohľadávok, ako aj poistenie pre prípad prerušenia prevádzky. Okrem toho vám ponúkame aj stavebnomontážne poistenie, ktoré zabezpečí vaše projekty a stavby. S nami môžete mať istotu a pokojné spanie bez starostí o svoj majetok.
+insurance.subtitle4;Práca
+insurance.paragraph4;Sme tu pre vás, aby sme vám poskytli poistenie zodpovednosti za škodu voči zamestnávateľovi a poistenie profesií ako sú napríklad lekárske povolania, účtovníci, právnici a mnoho ďalších. Bez ohľadu na to, v akej profesii pracujete, u nás nájdete poistenie, ktoré sa prispôsobí vašim potrebám a poskytne vám pocit bezpečia a ochrany pri výkone vašej práce.
+insurance.subtitle5;Auto
+insurance.paragraph5;U nás si môžete zabezpečiť zákonné poistenie, havarijné poistenie a poistenie finančnej straty - GAP pre občanov aj podnikateľov. Navyše, poskytujeme aj poistenie dopravných prostriedkov, aby ste si mohli vychutnávať svoje cestovanie bez starostí a s istotou, že vaše vozidlo je chránené.
+insurance.subtitle6;Cestovanie
+insurance.paragraph6;Užite si svoje cestovanie s pocitom istoty a bezpečia s našim cestovným poistením. Bez ohľadu na to, či ide o krátkodobú dovolenku alebo dlhodobý pobyt v zahraničí, ponúkame vám široké pokrytie rizík a ochranu pred neočakávanými udalosťami, ktoré môžu nastať počas vašich ciest.
 
 aboutUs.title1;Sme chovateľská stanica Vita Amoris;Vita Amoris Breeding Station;
 aboutUs.subtitle1;... a všetko to začal Áron;.... and it all began with Aron;
@@ -51,20 +69,6 @@ about-doberman.title8;Farba;Colour;
 about-doberman.paragraph8;čierna s pálením, hnedá s pálením;black and rust, brown and rust;
 about-doberman.title9;Hmotnosť;Weight;
 about-doberman.paragraph9;32-45 kg;32-45 kg;
-
-why-doberman.title;Prečo si vybrať dobermana?;Why choose a Dobermann?;
-why-doberman.title1;Inteligentný;Intelligent;
-why-doberman.paragraph1;Doberman je vysoko inteligentný pes, vďaka čomu sa ľahko trénuje a reaguje na príkazy.;The Dobermann is a highly intelligent dog, which makes it easy to train and obey.;
-why-doberman.title2;Verný;Loyal;
-why-doberman.paragraph2;Je známy svojou silnou lojalitou k majiteľom a ich rodinám a veľmi si ich chráni.;It is well known for its strong loyalty to its owners as well as their families, and is very protective of them.;
-why-doberman.title3;Plný energie;Energetic;
-why-doberman.paragraph3;Doberman má veľa energie a vyžaduje pravidelný pohyb, aby zostal zdravý a šťastný.;The Dobermann has a lot of energy, and requires regular exercise to keep fit and happy.;
-why-doberman.title4;Odvážný;Fearless;
-why-doberman.paragraph4;Doberman je nebojácny a v prípade potreby bude brániť svoju rodinu.;The Dobermann is fearless and very protective of his family.;
-why-doberman.title5;Perfektný strážny pes;Excellent Watchdog;
-why-doberman.paragraph5;Má vysokú úroveň ostražitosti, čo z neho robí skvelého strážneho psa.;A high level of vigilance makes him a great guard dog.;
-why-doberman.title6;Trénovateľný;Trainable;
-why-doberman.paragraph6;Doberman je dobre trénovateľný a dokáže sa naučiť rôzne povely a triky, vďaka čomu je skvelý pre výcvik poslušnosti a iné druhy psích športov.;The Dobermann is highly trainable and easy to teach a variety of commands and tricks, making it suitable for obedience training and other dog sports.
 
 activities.title;A to hlavné, je skvelý spoločník pri každej aktivite;The best thing is - you get a brilliant company for all types of activities;
 activities.title1;Keď chcete oddychovať  ;Downtime;

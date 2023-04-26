@@ -1,0 +1,65 @@
+@import "../variables.scss";
+
+#insurance {
+  h1 {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.row-left {
+  h3 {
+    text-align: left !important;
+    color: var(--text);
+    letter-spacing: 15px;
+  }
+
+  mat-icon {
+    display: flex !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 50px 0;
+  }
+
+  margin-bottom: 50px !important;
+}
+
+.row-right {
+  h3 {
+    text-align: right !important;
+    color: var(--text);
+    letter-spacing: 15px;
+  }
+
+  mat-icon {
+    display: flex !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: 50px 0 50px auto;
+  }
+
+  margin-bottom: 50px !important;
+}
+
+@media only screen and (max-width: $tablet-resolution) {
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+  mat-icon {
+    margin: 20px auto !important;
+  }
+
+  .row {
+    h3 {
+      text-align: center !important;
+    }
+  }
+
+  .line {
+    display: none;
+  }
+}

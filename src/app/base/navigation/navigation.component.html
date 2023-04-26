@@ -5,43 +5,19 @@
       id="navbar-toggler" [ngClass]="{close: toClose}">
       <span></span>
     </div>
-    <img class="navbar-brand-img desktop-only" src="assets/images/logo.png">
-    <img class="navbar-brand-img mobile-only" src="assets/images/logo-black.png">
+    <a class="navbar-brand">
+      <div class="navbar-brand-name">
+        <h3>{{'title1' | translate | uppercase}}</h3>
+        <h3 class="no-bottom-margin">{{'title2' | translate | uppercase}}</h3>
+      </div>
+    </a>
     <div class="collapse navbar-collapse" id="primary-menu">
       <ul class="nav navbar-nav ms-auto nav-no-opacity">
-        <app-navigation-item title="about-us"></app-navigation-item>
-        <app-navigation-item title="about-doberman"></app-navigation-item>
-        <app-navigation-item title="our-dog"></app-navigation-item>
-        <app-navigation-item title="our-puppies"></app-navigation-item>
+        <app-navigation-item title="insurance"></app-navigation-item>
+        <app-navigation-item title="partners"></app-navigation-item>
+        <app-navigation-item title="wanna-be-insured"></app-navigation-item>
         <app-navigation-item title="contact"></app-navigation-item>
-        <li>
-          <div class="dropdown show nav-item-border">
-            <a class="btn btn-secondary dropdown-toggle lang-dropdown nav-text-color" href="#" role="button"
-              id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {{ currentLang | uppercase}}
-            </a>
-
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" (click)="changeUsedLang('sk')">
-                <div class="flex">
-                  <mat-icon svgIcon="sk_flag"></mat-icon>
-                  <span class="margin-left-10">SK</span>
-                </div>
-              </a>
-              <a class="dropdown-item" (click)="changeUsedLang('en')">
-                <div class="flex">
-                  <mat-icon svgIcon="en_flag"></mat-icon>
-                  <span class="margin-left-10">EN</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" (click)="openFacebook()">
-            <mat-icon class="icon-display" svgIcon="facebook"></mat-icon>
-          </a>
-        </li>
+        <app-navigation-item title="about-me"></app-navigation-item>
       </ul>
     </div>
   </div>

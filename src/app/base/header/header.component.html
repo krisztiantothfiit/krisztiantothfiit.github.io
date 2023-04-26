@@ -1,12 +1,19 @@
 <app-section id="header">
   <div class="row">
-    <div class="col-lg-6 col-sm-12">
-      <img src="assets/images/header/header1.png">
-    </div>
     <div class="col-lg-6 col-sm-12 header-text">
-      <h1>{{ 'header.text' | translate | uppercase }}</h1>
-      <span class="nav-text-color">{{ 'header.author' | translate | uppercase }}</span>
-      <img class="paw" src="assets/images/header/header3.png">
+      <h1>{{ 'header.title1' | translate | uppercase }}</h1>
+      <h1>{{ 'header.title2' | translate | uppercase }}</h1>
+      <span class="flex">
+        <h1>{{ 'header.title3' | translate | uppercase }}&nbsp;</h1>
+        <h1 class="highlight">{{ 'header.title4' | translate | uppercase }}</h1>
+      </span>
+      <div class="divider"></div>
+      <p>{{ 'header.text' | translate }}</p>
+      <button class="header-button" mat-raised-button (click)="scroll()">
+        <span class="header-button-text">{{ 'header.button' | translate | uppercase }}</span>
+    </button>    </div>
+    <div class="col-lg-6 col-sm-12 header-img">
+      <img src="assets/images/header/header1.png">
     </div>
   </div>
 </app-section>

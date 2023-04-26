@@ -17,10 +17,10 @@ export class HeaderComponent {
     })
   }
 
-  scrollToContact() {
-    const el = document.getElementById("contact");
+  scroll() {
+    const el = document.getElementById('insurance');
     if (el) {
-        el.scrollIntoView({behavior: 'smooth'});
+      el.scrollIntoView({ behavior: 'smooth' });
     }
-}
+  }
 }
