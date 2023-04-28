@@ -31,7 +31,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { InsuranceComponent } from './insurance/insurance.component';
-import { AboutdobermansComponent } from './about-dobermans/about-dobermans.component';
+import { PartnersComponent } from './partners/partners.component';
 import { CertificateComponent } from './certificate/certificate.component';
 import { OurDogComponent } from './our-dog/our-dog.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
@@ -53,7 +53,7 @@ import { PhotogalleryComponent } from './photogallery/photogallery.component';
     MessageDialogComponent,
     ActivitiesComponent,
     InsuranceComponent,
-    AboutdobermansComponent,
+    PartnersComponent,
     CertificateComponent,
     OurDogComponent,
     OurPuppiesComponent,

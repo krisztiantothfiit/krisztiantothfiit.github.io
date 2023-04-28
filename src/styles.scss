@@ -6,7 +6,7 @@
 @import "styles/footer.scss";
 @import "styles/header.scss";
 @import "styles/about-us.scss";
-@import "styles/about-dobermans.scss";
+@import "styles/partners.scss";
 @import "styles/navigation.scss";
 @import "styles/activities.scss";
 @import "styles/sub-pages.scss";
@@ -108,7 +108,7 @@ span {
 
 .scrollToTop.mat-mini-fab {
   position: fixed;
-  background-color: var(--secondary);
+  background-color: var(--terciary);
   top: auto;
   left: auto;
   right: 30px;
@@ -143,9 +143,9 @@ button:focus {
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  color: var(--text) !important;
+  color: var(--background) !important;
   border-radius: 10px !important;
-  background-color: var(--terciary) !important;
+  background-color: var(--primary) !important;
   margin: 5px !important;
 }
 
@@ -155,11 +155,11 @@ button:focus {
   background-color: var(--background) !important;
   border-radius: 10px !important;
   margin: 5px !important;
-  color: var(--terciary) !important;
+  color: var(--primary) !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
-  color: var(--terciary);
+  color: var(--text);
 }
 
 .cc-theme-edgeless.cc-window {
@@ -167,7 +167,7 @@ button:focus {
 }
 
 .cc-message {
-  color: var(--terciary);
+  color: var(--text);
 }
 
 // SCROLL BAR
@@ -177,13 +177,12 @@ button:focus {
   height: 8px;
   overflow-y: scroll;
   background: var(--seconday);
-  box-shadow: inset 0 0 4px var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-shade);
+  background: var(--terciary);
   border-radius: 12px;
-  border: 1px solid var(--primary-shade);
+  border: 1px solid var(--terciary);
 }
 
 p:last-child {
