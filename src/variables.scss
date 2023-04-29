@@ -1,5 +1,4 @@
 $primary: #125EC6;
-$primary-shade: #85796F;
 $background: #F2F5FA;
 $default: #FFFFFF;
 $secondary: #000000;
@@ -11,11 +10,9 @@ $tablet-resolution: 960px;
 $font-family-text: 'Pontano Sans', sans-serif;;
 $font-family-title: 'Montserrat', sans-serif;
 $font-family-highlighted-text: 'Fira Sans', sans-serif;
-$box-shadow: 0px 4px 30px rgba(64, 30, 10, 0.3);
 
 :root {
     --primary: #{$primary};
-    --primary-shade: #{$primary-shade};
     --default: #{$default};
     --background: #{$background};
     --secondary: #{$secondary};
@@ -24,5 +21,4 @@ $box-shadow: 0px 4px 30px rgba(64, 30, 10, 0.3);
     --font-family-text: #{$font-family-text};
     --font-family-title: #{$font-family-title};
     --font-family-highlighted-text: #{$font-family-highlighted-text};
-    --box-shadow: #{$box-shadow};
 }

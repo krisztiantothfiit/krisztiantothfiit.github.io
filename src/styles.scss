@@ -8,13 +8,8 @@
 @import "styles/about-us.scss";
 @import "styles/partners.scss";
 @import "styles/navigation.scss";
-@import "styles/activities.scss";
-@import "styles/sub-pages.scss";
-@import "styles/services.scss";
 @import "styles/insurance.scss";
-@import "styles/our-dog.scss";
-@import "styles/our-puppies.scss";
-@import "styles/photogallery.scss";
+@import "styles/contact.scss";
 
 .container {
   max-width: 1200px;
@@ -22,7 +17,7 @@
 
 .section {
   text-align: center;
-  padding: 2% 0;
+  padding: 50px 0;
 }
 
 .row {
@@ -30,7 +25,6 @@
 }
 
 img {
-  border-radius: 5px;
   max-width: 100%;
 }
 
@@ -61,7 +55,7 @@ h2 {
   font-family: var(--font-family-highlighted-text);
   text-align: center;
   position: relative;
-  color: var(--primary-shade);
+  color: var(--primary);
   margin-bottom: 2rem;
 }
 
@@ -89,12 +83,11 @@ span {
   background-color: var(--secondary);
   border-radius: 45px;
   padding: 4px 32px;
-  box-shadow: var(--box-shadow);
 
   span {
     color: var(--primary);
     text-transform: uppercase;
-    font-family: var(--font-family-title);
+    font-family: var(--font-family-text);
   }
 }
 
@@ -115,7 +108,6 @@ span {
   bottom: 30px;
   box-shadow: none;
   z-index: 10;
-  box-shadow: var(--box-shadow);
 
   .mat-icon {
     transform: rotate(90deg) !important;
@@ -189,17 +181,35 @@ p:last-child {
   margin-bottom: 0;
 }
 
+// MAP
+
+.map {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 @media only screen and (max-width: $tablet-resolution) {
   .container {
     max-width: 720px !important;
     padding: 0;
   }
+
+  .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  h1 {
+    font-size: 25px;
+  }
+
   .section {
-    padding: 1rem 2rem;
+    padding: 50px 2rem;
   }
 
   .mobile-only {
@@ -237,7 +247,13 @@ p:last-child {
     flex-direction: column-reverse;
   }
 
-  .col-md-4 .col-md-6, .col-sm-12 {
-    padding: 0;
+  .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .map {
+    height: 350px;
+    margin-top: 20px;
   }
 }

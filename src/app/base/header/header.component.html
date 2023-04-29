@@ -1,6 +1,6 @@
 <app-section id="header">
   <div class="row">
-    <div class="col-lg-6 col-sm-12 header-text">
+    <div class="col-lg-6 col-md-12 header-text">
       <h1>{{ 'header.title1' | translate | uppercase }}</h1>
       <h1>{{ 'header.title2' | translate | uppercase }}</h1>
       <span class="flex">
@@ -9,10 +9,11 @@
       </span>
       <div class="divider"></div>
       <p>{{ 'header.text' | translate }}</p>
-      <button class="header-button" mat-raised-button (click)="scroll()">
-        <span class="header-button-text">{{ 'header.button' | translate | uppercase }}</span>
-    </button>    </div>
-    <div class="col-lg-6 col-sm-12 header-img">
+      <button mat-raised-button (click)="scroll()">
+        <span>{{ 'header.button' | translate | uppercase }}</span>
+      </button>
+    </div>
+    <div class="col-lg-6 col-md-12 header-img">
       <img src="assets/images/header/header1.png">
     </div>
   </div>

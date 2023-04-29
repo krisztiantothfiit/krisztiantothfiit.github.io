@@ -12,7 +12,7 @@
 
   .row-left {
     h3 {
-      text-align: left !important;
+      text-align: left;
       color: var(--text);
       letter-spacing: 15px;
     }
@@ -24,14 +24,15 @@
       margin: 50px 0;
     }
 
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
   }
 
   .row-right {
     h3 {
-      text-align: right !important;
+      text-align: right;
       color: var(--text);
       letter-spacing: 15px;
+      margin-right: -15px;
     }
 
     mat-icon {
@@ -41,7 +42,11 @@
       margin: 50px 0 50px auto;
     }
 
-    margin-bottom: 50px !important;
+    margin-bottom: 50px;
+  }
+
+  .row-right:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -55,7 +60,7 @@
     }
   }
 
-  .row {
+  .row, .row-left, .row-right {
     h3 {
       text-align: center !important;
     }

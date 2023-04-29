@@ -1,7 +1,7 @@
 id;sk
 fancyweb;FancyWeb
 title1;Alžbeta
-title2;Vímiova
+title2;Vímiová
 
 cookieMessage;"Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.";"This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.";
 cookieAllow;Povoliť;Allow;
@@ -43,61 +43,36 @@ partners.text2;Ak sa klient zaujíma o produkt  inej poisťovacej inštitúcie, 
 partners.text3;zoznamu.
 
 aboutUs.title1;Sme chovateľská stanica Vita Amoris;Vita Amoris Breeding Station;
-aboutUs.subtitle1;... a všetko to začal Áron;.... and it all began with Aron;
+aboutUs.title2;... a všetko to začal Áron;.... and it all began with Aron;
 aboutUs.text1;Keď sme s manželom doniesli domov šteniatko xdobermana zachráneného z osady, ani nás nenapadlo, ako veľmi zasiahne do nášho života. Zo šteniatka sa stal šikovný a múdry pes, tak trochu introvert. ;When my husband and I brought home a Doberman puppy rescued from a settlement, we had no idea how much it would affect our lives. The puppy grew up into a clever and wise dog, a bit of an introvert.
 aboutUs.text2;Po čase sme začali uvažovať nad ďalším štvornohým spoločníkom.;After a while, we started thinking about getting another four-legged companion.;
 aboutUs.text3;Ako inak, voľba padla na plemeno dobermana. Spustil sa kolotoč študovania vhodných chovateľských staníc. V čase zbierania informácií sme sa zoznámili s CHS European K9 training base. Dospeli sme k rozhodnutiu, že jeden z rodičov nášho šteniatka bude z tejto stanice.;Our choice, of course,  fell on the Dobermann breed. A great search for suitable breeding stations began. At the time of collecting information, we got acquainted with the CHS European K9 training base. We had decided that one of our puppy's parents would be from this station.
 aboutUs.text4;Chceli sme fenku pracovnej povahy po rodičoch a povahou opakom nášho introverta.;We wanted an eager female dog with parents of the nature quite opposite to our introverted male.;
-aboutUs.text5;Predstava sa naplnila, keď sme sa dozvedeli o očakávaní šteniatok z chovateľskej stanice Halit Paša zo spojenia Hera Halit Paša a Expert European K9 training base.;The dream came true once we learned about an expected delivery of puppies from the Halit Paša breeding station, born out of the connection between Hera Halit Paša and Expert European K9 training base.
 
-aboutUs.title2;Legenda je naša životná láska (vita amoris);Legenda - the love of our life;
-aboutUs.subtitle2;Do nášho života pribudla Legenda Halit Paša, ktorá nám zmenila život.;Legenda Halit Paša has entered our life and turned it upside down;
-aboutUs.text6;Z malého čierneho klbka vyrástla bláznivá, vždy zvedavá, krásna slečna s veľkou chuťou pracovať. Začali sme s ňou chodiť na výstavy, mňa priviedla k športovej kynológii, vyliečila ma z prehnanej poriadkumilovnosti, Áron pri nej ožil a to najhlavnejšie, stala sa pre nás veselou a oddanou spoločníčkou pri všetkých aktivitách.;The tiny black bundle grew into a frisky, always curious, beautiful, keen lady. We started attending exhibitions with her, she inspired me to take up to sports cynology, she cured me of my obsessive tidiness, and most importantly, Áron became much livelier around her, she became a cheerful and devoted companion of ours on all fronts.
-aboutUs.text7;Ako sme krôčik po krôčiku pracovali s Legenou, klíčila v nás túžba mať jej šteniatko, tak sme založili chovateľskú stanicu.;The training process and the amazing progress made with Legenda awoke the desire to have our own puppies, that finally resulted in founding a breeding station.;
-aboutUs.text8;V 06/2022 sme založili chovateľskú stanicu Vita Amoris s cieľom zachovať v šteniatkach Legendinu hravosť, dravosť, bláznivosť a venovať sa chovu tohto nádherného elegantného plemena so zameraním na zdravie a pracovitosť.;In June 2022, we founded the kennel Vita Amoris with the aim of preserving Legenda's playfulness, ferocity and elán in the puppies, and to devote ourselves to the business of breeding of this beautiful and elegant canine with an emphasis on health and agility.
+contact.form.title1;Chcem sa poistiť
+contact.form.title2;Získajte poistenie rýchlo a jednoducho
+contact.form.name;Meno a priezvisko
+contact.form.email;Email
+contact.form.phone;Mobilné číslo
+contact.form.insurance;O aké poistenie by ste mali záujem?
+contact.form.insurance.majetkuObcanov;Poistenie majetku občanov
+contact.form.insurance.motorovychVozidiel;Poistenie motorových vozidiel
+contact.form.insurance.osob;Poistenie osôb
+contact.form.insurance.podnikatelov;Poistenie podnikateľov
+contact.form.insurance.bytovychDomov;Poistenie bytových domov
+contact.form.insurance.cestovne;Cestovné poistenie
+contact.form.insurance.vykonuPrace;Poistenie v rámci výkonu práce
+contact.form.insurance.profesii;Poistenie profesií
+contact.form.insurance.kybernetickychRizik;Poistenie kybernetických rizík
+contact.form.insurance.agro;Agro poistenie
+contact.form.insurance.dopravnychProstriedkov;Poistenie dopravných prostriedkov
+contact.form.insurance.do;Poistenie D&O
+contact.form.message;Správa
+contact.form.submitBtn;Odoslať
+contact.form.required;Povinné pole
+contact.form.pattern;Nesprávny tvar
+contact.form.successMsg;Správa bola úspešne odoslaná!
+contact.form.failMsg;Odoslanie správy zlyhalo
 
-activities.title;A to hlavné, je skvelý spoločník pri každej aktivite;The best thing is - you get a brilliant company for all types of activities;
-activities.title1;Keď chcete oddychovať  ;Downtime;
-activities.title2;Pri oslave sviatkov;Partytime;
-activities.title3;Keď máte chuť sa hrať;Playtime;
-activities.title4;Na dovolenke v horách;In the great outdoors;
-activities.title5;NA túre;Hiking;
-activities.title6;Pri kúpaní sa v bazéne;Pooltime;
-
-our-dog.title;Zoznámte sa s našou fenkou;Meet our Female;
-our-dog.subtitle;Legenda;Legenda;
-our-dog.paragraph;Je to bláznivá potvora s neskutočnou chuťou pracovať. Bystrá, ľahko sa učí nové veci, teší ju pochvala. Výmyselníčka, ktorej nerobí problém otvoriť si dvere, roldor, skrinky. Miluje mojkanie, “pusinkovanie”. Za pamlsok ci loptičku je ochotná urobiť čokoľvek. Psích kamarátov si vyberá.;A frisky brute with an incredible desire to work. A smartie, learns easily, enjoys praise. An inventive creature having no problems opening your doors, wardrobes, cabinets. Loves cuddling and petting. She is willing to do anything for a treat or a ball. She chooses has a very selective taste of canine friends.
-our-dog.video;A má rada hudbu. Pozrite si klip 😊;Loves Music. Check the clip 😊;
-
-our-puppies.title;Chcete aj vy svojho dobermana? ;Dreaming of your own Doberman?;
-our-puppies.subtitle;Čoskoro budeme mať šteniatka;Puppies are on the way;
-our-puppies.paragraph1;Plánujeme vrh A.;Planning Cast A in the pipeline;
-our-puppies.paragraph2;Ak všetko pôjde ako má, bude odber šteniatok možný približne na prelome júna/júla 2023.;Provided all goes well, your puppies will be ready to collect late June, or early July 2023;
-
-contact.title;Kontaktujte nás;Contact Us;
-contact.form.title;Vyžiadajte si obhliadku;Request a meeting;
-contact.form.name;Meno a priezvisko;First Name and Surname;
-contact.form.email;Email;Email;
-contact.form.phone;Tel. číslo;Phone Number;
-contact.form.message;Správa;Message;
-contact.form.name.placeholder;napr. Jožko Mrkvička;e.g. Jožko Mrkvička;
-contact.form.email.placeholder;vzor@email.com;sample@email.com;
-contact.form.message.placeholder;Chcel by som si dohodnúť stretnutie...;I would like to make an appointment;
-contact.form.submitBtn;Poslať správu;Send a Message;
-contact.form.required;Povinné pole;Mandatory/Compulsory/Obligatotry Field;
-contact.form.pattern;Nesprávny tvar;Incorrect/Wrong Typing;
-contact.form.successMsg;Správa bola úspešne odoslaná!;The message was successfully sent;
-contact.form.failMsg;Odoslanie správy zlyhalo;Message sending failed;
-
-footer.title;Vita Amoris;Vita Amoris;
-footer.subtitle;Chovateľská stanica;Breeding Station;
-footer.text1; © Vita Amoris - Dizajn zo; © Vita Amoris - Design from;
-footer.text2;vytvoril ;created by;
-footer.phone.title;Telefónne číslo;Phone Number;
-footer.phone.text;+421 903 277 291;+421 903 277 291;
-footer.email.title;Email;Email;
-footer.email.text;kennel@vitaamoris.sk;kennel@vitaamoris.sk;
-footer.facebook.title;Sledujte nás na facebooku;Follow Us on Facebook;
-
-photogallery.title1;Áron a Legenda;Áron and Legenda;
-photogallery.title2;Tréning s Legendou;Training with Legenda;
+footer.text1; © Alžbeta Vímiová - Dizajn zo
+footer.text2;vytvoril ;

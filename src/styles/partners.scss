@@ -11,7 +11,7 @@
   }
 
   .section {
-    background: linear-gradient(white 0%, var(--background) 10%, white 100%);
+    background: linear-gradient(white 0%, var(--background) 30%, var(--background) 70%, white 100%);
   }
 }
 
@@ -38,4 +38,11 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .logo-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    img {
+      padding: 5px;
+    }
+  }
 }

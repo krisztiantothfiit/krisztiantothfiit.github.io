@@ -1,0 +1,48 @@
+<app-section id="contactForm">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <app-map></app-map>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <h3>{{ 'contact.form.title1' | translate | uppercase }}</h3>
+      <h1>{{ 'contact.form.title2' | translate | uppercase }}</h1>
+      <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.name"></mat-label>
+          <input matInput name="Name" formControlName="name">
+          <mat-error *ngIf="hasRequiredError('name')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.email"></mat-label>
+          <input matInput name="Email" formControlName="email"
+            pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}">
+          <mat-error *ngIf="hasRequiredError('email')" translate="contact.form.required"></mat-error>
+          <mat-error *ngIf="hasPatternError('email')" translate="contact.form.pattern"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.phone"></mat-label>
+          <input matInput name="Phone" formControlName="phone">
+          <mat-error *ngIf="hasRequiredError('phone')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.insurance"></mat-label>
+          <mat-select formControlName="insurance">
+            <mat-option *ngFor="let insurance of insurances" [value]="insurance">
+              {{ 'contact.form.insurance.' + insurance | translate}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="standard" floatLabel="always">
+          <mat-label translate="contact.form.message"></mat-label>
+          <textarea matInput name="Message" rows="3" formControlName="message"></textarea>
+          <mat-error *ngIf="hasRequiredError('message')" translate="contact.form.required"></mat-error>
+        </mat-form-field>
+        <div class="submit-btn mt-4">
+          <button mat-raised-button type="submit">
+            <span>{{'contact.form.submitBtn' | translate | uppercase}}</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</app-section>

@@ -6,7 +6,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectionComponent } from './base/section/section.component';
-import { ContactComponent } from './base/contact/contact.component';
+import { ContactFormComponent } from './base/contact/contact-form.component';
 import { HeaderComponent } from './base/header/header.component';
 import { NavigationItemComponent } from './base/navigation/navigation-item/navigation-item.component';
 import { NavigationComponent } from './base/navigation/navigation.component';
@@ -29,20 +29,15 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
-import { ActivitiesComponent } from './activities/activities.component';
 import { InsuranceComponent } from './insurance/insurance.component';
 import { PartnersComponent } from './partners/partners.component';
-import { CertificateComponent } from './certificate/certificate.component';
-import { OurDogComponent } from './our-dog/our-dog.component';
-import { YouTubePlayerModule } from '@angular/youtube-player';
-import { OurPuppiesComponent } from './our-puppies/our-puppies.component';
-import { PhotogalleryComponent } from './photogallery/photogallery.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContactComponent,
+    ContactFormComponent,
     NavigationComponent,
     NavigationItemComponent,
     SectionComponent,
@@ -51,13 +46,8 @@ import { PhotogalleryComponent } from './photogallery/photogallery.component';
     ScrollToTopComponent,
     AboutUsComponent,
     MessageDialogComponent,
-    ActivitiesComponent,
     InsuranceComponent,
     PartnersComponent,
-    CertificateComponent,
-    OurDogComponent,
-    OurPuppiesComponent,
-    PhotogalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +63,7 @@ import { PhotogalleryComponent } from './photogallery/photogallery.component';
     MatDialogModule,
     MatTabsModule,
     MatGridListModule,
-    YouTubePlayerModule,
+    MatSelectModule,
     GoogleTagManagerModule.forRoot({
       id: environment.gtmId,
     }),

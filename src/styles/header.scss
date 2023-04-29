@@ -26,10 +26,10 @@
   padding: 10px 30px !important;
   background-color: var(--primary);
   border-radius: 35px !important;
-}
 
-.header-button-text {
-  color: var(--background) !important;
+  span {
+    color: var(--background) !important;
+  }
 }
 
 .divider {
@@ -40,26 +40,25 @@
   margin-bottom: 16px;
 }
 
+@media only screen and (max-width: $tablet-resolution) {
+  #header .row {
+    flex-direction: column-reverse
+  }
+
+  .header-text {
+    padding-top: 20px !important;
+  }
+
+}
+
 @media only screen and (max-width: $mobile-resolution) {
   #header .section {
     padding-top: 100px;
-  }
-
-  .header-img {
-    padding-top: 15px !important;
   }
 }
 
 @media only screen and (max-width: $small-mobile-resolution) {
   #header .section {
     padding-top: 100px;
-  }
-
-  .header-text {
-    margin-top: 0;
-  }
-
-  .header-img {
-    padding-top: 30px !important;
   }
 }
