@@ -24,6 +24,25 @@
   }
 }
 
+#contact {
+  h1 {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
+
+  mat-icon {
+    display: flex !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin: auto auto 16px auto;
+  }
+
+  p {
+    text-align: center !important;
+    margin: 0;
+  }
+}
+
 .success-dialog-content {
   padding: 3%;
   flex-direction: column;
@@ -106,6 +125,22 @@
 
   #contactForm .row {
     flex-direction: column-reverse;
+  }
+
+  #contact {
+    h1 {
+      text-align: center !important;
+      margin-bottom: 16px;
+    }
+
+    mat-icon {
+      margin: auto;
+    }
+
+    p:nth-last-child(1) {
+      text-align: center !important;
+      margin: 0 0 16px 0;
+    }
   }
 }
 

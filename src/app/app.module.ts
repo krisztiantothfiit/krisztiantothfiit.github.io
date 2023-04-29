@@ -32,6 +32,7 @@ import { MessageDialogComponent } from './base/contact/message-dialog/message-di
 import { InsuranceComponent } from './insurance/insurance.component';
 import { PartnersComponent } from './partners/partners.component';
 import {MatSelectModule} from '@angular/material/select';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {MatSelectModule} from '@angular/material/select';
     MessageDialogComponent,
     InsuranceComponent,
     PartnersComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

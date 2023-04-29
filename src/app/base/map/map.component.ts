@@ -31,7 +31,6 @@ export class MapComponent implements OnInit {
       }),
     });
 
-
     var markers = new VectorLayer({
       source: new VectorSource(),
       style: new Style({
@@ -42,6 +41,7 @@ export class MapComponent implements OnInit {
       })
     });
     this.map.addLayer(markers);
+    setTimeout(() => this.map.updateSize(), 0);
 
     var marker = new Feature(new Point(fromLonLat([17.87667749734036, 48.15621347325009])));
     // @ts-ignore: Object is possibly 'null'.

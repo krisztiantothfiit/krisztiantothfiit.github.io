@@ -10,9 +10,9 @@ cookiePolicy;Zásady používania súborov cookie;Cookie Policy;
 
 navigation.insurance;Poistenie
 navigation.partners;Partneri
-navigation.wanna-be-insured;Chcem sa poistiť
+navigation.contactForm;Chcem sa poistiť
 navigation.contact;Kontakt
-navigation.about-me;O mne
+navigation.about-us;O mne
 
 header.title1;Spoločne
 header.title2;Zabezpečíme
@@ -42,13 +42,6 @@ partners.text1;Snažím sa nájsť najlepšie riešenia pre mojich klientov, pre
 partners.text2;Ak sa klient zaujíma o produkt  inej poisťovacej inštitúcie, veľmi rada nájdem riešenie aj medzi inými z tohto
 partners.text3;zoznamu.
 
-aboutUs.title1;Sme chovateľská stanica Vita Amoris;Vita Amoris Breeding Station;
-aboutUs.title2;... a všetko to začal Áron;.... and it all began with Aron;
-aboutUs.text1;Keď sme s manželom doniesli domov šteniatko xdobermana zachráneného z osady, ani nás nenapadlo, ako veľmi zasiahne do nášho života. Zo šteniatka sa stal šikovný a múdry pes, tak trochu introvert. ;When my husband and I brought home a Doberman puppy rescued from a settlement, we had no idea how much it would affect our lives. The puppy grew up into a clever and wise dog, a bit of an introvert.
-aboutUs.text2;Po čase sme začali uvažovať nad ďalším štvornohým spoločníkom.;After a while, we started thinking about getting another four-legged companion.;
-aboutUs.text3;Ako inak, voľba padla na plemeno dobermana. Spustil sa kolotoč študovania vhodných chovateľských staníc. V čase zbierania informácií sme sa zoznámili s CHS European K9 training base. Dospeli sme k rozhodnutiu, že jeden z rodičov nášho šteniatka bude z tejto stanice.;Our choice, of course,  fell on the Dobermann breed. A great search for suitable breeding stations began. At the time of collecting information, we got acquainted with the CHS European K9 training base. We had decided that one of our puppy's parents would be from this station.
-aboutUs.text4;Chceli sme fenku pracovnej povahy po rodičoch a povahou opakom nášho introverta.;We wanted an eager female dog with parents of the nature quite opposite to our introverted male.;
-
 contact.form.title1;Chcem sa poistiť
 contact.form.title2;Získajte poistenie rýchlo a jednoducho
 contact.form.name;Meno a priezvisko
@@ -74,5 +67,22 @@ contact.form.pattern;Nesprávny tvar
 contact.form.successMsg;Správa bola úspešne odoslaná!
 contact.form.failMsg;Odoslanie správy zlyhalo
 
-footer.text1; © Alžbeta Vímiová - Dizajn zo
-footer.text2;vytvoril ;
+contact.title1;Kontakt
+contact.title2;Neváhajte ma kontaktovať
+contact.phone;+421 903 723 612
+contact.email1;alzbeta@vimiova.sk
+contact.email2;vimiova@respect-slovakia.sk
+contact.address1;P. Pázmáňa 2020/30, Šaľa
+contact.address2;Budova OK Centra
+
+about-us.title1;O mne;
+about-us.title2;Som alžbeta vímiová;
+about-us.text1;Svoju profesiu vykonávam od ukončenia strednej školy, v tom čase ešte pre jednu poisťovňu. Prešla som všetkými zmenami v poisťovníctve , ktoré sa týkali spôsobu vykonávania tejto práce ale vyskúšala som pracovať aj v jednotlivých poisťovniach.
+about-us.text2;Už viac rokov sa zaoberám s poisťovacími službami, počnúc od vyhľadania vhodného produktu pre klienta,následneho servisu – zapracovanie zmien v poisteniach, pomoc a súčinnosť pri škodových – poistných udalostiach a taktiež pomôžem prispôsobiť existujúce poistenie pri životných udalostiach alebo pri zmene zamestnania alebo podnikania.
+about-us.text3;Potom som sa rozhodla a aj moje skúsenosti a požiadavky od klientov ma posunuli dopredu , robiť pre viac poisťovní. Pre nich je to voľba medzi viacerými možnosťami a porovnanie podmienok produktu ako aj ceny produktu.
+about-us.text4;Som podriadený finančný agent, a prácu finančného agenta robím cez maklérsku spoločnosť Respect Slovakia, s.r.o., so sídlom v Piešťanoch , na Valovej číslo 38. Môžem sa na nich obrátiť vprípade škodových udalostí – likvidácie poistných udalostí, právnej pomoci a v prípade informačnej technológie. Toto mi pomôže byť ešte pripravenejšou pri mojej práci- profesie.
+
+footer.text1;Registračné číslo v NBS: 259234
+footer.text2; © Alžbeta Vímiová - Dizajn zo
+footer.text3;vytvoril ;
+footer.text4;Ilustračné obrázky navrhol Freepik;

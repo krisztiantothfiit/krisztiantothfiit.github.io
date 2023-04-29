@@ -1,9 +1,26 @@
 @import "../variables.scss";
 
-#certificate h2 {
-  margin-bottom: 0;
+#about-us {
+  h3 {
+    text-align: left !important;
+  }
+
+  h1 {
+    margin-bottom: 32px;
+  }
+
+  img {
+    max-width: 75%;
+  }
+
+  .section {
+    background: linear-gradient(white 0%, var(--background) 10%, var(--background) 80%, white 100%);
+  }
 }
 
+.first-row {
+  margin-bottom: 16px !important;
+}
 
 @media only screen and (max-width: $tablet-resolution) {
 }

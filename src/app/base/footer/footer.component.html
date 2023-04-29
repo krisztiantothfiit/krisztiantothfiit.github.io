@@ -1,39 +1,18 @@
-<app-section id="contact">
+<app-section id="footer">
   <div class="footer">
-    <div class="row">
-      <div class="col-md-3 col-sm-12">
-        <img class="navbar-brand-img desktop-only" src="assets/images/logo.png">
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="icon-background">
-          <mat-icon>call</mat-icon>
-        </div>
-        <h3> {{'footer.phone.title' | translate }}</h3>
-        <p>{{'footer.phone.text' | translate }}</p>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="icon-background">
-          <mat-icon>email</mat-icon>
-        </div>
-        <h3> {{'footer.email.title' | translate }}</h3>
-        <p>{{'footer.email.text' | translate }}</p>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="icon-background">
-          <mat-icon>facebook</mat-icon>
-        </div>
-        <a href="https://www.facebook.com/profile.php?id=100090247062700" class="link" target="_blank">
-          {{ 'footer.facebook.title' | translate | uppercase }}
-        </a>
-      </div>
-    </div>
+    <p>{{ 'footer.text1' | translate }}</p>
     <div>
       <span>{{getYear()}}</span>
-      <span translate="footer.text1"></span>
-      <mat-icon class="heart red">favorite</mat-icon>
       <span translate="footer.text2"></span>
+      <mat-icon class="heart red">favorite</mat-icon>
+      <span translate="footer.text3"></span>
       <a href="https://fancywebsite.github.io" class="link" target="_blank">
         <span translate="fancyweb"></span>
+      </a>
+    </div>
+    <div>
+      <a href="http://www.freepik.com" class="link" target="_blank">
+        <span translate="footer.text4"></span>
       </a>
     </div>
   </div>
