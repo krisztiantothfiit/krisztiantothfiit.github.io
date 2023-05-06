@@ -18,7 +18,7 @@ export class HeaderComponent {
   }
 
   scroll() {
-    const el = document.getElementById('insurance');
+    const el = document.getElementById('contactForm');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }

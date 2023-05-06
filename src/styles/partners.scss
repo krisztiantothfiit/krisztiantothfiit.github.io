@@ -7,7 +7,6 @@
 
   h1 {
     width: 90%;
-    margin-bottom: 32px;
   }
 
   .section {
@@ -15,14 +14,13 @@
   }
 }
 
-.ref {
-  text-decoration: underline !important;
+.ref, .ref span {
+  text-decoration: none !important;
   cursor: pointer;
   color: var(--primary) !important;
 }
 
-.ref:hover {
-  text-decoration: none !important;
+.ref:hover, .ref span:hover {
   color: var(--terciary) !important;
 }
 

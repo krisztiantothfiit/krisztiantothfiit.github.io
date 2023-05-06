@@ -2,8 +2,11 @@
 
 #insurance {
   h1 {
-    text-align: center !important;
-    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .row-left img, .row-right img {
+    height: 350px;
   }
 
   h3 {
@@ -15,6 +18,7 @@
       text-align: left;
       color: var(--text);
       letter-spacing: 15px;
+      margin-right: -15px;
     }
 
     mat-icon {
@@ -54,7 +58,13 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+
   #insurance {
+    .row-left img, .row-right img {
+      height: auto;
+      max-height: 350px;
+    }
+
     mat-icon {
       margin: 20px auto !important;
     }

@@ -25,6 +25,7 @@
 }
 
 img {
+  max-height: 350px;
   max-width: 100%;
 }
 
@@ -48,6 +49,7 @@ h1 {
   font-family: var(--font-family-title);
   letter-spacing: 1px;
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -101,7 +103,7 @@ span {
 
 .scrollToTop.mat-mini-fab {
   position: fixed;
-  background-color: var(--terciary);
+  background-color: var(--primary);
   top: auto;
   left: auto;
   right: 30px;
@@ -115,14 +117,14 @@ span {
   }
 
   .mat-button-wrapper {
-    color: var(--primary);
+    color: var(--default);
   }
 }
 
 .scrollToTop.mat-mini-fab:hover {
-  background-color: var(--background);
+  background-color: var(--primary);
   .mat-button-wrapper {
-    color: var(--secondary);
+    color: var(--default);
   }
 }
 
@@ -201,12 +203,24 @@ p:last-child {
     padding-right: 0;
   }
 
+  .map {
+    height: 350px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+    text-align: left !important;
+  }
+
+  h3 {
+    text-align: left !important; 
+  }
+
 }
 
 @media only screen and (max-width: $mobile-resolution) {
-  h1 {
-    font-size: 25px;
-  }
 
   .section {
     padding: 50px 2rem;
@@ -250,10 +264,5 @@ p:last-child {
   .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .map {
-    height: 350px;
-    margin-top: 20px;
   }
 }

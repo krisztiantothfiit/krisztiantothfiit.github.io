@@ -180,7 +180,7 @@
 
 .nav-item:hover {
   .nav-text-color {
-    text-decoration: underline;
+    color: var(--primary);
   }
 }
 
@@ -230,12 +230,12 @@
     z-index: 17;
     width: 100vw;
     background-color: var(--default);
+    border-bottom: 1px solid var(--terciary);
   }
 
   .nav-item-border {
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--terciary);
   }
-
 
   .dropdown-menu.show {
     display: flex;
