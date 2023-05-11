@@ -9,6 +9,6 @@ export class MailService {
   constructor(private http: HttpClient) { }
 
   public sendMail(mailOptions: any) {
-    return this.http.post('https://us-central1-i-imko.cloudfunctions.net/app/send-mail', { body : mailOptions });
+    return this.http.post('https://us-central1-vimiovaalzbeta-ddc64.cloudfunctions.net/app/send-mail', { body : mailOptions });
   }
 }
