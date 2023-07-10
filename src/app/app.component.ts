@@ -91,12 +91,11 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('Alžbeta Vímiová');
+    this.titleService.setTitle('Tri Kvety');
     this.metaTagService.addTags([
-      { name: 'description', content: 'Hľadáte spoľahlivé poistenie, lízing či úver? Som tu pre vás. S mojou odbornosťou a skúsenosťami vám nájdem najlepšie riešenie pre vaše poistné potreby v bežnom a v pracovnom živote, ale aj v podnikaní. Dôverujte mi a zabezpečte si svoju budúcnosť a pokojný život.' },
-      { name: 'keywords', content: 'poistenie, poitenie aut, poistenie áut, poistenie majetku, zivotne poistenie, životné poistenie, alzbeta vimiova, alžbeta vímiová, porovnanie cien poistného, pomoc v likvidácií, riešnie škodových udalostí, lízing, lízing áut' },
+      { name: 'keywords', content: 'dobre jedlo, tri kvety' },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'Alžbeta Vímiová' },
+      { name: 'author', content: 'Robko' },
       { charset: 'UTF-8' },
     ])
   }
