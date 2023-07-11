@@ -1,79 +1,30 @@
 @import "../variables.scss";
 
 #header {
-  h1 {
-    margin-bottom: 0px;
+  img {
+    max-height:100%;
+    max-width: 100%;
   }
 
-  .row {
-    align-items: center;
+  .section {
+    text-align: center;
   }
-}
-
-.header-text {
-  text-align: left;
-}
-
-.header-img {
-  padding-top: 0;
-}
-
-.highlight {
-  color: var(--primary);
-}
-
-.background {
-  background: linear-gradient(var(--background) 85%, white 100%);
-}
-
-.mat-raised-button {
-  line-height: 1.5 !important;
-  padding: 10px 30px !important;
-  background-color: var(--primary);
-  border-radius: 35px !important;
-  box-shadow: none !important;
-
-  span {
-    color: var(--default) !important;
-  }
-}
-
-.mat-raised-button:hover {
-  background-color: var(--primary);
-
-  span {
-    color: var(--default) !important;
-  }
-}
-
-.divider {
-  width: 310px;
-  height: 10px;
-  border-radius: 15px;
-  background: linear-gradient(45deg, var(--primary), transparent);
-  margin-bottom: 16px;
-  margin-top: 16px;
+ 
 }
 
 @media only screen and (max-width: $tablet-resolution) {
-  #header .row {
-    flex-direction: column-reverse
+  #header {
+    .section {
+      padding: 50px 0;
+    }
+   
   }
-
-  .header-text {
-    padding-top: 20px !important;
-  }
-
 }
 
 @media only screen and (max-width: $mobile-resolution) {
-  #header .section {
-    padding-top: 100px;
-  }
+
 }
 
 @media only screen and (max-width: $small-mobile-resolution) {
-  #header .section {
-    padding-top: 100px;
-  }
+  
 }

@@ -7,9 +7,7 @@ $text: #0D0D0D;
 $small-mobile-resolution: 590px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
-$font-family-text: 'Pontano Sans', sans-serif;;
-$font-family-title: 'Montserrat', sans-serif;
-$font-family-highlighted-text: 'Fira Sans', sans-serif;
+$font-family-text: 'Cormorant Garamond', serif;
 
 :root {
     --primary: #{$primary};
@@ -19,6 +17,4 @@ $font-family-highlighted-text: 'Fira Sans', sans-serif;
     --terciary: #{$terciary};
     --text: #{$text};
     --font-family-text: #{$font-family-text};
-    --font-family-title: #{$font-family-title};
-    --font-family-highlighted-text: #{$font-family-highlighted-text};
 }

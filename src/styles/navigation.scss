@@ -174,13 +174,13 @@
 
 .nav-text-color {
   color: var(--text);
-  font-size: 18px;
+  font-size: 32px;
   text-align: left;
 }
 
 .nav-item:hover {
   .nav-text-color {
-    color: var(--primary);
+    font-weight: bold;
   }
 }
 
@@ -202,6 +202,15 @@
 
 .flex {
   display: flex;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navbar-expand-custom > .container {
+  justify-content: center;
 }
 
 @media only screen and (max-width: $tablet-resolution) {
@@ -230,7 +239,6 @@
     z-index: 17;
     width: 100vw;
     background-color: var(--default);
-    border-bottom: 1px solid var(--terciary);
   }
 
   .nav-item-border {
@@ -247,11 +255,10 @@
     top: 35px;
     right: unset;
   }
-}
 
-.navbar-nav {
-  width: 100%;
-  justify-content: space-evenly;
+  .navbar-expand-custom > .container {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: $mobile-resolution) {
