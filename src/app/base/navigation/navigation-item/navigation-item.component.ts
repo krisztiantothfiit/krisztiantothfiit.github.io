@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation-item',
@@ -7,15 +8,9 @@ import { Component, Input } from '@angular/core';
 export class NavigationItemComponent {
     @Input() title = '';
 
-    scroll() {
-        const el = document.getElementById(this.title);
-        if (el) {
-            var elementPosition = el.getBoundingClientRect().top;
-            var offsetPosition = elementPosition + window.pageYOffset - 56;
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-           });
-        }
+    constructor(protected router: Router){}
+
+    navigate() {
+        this.router.navigate([this.title]);
     }
 }

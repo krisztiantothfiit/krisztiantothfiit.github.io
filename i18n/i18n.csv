@@ -8,12 +8,12 @@ cookieAllow;Povoliť;Allow;
 cookieDeny;Odmietnuť;Deny;
 cookiePolicy;Zásady používania súborov cookie;Cookie Policy;
 
-navigation.home;Domov
+navigation.;Domov
 navigation.brunch;Brunch
-navigation.lunch;Obed
-navigation.dinner;Večera
-navigation.drinks;Drinky
-navigation.about-us;My
+navigation.obed;Obed
+navigation.vecera;Večera
+navigation.drinky;Drinky
+navigation.my;My
 
 about-us.text1;Zóna slobody, oddychu a zábavy.
 about-us.text2;Výberová gastronómia zo sezónnych a domácich surovín.
@@ -21,26 +21,8 @@ about-us.text3;High-end cocktaily & punkové experimenty.
 about-us.text4;Brunch s rodinou, obed s partnerom a večera s kamošmi.
 about-us.text5;To sme my, trikvety, v srdci Nitry.
 
-insurance.title1;Poistenie
-insurance.title2;Poistite si všetko, čo je pre vás dôležité...
-insurance.subtitle1;Život
-insurance.paragraph1;Zabezpečíme pre vás kvalitné a komplexné poistenie osôb všetkých vekových kategórií, vrátane detí, dospelých a seniorov. Ponúkame životné a úrazové poistenie, ako aj špeciálne poistenie, ktoré splní všetky vaše požiadavky.
-insurance.subtitle2;Domov
-insurance.paragraph2;Poskytujeme vám kompletné poistenie pre rodinné domy, byty, bytové domy a ich vybavenie, spolu s poistením zodpovednosti za vlastníctvo týchto nehnuteľností a poistením zodpovednosti z bežnej činnosti. Vieme pre vás zistiť najlepšiu ponuku úverov z bánk, ak hľadáte riešenie na kúpu nehnuteľnosti - bytu, rodinného domu alebo zariadenia. Váš majetok a zodpovednosť sú u nás v bezpečí.
-insurance.subtitle3;Podnikanie
-insurance.paragraph3;Máte v pláne zaobstaranie technológie, zariadenia pre svoje podnikanie? Vyhľadáme vhodné riešenie, či už pomocou lízingu - finančný a operatívny alebo pomocou spotrebného úveru. U nás si môžete uzatvoriť poistenie majetku, ktoré zahŕňa poistenie zodpovednosti, pohľadávok, ako aj poistenie pre prípad prerušenia prevádzky. Okrem toho vám ponúkame aj stavebnomontážne poistenie, ktoré zabezpečí vaše projekty a stavby. S nami môžete mať istotu a pokojné spanie bez starostí o svoj majetok.
-insurance.subtitle4;Práca
-insurance.paragraph4;Sme tu pre vás, aby sme vám poskytli poistenie zodpovednosti za škodu voči zamestnávateľovi a poistenie profesií ako sú napríklad lekárske povolania, účtovníci, právnici a mnoho ďalších. Bez ohľadu na to, v akej profesii pracujete, u nás nájdete poistenie, ktoré sa prispôsobí vašim potrebám a poskytne vám pocit bezpečia a ochrany pri výkone vašej práce.
-insurance.subtitle5;Auto
-insurance.paragraph5;U nás si môžete zabezpečiť zákonné poistenie, havarijné poistenie a poistenie finančnej straty - GAP pre občanov aj podnikateľov. Navyše, poskytujeme aj poistenie dopravných prostriedkov, aby ste si mohli vychutnávať svoje cestovanie bez starostí a s istotou, že vaše vozidlo je chránené. Spolupracujeme aj s lízingovými spoločnosťami pokiaľ kúpu auta plánujete riešiť financovaním - lízingom alebo úverom.
-insurance.subtitle6;Cestovanie
-insurance.paragraph6;Užite si svoje cestovanie s pocitom istoty a bezpečia s našim cestovným poistením. Bez ohľadu na to, či ide o krátkodobú dovolenku alebo dlhodobý pobyt v zahraničí, ponúkame vám široké pokrytie rizík a ochranu pred neočakávanými udalosťami, ktoré môžu nastať počas vašich ciest.
-
-partners.title1;Partneri
-partners.title2;Vaše poistenie je  v dobrých rukách
-partners.text1;Snažím sa nájsť to najlepšie riešenia pre mojich klientov, preto spolupracujem iba s poisťovňami, ktoré majú vysokú úroveň kvality a spoľahlivosti. 
-partners.text2;V prípade ak sa klient zaujíma o produkt inej poisťovacej inštitúcie, veľmi rada nájdem riešenie aj medzi inými z tohto
-partners.text3;zoznamu.
+breakfast.text1;Raňajky. Sladké aj slané.
+breakfast.text2;Z lokálnych surovín.
 
 contact.form.title1;Chcem sa poistiť
 contact.form.title2;Získajte poistenie rýchlo a jednoducho

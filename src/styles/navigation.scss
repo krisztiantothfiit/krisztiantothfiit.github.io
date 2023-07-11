@@ -3,6 +3,12 @@
   font-family: var(--font-family-text);
   z-index: 1;
   background-color: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+.activeMenuItem span {
+  font-weight: bold;
 }
 
 .nav-item {
@@ -242,7 +248,7 @@
   }
 
   .nav-item-border {
-    border-bottom: 1px solid var(--terciary);
+    border-bottom: 1px solid var(--secondary);
   }
 
   .dropdown-menu.show {

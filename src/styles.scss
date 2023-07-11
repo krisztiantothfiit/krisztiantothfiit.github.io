@@ -5,11 +5,14 @@
 @import "variables";
 @import "styles/footer.scss";
 @import "styles/header.scss";
-@import "styles/about-us.scss";
-@import "styles/partners.scss";
+@import "styles/home.scss";
 @import "styles/navigation.scss";
-@import "styles/insurance.scss";
 @import "styles/contact.scss";
+@import "styles/brunch.scss";
+@import "styles/lunch.scss";
+@import "styles/dinner.scss";
+@import "styles/drinks.scss";
+@import "styles/us.scss";
 
 .container {
   max-width: 1200px;
@@ -17,7 +20,11 @@
 
 .section {
   text-align: center;
-  padding: 50px 0;
+  padding: 20px 0;
+}
+
+.row {
+  min-height: 500px;
 }
 
 .row {
@@ -137,19 +144,19 @@ button:focus {
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  color: var(--background) !important;
+  color: var(--primary) !important;
   border-radius: 10px !important;
-  background-color: var(--primary) !important;
+  background-color: #000 !important;
   margin: 5px !important;
 }
 
 .cookie-button-deny {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  background-color: var(--background) !important;
+  background-color:var(--terciary) !important;
   border-radius: 10px !important;
   margin: 5px !important;
-  color: var(--primary) !important;
+  color:  #000 !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
@@ -170,13 +177,13 @@ button:focus {
   width: 8px;
   height: 8px;
   overflow-y: scroll;
-  background: var(--seconday);
+  background: var(--default);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--terciary);
+  background: var(--secondary);
   border-radius: 12px;
-  border: 1px solid var(--terciary);
+  border: 1px solid var(--secondary);
 }
 
 p:last-child {

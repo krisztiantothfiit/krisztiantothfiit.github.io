@@ -1,5 +1,5 @@
 <li class="nav-item">
-    <a class="nav-link nav-item-border" (click)="scroll()">
+    <a class="nav-link nav-item-border" [routerLink]="title" [routerLinkActive]="['activeMenuItem']" [routerLinkActiveOptions]="{ exact: true }">
         <span class="nav-text-color">{{'navigation.' + title | translate }}</span>
     </a>
 </li>

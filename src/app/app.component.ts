@@ -21,6 +21,12 @@ export class AppComponent implements OnInit {
     private metaTagService: Meta,
     private titleService: Title,
     private router: Router) {
+
+    // Redirect http to https
+    if (!/https/.test(window.location.protocol) && /http/.test(window.location.protocol) && !/localhost/.test(window.location.href)) {
+      window.location.href = window.location.href.replace('http:', 'https:');   
+    }
+
     // Translate initialization
     translate.setTranslation(this.currentLang, defaultLanguage);
     translate.setDefaultLang(this.currentLang);
@@ -42,12 +48,6 @@ export class AppComponent implements OnInit {
     this.addIconToRegistry('fail', 'assets/icons/fail.svg');
     this.addIconToRegistry('facebook', 'assets/icons/facebook.svg');
     this.addIconToRegistry('logo', 'assets/images/logo.svg');
-    this.addIconToRegistry('insurance1', 'assets/images/insurance/insurance1.svg');
-    this.addIconToRegistry('insurance2', 'assets/images/insurance/insurance2.svg');
-    this.addIconToRegistry('insurance3', 'assets/images/insurance/insurance3.svg');
-    this.addIconToRegistry('insurance4', 'assets/images/insurance/insurance4.svg');
-    this.addIconToRegistry('insurance5', 'assets/images/insurance/insurance5.svg');
-    this.addIconToRegistry('insurance6', 'assets/images/insurance/insurance6.svg');
     this.addIconToRegistry('contact1', 'assets/images/contact/contact1.svg');
     this.addIconToRegistry('contact2', 'assets/images/contact/contact2.svg');
     this.addIconToRegistry('contact3', 'assets/images/contact/contact3.svg');
@@ -91,9 +91,9 @@ export class AppComponent implements OnInit {
   }
 
   addMetaTags(): void {
-    this.titleService.setTitle('Tri Kvety');
+    this.titleService.setTitle('trikvety');
     this.metaTagService.addTags([
-      { name: 'keywords', content: 'dobre jedlo, tri kvety' },
+      { name: 'keywords', content: 'dobre jedlo, trikvety' },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'Robko' },
       { charset: 'UTF-8' },

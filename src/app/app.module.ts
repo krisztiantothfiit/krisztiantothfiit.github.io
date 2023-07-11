@@ -27,12 +27,17 @@ import { environment } from 'src/environments/environment';
 import { ScrollToTopComponent } from './base/scroll-to-top/scroll-to-top.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { AboutUsComponent } from './about-us/about-us.component';
+import { AboutUsComponent } from './home/about-us/about-us.component';
 import { MessageDialogComponent } from './base/contact/message-dialog/message-dialog.component';
-import { InsuranceComponent } from './insurance/insurance.component';
-import { PartnersComponent } from './partners/partners.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { BrunchComponent } from './brunch/brunch.component';
+import { LunchComponent } from './lunch/lunch.component';
+import { DinnerComponent } from './dinner/dinner.component';
+import { DrinksComponent } from './drinks/drinks.component';
+import { UsComponent } from './us/us.component';
+import { BreakfastComponent } from './home/breakfast/breakfast.component';
 
 @NgModule({
   declarations: [
@@ -47,9 +52,14 @@ import { ContactComponent } from './contact/contact.component';
     ScrollToTopComponent,
     AboutUsComponent,
     MessageDialogComponent,
-    InsuranceComponent,
-    PartnersComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent,
+    BrunchComponent,
+    LunchComponent,
+    DinnerComponent,
+    DrinksComponent,
+    UsComponent,
+    BreakfastComponent
   ],
   imports: [
     BrowserModule,
