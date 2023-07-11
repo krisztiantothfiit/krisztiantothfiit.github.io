@@ -81,7 +81,7 @@ h3 {
 p,
 span {
   color: var(--text);
-  text-align: justify;
+  text-align: left;
   font-size: 24px;
   font-family: var(--font-family-text);
 }
@@ -144,9 +144,9 @@ button:focus {
 .cookie-button-allow {
   line-height: 1.5 !important;
   padding: 10px 30px !important;
-  color: var(--primary) !important;
+  color: #000 !important;
   border-radius: 10px !important;
-  background-color: #000 !important;
+  background-color: var(--primary) !important;
   margin: 5px !important;
 }
 

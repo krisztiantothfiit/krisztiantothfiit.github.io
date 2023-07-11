@@ -38,6 +38,8 @@ import { DinnerComponent } from './dinner/dinner.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { UsComponent } from './us/us.component';
 import { BreakfastComponent } from './home/breakfast/breakfast.component';
+import { LunchMenuComponent } from './home/lunch-menu/lunch-menu.component';
+import { AlacarteComponent } from './home/alacarte/alacarte.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import { BreakfastComponent } from './home/breakfast/breakfast.component';
     DinnerComponent,
     DrinksComponent,
     UsComponent,
-    BreakfastComponent
+    BreakfastComponent,
+    LunchMenuComponent,
+    AlacarteComponent
   ],
   imports: [
     BrowserModule,

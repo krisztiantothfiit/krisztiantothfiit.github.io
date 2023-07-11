@@ -5,9 +5,22 @@
   min-height: 100vh;
 }
 
-#breakfast p {
-  font-size: 25px;
+.section {
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+#header .section {
+  border-top: 0;
+}
+
+#breakfast p, #lunch-menu p, #alacarte p {
+  font-size: 30px;
   margin-bottom: 0;
+  font-style: italic;
+}
+
+#alacarte p {
+  color: var(--default);
 }
 
 .page {
@@ -27,7 +40,7 @@
 
 .breafast-img2 {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 30%;
   height: 200px;
 }
@@ -37,11 +50,65 @@
   height: 300px;
 }
 
+.lunch-menu-text, .alacarte-text {
+  padding-top: 30px;
+  position: relative;
+}
+
+.lunch-menu-img1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+}
+
+.lunch-menu-img2 {
+  position: absolute;
+  height: 450px;
+  left: 10%;
+  top: 0;
+}
+
+.lunch-menu-img3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+}
+
+.alacarte-img1 {
+  position: absolute;
+  height: 450px;
+  left: 10%;
+  top: 0;
+}
+
+.alacarte-img2 {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  height: 250px;
+}
+
+.alacarte-img3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+}
+
+.alacarte-img4 {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+  height: 300px;
+}
+
 .about-us-text {
   align-self: center;
 
   p:nth-child(-n+5) {
-    font-weight: 600;
+    font-size: 24px;
   }
 
   p:nth-child(6) {
@@ -58,6 +125,33 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .lunch-menu-text, .alacarte-text {
+    padding-top: 0px;
+  }
+
+  .alacarte-img1 {
+    position: relative;
+    left: unset;
+    top: unset;
+    padding-bottom: 20px;
+  }
+
+  .alacarte-img3 {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .alacarte-col2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .alacarte-img4 {
+    position: relative;
+    bottom: unset;
+  }
+
   .breakfast-col1 {
     min-height: 400px;
     overflow: hidden;
@@ -78,6 +172,23 @@
     display: flex;
     padding-top: 20px;
     flex-direction: column-reverse;
+  }
+
+  .lunch-menu-col1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .lunch-menu-img1 {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .lunch-menu-img2 {
+    position: relative;
+    padding-top: 20px;
+    left: unset;
+    top: unset;
   }
 
   .about-us-text {
