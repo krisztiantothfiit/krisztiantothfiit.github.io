@@ -1,4 +1,82 @@
 .lunch {
     background: linear-gradient(180deg, #28E895 0%, #188355 100%);
     min-height: 100vh;
+    text-align: center;
+}
+
+.lunch-el1 {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    height: 500px;
+}
+
+.lunch-el2 {
+    position: absolute;
+    right: 0;
+    top: -10%;
+    height: 200px;
+}
+
+.lunch-el3 {
+    position: absolute;
+    left: 0;
+    top: -10%;
+    height: 100px;
+}
+
+.lunch-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.lunch-time {
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.lunch-menu-title {
+    width: fit-content;
+    margin: auto;
+    background: linear-gradient(150deg, white, transparent);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#lunch-pictures .row {
+    min-height: 600px;
+}
+
+.lunch-img1 {
+    position: absolute;
+    height: 400px;
+    top: -10%;
+    left: 0;
+}
+
+.lunch-img2 {
+    position: absolute;
+    height: 350px;
+    top: 20%;
+    left: 25%;
+}
+
+.lunch-img3 {
+    position: absolute;
+    height: 350px;
+    top: 40%;
+    left: 50%;
+}
+
+.lunch-img4 {
+    position: absolute;
+    height: 350px;
+    top: 20%;
+    left: 75%;
 }

@@ -9,11 +9,11 @@
   border-top: 3px solid rgba(0, 0, 0, 0.1);
 }
 
-#header .section {
+#header .section, #lunch-text .section {
   border-top: 0;
 }
 
-#breakfast p, #lunch-menu p, #alacarte p {
+#breakfast p, #home-lunch-menu p, #alacarte p {
   font-size: 30px;
   margin-bottom: 0;
   font-style: italic;
@@ -24,7 +24,7 @@
 }
 
 .page {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .about-us-img {
