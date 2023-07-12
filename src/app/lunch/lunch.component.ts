@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
 })
 export class LunchComponent {
 
+  scroll() {
+    const el = document.getElementById('lunch-menu');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

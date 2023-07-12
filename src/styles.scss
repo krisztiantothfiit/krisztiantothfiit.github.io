@@ -89,23 +89,12 @@ span {
 // BUTTONS
 
 .section .mat-flat-button {
-  background-color: var(--secondary);
-  border-radius: 45px;
-  padding: 4px 32px;
-
-  span {
-    color: var(--primary);
-    text-transform: uppercase;
-    font-family: var(--font-family-text);
-  }
+  border-radius: 10px;
+  padding: 10px 20px;;
 }
 
 .section .mat-flat-button:hover {
   background-color: var(--background) !important;
-
-  span {
-    color: var(--secondary) !important;
-  }
 }
 
 .scrollToTop.mat-mini-fab {
@@ -148,6 +137,7 @@ button:focus {
   border-radius: 10px !important;
   background-color: var(--primary) !important;
   margin: 5px !important;
+  border-color: var(--primary);
 }
 
 .cookie-button-deny {
@@ -156,7 +146,7 @@ button:focus {
   background-color:var(--terciary) !important;
   border-radius: 10px !important;
   margin: 5px !important;
-  color:  #000 !important;
+  color: #000 !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
@@ -248,7 +238,7 @@ p:last-child {
 
   p,
   span {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .cc-window.cc-banner {

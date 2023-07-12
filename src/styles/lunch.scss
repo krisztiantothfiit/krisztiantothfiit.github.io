@@ -32,6 +32,7 @@
     align-items: center;
     p {
         margin-bottom: 0;
+        text-align: center;
     }
 }
 
@@ -41,12 +42,7 @@
 }
 
 .lunch-menu-title {
-    width: fit-content;
-    margin: auto;
     background: linear-gradient(150deg, white, transparent);
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
 }
 
 #lunch-pictures .row {
@@ -55,7 +51,7 @@
 
 .lunch-img1 {
     position: absolute;
-    height: 400px;
+    height: 450px;
     top: -10%;
     left: 0;
 }
@@ -64,19 +60,49 @@
     position: absolute;
     height: 350px;
     top: 20%;
-    left: 25%;
+    left: 20%;
 }
 
 .lunch-img3 {
     position: absolute;
     height: 350px;
     top: 40%;
-    left: 50%;
+    left: 40%;
 }
 
 .lunch-img4 {
     position: absolute;
-    height: 350px;
+    height: 400px;
     top: 20%;
-    left: 75%;
+    left: 60%;
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+
+    .lunch-img1 {
+        height: 250px;
+        top: 10%;
+        padding-top: 20px;
+    }
+    
+    .lunch-img2 {
+        height: 200px;
+        top: 20%;
+        left: 40%;
+    }
+    
+    .lunch-img3 {
+        height: 250px;
+        left: unset;
+        left: 50%;
+        right: 0;
+    }
+    
+    .lunch-img4 {
+        height: 250px;
+        top: unset;
+        left: 10%;
+        bottom: 0;
+    }
+
 }
