@@ -2,3 +2,82 @@
     background: #fff;
     min-height: 100vh;
 }
+
+.brunch-text {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 550px;
+  p {
+      margin-bottom: 0;
+      text-align: center;
+  }
+}
+
+.brunch-time {
+  font-size: 45px;
+}
+
+.brunch-img1 {
+  position: absolute;
+  height: 350px;
+  top: 10%;
+  left: 0%;
+}
+
+.brunch-img2 {
+  position: absolute;
+  height: 350px;
+  top: 15%;
+  left: 25%;
+}
+
+.brunch-img3 {
+  position: absolute;
+  height: 350px;
+  top: 20%;
+  left: 50%;
+}
+
+.brunch-img4 {
+  position: absolute;
+  height: 350px;
+  top: 12.5%;
+  left: 75%;
+}
+
+.brunch-menu-title {
+  background: linear-gradient(150deg, #FED9E3, transparent);
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+
+  .brunch-img1 {
+      height: 250px;
+      top: 10%;
+      padding-top: 20px;
+  }
+  
+  .brunch-img2 {
+      height: 200px;
+      top: 20%;
+      left: 40%;
+  }
+  
+  .brunch-img3 {
+      height: 250px;
+      left: 60%;
+      top: 40%;
+      right: 0;
+  }
+  
+  .brunch-img4 {
+      height: 250px;
+      top: unset;
+      left: 10%;
+      bottom: 10%;
+  }
+
+}

@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
 })
 export class BrunchComponent {
 
+  scroll() {
+    const el = document.getElementById('brunch-menu');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

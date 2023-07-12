@@ -36,6 +36,15 @@ lunch.text2;Polievka. Mäso. Vegetariánske.
 lunch.text3;Čerstvé. Domáce. Naše.
 lunch.menu;Aktuálna ponuka
 
+brunch.time;od 8:00 - 10:30
+brunch.menu;Aktuálna ponuka
+
+dinner.time;od 17:00 - 21:30
+dinner.text1;Večerné Á la carte zostavené naším Chefom, kombinácia chutí 3 jedál doplňujúca drinkami.
+dinner.dash;-
+dinner.text2;Polievka. Hlavný chod. Dezert.
+dinner.menu;Aktuálna ponuka
+
 contact.form.title1;Chcem sa poistiť
 contact.form.title2;Získajte poistenie rýchlo a jednoducho
 contact.form.name;Meno a priezvisko

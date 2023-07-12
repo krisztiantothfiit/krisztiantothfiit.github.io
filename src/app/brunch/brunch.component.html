@@ -1,3 +1,23 @@
 <div class="brunch page">
-
+  <app-section id="brunch-text-pictures">
+    <div class="row">
+      <div class="col-sm-12 brunch-text">
+        <p class="brunch-time">{{ 'brunch.time' | translate }}</p>
+        <img src="assets/images/brunch/brunch1.png" class="brunch-img1">
+        <img src="assets/images/brunch/brunch2.png" class="brunch-img2">
+        <img src="assets/images/brunch/brunch3.png" class="brunch-img3">
+        <img src="assets/images/brunch/brunch4.png" class="brunch-img4">
+        <button mat-flat-button class="brunch-menu-title" (click)="scroll()">
+          <p>{{ 'brunch.menu' | translate }}</p>
+        </button>
+      </div>
+    </div>
+  </app-section>
+  <app-section id="brunch-menu">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="assets/images/brunch/brunch5.png" class="lunch-menu">
+      </div>
+    </div>
+  </app-section>
 </div>

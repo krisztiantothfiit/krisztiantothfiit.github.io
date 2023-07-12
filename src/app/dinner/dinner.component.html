@@ -1,3 +1,33 @@
 <div class="dinner page">
-
+  <app-section id="dinner-text">
+    <div class="row">
+      <div class="col-sm-12 dinner-text">
+        <p class="dinner-time">{{ 'dinner.time' | translate }}</p>
+        <p>{{ 'dinner.text1' | translate }}</p>
+        <p>{{ 'dinner.dash' | translate }}</p>
+        <p>{{ 'dinner.text2' | translate }}</p>
+        <button mat-flat-button class="dinner-menu-title" (click)="scroll()">
+          <p>{{ 'lunch.menu' | translate }}</p>
+        </button>
+      </div>
+    </div>
+  </app-section>
+  <app-section id="lunch-pictures">
+    <div class="row">
+      <div class="col-sm-12">
+        
+        <img src="assets/images/dinner/dinner1.png" class="dinner-img1">
+        <img src="assets/images/dinner/dinner3.png" class="dinner-img3">
+        <img src="assets/images/dinner/dinner2.png" class="dinner-img2">
+        <img src="assets/images/dinner/dinner4.png" class="dinner-img4">
+      </div>
+    </div>
+  </app-section>
+  <app-section id="lunch-menu">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="assets/images/menu/ala.jpg" class="lunch-menu">
+      </div>
+    </div>
+  </app-section>
 </div>
