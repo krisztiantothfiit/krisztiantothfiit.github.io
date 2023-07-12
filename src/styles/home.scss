@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .home {
-  background: linear-gradient(180deg, #fff 0%, #22e791 50%, #000 100%);
+  background: linear-gradient(180deg, #fff 0%, #fff 50%, #22e791 70%, #000 100%);
   min-height: 100vh;
 }
 
@@ -31,6 +31,25 @@
   text-align: right;
 }
 
+.about-us-el1 {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  height: 300px;
+}
+
+.about-us-el2 {
+  height: 100px;
+  margin-left: auto;
+}
+
+.about-us-el3 {
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+  height: 200px;
+}
+
 .breafast-img1 {
   position: absolute;
   top: 10%;
@@ -40,7 +59,7 @@
 
 .breafast-img2 {
   position: absolute;
-  top: 55%;
+  bottom: 0;
   left: 30%;
   height: 200px;
 }
@@ -48,6 +67,13 @@
 .breakfast-img3 {
   padding-bottom: 30px;
   height: 300px;
+}
+
+.breafast-el1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 150px;
 }
 
 .lunch-menu-text, .alacarte-text {
@@ -76,6 +102,24 @@
   height: 300px;
 }
 
+.lunch-menu-el1 {
+  position: absolute;
+  height: 300px;
+  left: 40%;
+  top: -20%;
+}
+
+.lunch-menu-el2 {
+  position: absolute;
+  height: 100px;
+  right: 0;
+  top: 0;
+}
+
+.alacarte-text {
+  width: 70%;
+}
+
 .alacarte-img1 {
   position: absolute;
   height: 450px;
@@ -85,7 +129,7 @@
 
 .alacarte-img2 {
   position: absolute;
-  right: 0;
+  right: 20%;
   bottom: 10%;
   height: 250px;
 }
@@ -94,18 +138,26 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 300px;
+  height: 250px;
 }
 
 .alacarte-img4 {
   position: absolute;
   right: 0;
-  bottom: 20%;
-  height: 300px;
+  bottom: 10%;
+  height: 250px;
+}
+
+.alacarte-el1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100px;
 }
 
 .about-us-text {
-  align-self: center;
+  align-self: baseline;
+  text-align: right;
 
   p:nth-child(-n+5) {
     font-size: 24px;
@@ -127,10 +179,19 @@
 @media only screen and (max-width: $mobile-resolution) {
   .lunch-menu-text, .alacarte-text {
     padding-top: 0px;
+    width: 100%;
   }
 
   .alacarte-img1 {
-    position: relative;
+    height: 300px;
+    left: 0;
+    top: 0;
+    right: unset;
+  }
+
+  .alacarte-img2 {
+    right: 0;
+    bottom: 0;
     left: unset;
     top: unset;
     padding-bottom: 20px;
@@ -152,13 +213,21 @@
     bottom: unset;
   }
 
-  .breakfast-col1 {
+  .breakfast-col1, .lunch-menu-col2, .alacarte-col1 {
     min-height: 400px;
     overflow: hidden;
   }
 
   .breafast-img1 {
     top: 0;
+    height: 300px;
+  }
+
+  .breafast-img2 {
+    right: 0;
+    bottom: 0;
+    top: unset;
+    left: unset;
   }
 
   .breakfast-img3 {
@@ -185,10 +254,14 @@
   }
 
   .lunch-menu-img2 {
-    position: relative;
     padding-top: 20px;
-    left: unset;
-    top: unset;
+    left: 0;
+    top: 0;
+    height: 300px;
+  }
+
+  .lunch-menu-img3 {
+    height: 250px;
   }
 
   .about-us-text {
