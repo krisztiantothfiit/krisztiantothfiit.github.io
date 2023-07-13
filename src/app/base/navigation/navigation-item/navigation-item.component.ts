@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-navigation-item',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 export class NavigationItemComponent {
     @Input() title = '';
 
-    constructor(protected router: Router){}
+    constructor(protected router: Router, public navigationService: NavigationService){}
 
     navigate() {
         this.router.navigate([this.title]);

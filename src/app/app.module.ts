@@ -40,6 +40,7 @@ import { UsComponent } from './us/us.component';
 import { BreakfastComponent } from './home/breakfast/breakfast.component';
 import { LunchMenuComponent } from './home/lunch-menu/lunch-menu.component';
 import { AlacarteComponent } from './home/alacarte/alacarte.component';
+import { NavigationService } from './base/navigation/navigation.service';
 
 @NgModule({
   declarations: [
@@ -94,7 +95,7 @@ import { AlacarteComponent } from './home/alacarte/alacarte.component';
     BrowserAnimationsModule,
     NgcCookieConsentModule.forRoot(cookieConfig)
   ],
-  providers: [],
+  providers: [NavigationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

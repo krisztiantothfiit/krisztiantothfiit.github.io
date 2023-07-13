@@ -184,6 +184,12 @@
   text-align: left;
 }
 
+.nav-text-color-white {
+  color: var(--default);
+  font-size: 32px;
+  text-align: left;
+}
+
 .nav-item:hover {
   .nav-text-color {
     font-weight: bold;
@@ -247,8 +253,16 @@
     background-color: var(--default);
   }
 
+  .navbar-black {
+    background-color: var(--secondary);
+  }
+
   .nav-item-border {
     border-bottom: 1px solid var(--secondary);
+  }
+
+  .nav-item-border-white {
+    border-bottom: 1px solid var(--default);
   }
 
   .dropdown-menu.show {

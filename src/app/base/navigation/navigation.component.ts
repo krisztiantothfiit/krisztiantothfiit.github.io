@@ -3,6 +3,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
 import { CookieService } from '../../cookie.service';
+import { NavigationService } from './navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -14,7 +15,8 @@ export class NavigationComponent {
   public href: string = "";
   toClose: boolean = false;
 
-  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router) { }
+  constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router,
+    public navigationService: NavigationService) { }
 
   changeUsedLang(lang: string) {
     this.translate.use(lang);

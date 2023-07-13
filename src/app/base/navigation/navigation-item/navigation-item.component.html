@@ -1,5 +1,8 @@
 <li class="nav-item">
-    <a class="nav-link nav-item-border" [routerLink]="title" [routerLinkActive]="['activeMenuItem']" [routerLinkActiveOptions]="{ exact: true }">
-        <span class="nav-text-color">{{'navigation.' + title | translate }}</span>
-    </a>
+  <a [ngClass]="navigationService.displayWhite ? 'nav-item-border-white' : 'nav-item-border'"
+    class="nav-link" [routerLink]="title" [routerLinkActive]="['activeMenuItem']"
+    [routerLinkActiveOptions]="{ exact: true }">
+    <span [ngClass]="navigationService.displayWhite ? 'nav-text-color-white' : 'nav-text-color'">{{'navigation.' + title
+      | translate }}</span>
+  </a>
 </li>
