@@ -17,4 +17,11 @@ export class DrinksComponent implements OnInit, OnDestroy {
     this.navigationService.changeColorToBlack();
   }
 
+  scroll() {
+    const el = document.getElementById('drinks-menu');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
 }

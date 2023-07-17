@@ -54,7 +54,7 @@
 .drinks-img4 {
   position: absolute;
   height: 400px;
-  top: -15%;
+  top: -5%;
   left: 55%;
 }
 
@@ -95,5 +95,9 @@
     height: 250px;
     top: -10%;
     left: 25%;
+  }
+
+  .drinks-text {
+    max-width: 100%;
   }
 }

@@ -10,14 +10,16 @@
                 <p>{{ 'lunch.dash' | translate }}</p>
                 <p>{{ 'lunch.text3' | translate }}</p>
             </div>
+            <div class="col-sm-12 lunch-btn">
+                <button mat-flat-button class="lunch-menu-title" (click)="scroll()">
+                    <p>{{ 'lunch.menu' | translate }}</p>
+                </button>
+            </div>
         </div>
     </app-section>
     <app-section id="lunch-pictures">
         <div class="row">
             <div class="col-sm-12">
-                <button mat-flat-button class="lunch-menu-title" (click)="scroll()">
-                    <p>{{ 'lunch.menu' | translate }}</p>
-                </button>
                 <img src="assets/images/lunch/lunch1.png" class="lunch-img1">
                 <img src="assets/images/lunch/lunch2.png" class="lunch-img2">
                 <img src="assets/images/lunch/lunch4.png" class="lunch-img4">
