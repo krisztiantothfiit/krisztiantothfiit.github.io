@@ -4,7 +4,7 @@
       <div class="about-us-img">
         <img src="assets/images/home/elements/element1.png" class="about-us-el1">
         <img src="assets/images/home/elements/element3.png" class="about-us-el3">
-        <img src="assets/images/home/about-us/about-us.png">
+        <img [@fadeInOut]="isIn ? 'in' : 'out'"  (appear)="triggerAnimation()" src="assets/images/home/about-us/about-us.png">
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 about-us-text">
@@ -19,5 +19,4 @@
       <p>{{ 'about-us.text5' | translate }}</p>
     </div>
   </div>
-
 </app-section>
