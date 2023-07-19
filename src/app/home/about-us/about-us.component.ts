@@ -24,7 +24,12 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
   isIn = false;
 
-  triggerAnimation() {
-    this.isIn = !this.isIn;
+  triggerAnimationIn() {
+    console.log('appeared')
+    this.isIn = true;
+  }
+  triggerAnimationOut() {
+    console.log('disappeared')
+    this.isIn = false;
   }
 }

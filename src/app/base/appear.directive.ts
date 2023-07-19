@@ -10,6 +10,7 @@ import { startWith } from 'rxjs/operators';
 })
 export class AppearDirective implements AfterViewInit, OnDestroy {
   @Output() appear: EventEmitter<void>;
+  @Output() disappear: EventEmitter<void>;
 
   elementPos!: number;
   elementHeight!: number;
@@ -20,8 +21,11 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   subscriptionScroll!: Subscription;
   subscriptionResize!: Subscription;
 
+  pause: boolean = false;
+
   constructor(private element: ElementRef) {
     this.appear = new EventEmitter<void>();
+    this.disappear = new EventEmitter<void>();
   }
 
   saveDimensions() {
@@ -44,14 +48,32 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
       this.saveDimensions();
       if (this.isVisible()) {
         this.unsubscribe();
-        this.appear.emit();
+        if (!this.pause) {
+          this.appear.emit();
+        }
+        this.pause = true;
+      }
+    }
+
+    if (this.pause && this.isInvisible()) {
+      this.saveDimensions();
+      if (this.isInvisible()) {
+        //this.unsubscribe();
+        if (this.pause) {
+          this.disappear.emit();
+        }
+        this.pause = false;
       }
     }
   }
   isVisible() {
     // Ak chceme zmenit kedy je element povazovany za visible treba pripocitat cislo k this.elementPos na konci
     // napr. ak chceme aby bol visible ked je cely element viditelny tak treba pridat + this.elementHeight
-    return this.scrollPos >= this.elementPos || (this.scrollPos + this.windowHeight) >= (this.elementPos);
+    return this.scrollPos >= this.elementPos || (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight / 2);
+  }
+
+  isInvisible() {
+    return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.windowHeight + this.elementHeight);
   }
 
   subscribe() {
@@ -77,7 +99,7 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     setTimeout(() => this.subscribe(), 0)
-    
+
   }
   ngOnDestroy() {
     this.unsubscribe();
