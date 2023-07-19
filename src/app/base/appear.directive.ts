@@ -22,6 +22,7 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   subscriptionResize!: Subscription;
 
   pause: boolean = false;
+  isBelow: boolean = false;
 
   constructor(private element: ElementRef) {
     this.appear = new EventEmitter<void>();
@@ -47,8 +48,8 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
     if (this.isVisible()) {
       this.saveDimensions();
       if (this.isVisible()) {
-        this.unsubscribe();
         if (!this.pause) {
+          this.isBelow = !this.isBelow;
           this.appear.emit();
         }
         this.pause = true;
@@ -58,7 +59,6 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
     if (this.pause && this.isInvisible()) {
       this.saveDimensions();
       if (this.isInvisible()) {
-        //this.unsubscribe();
         if (this.pause) {
           this.disappear.emit();
         }
@@ -69,11 +69,18 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   isVisible() {
     // Ak chceme zmenit kedy je element povazovany za visible treba pripocitat cislo k this.elementPos na konci
     // napr. ak chceme aby bol visible ked je cely element viditelny tak treba pridat + this.elementHeight
-    return this.scrollPos >= this.elementPos || (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight / 2);
+    if (!this.isBelow) {
+      return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight / 2);
+    }
+    return this.scrollPos <= (this.elementPos + this.elementHeight / 2);
   }
 
   isInvisible() {
-    return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.windowHeight + this.elementHeight);
+    if (this.isBelow) {
+      return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.windowHeight + this.elementHeight / 2);
+    }
+    return (this.scrollPos + this.windowHeight) <= (this.elementPos + this.elementHeight / 2);
+
   }
 
   subscribe() {
@@ -98,7 +105,7 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => this.subscribe(), 0)
+    setTimeout(() => this.subscribe(), 100)
 
   }
   ngOnDestroy() {

@@ -25,11 +25,9 @@ export class AboutUsComponent {
   isIn = false;
 
   triggerAnimationIn() {
-    console.log('appeared')
     this.isIn = true;
   }
   triggerAnimationOut() {
-    console.log('disappeared')
     this.isIn = false;
   }
 }
