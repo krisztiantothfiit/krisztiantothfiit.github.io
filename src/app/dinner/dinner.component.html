@@ -20,10 +20,10 @@
       <div class="col-sm-12">
         <img src="assets/images/dinner/element1.png" class="dinner-el1 desktop-only">
         <img src="assets/images/dinner/element2.png" class="dinner-el2 desktop-only">
-        <img src="assets/images/dinner/dinner1.png" class="dinner-img1">
-        <img src="assets/images/dinner/dinner3.png" class="dinner-img3">
-        <img src="assets/images/dinner/dinner2.png" class="dinner-img2">
-        <img src="assets/images/dinner/dinner4.png" class="dinner-img4">
+        <img appParallax [ratio]="0.1" src="assets/images/dinner/dinner1.png" class="dinner-img1">
+        <img appParallax [ratio]="0.2" src="assets/images/dinner/dinner3.png" class="dinner-img3">
+        <img appParallax [ratio]="0.2" src="assets/images/dinner/dinner2.png" class="dinner-img2">
+        <img appParallax [ratio]="0.1" src="assets/images/dinner/dinner4.png" class="dinner-img4">
       </div>
     </div>
   </app-section>
@@ -32,7 +32,7 @@
       <div class="col-sm-12">
         <img src="assets/images/dinner/element3.png" class="dinner-el3 desktop-only">
         <img src="assets/images/dinner/element6.png" class="dinner-el6 big-desktop-only">
-        <img src="assets/images/menu/ala.jpg" class="lunch-menu">
+        <img appParallax [ratio]="0.1" src="assets/images/menu/ala.jpg" class="lunch-menu">
       </div>
     </div>
   </app-section>

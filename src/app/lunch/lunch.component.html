@@ -1,39 +1,43 @@
 <div class="lunch page">
-    <img src="assets/images/lunch/element1.png" class="lunch-el1 desktop-only">
-    <app-section id="lunch-text">
-        <div class="row">
-            <div class="col-sm-12 lunch-text">
-                <p class="lunch-time">{{ 'lunch.time' | translate }}</p>
-                <p>{{ 'lunch.text1' | translate }}</p>
-                <p>{{ 'lunch.dash' | translate }}</p>
-                <p>{{ 'lunch.text2' | translate }}</p>
-                <p>{{ 'lunch.dash' | translate }}</p>
-                <p>{{ 'lunch.text3' | translate }}</p>
-            </div>
-            <div class="col-sm-12 lunch-btn">
-                <button mat-flat-button class="lunch-menu-title" (click)="scroll()">
-                    <p>{{ 'lunch.menu' | translate }}</p>
-                </button>
-            </div>
-        </div>
-    </app-section>
-    <app-section id="lunch-pictures">
-        <div class="row">
-            <div class="col-sm-12">
-                <img src="assets/images/lunch/lunch1.png" class="lunch-img1">
-                <img src="assets/images/lunch/lunch2.png" class="lunch-img2">
-                <img src="assets/images/lunch/lunch4.png" class="lunch-img4">
-                <img src="assets/images/lunch/lunch3.png" class="lunch-img3">
-                <img src="assets/images/lunch/element2.png" class="lunch-el2 desktop-only">
-            </div>
-        </div>
-    </app-section>
-    <app-section id="lunch-menu">
-        <div class="row">
-            <div class="col-sm-12">
-                <img src="assets/images/lunch/element3.png" class="lunch-el3 desktop-only">
-                <img src="assets/images/menu/obed.jpg" class="lunch-menu">
-            </div>
-        </div>
-    </app-section>
+  <img src="assets/images/lunch/element1.png" class="lunch-el1 desktop-only">
+  <app-section id="lunch-text">
+    <div appParallax [ratio]="0.1" class="row">
+      <div class="col-sm-12 lunch-text">
+        <p class="lunch-time">{{ 'lunch.time' | translate }}</p>
+        <p>{{ 'lunch.text1' | translate }}</p>
+        <p>{{ 'lunch.dash' | translate }}</p>
+        <p>{{ 'lunch.text2' | translate }}</p>
+        <p>{{ 'lunch.dash' | translate }}</p>
+        <p>{{ 'lunch.text3' | translate }}</p>
+      </div>
+      <div class="col-sm-12 lunch-btn">
+        <button mat-flat-button class="lunch-menu-title" (click)="scroll()">
+          <p>{{ 'lunch.menu' | translate }}</p>
+        </button>
+      </div>
+    </div>
+  </app-section>
+  <app-section id="lunch-pictures">
+    <div class="row">
+      <div class="col-sm-12">
+        <img appParallax [ratio]="0.2" src="assets/images/lunch/lunch1.png" class="lunch-img1 desktop-only">
+        <img appParallax [ratio]="0.3" src="assets/images/lunch/lunch2.png" class="lunch-img2 desktop-only">
+        <img appParallax [ratio]="0.4" src="assets/images/lunch/lunch4.png" class="lunch-img4 desktop-only">
+        <img appParallax [ratio]="0.2" src="assets/images/lunch/lunch3.png" class="lunch-img3 desktop-only">
+        <img src="assets/images/lunch/lunch1.png" class="lunch-img1 mobile-only">
+        <img src="assets/images/lunch/lunch2.png" class="lunch-img2 mobile-only">
+        <img src="assets/images/lunch/lunch4.png" class="lunch-img4 mobile-only">
+        <img src="assets/images/lunch/lunch3.png" class="lunch-img3 mobile-only">
+        <img src="assets/images/lunch/element2.png" class="lunch-el2 desktop-only">
+      </div>
+    </div>
+  </app-section>
+  <app-section id="lunch-menu">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="assets/images/lunch/element3.png" class="lunch-el3 desktop-only">
+        <img appParallax [ratio]="0.1" src="assets/images/menu/obed.jpg" class="lunch-menu">
+      </div>
+    </div>
+  </app-section>
 </div>
