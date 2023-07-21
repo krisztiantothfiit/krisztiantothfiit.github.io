@@ -42,6 +42,7 @@ import { LunchMenuComponent } from './home/lunch-menu/lunch-menu.component';
 import { AlacarteComponent } from './home/alacarte/alacarte.component';
 import { NavigationService } from './base/navigation/navigation.service';
 import { AppearDirective } from './base/appear.directive';
+import { ParallaxDirective } from './base/parallax.directive';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { AppearDirective } from './base/appear.directive';
     BreakfastComponent,
     LunchMenuComponent,
     AlacarteComponent,
-    AppearDirective
+    AppearDirective,
+    ParallaxDirective
   ],
   imports: [
     BrowserModule,

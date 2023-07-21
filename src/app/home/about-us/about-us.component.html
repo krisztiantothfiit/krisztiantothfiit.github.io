@@ -2,19 +2,25 @@
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 desktop-only">
       <div class="about-us-img">
+        <img appParallax [ratio]="0.5" src="assets/images/home/about-us/about-us.png"
+          class="about-us-img1 desktop-only">
+        <img src="assets/images/home/about-us/about-us.png" class="mobile-only">
         <img src="assets/images/home/elements/element1.png" class="about-us-el1">
         <img src="assets/images/home/elements/element3.png" class="about-us-el3">
-        <img [@slideInOutLeft]="isIn ? 'in' : 'out'" (appear)="triggerAnimationIn()"
-        (disappear)="triggerAnimationOut()" src="assets/images/home/about-us/about-us.png" class="desktop-only">
-        <img [@fadeInOut]="isIn ? 'in' : 'out'" (appear)="triggerAnimationIn()"
-        (disappear)="triggerAnimationOut()" src="assets/images/home/about-us/about-us.png" class="mobile-only">
       </div>
     </div>
-    <div [@fadeInOut]="isIn ? 'in' : 'out'"  (appear)="triggerAnimationIn()" (disappear)="triggerAnimationOut()" class="col-lg-6 col-md-6 col-sm-12 about-us-text">
-      <div class="mobile-only about-us-img">
+    <div appParallax [ratio]="0.1" class="col-lg-6 col-md-6 col-sm-12 about-us-text desktop-only">
+      <img src="assets/images/home/elements/element2.png" class="about-us-el2">
+      <p>{{ 'about-us.text1' | translate }}</p>
+      <p>{{ 'about-us.text2' | translate }}</p>
+      <p>{{ 'about-us.text3' | translate }}</p>
+      <p>{{ 'about-us.text4' | translate }}</p>
+      <p>{{ 'about-us.text5' | translate }}</p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 about-us-text mobile-only">
+      <div class="about-us-img">
         <img src="assets/images/home/about-us/about-us.png">
       </div>
-      <img src="assets/images/home/elements/element2.png" class="about-us-el2 desktop-only">
       <p>{{ 'about-us.text1' | translate }}</p>
       <p>{{ 'about-us.text2' | translate }}</p>
       <p>{{ 'about-us.text3' | translate }}</p>
