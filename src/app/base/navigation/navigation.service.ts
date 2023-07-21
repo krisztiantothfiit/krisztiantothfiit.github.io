@@ -15,6 +15,8 @@ export class NavigationService {
   }
 
   toggleNav() {
-    this.toClose = !this.toClose;
+    if (this.isMobile) {
+      this.toClose = !this.toClose;
+    }
   }
 }
