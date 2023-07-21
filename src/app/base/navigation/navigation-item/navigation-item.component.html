@@ -1,7 +1,7 @@
 <li class="nav-item">
   <a [ngClass]="navigationService.displayWhite ? 'nav-item-border-white' : 'nav-item-border'"
     class="nav-link" [routerLink]="title" [routerLinkActive]="['activeMenuItem']"
-    [routerLinkActiveOptions]="{ exact: true }">
+    [routerLinkActiveOptions]="{ exact: true }" (click)="navigationService.toggleNav()">
     <span [ngClass]="navigationService.displayWhite ? 'nav-text-color-white' : 'nav-text-color'">{{'navigation.' + title
       | translate }}</span>
   </a>

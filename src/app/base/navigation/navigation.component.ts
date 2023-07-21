@@ -13,7 +13,6 @@ export class NavigationComponent {
   @Input() public currentLang = '';
 
   public href: string = "";
-  toClose: boolean = false;
 
   constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router,
     public navigationService: NavigationService) { }
@@ -46,10 +45,6 @@ export class NavigationComponent {
         this.ccService.destroy();
         this.ccService.init(this.ccService.getConfig());
       });
-  }
-
-  toggleNav() {
-    this.toClose = !this.toClose;
   }
 
   openFacebook() {
