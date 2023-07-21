@@ -4,10 +4,13 @@
       <div class="about-us-img">
         <img src="assets/images/home/elements/element1.png" class="about-us-el1">
         <img src="assets/images/home/elements/element3.png" class="about-us-el3">
-        <img [@fadeInOut]="isIn ? 'in' : 'out'"  (appear)="triggerAnimationIn()" (disappear)="triggerAnimationOut()" src="assets/images/home/about-us/about-us.png">
+        <img [@slideInOutLeft]="isIn ? 'in' : 'out'" (appear)="triggerAnimationIn()"
+        (disappear)="triggerAnimationOut()" src="assets/images/home/about-us/about-us.png" class="desktop-only">
+        <img [@fadeInOut]="isIn ? 'in' : 'out'" (appear)="triggerAnimationIn()"
+        (disappear)="triggerAnimationOut()" src="assets/images/home/about-us/about-us.png" class="mobile-only">
       </div>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12 about-us-text">
+    <div [@fadeInOut]="isIn ? 'in' : 'out'"  (appear)="triggerAnimationIn()" (disappear)="triggerAnimationOut()" class="col-lg-6 col-md-6 col-sm-12 about-us-text">
       <div class="mobile-only about-us-img">
         <img src="assets/images/home/about-us/about-us.png">
       </div>

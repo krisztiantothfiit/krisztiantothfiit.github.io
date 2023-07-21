@@ -23,6 +23,7 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
 
   pause: boolean = false;
   isBelow: boolean = false;
+  initialized: boolean = false;
 
   constructor(private element: ElementRef) {
     this.appear = new EventEmitter<void>();
@@ -69,18 +70,25 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   isVisible() {
     // Ak chceme zmenit kedy je element povazovany za visible treba pripocitat cislo k this.elementPos na konci
     // napr. ak chceme aby bol visible ked je cely element viditelny tak treba pridat + this.elementHeight
-    if (!this.isBelow) {
-      return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight / 2);
+    if (this.elementHeight > 0) {
+      if (!this.isBelow) {
+        return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight / 2);
+      }
+      return this.scrollPos <= (this.elementPos + this.elementHeight / 2);
     }
-    return this.scrollPos <= (this.elementPos + this.elementHeight / 2);
+
+    return false;
   }
 
   isInvisible() {
-    if (this.isBelow) {
-      return (this.scrollPos + this.windowHeight) >= (this.elementPos + this.windowHeight + this.elementHeight / 2);
+    if (this.elementHeight > 0) {
+      if (this.isBelow) {
+        return (this.scrollPos + this.windowHeight) >= (this.elementPos  + this.elementHeight / 2);
+      }
+      return (this.scrollPos + this.windowHeight) <= (this.elementPos + this.elementHeight / 2);
     }
-    return (this.scrollPos + this.windowHeight) <= (this.elementPos + this.elementHeight / 2);
 
+    return false;
   }
 
   subscribe() {
@@ -105,8 +113,10 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => this.subscribe(), 100)
-
+    setTimeout(() => {
+      this.saveDimensions();
+      this.subscribe();
+    }, 1000)
   }
   ngOnDestroy() {
     this.unsubscribe();
