@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component, HostListener, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
@@ -15,7 +15,9 @@ export class NavigationComponent {
   public href: string = "";
 
   constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router,
-    public navigationService: NavigationService) { }
+    public navigationService: NavigationService) { 
+      this.navigationService.isMobile = window.innerWidth < 770;
+    }
 
   changeUsedLang(lang: string) {
     this.translate.use(lang);
@@ -49,5 +51,11 @@ export class NavigationComponent {
 
   openFacebook() {
     window.open("https://www.facebook.com/profile.php?id=100090247062700", "_blank");
+  }
+
+
+  @HostListener("window:resize", ["$event"])
+  onWindowResize() {
+    this.navigationService.isMobile = window.innerWidth < 770;
   }
 }

@@ -7,12 +7,18 @@
     </div>
     <div class="collapse navbar-collapse" id="primary-menu">
       <ul class="nav navbar-nav ms-auto nav-no-opacity">
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu"></app-navigation-item>
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu" title="brunch"></app-navigation-item>
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu" title="obed"></app-navigation-item>
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu" title="vecera"></app-navigation-item>
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu" title="drinky"></app-navigation-item>
-        <app-navigation-item  data-toggle="collapse" data-target="#primary-menu" title="my"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu" title="brunch"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu" title="obed"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu" title="vecera"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu" title="drinky"></app-navigation-item>
+        <app-navigation-item *ngIf="navigationService.isMobile" data-toggle="collapse" data-target="#primary-menu" title="my"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile" title="brunch"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile" title="obed"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile" title="vecera"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile" title="drinky"></app-navigation-item>
+        <app-navigation-item *ngIf="!navigationService.isMobile" title="my"></app-navigation-item>
       </ul>
     </div>
   </div>
