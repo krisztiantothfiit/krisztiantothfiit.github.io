@@ -3,7 +3,7 @@
 }
 
 .drinks-time {
-  font-size: 45px !important;
+  font-size: 40px !important;
   padding-bottom: 75px;
 }
 
@@ -12,22 +12,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 66%;
   margin: 0 auto 100px auto;
   p {
     margin-bottom: 0;
     text-align: center;
     color: var(--default);
-    font-size: 35px;
+    font-size: 32px;
+    width: 50%;
   }
 }
 
 #drinks-pictures .row {
   min-height: 600px;
-}
-
-#drinks-pictures .section {
-  border-top: 3px solid rgba(256, 256, 256, 0.1)
 }
 
 .drinks-el1 {
@@ -125,7 +121,7 @@
     left: 25%;
   }
 
-  .drinks-text {
-    max-width: 100%;
+  .drinks-text p{
+    width: 100%;
   }
 }

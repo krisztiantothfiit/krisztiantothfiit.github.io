@@ -35,14 +35,15 @@
     flex-direction: column;
     align-items: center;
     p {
+        width: 35%;
         margin-bottom: 0;
         text-align: center;
-        font-size: 35px;
+        font-size: 32px;
     }
 }
 
 .lunch-time {
-    font-size: 45px;
+    font-size: 40px !important;
     padding-bottom: 30px;
 }
 
@@ -109,5 +110,11 @@
         left: 10%;
         bottom: 0;
     }
+
+    .lunch-text {
+      p {
+          width: 100%;
+      }
+  }
 
 }
