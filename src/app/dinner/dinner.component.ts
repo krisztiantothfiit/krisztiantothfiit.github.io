@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 export class DinnerComponent {
 
   scroll() {
-    const el = document.getElementById('lunch-menu');
+    const el = document.getElementById('dinner-menu');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
