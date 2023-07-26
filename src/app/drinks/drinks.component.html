@@ -4,12 +4,17 @@
   <app-section id="drinks-text">
     <div class="row">
       <div class="col-sm-12 drinks-text">
-        <p class="drinks-time">{{ 'drinks.time' | translate }}</p>
+        <p class="time">{{ 'drinks.time' | translate }}</p>
         <p>{{ 'drinks.text1' | translate }}</p>
         <p>{{ 'drinks.dash' | translate }}</p>
         <p>{{ 'drinks.text2' | translate }}</p>
         <p>{{ 'drinks.dash' | translate }}</p>
         <p>{{ 'drinks.text3' | translate }}</p>
+      </div>
+      <div class="col-sm-12 drinks-btn">
+        <button mat-flat-button class="drinks-menu-title" (click)="scroll()">
+          <p>{{ 'drinks.menu' | translate }}</p>
+        </button>
       </div>
     </div>
   </app-section>

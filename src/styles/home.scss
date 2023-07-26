@@ -155,10 +155,6 @@
   align-self: baseline;
   text-align: right;
 
-  p:nth-child(-n+5) {
-    font-size: 32px;
-  }
-
   p:nth-child(6) {
     font-style: italic;
     font-size: 28px;
@@ -277,7 +273,6 @@
     p {
       text-align: center;
       margin-bottom: 0;
-      font-size: 20px;
     }
   }
 

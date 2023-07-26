@@ -13,19 +13,12 @@
     margin-bottom: 0;
     text-align: center;
     color: var(--default);
-    font-size: 32px;
     width: 60%;
   }
 }
 
-.dinner-time {
-  font-size: 40px !important;
-  padding-bottom: 75px;
-}
-
 .dinner-menu-title {
   background: linear-gradient(150deg, black, transparent);
-  margin-top: 125px !important;
 }
 
 .dinner-btn p {
@@ -128,8 +121,9 @@
 
   .dinner-img4 {
     height: 250px;
-    top: 50%;
+    top: unset;
     left: 10%;
+    bottom: 0;
   }
 
   .dinner-menu-title {

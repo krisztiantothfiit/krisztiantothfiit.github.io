@@ -86,7 +86,7 @@ p,
 span {
   color: var(--text);
   text-align: left;
-  font-size: 24px;
+  font-size: 32px;
   font-family: var(--font-family-text);
 }
 
@@ -95,10 +95,14 @@ span {
 .section .mat-flat-button {
   border-radius: 10px;
   padding: 10px 20px;
+  margin-top: 75px;
 }
 
 .section .mat-flat-button:hover {
-  background-color: var(--background) !important;
+  background: linear-gradient(150deg, white, white);
+  p {
+    color: black;
+  }
 }
 
 .scrollToTop.mat-mini-fab {
@@ -224,8 +228,13 @@ p:last-child {
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .section .mat-flat-button {
+    margin-top: 25px;
+  }
+
   .section {
-    padding: 50px 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
   }
 
   .mobile-only {
@@ -266,5 +275,9 @@ p:last-child {
   .col-sm-12 {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .row {
+    min-height: 0px;
   }
 }

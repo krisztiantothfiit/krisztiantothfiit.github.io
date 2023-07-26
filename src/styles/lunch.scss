@@ -38,13 +38,12 @@
         width: 35%;
         margin-bottom: 0;
         text-align: center;
-        font-size: 32px;
     }
 }
 
-.lunch-time {
+.time {
     font-size: 40px !important;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
 }
 
 .lunch-menu-title {
@@ -85,10 +84,14 @@
 
 @media only screen and (max-width: $mobile-resolution) {
 
+    .time {
+        font-size: 32px !important;
+        padding-bottom: 25px;
+    }
+
     .lunch-img1 {
         height: 250px;
-        top: 10%;
-        padding-top: 20px;
+        top: 0%;
     }
     
     .lunch-img2 {

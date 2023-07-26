@@ -3,15 +3,19 @@
   <app-section id="brunch-text-pictures">
     <div class="row">
       <div class="col-sm-12 brunch-text">
-        <p class="brunch-time">{{ 'brunch.time' | translate }}</p>
-        <img appParallax [ratio]="0.5" src="assets/images/brunch/brunch1.png" class="brunch-img1 desktop-only">
-        <img appParallax [ratio]="0.6" src="assets/images/brunch/brunch2.png" class="brunch-img2 desktop-only">
-        <img appParallax [ratio]="0.7" src="assets/images/brunch/brunch3.png" class="brunch-img3 desktop-only">
-        <img appParallax [ratio]="0.5" src="assets/images/brunch/brunch4.png" class="brunch-img4 desktop-only">
-        <img src="assets/images/brunch/brunch1.png" class="brunch-img1 mobile-only">
-        <img src="assets/images/brunch/brunch2.png" class="brunch-img2 mobile-only">
-        <img src="assets/images/brunch/brunch3.png" class="brunch-img3 mobile-only">
-        <img src="assets/images/brunch/brunch4.png" class="brunch-img4 mobile-only">
+        <p class="time">{{ 'brunch.time' | translate }}</p>
+        <div class="brunch-images">
+          <img appParallax [ratio]="0.5" src="assets/images/brunch/brunch1.png" class="brunch-img1 desktop-only">
+          <img appParallax [ratio]="0.6" src="assets/images/brunch/brunch2.png" class="brunch-img2 desktop-only">
+          <img appParallax [ratio]="0.7" src="assets/images/brunch/brunch3.png" class="brunch-img3 desktop-only">
+          <img appParallax [ratio]="0.5" src="assets/images/brunch/brunch4.png" class="brunch-img4 desktop-only">
+          <img src="assets/images/brunch/brunch1.png" class="brunch-img1 mobile-only">
+          <img src="assets/images/brunch/brunch2.png" class="brunch-img2 mobile-only">
+          <img src="assets/images/brunch/brunch3.png" class="brunch-img3 mobile-only">
+          <img src="assets/images/brunch/brunch4.png" class="brunch-img4 mobile-only">
+        </div>
+      </div>
+      <div class="col-sm-12 brunch-btn">
         <button mat-flat-button class="brunch-menu-title" (click)="scroll()">
           <p>{{ 'brunch.menu' | translate }}</p>
         </button>

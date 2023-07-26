@@ -2,23 +2,24 @@
     background: #000;
 }
 
-.drinks-time {
-  font-size: 40px !important;
-  padding-bottom: 75px;
-}
-
 .drinks-text {
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto 100px auto;
   p {
     margin-bottom: 0;
     text-align: center;
     color: var(--default);
-    font-size: 32px;
     width: 50%;
+  }
+}
+
+.drinks-menu-title {
+  background: linear-gradient(150deg, #dd1651, transparent);
+
+  p {
+    color: var(--default)
   }
 }
 
@@ -117,7 +118,7 @@
 
   .drinks-img5 {
     height: 250px;
-    top: -10%;
+    top: 0%;
     left: 25%;
   }
 

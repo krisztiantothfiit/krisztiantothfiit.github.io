@@ -7,17 +7,12 @@
   align-self: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   min-height: 550px;
   p {
       margin-bottom: 0;
       text-align: center;
   }
-}
-
-.brunch-time {
-  font-size: 40px !important;
 }
 
 .brunch-el1 {
@@ -52,14 +47,14 @@
 .brunch-img1 {
   position: absolute;
   height: 350px;
-  top: 10%;
+  top: 0%;
   left: 0%;
 }
 
 .brunch-img2 {
   position: absolute;
   height: 350px;
-  top: 15%;
+  top: 10%;
   left: 25%;
 }
 
@@ -77,6 +72,11 @@
   left: 75%;
 }
 
+.brunch-images {
+  height: 450px;
+  position: relative;
+}
+
 .brunch-menu-title {
   background: linear-gradient(150deg, #FED9E3, transparent);
 }
@@ -85,8 +85,7 @@
 
   .brunch-img1 {
       height: 250px;
-      top: 10%;
-      padding-top: 20px;
+      top: 0%;
   }
   
   .brunch-img2 {
@@ -97,7 +96,7 @@
   
   .brunch-img3 {
       height: 250px;
-      left: 60%;
+      left: unset;
       top: 40%;
       right: 0;
   }
@@ -106,7 +105,7 @@
       height: 250px;
       top: unset;
       left: 10%;
-      bottom: 10%;
+      bottom: 0;
   }
 
 }
