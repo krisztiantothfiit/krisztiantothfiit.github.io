@@ -14,6 +14,7 @@ navigation.obed;Obed
 navigation.vecera;Večera
 navigation.drinky;Drinky
 navigation.my;My
+navigation.rezervacie;Rezervácie
 
 about-us.text1;Zóna slobody, oddychu a zábavy.
 about-us.text2;Výberová gastronómia zo sezónnych a domácich surovín.
@@ -52,30 +53,18 @@ drinks.text2;Príď si k nám posedieť ráno s rodinkou, poobede s priateľom a
 drinks.text3;Vyber si atmosféru, akú ty chceš.
 drinks.menu;Aktuálna ponuka
 
-contact.form.title1;Chcem sa poistiť
-contact.form.title2;Získajte poistenie rýchlo a jednoducho
+contact.form.title;Rezervujte si stôl u nás
 contact.form.name;Meno a priezvisko
 contact.form.email;Email
 contact.form.phone;Mobilné číslo
-contact.form.insurance;O aké poistenie by ste mali záujem?
-contact.form.insurance.majetkuObcanov;Poistenie majetku občanov
-contact.form.insurance.motorovychVozidiel;Poistenie motorových vozidiel
-contact.form.insurance.osob;Poistenie osôb
-contact.form.insurance.podnikatelov;Poistenie podnikateľov
-contact.form.insurance.bytovychDomov;Poistenie bytových domov
-contact.form.insurance.cestovne;Cestovné poistenie
-contact.form.insurance.vykonuPrace;Poistenie v rámci výkonu práce
-contact.form.insurance.profesii;Poistenie profesií
-contact.form.insurance.kybernetickychRizik;Poistenie kybernetických rizík
-contact.form.insurance.agro;Agro poistenie
-contact.form.insurance.dopravnychProstriedkov;Poistenie dopravných prostriedkov
-contact.form.insurance.do;Poistenie D&O
-contact.form.message;Správa
+contact.form.people;Počet ľudí
+contact.form.time;Čas
+contact.form.message;Poznámky (intolerancie, požiadavky)
 contact.form.submitBtn;Odoslať
 contact.form.required;Povinné pole
-contact.form.pattern;Nesprávny tvar
-contact.form.successMsg;Správa bola úspešne odoslaná!
-contact.form.failMsg;Odoslanie správy zlyhalo
+contact.form.pattern;Nesprávny tvar emailu
+contact.form.successMsg;Vaše informácie k rezervácií boli úspešne odoslané!
+contact.form.failMsg;Odoslanie správy zlyhalo, kontaktujte nás telefonicky alebo emailom.
 
 contact.title1;Kontakt
 contact.title2;Neváhajte ma kontaktovať
@@ -86,6 +75,17 @@ contact.address1;P. Pázmáňa 2020/30, Šaľa
 contact.address2;Budova OK Centra
 
 
-footer.text2; © Alžbeta Vímiová - Dizajn zo
-footer.text3;vytvoril ;
-footer.text4;Ilustračné obrázky navrhol Freepik;
+footer.title1;Sleduj nás
+footer.title2;Spoj sa s nami
+footer.title3;Príď nás navštíviť
+footer.phone;0915 383 919
+footer.email;info@trikvety.sk
+footer.address1;Štefánikova trieda 72/46,
+footer.address2;949 01 Nitra
+footer.monday;Pondelok: 8-22
+footer.tuesday;Utorok: 8-22
+footer.wednesday;Streda: 8-22
+footer.thursday;Štvrtok: 8-22
+footer.friday;Piatok: 8-24
+footer.saturday;Sobota: 8-24
+footer.sunday;Nedeľa: 9-18

@@ -194,6 +194,7 @@ p:last-child {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  filter: grayscale(1);
 }
 
 @media only screen and (max-width: $tablet-resolution) {
@@ -205,11 +206,6 @@ p:last-child {
   .col-md-12 {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .map {
-    height: 350px;
-    margin-top: 20px;
   }
 
   h1 {

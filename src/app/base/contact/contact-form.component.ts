@@ -12,18 +12,15 @@ import { TranslateService } from '@ngx-translate/core';
 export class ContactFormComponent {
   formGroup: FormGroup;
 
-  insurances = ['majetkuObcanov', 'motorovychVozidiel', 'osob', 'podnikatelov',
-    'bytovychDomov', 'cestovne', 'vykonuPrace', 'profesii', 'kybernetickychRizik',
-    'agro', 'dopravnychProstriedkov', 'do']
-
   constructor(private dialog: MatDialog, private mailService: MailService, private translate: TranslateService) {
 
     this.formGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required]),
+      people: new FormControl('', [Validators.required]),
+      time: new FormControl('', [Validators.required]),
+      email: new FormControl('', []),
       phone: new FormControl('', [Validators.required]),
-      insurance: new FormControl('', [Validators.required]),
-      message: new FormControl('', [Validators.required])
+      message: new FormControl('', [])
     });
   }
 
@@ -38,7 +35,6 @@ export class ContactFormComponent {
   }
 
   public submit(formDirective: FormGroupDirective): void {
-    console.log(this.formGroup.value.insurance, this.translate.instant(`contact.form.insurance.${this.formGroup.value.insurance}`))
     if (!this.formGroup.invalid) {
       const mailOptions = {
         subject: `Správa od ${this.formGroup.value.name}`,

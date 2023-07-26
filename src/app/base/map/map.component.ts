@@ -26,8 +26,8 @@ export class MapComponent implements OnInit {
       ],
       target: 'map',
       view: new View({
-        center: transform([17.876134, 48.155533], 'EPSG:4326', 'EPSG:3857'),
-        zoom: 17, maxZoom: 20,
+        center: transform([18.08566411050217, 48.30917064851812], 'EPSG:4326', 'EPSG:3857'),
+        zoom: 16, maxZoom: 20,
       }),
     });
 
@@ -43,7 +43,7 @@ export class MapComponent implements OnInit {
     this.map.addLayer(markers);
     setTimeout(() => this.map.updateSize(), 0);
 
-    var marker = new Feature(new Point(fromLonLat([17.87667749734036, 48.15621347325009])));
+    var marker = new Feature(new Point(fromLonLat([18.08566411050217, 48.30917064851812])));
     // @ts-ignore: Object is possibly 'null'.
     markers.getSource().addFeature(marker);
   }

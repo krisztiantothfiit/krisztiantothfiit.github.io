@@ -1,11 +1,5 @@
-#contactForm {
-  h3 {
-    text-align: left !important;
-  }
-}
-
-#contactForm .mat-raised-button {
-  width: 100%;
+.contact {
+  background: linear-gradient(180deg, white 0%, white 100%);
 }
 
 .success-dialog {
@@ -65,6 +59,20 @@
 .form {
   flex-direction: column;
   display: flex;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto !important;
+
+  p {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+}
+
+.submit-btn {
+  background: linear-gradient(150deg, #28E895, transparent);
 }
 
 .mat-form-field-label {
