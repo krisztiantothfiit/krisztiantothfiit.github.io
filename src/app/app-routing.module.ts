@@ -5,7 +5,6 @@ import { BrunchComponent } from './brunch/brunch.component';
 import { LunchComponent } from './lunch/lunch.component';
 import { DinnerComponent } from './dinner/dinner.component';
 import { DrinksComponent } from './drinks/drinks.component';
-import { UsComponent } from './us/us.component';
 import { ContactFormComponent } from './base/contact/contact-form.component';
 
 const routes: Routes = [
@@ -13,8 +12,7 @@ const routes: Routes = [
   { path: 'obed', component: LunchComponent },
   { path: 'vecera', component: DinnerComponent },
   { path: 'drinky', component: DrinksComponent },
-  { path: 'my', component: UsComponent },
-  { path: 'rezervacie', component: ContactFormComponent },
+  { path: 'kontakt', component: ContactFormComponent },
   { path: '', component: HomeComponent }
 ];
 

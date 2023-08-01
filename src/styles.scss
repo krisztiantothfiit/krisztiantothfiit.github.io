@@ -12,7 +12,8 @@
 @import "styles/lunch.scss";
 @import "styles/dinner.scss";
 @import "styles/drinks.scss";
-@import "styles/us.scss";
+@import "styles/establishments.scss";
+@import "styles/events.scss";
 
 html {
   overflow-x: hidden;
@@ -24,7 +25,7 @@ html {
 
 .section {
   text-align: center;
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .row {

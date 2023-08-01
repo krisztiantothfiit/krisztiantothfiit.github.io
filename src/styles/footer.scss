@@ -2,7 +2,7 @@
 
 #footer {
   p {
-    text-align: center;
+    text-align: left;
     margin-bottom: 0;
   }
 
@@ -14,9 +14,10 @@
 
 .footer-row {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
   padding-bottom: 75px;
+  width: 60%;
+  margin: auto;
 }
 
 .footer-white p {
@@ -34,11 +35,6 @@
   overflow: hidden;
 }
 
-.social-icon {
-  height: 65px !important;
-  width: 65px !important;
-}
-
 .icon {
   height: 45px;
   width: 45px;
@@ -46,6 +42,7 @@
   background: black;
   border-radius: 999px;
   padding: 10px;
+  margin-right: 20px;
   mat-icon {
     height: 25px;
     width: 25px;
@@ -60,13 +57,9 @@
 
 .footer-col {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   min-width: 300px;
-}
-
-.space {
-  gap: 50px;
 }
 
 .heart.mat-icon {
@@ -91,6 +84,8 @@
 
   .footer-col {
     min-width: 0;
+    padding-bottom: 20px;
+    justify-content: flex-start;
   }
 
   .footer-row-mobile {
@@ -99,5 +94,13 @@
 
   .footer-map {
     padding: 0;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0px;
+    width: 100%;
+    flex-direction: column;
   }
 }

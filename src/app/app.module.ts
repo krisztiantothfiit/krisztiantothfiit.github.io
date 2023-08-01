@@ -36,13 +36,14 @@ import { BrunchComponent } from './brunch/brunch.component';
 import { LunchComponent } from './lunch/lunch.component';
 import { DinnerComponent } from './dinner/dinner.component';
 import { DrinksComponent } from './drinks/drinks.component';
-import { UsComponent } from './us/us.component';
 import { BreakfastComponent } from './home/breakfast/breakfast.component';
 import { LunchMenuComponent } from './home/lunch-menu/lunch-menu.component';
 import { AlacarteComponent } from './home/alacarte/alacarte.component';
 import { NavigationService } from './base/navigation/navigation.service';
 import { AppearDirective } from './base/appear.directive';
 import { ParallaxDirective } from './base/parallax.directive';
+import { EventsComponent } from './home/events/events.component';
+import { EstablishmentComponent } from './home/establishment/establishment.component';
 
 @NgModule({
   declarations: [
@@ -63,12 +64,13 @@ import { ParallaxDirective } from './base/parallax.directive';
     LunchComponent,
     DinnerComponent,
     DrinksComponent,
-    UsComponent,
     BreakfastComponent,
     LunchMenuComponent,
     AlacarteComponent,
     AppearDirective,
-    ParallaxDirective
+    ParallaxDirective,
+    EventsComponent,
+    EstablishmentComponent
   ],
   imports: [
     BrowserModule,

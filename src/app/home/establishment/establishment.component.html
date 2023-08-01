@@ -1,0 +1,24 @@
+<app-section id="establishment">
+  <div class="row">
+    <div class="col-sm-12 mobile-only establishment-images">
+      <img src="assets/images/home/establishment/establishment2.png" class="establishment-img2 mobile-only">
+      <img src="assets/images/home/establishment/establishment3.png" class="establishment-img3">
+      <img src="assets/images/home/establishment/establishment1.png" class="establishment-img1">
+    </div>
+    <div class="col-sm-12">
+      <p class="establishment-text1" [innerHTML]="'establishment.text1' | translate"></p>
+    </div>
+    <div class="col-sm-12 establishment-images">
+      <img appParallax [ratio]="0.08" src="assets/images/home/establishment/establishment2.png" class="establishment-img2 desktop-only">
+      <img appParallax [ratio]="0.1" src="assets/images/home/establishment/establishment4.png" class="establishment-img4 desktop-only">
+      <img appParallax [ratio]="0.2" src="assets/images/home/establishment/establishment5.png" class="establishment-img5 desktop-only">
+      <img src="assets/images/home/establishment/establishment4.png" class="establishment-img4 mobile-only">
+      <img src="assets/images/home/establishment/establishment5.png" class="establishment-img5 mobile-only">
+      <img src="assets/images/home/establishment/establishment3.png" class="establishment-img3 desktop-only">
+      <img src="assets/images/home/establishment/establishment1.png" class="establishment-img1 desktop-only">
+    </div>
+    <div class="col-sm-12 establishment-text2">
+      <p>{{ 'establishment.text2' | translate }}</p>
+    </div>
+  </div>
+</app-section>

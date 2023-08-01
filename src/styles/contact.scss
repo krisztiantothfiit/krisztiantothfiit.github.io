@@ -115,6 +115,11 @@
   text-align: left;
 }
 
+.hours {
+  justify-content: center;
+  display: flex;
+}
+
 @media only screen and (max-width: $tablet-resolution) {
   #contactForm .row {
     flex-direction: column-reverse;
@@ -122,6 +127,11 @@
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+
+  .contact-form {
+    width: 100%;
+  }
+
   .button {
     margin-bottom: 1rem;
   }

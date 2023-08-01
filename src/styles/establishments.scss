@@ -1,0 +1,93 @@
+.establishment-img1 {
+    position: absolute;
+    height: 250px;
+    left: 0;
+    bottom: 0;
+}
+
+.establishment-img2 {
+    position: absolute;
+    height: 300px;
+    left: 10%;
+    bottom: 0;
+}
+
+.establishment-img3 {
+    position: absolute;
+    height: 150px;
+    left: 40%;
+    bottom: 0;
+}
+
+.establishment-img4 {
+    position: absolute;
+    height: 300px;
+    left: 50%;
+    bottom: 0;
+}
+
+.establishment-img5 {
+    position: absolute;
+    height: 250px;
+    right: 0;
+    bottom: 0;
+}
+
+.establishment-text1 {
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+}
+
+.establishment-text2 {
+    margin-top: 20px;
+}
+
+.establishment-images {
+    min-height: 500px;
+}
+
+@media only screen and (max-width: $mobile-resolution) {
+    .establishment-text1 {
+        max-width: 100%;
+    }
+
+    .establishment-img1 {
+        height: 250px;
+        right: 0;
+        bottom: 20%;
+        left: unset;
+    }
+    
+    .establishment-img2 {
+        height: unset;
+        max-height: 250px;
+        left: 0;
+        bottom: unset;
+        top: 0;
+    }
+    
+    .establishment-img3 {
+        height: 150px;
+        left: 0;
+        bottom: 0;
+        padding-bottom: 20px;
+    }
+    
+    .establishment-img4 {
+        height: unset;
+        max-height: 250px;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 20px;
+    }
+    
+    .establishment-img5 {
+        height: 300px;
+        right: 0;
+        bottom: unset;
+        top: 0;
+        padding-top: 20px;
+    }
+
+}

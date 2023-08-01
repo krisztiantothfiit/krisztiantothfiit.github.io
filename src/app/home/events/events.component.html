@@ -1,0 +1,24 @@
+<app-section id="events">
+  <div class="row">
+    <div appParallax [ratio]="0.05" class="col-sm-12 events-text desktop-only">
+      <p>{{ 'events.text1' | translate }}</p>
+      <p>{{ 'events.text2' | translate }}</p>
+      <p>{{ 'events.text3' | translate }}</p>
+    </div>
+    <div class="col-sm-12 events-text mobile-only">
+      <p>{{ 'events.text1' | translate }}</p>
+      <p>{{ 'events.text2' | translate }}</p>
+      <p>{{ 'events.text3' | translate }}</p>
+    </div>
+    <div class="col-sm-12 events-images">
+      <img appParallax [ratio]="0.05" src="assets/images/home/events/events1.png" class="events-img1 desktop-only">
+      <img appParallax [ratio]="0.08" src="assets/images/home/events/events2.png" class="events-img2 desktop-only">
+      <img appParallax [ratio]="0.05" src="assets/images/home/events/events3.png" class="events-img3 desktop-only">
+      <img appParallax [ratio]="0.08" src="assets/images/home/events/events4.png" class="events-img4 desktop-only">
+      <img src="assets/images/home/events/events1.png" class="events-img1 mobile-only">
+      <img src="assets/images/home/events/events2.png" class="events-img2 mobile-only">
+      <img src="assets/images/home/events/events3.png" class="events-img3 mobile-only">
+      <img src="assets/images/home/events/events4.png" class="events-img4 mobile-only">
+    </div>
+  </div>
+</app-section>
