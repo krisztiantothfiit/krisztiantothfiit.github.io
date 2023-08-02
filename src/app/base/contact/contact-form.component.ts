@@ -38,7 +38,7 @@ export class ContactFormComponent {
     if (!this.formGroup.invalid) {
       const mailOptions = {
         subject: `Správa od ${this.formGroup.value.name}`,
-        text: `${this.formGroup.value.message}\n\nMeno odosielateľa: ${this.formGroup.value.name}\n\nOdosielateľ má záujem o: ${this.formGroup.value.insurance}\n\nE-mailová adresa odosielateľa: ${this.formGroup.value.email}\n\Mobilné číslo odosielateľa: ${this.formGroup.value.phone}`
+        text: `${this.formGroup.value.message}`
       }
 
       this.mailService.sendMail(mailOptions)
