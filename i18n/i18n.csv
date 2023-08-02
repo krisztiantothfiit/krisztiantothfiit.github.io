@@ -73,11 +73,8 @@ contact.form.failMsg;Odoslanie správy zlyhalo, kontaktujte nás telefonicky ale
 
 footer.phone;0915 383 919
 footer.email;info@trikvety.sk
-footer.address;Štefánikova trieda 72/46, 949 01 Nitra
-footer.monday;Pondelok: 8-22
-footer.tuesday;Utorok: 8-22
-footer.wednesday;Streda: 8-22
-footer.thursday;Štvrtok: 8-22
+footer.address;Štefánikova trieda 72/46, Nitra
+footer.mondayThursday;Pondelok-Štvrtok: 8-22
 footer.friday;Piatok: 8-24
 footer.saturday;Sobota: 8-24
 footer.sunday;Nedeľa: 9-18

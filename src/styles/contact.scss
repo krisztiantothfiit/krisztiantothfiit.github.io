@@ -62,11 +62,13 @@
 }
 
 .contact-form {
-  width: 60%;
   margin: auto !important;
 
   p {
     text-align: center;
+  }
+
+  .contact-title {
     margin-bottom: 75px;
   }
 }
@@ -118,15 +120,23 @@
 .hours {
   justify-content: center;
   display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: $tablet-resolution) {
   #contactForm .row {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .contact-form .contact-title {
+    margin-bottom: 25px;
+  }
+
+  .hours {
+    padding-top: 25px;
+  }
 
   .contact-form {
     width: 100%;

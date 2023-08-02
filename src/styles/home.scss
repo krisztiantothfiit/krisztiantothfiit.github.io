@@ -31,7 +31,7 @@
   position: absolute;
   top: -30%;
   left: 0;
-  height: 300px;
+  height: 400px;
 }
 
 .about-us-el2 {
@@ -43,7 +43,7 @@
   position: absolute;
   bottom: -10%;
   left: 20%;
-  height: 200px;
+  height: 250px;
 }
 
 .breafast-img1 {
@@ -70,7 +70,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 150px;
+  height: 200px;
 }
 
 .lunch-menu-text, .alacarte-text {
@@ -96,12 +96,12 @@
   position: absolute;
   height: 300px;
   left: 40%;
-  top: -20%;
+  bottom: 20%;
 }
 
 .lunch-menu-el2 {
   position: absolute;
-  height: 100px;
+  height: 150px;
   right: 0;
   top: 0;
 }
@@ -148,13 +148,13 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 100px;
+  height: 200px;
 }
 
 .about-us-text {
   display: flex !important;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: right;
 
   p:nth-child(6) {

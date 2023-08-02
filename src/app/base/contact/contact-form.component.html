@@ -1,8 +1,8 @@
 <div class="contact page">
   <app-section id="contactForm">
     <div class="row contact-form">
-      <div class="col-sm-12">
-        <p>{{ 'contact.form.title' | translate }}</p>
+      <div class="col-md-6 col-sm-12">
+        <p class="contact-title">{{ 'contact.form.title' | translate }}</p>
         <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
           <mat-form-field appearance="standard" floatLabel="always">
             <mat-label translate="contact.form.name"></mat-label>
@@ -28,7 +28,7 @@
             <mat-label translate="contact.form.email"></mat-label>
             <input matInput name="Email" formControlName="email"
               pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}">
-           <mat-error *ngIf="hasPatternError('email')" translate="contact.form.pattern"></mat-error>
+            <mat-error *ngIf="hasPatternError('email')" translate="contact.form.pattern"></mat-error>
           </mat-form-field>
           <mat-form-field appearance="standard" floatLabel="always">
             <mat-label translate="contact.form.message"></mat-label>
@@ -42,20 +42,15 @@
           </div>
         </form>
       </div>
-    </div>
-  </app-section>
-  <app-footer></app-footer>
-  <app-section>
-    <div class="hours">
-      <div>
-      <p>{{ 'footer.monday' | translate }}</p>
-      <p>{{ 'footer.tuesday' | translate }}</p>
-      <p>{{ 'footer.wednesday' | translate }}</p>
-      <p>{{ 'footer.thursday' | translate }}</p>
-      <p>{{ 'footer.friday' | translate }}</p>
-      <p>{{ 'footer.saturday' | translate }}</p>
-      <p>{{ 'footer.sunday' | translate }}</p>
-    </div>
+      <div class="col-md-6 col-sm-12 hours">
+        <div>
+          <p>{{ 'footer.mondayThursday' | translate }}</p>
+          <p>{{ 'footer.friday' | translate }}</p>
+          <p>{{ 'footer.saturday' | translate }}</p>
+          <p>{{ 'footer.sunday' | translate }}</p>
+        </div>
+        <app-footer></app-footer>
+      </div>
     </div>
   </app-section>
 </div>

@@ -38,7 +38,12 @@
   </app-section>
   <app-section id="drinks-menu">
     <div class="row">
-      <div appParallax [ratio]="0.1" class="col-sm-12">
+      <div appParallax [ratio]="0.1" class="col-sm-12 desktop-only">
+        <img src="assets/images/menu/napoje1.png" class="drinks-menu">
+        <img src="assets/images/menu/napoje2.png" class="drinks-menu">
+        <img src="assets/images/menu/napoje3.png" class="drinks-menu">
+      </div>
+      <div class="col-sm-12 mobile-only">
         <img src="assets/images/menu/napoje1.png" class="drinks-menu">
         <img src="assets/images/menu/napoje2.png" class="drinks-menu">
         <img src="assets/images/menu/napoje3.png" class="drinks-menu">

@@ -37,8 +37,8 @@ export class ContactFormComponent {
   public submit(formDirective: FormGroupDirective): void {
     if (!this.formGroup.invalid) {
       const mailOptions = {
-        subject: `Správa od ${this.formGroup.value.name}`,
-        text: `${this.formGroup.value.message}`
+        subject: `Rezervácia trikvety`,
+        text: `Meno a priezvisko: ${this.formGroup.value.name}\n\nPočet ľudí: ${this.formGroup.value.people}\n\nČas: ${this.formGroup.value.time}\n\nMobilné číslo: ${this.formGroup.value.phone}\n\nEmail: ${this.formGroup.value.email ? this.formGroup.value.email : 'neuvedené'}\n\nPoznámky (intolerancie, požiadavky): ${this.formGroup.value.message ? this.formGroup.value.message : 'neuvedené'}`
       }
 
       this.mailService.sendMail(mailOptions)
