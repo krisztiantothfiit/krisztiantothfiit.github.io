@@ -167,7 +167,7 @@ button:focus {
 
 .cc-message {
   color: var(--text);
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 1rem;
 }
 
@@ -178,6 +178,10 @@ button:focus {
   right: 0;
   left: unset;
   background-color: #f2f2f2;
+
+  span {
+  font-family: var(--font-family-cookies);
+  }
 }
 
 // SCROLL BAR
@@ -272,8 +276,7 @@ p:last-child {
   }
 
   .cc-banner.cc-theme-edgeless .cc-message {
-    margin: 1em;
-
+    margin: 1em !important;
   }
 
   .cc-revoke.cc-bottom {

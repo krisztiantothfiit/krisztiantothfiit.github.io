@@ -9,6 +9,7 @@ $small-mobile-resolution: 590px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
 $font-family-text: 'Cormorant Garamond', serif;
+$font-family-cookies: 'Noto Serif Vithkuqi', serif;
 
 :root {
     --primary: #{$primary};
@@ -19,4 +20,5 @@ $font-family-text: 'Cormorant Garamond', serif;
     --hamburger: #{$hamburger};
     --text: #{$text};
     --font-family-text: #{$font-family-text};
+    --font-family-cookies: #{$font-family-cookies};
 }

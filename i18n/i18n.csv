@@ -2,7 +2,7 @@ id;sk
 fancyweb;FancyWeb
 title;Tri kvety
 
-cookieMessage;"Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na uloženie zvoleného jazyka a na analýzu návštevnosti stránky.";"This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.";
+cookieMessage;Táto stránka používa súbory cookie. Kliknutím na tlačidlo "Povoliť" súhlasíte s ich používaním na analýzu návštevnosti stránky.;This website uses cookies. By clicking the "Allow" button, you agree to their use to save the selected language and to analyze site traffic.;
 cookieAllow;Povoliť;Allow;
 cookieDeny;Odmietnuť;Deny;
 cookiePolicy;Zásady používania súborov cookie;Cookie Policy;
