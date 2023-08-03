@@ -1,9 +1,9 @@
 <nav id="nav" [ngClass]="{'navbar-black' : navigationService.displayWhite}" 
 class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque"
-[style.background]="color">
+[style.background]="navigationService.isMobile && !navigationService.toClose ? 'transparent' : color">
   <div class="container">
     <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
-      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="navigationService.toggleNav()"
+      aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="hamburgerClick()"
       id="navbar-toggler" [ngClass]="{close: navigationService.toClose}"
       [style.color]="textColor">
       <span></span>

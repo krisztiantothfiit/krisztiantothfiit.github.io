@@ -141,21 +141,20 @@ button:focus {
 
 .cookie-button-allow {
   line-height: 1.5 !important;
-  padding: 10px 30px !important;
+  padding: 5px 10px !important;
   color: #000 !important;
-  border-radius: 10px !important;
-  background-color: var(--primary) !important;
   margin: 5px !important;
-  border-color: var(--primary);
+  font-size: 12px !important;
+  border: 0px !important;
 }
 
 .cookie-button-deny {
   line-height: 1.5 !important;
-  padding: 10px 30px !important;
-  background-color: var(--terciary) !important;
-  border-radius: 10px !important;
+  padding: 5px 10px !important;
   margin: 5px !important;
   color: #000 !important;
+  font-size: 12px !important;
+  border: 0px !important;
 }
 
 .cc-animate.cc-revoke.cc-bottom {
@@ -163,11 +162,22 @@ button:focus {
 }
 
 .cc-theme-edgeless.cc-window {
-  border-top: 1px solid var(--primarý-shade);
+  border-top: 1px solid var(--primary-shade);
 }
 
 .cc-message {
   color: var(--text);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.cc-theme-edgeless.cc-banner.cc-window {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  right: 0;
+  left: unset;
+  background-color: #f2f2f2;
 }
 
 // SCROLL BAR
@@ -225,6 +235,10 @@ p:last-child {
 }
 
 @media only screen and (max-width: $mobile-resolution) {
+  .cc-theme-edgeless.cc-banner.cc-window {
+    width: 100%;
+  }
+  
   .section .mat-flat-button {
     margin-top: 25px;
   }
@@ -259,6 +273,7 @@ p:last-child {
 
   .cc-banner.cc-theme-edgeless .cc-message {
     margin: 1em;
+
   }
 
   .cc-revoke.cc-bottom {

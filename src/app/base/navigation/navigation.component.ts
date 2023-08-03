@@ -40,7 +40,7 @@ export class NavigationComponent {
             break;
         }
 
-        document.documentElement.style.setProperty('--hamburger', this.textColor);
+        document.documentElement.style.setProperty('--hamburger', this.color);
       }
     })
   }
@@ -79,6 +79,10 @@ export class NavigationComponent {
     window.open("https://www.facebook.com/profile.php?id=100090247062700", "_blank");
   }
 
+  hamburgerClick() {
+    this.navigationService.toggleNav();
+    document.documentElement.style.setProperty('--hamburger', this.navigationService.toClose ? this.textColor : this.color);
+  }
 
   @HostListener("window:resize", ["$event"])
   onWindowResize() {
