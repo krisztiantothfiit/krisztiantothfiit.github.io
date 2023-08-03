@@ -4,6 +4,7 @@ $default: #FFFFFF;
 $secondary: #000000;
 $terciary: #e12d59;
 $text: #000000;
+$hamburger: #000000;
 $small-mobile-resolution: 590px;
 $mobile-resolution: 769px;
 $tablet-resolution: 960px;
@@ -15,6 +16,7 @@ $font-family-text: 'Cormorant Garamond', serif;
     --background: #{$background};
     --secondary: #{$secondary};
     --terciary: #{$terciary};
+    --hamburger: #{$hamburger};
     --text: #{$text};
     --font-family-text: #{$font-family-text};
 }

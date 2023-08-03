@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component, HostListener, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
@@ -13,11 +13,37 @@ export class NavigationComponent {
   @Input() public currentLang = '';
 
   public href: string = "";
+  public color: string = "";
+  public textColor: string = "";
 
   constructor(private translate: TranslateService, private cookie: CookieService, private ccService: NgcCookieConsentService, private router: Router,
-    public navigationService: NavigationService) { 
-      this.navigationService.isMobile = window.innerWidth < 770;
-    }
+    public navigationService: NavigationService) {
+    this.navigationService.isMobile = window.innerWidth < 770;
+
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd && this.navigationService.isMobile) {
+        this.href = val.url;
+        switch (this.href) {
+          case '/':
+          case '/kontakt':
+          case '/brunch':
+            this.textColor = "#ffffff";
+            this.color = "#000000";
+            break;
+          case '/obed':
+          case '/vecera':
+            this.textColor = "#000000";
+            this.color = "#ffffff"; break;
+          case '/drinky':
+            this.textColor = "#ffffff";
+            this.color = "#e12d59";
+            break;
+        }
+
+        document.documentElement.style.setProperty('--hamburger', this.textColor);
+      }
+    })
+  }
 
   changeUsedLang(lang: string) {
     this.translate.use(lang);

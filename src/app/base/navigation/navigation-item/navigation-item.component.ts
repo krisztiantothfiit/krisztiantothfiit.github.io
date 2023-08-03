@@ -8,6 +8,7 @@ import { NavigationService } from '../navigation.service';
 })
 export class NavigationItemComponent {
     @Input() title = '';
+    @Input() textColor = '#000000';
 
     constructor(protected router: Router, public navigationService: NavigationService){}
 

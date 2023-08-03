@@ -1,18 +1,21 @@
-<nav id="nav" [ngClass]="{'navbar-black' : navigationService.displayWhite}" class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque">
+<nav id="nav" [ngClass]="{'navbar-black' : navigationService.displayWhite}" 
+class="navbar navbar-expand-custom navbar-top navbar-fixed navbar-opaque"
+[style.background]="color">
   <div class="container">
     <div class="navbar-toggler toggler nav-text-color" type="button" data-toggle="collapse" data-target="#primary-menu"
       aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation" (click)="navigationService.toggleNav()"
-      id="navbar-toggler" [ngClass]="{close: navigationService.toClose}">
+      id="navbar-toggler" [ngClass]="{close: navigationService.toClose}"
+      [style.color]="textColor">
       <span></span>
     </div>
     <div class="collapse navbar-collapse" id="primary-menu">
       <ul class="nav navbar-nav ms-auto nav-no-opacity">
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu"></app-navigation-item>
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="brunch"></app-navigation-item>
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="obed"></app-navigation-item>
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="vecera"></app-navigation-item>
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="drinky"></app-navigation-item>
-        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="kontakt"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" [textColor]="textColor"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="brunch" [textColor]="textColor"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="obed" [textColor]="textColor"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="vecera" [textColor]="textColor"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="drinky" [textColor]="textColor"></app-navigation-item>
+        <app-navigation-item [attr.data-toggle]="navigationService.isMobile ? 'collapse' : 'show'" data-target="#primary-menu" title="kontakt" [textColor]="textColor"></app-navigation-item>
       </ul>
     </div>
   </div>
