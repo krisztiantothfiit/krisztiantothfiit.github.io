@@ -93,9 +93,9 @@ export class AppComponent implements OnInit {
   addMetaTags(): void {
     this.titleService.setTitle('trikvety');
     this.metaTagService.addTags([
-      { name: 'keywords', content: 'dobre jedlo, trikvety' },
+      { name: 'keywords', content: 'trikvety, reštaurácie, nitra, tri kvety, reštaurácia, restauracia' },
       { name: 'robots', content: 'index, follow' },
-      { name: 'author', content: 'Robko' },
+      { name: 'author', content: 'Robert Miklóš' },
       { charset: 'UTF-8' },
     ])
   }
