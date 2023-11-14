@@ -35,8 +35,8 @@ events.text1;Organizujeme súkromné oslavy a eventy.
 events.text2;Prostredníctvom našich akcií podporujeme umelcov, hudobníkov a remeselníkov.
 events.text3;Ak sa chceš zviditeľniť, urobiť si u nás oslavu alebo urobiť u nás workshop, určite nás kontaktuj.
 
-lunch.time;od 11:00 - 15:30
-lunch.text1;Každý týždeň nové menu podávané podľa sezónnosti.
+lunch.time;od 11:00 - 15:00
+lunch.text1;Každý deň ponúkame nové menu podávané podľa sezónnosti.
 lunch.dash;-
 lunch.text2;Polievka. Mäso. Vegetariánske.
 lunch.text3;Čerstvé. Domáce. Naše.
@@ -44,14 +44,17 @@ lunch.menu;Aktuálna ponuka
 
 brunch.time;od 8:00 - 10:30
 brunch.menu;Aktuálna ponuka
+brunch.text1;Čerstvé raňajky ponúkame každý deň. 
+brunch.text2;Voľnú sobotu si užite v kruhu známych pri kvalitnom brunchy.
 
-dinner.time;od 17:00 - 21:30
-dinner.text1;Večerné Á la carte zostavené naším Chefom, kombinácia chutí 3 jedál doplňujúca drinkami.
+dinner.time;od 17:00 - 21:00
+dinner.text1;Á la carte menu, pripravované zo sezónnych surovín, jesenný fusion Ázie a Slovenských jedál.
 dinner.dash;-
 dinner.text2;Polievka. Hlavný chod. Dezert.
 dinner.menu;Aktuálna ponuka
 
-drinks.time;od 17:00 - 21:30
+drinks.time1;po-štv do 22:00
+drinks.time2;pia-so do 00:00
 drinks.text1;High fashion drinky, klasiky, punkové experimenty, ale aj sezónne úlety.
 drinks.dash;-
 drinks.text2;Príď si k nám posedieť ráno s rodinkou, poobede s priateľom alebo večer s partiou.
