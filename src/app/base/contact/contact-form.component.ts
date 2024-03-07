@@ -20,13 +20,25 @@ export class ContactFormComponent {
       time: new FormControl('', [Validators.required]),
       email: new FormControl('', []),
       phone: new FormControl('', [Validators.required]),
-      message: new FormControl('', [])
+      message: new FormControl('', []),
+      date: new FormControl('', [Validators.required])
     });
+  }
+
+  getMinDate() {
+    const date = new Date();
+    date.setHours(0,0,0,0);
+    return date;
   }
 
   public hasRequiredError(field: string): boolean {
     const formField = this.formGroup.get(field);
     return !!(formField && (formField.touched) && formField.hasError('required'));
+  }
+
+  public hasMinError(field: string): boolean {
+    const formField = this.formGroup.get(field);
+    return !!(formField && (formField.touched) && formField.hasError('matDatepickerMin'));
   }
 
   public hasPatternError(field: string): boolean {
@@ -38,7 +50,7 @@ export class ContactFormComponent {
     if (!this.formGroup.invalid) {
       const mailOptions = {
         subject: `Rezervácia trikvety`,
-        text: `Meno a priezvisko: ${this.formGroup.value.name}\n\nPočet ľudí: ${this.formGroup.value.people}\n\nČas: ${this.formGroup.value.time}\n\nMobilné číslo: ${this.formGroup.value.phone}\n\nEmail: ${this.formGroup.value.email ? this.formGroup.value.email : 'neuvedené'}\n\nPoznámky (intolerancie, požiadavky): ${this.formGroup.value.message ? this.formGroup.value.message : 'neuvedené'}`
+        text: `Meno a priezvisko: ${this.formGroup.value.name}\n\nPočet ľudí: ${this.formGroup.value.people}\n\nDátum: ${this.formGroup.value.date.format("DD.MM.YYYY")}\n\nČas: ${this.formGroup.value.time}\n\nMobilné číslo: ${this.formGroup.value.phone}\n\nEmail: ${this.formGroup.value.email ? this.formGroup.value.email : 'neuvedené'}\n\nPoznámky (intolerancie, požiadavky): ${this.formGroup.value.message ? this.formGroup.value.message : 'neuvedené'}`
       }
 
       this.mailService.sendMail(mailOptions)

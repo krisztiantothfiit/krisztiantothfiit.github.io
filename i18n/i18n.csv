@@ -66,10 +66,12 @@ contact.form.name;Meno a priezvisko
 contact.form.email;Email
 contact.form.phone;Mobilné číslo
 contact.form.people;Počet ľudí
+contact.form.date;Dátum
 contact.form.time;Čas
 contact.form.message;Poznámky (intolerancie, požiadavky)
 contact.form.submitBtn;Odoslať
 contact.form.required;Povinné pole
+contact.form.minDate;Zvoľte dátum v budúcnosti
 contact.form.pattern;Nesprávny tvar emailu
 contact.form.successMsg;Vaše informácie k rezervácií boli úspešne odoslané!
 contact.form.failMsg;Odoslanie správy zlyhalo, kontaktujte nás telefonicky alebo emailom.

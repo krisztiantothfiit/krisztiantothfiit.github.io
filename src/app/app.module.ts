@@ -44,7 +44,27 @@ import { AppearDirective } from './base/appear.directive';
 import { ParallaxDirective } from './base/parallax.directive';
 import { EventsComponent } from './home/events/events.component';
 import { EstablishmentComponent } from './home/establishment/establishment.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
 
+export class CustomDateAdapter extends MomentDateAdapter {
+  override getFirstDayOfWeek(): number {
+      return 1;
+  }
+}
+
+export const MY_FORMATS = {
+  parse: {
+    dateInput: 'DD.MM.YYYY',
+  },
+  display: {
+    dateInput: 'DD.MM.YYYY',
+    monthYearLabel: 'MMM YYYY',
+    dateA11yLabel: 'LL',
+    monthYearA11yLabel: 'MMMM YYYY',
+  },
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,6 +107,8 @@ import { EstablishmentComponent } from './home/establishment/establishment.compo
     MatTabsModule,
     MatGridListModule,
     MatSelectModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
     GoogleTagManagerModule.forRoot({
       id: environment.gtmId,
     }),
@@ -101,7 +123,10 @@ import { EstablishmentComponent } from './home/establishment/establishment.compo
     BrowserAnimationsModule,
     NgcCookieConsentModule.forRoot(cookieConfig)
   ],
-  providers: [NavigationService],
+  providers: [NavigationService,
+    { provide: MAT_DATE_LOCALE, useValue: 'sk-SK' },
+    { provide: DateAdapter, useClass: CustomDateAdapter },
+    {provide: MAT_DATE_FORMATS, useValue: MY_FORMATS},],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

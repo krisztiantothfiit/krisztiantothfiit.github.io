@@ -15,6 +15,14 @@
             <mat-error *ngIf="hasRequiredError('people')" translate="contact.form.required"></mat-error>
           </mat-form-field>
           <mat-form-field appearance="standard" floatLabel="always">
+            <mat-label translate="contact.form.date"></mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date" [min]="getMinDate()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="hasRequiredError('date')" translate="contact.form.required"></mat-error>
+            <mat-error *ngIf="hasMinError('date')" translate="contact.form.minDate"></mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="standard" floatLabel="always">
             <mat-label translate="contact.form.time"></mat-label>
             <input matInput name="Time" formControlName="time">
             <mat-error *ngIf="hasRequiredError('time')" translate="contact.form.required"></mat-error>
