@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MailService } from './mail-service.service';
 import { MessageDialogComponent } from './message-dialog/message-dialog.component';
 import { TranslateService } from '@ngx-translate/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,8 +12,9 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ContactFormComponent {
   formGroup: FormGroup;
+  url: SafeResourceUrl = '';
 
-  constructor(private dialog: MatDialog, private mailService: MailService, private translate: TranslateService) {
+  constructor(private dialog: MatDialog, private mailService: MailService, private translate: TranslateService, sanitizer: DomSanitizer) {
 
     this.formGroup = new FormGroup({
       name: new FormControl('', [Validators.required]),
@@ -23,6 +25,10 @@ export class ContactFormComponent {
       message: new FormControl('', []),
       date: new FormControl('', [Validators.required])
     });
+
+    const eid = 'hydra-cb1dad80-ad42-11ed-99c0-05c707191fb7';
+    const query = '';
+    this.url = sanitizer.bypassSecurityTrustResourceUrl(`https://reservation.dish.co/widget/${eid}?${query}`);
   }
 
   getMinDate() {

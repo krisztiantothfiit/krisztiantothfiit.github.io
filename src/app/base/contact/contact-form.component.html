@@ -3,7 +3,10 @@
     <div class="row contact-form">
       <div class="col-md-6 col-sm-12">
         <p class="contact-title">{{ 'contact.form.title' | translate }}</p>
-        <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
+        <iframe id="reservationWidget" [src]="url" width="300" height="450" frameborder="0">
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+        <!-- <form [formGroup]="formGroup" #formDirective="ngForm" class="form" (ngSubmit)="submit(formDirective)">
           <mat-form-field appearance="standard" floatLabel="always">
             <mat-label translate="contact.form.name"></mat-label>
             <input matInput name="Name" formControlName="name">
@@ -48,7 +51,7 @@
               <span>{{'contact.form.submitBtn' | translate }}</span>
             </button>
           </div>
-        </form>
+        </form> -->
       </div>
       <div class="col-md-6 col-sm-12 hours">
         <div>
